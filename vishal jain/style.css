@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 300px;
+  height: 80vh;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #01000063;
+}
+
+.currentTime {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: center;
+  grid-gap: 10px;
+  height: 37px;
+  padding-top: 10px;
+}
+
+#Hours,
+#Minutes,
+#Second {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0F3F4;
+  border-radius: 10px;
+  font-size: x-large;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SetAlarm {
+  grid-row-start: 3;
+  grid-row-end: 1000;
+  overflow-y: scroll;
+  font-size: 20px;
+  font-family: "Gill Sans", sans-serif;
+  padding-top: 14px;
+}
+
+#DoneBtn {
+  border: 1px solid #3edc3e;
+  background-color: #3edc3e;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 11px;
+}
+
+.Done {
+  display: grid;
+  justify-content: center;
+  grid-gap: 11px;
+}
+
+#SongSelect {
+  border-radius: 10px;
+  border: 1px solid #22DD59;
+  background-color: #22DD59;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#AlarmHistory {
+  padding-top: 10px;
+  font-size: 25px;
+  padding-left: 10px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+
+.Add_StopWatch_Buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  background-color: white;
+  height: 7vh;
+}
+
+#AddBtn,
+#StopWatchBtn {
+  border: 1px solid #000000d9;
+  background-color: #000000d9;
+  color: rgba(255, 255, 255, 0.592);
+  cursor: pointer;
+  font-size: 28px;
+  border-bottom-left-radius: 20px;
+}
+
+#AddBtn:hover,
+#StopWatchBtn:hover {
+  color: rgb(255, 255, 255);
+}
+
+i:hover {
+  transform: scale(1.1);
+}
+
+#StopWatchBtn {
+  border: 1px solid #000000d9;
+  background-color: #000000d9;
+  color: rgba(255, 255, 255, 0.592);
+  cursor: pointer;
+  font-size: 28px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+}
+
+.AddingAlarm {
+  display: none;
+  justify-content: center;
+  align-content: center;
+  background-color: #DD22A6;
+  height: 80vh;
+  width: 300px;
+  border-radius: 20px;
+  color: white;
+  grid-gap: 18px;
+
+}
+
+
+.Alarm {
+  padding-left: 3px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DivAlarm {
+  padding: 15px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+}
+
+.RemoveSettedAlarm {
+  font-size: 1.5em;
+  width: 1em;
+  background-color: #d9373786;
+  border: 1px solid #d9373786;
+  border-radius: 50%;
+  height: 1em;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin-right: 13px;
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.RemoveSettedAlarm:hover {
+  color: white;
+  background-color: #d93737;
+  border: 1px solid #d93737;
+}
+
+
+.StopWatchPage {
+  display: none;
+  justify-content: center;
+  height: 80vh;
+  width: 300px;
+  border-radius: 20px;
+  color: white;
+  grid-gap: 5px;
+  background-color: #628dfd;
+}
+
+.TimmerDisplayMain {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.TimmerDisplay {
+  display: flex;
+  background-color: white;
+  color: #000000cc;
+  border-radius: 8px;
+  align-items: center;
+  font-weight: 600;
+  font-family: system-ui;
+  grid-gap: 10px;
+  box-sizing: border-box;
+  width: 237.07px;
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+
+.logicBtn {
+  grid-gap: 22px;
+  display: flex;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.Buttons {
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 17px;
+  border: 1px solid white;
+  color: #7441a6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#TimmerMilliSecond {
+  color: #7441a6;
+}
+
+#BackBtn {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 3px;
+  align-items: flex-end;
+}
+
+#back {
+  cursor: pointer;
+  color: white;
+  height: 31px;
+  width: 100px;
+  font-size: 1.5em;
+  border: 2px solid #b97bf6bd;
+  background-color: #a75feebd;
+  border-radius: 10px;
+}

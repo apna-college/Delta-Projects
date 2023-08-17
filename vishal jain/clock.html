@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <!--  Developer Vishal  -->
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <!-- alarm alarm page -->
+        <div class="AddingAlarm">
+            <div>
+                <label for="appt-time">Select Your time :</label>
+                <input id="alarm" type="time" name="alarm" />
+            </div>
+            <div class="Done SongSelect_main">
+                <Select id="SongSelect">
+                    <option value="Select_Song" class="radheSong" id="radhe_radhe0">Select Song</option>
+                    <option value="radhe_radhe1" class="radheSong" id="radhe_radhe1">Song : 1</option>
+                    <option value="radhe_radhe2" class="radheSong" id="radhe_radhe2">Song : 2</option>
+                    <option value="radhe_radhe3" class="radheSong" id="radhe_radhe3">Song : 3</option>
+                    <option value="radhe_radhe4" class="radheSong" id="radhe_radhe4">Song : 4</option>
+                    <option value="radhe_radhe5" class="radheSong" id="radhe_radhe5">Song : 5</option>
+                </Select>
+                <button id="DoneBtn">Done</button>
+            </div>
+        </div>
+
+        <!-- displaying current setted alarm -->
+        <div class="Container">
+            <div class="currentTime">
+                <div id="Hours"></div>
+                <div id="Minutes"></div>
+                <div id="Second"></div>
+            </div>
+            <div id="AlarmHistory">Alarm History:</div>
+            <div class="SetAlarm"></div>
+
+            <!-- Buttons to see stop watch and add alarm -->
+            <div class="Add_StopWatch_Buttons">
+                
+                <button id="AddBtn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <button id="StopWatchBtn">
+                    <i class="fa-solid fa-stopwatch"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Stop Watch page -->
+        <div class="StopWatchPage">
+            <div class="TimmerDisplayMain">
+                <div class="TimmerDisplay">
+                    <div id="TimmerHours">00</div>:
+                    <div id="TimmerMintues">00</div>:
+                    <div id="TimmerSecond">00</div>:
+                    <div id="TimmerMilliSecond">00</div>
+                </div>
+            </div>
+
+            <div class="logicBtn">
+                <button class="Buttons" id="StopBtn">STOP</button>
+                <button class="Buttons" id="StartBtn">START</button>
+                <button class="Buttons" id="resetBtn">RESET</button>
+            </div>
+
+            <div id="BackBtn">
+                <button id="back">BACK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
