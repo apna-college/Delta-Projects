@@ -1,0 +1,101 @@
+  
+
+ .btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 99;
+
+ }
+ .sidebar_menu{
+    position: fixed;
+    left: -500px;
+  height: 77%;
+  width: 50%;
+  background-color: rgba(59, 49, 49, 0.9);
+  box-shadow: 0  0 10px rgba(255, 255, 255, 0.6);
+  z-index: 99;
+  top: 0;
+  transition: all 0.5s;
+ }
+ .sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0  0 5px rgba(255, 255, 255, 0.4);
+    height: 60px;
+ }
+ .sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+ }
+ .sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 30px;
+    position: absolute;
+  /*   left: 270px; */
+  left: 80%;
+    line-height: 60px;
+    cursor: pointer;
+  /*   opacity: 0; */
+
+ }
+ .sidebar_menu .menu{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+ }
+ .sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 10px 20px;
+    list-style: none;
+ }
+ .sidebar_menu .menu li a{
+    text-decoration: none;
+    color: rgb(226, 214, 214);
+    font-size: 20px;
+ }
+ .sidebar_menu .menu i{
+    padding-right: 9px;
+ }
+ 
+ 
+ #check{
+    display: none;
+ }
+ .sidebar_menu .menu li:hover{
+    box-shadow: 0  0 5px rgba(255, 255, 255, 0.4);
+ }
+ .btn_one i:hover{
+    font-size: 35px;
+    
+ }
+ .btn_two i:hover{
+    font-size: 35px;
+    
+ }
+ .social_media i:hover{
+     transform: scale(1.2);
+    opacity: 10;
+     
+ }
+ #check:checked ~ .sidebar_menu{
+left: 0px;
+ }
+ #check:checked ~ .btn_one{
+   opacity: 0;
+     }
+
+
+
+
+ 
