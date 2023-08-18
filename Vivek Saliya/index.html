@@ -8,6 +8,7 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <div class="container"> 
         <div class="top">
@@ -16,16 +17,19 @@
         </div>
         <div class="main">
             <div class="quote-area">
-                <p id="quote">
-                    "Life is about not knowing, having to change, taking the moment and making the best of it, without knowing what's going to happen next"
-                </p>
-                <p id="author">
-                    - Gilda Radner
-                </p>
+                <div>
+                    <p id="quote">
+                        "Life is about not knowing, having to change, taking the moment and making the best of it, without knowing what's going to happen next"
+                    </p>
+                    <p id="author">
+                        - Gilda Radner
+                    </p>
+                </div>
+                <div class="bottom">
+                    <button id="btn"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
             </div>
-        </div>
-        <div class="bottom">
-            <button id="btn">Generate new quote</button>
+            
         </div>
         <div class="end">
             <p>Made using Quote Garden API</p>
