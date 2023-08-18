@@ -1,12 +1,12 @@
 # Weather Application using API
 
-To use this API it uis needed to create account on OpenWeather Website
+To use this API it is needed to create account on OpenWeather Website
 https://home.openweathermap.org
 
 
 # Features :
 
-1. This Web Application will show the current weather of enterted   location using API. 
+1. This Web Application will show the current weather of enterted location using API. 
 
 2. After entering the location in input bar and hitting enter key or clicking search icon you will get weather results of respective location.
 
@@ -17,5 +17,5 @@ https://home.openweathermap.org
             https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key};
 
 # Parameters: 
-            1. City = The name of city entered in input bar is assigned.
+            1. City : The name of city entered in input bar is assigned.
             2. Application Id : Personal Id (Will be given during signup).
