@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simpleInterest</title>
+    <style>
+      body {
+        background: linear-gradient(rgb(6, 6, 72), rgb(5, 5, 5), rgb(33, 3, 58))
+          center center/cover no-repeat;
+        height: 100vh;
+        color: white;
+      }.out_box{
+        background-color: azure;
+        height: 100px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 25px;
+      }.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 90vh;
+      }input{
+        height: 30px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 20px;
+        margin: 10px;
+      }label{
+        font-size: 25px;
+      }.center{
+        text-align: center;
+      }#btn{
+        margin: 10px;
+        height: 40px;
+        width: fit-content;
+        font-size: 30px;
+        border-radius: 20px;
+        padding: 10px 15px 40px 15px;
+        border: 2px solid red;
+        background-color: rgb(237, 181, 97);
+        font-weight: 600;
+        transition-duration: 2s;
+      }#btn:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <div class="container">
+    <div class="center">
+      <div class="am">
+        <label> Amount: </label>
+        <input type="number" placeholder="Enter amount" id="Amo"/>
+      </div>
+      <div class="ra">
+        <label> Rate: </label>
+        <input type="number" placeholder="Enter rate" id="Rate"/>
+      </div>
+      <div class="ye">
+        <label> year: </label>
+        <input type="number" placeholder="Enter year" id="year"/>
+      </div>
+      <button id="btn">
+        Submit
+      </button>
+      <div class="out_box" ><div id="out"></div></div>
+    </div>
+    
+  </div>
+  <body>
+    <script>
+
+let btn = document.getElementById('btn')
+btn.addEventListener('click',simpleInterest)
+
+function simpleInterest() {
+    let p = document.getElementById('Amo').value
+let r = document.getElementById('Rate').value
+let t =  document.getElementById('year').value
+ 
+let out = document.getElementById('out')
+let simInte =(p * r * t) / 100;
+out.textContent = "SimpleInterest:" + simInte
+ 
+
+      
+      }
+
+     
+   
+    </script>
+  </body>
+</html>
