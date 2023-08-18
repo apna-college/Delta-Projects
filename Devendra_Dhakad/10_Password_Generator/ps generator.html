@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generater</title>
+  <style>
+    body {
+      background: linear-gradient(rgb(6, 6, 72), rgb(5, 5, 5), rgb(33, 3, 58)) center center/cover no-repeat;
+      height: 100vh;
+
+      color: azure;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    .container {
+      height: 480px;
+      width: 350px;
+      background-color: rgb(101, 0, 233);
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+
+
+    }
+
+    #ou {
+      height: 50px;
+      width: 300px;
+      background-color: rgb(224, 177, 115);
+      text-align: center;
+      font-size: 30px;
+      border: 2px solid black;
+      border-radius: 5px;
+      color: black;
+      text-align: center;
+      margin-left: 20px;
+      padding-top: 10px;
+
+    }
+
+    .left {
+      font-size: 25px;
+      margin: 10px;
+      float: left;
+
+    }
+
+    .right {
+      font-size: 25px;
+      margin: 10px;
+      float: right;
+    }
+
+    #nim_inp {
+      width: 40px;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    #copy_btn {
+      font-size: 20px;
+      border-radius: 2px;
+      border: none;
+
+      color: black;
+      float: right;
+      transition-duration: 2s;
+      margin: 10px;
+    }
+
+    #copy_btn:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+
+    #Gene_btn {
+      font-size: 20px;
+      border-radius: 2px;
+      border: none;
+      background-color: blue;
+      color: antiquewhite;
+      padding: 10px;
+      transition-duration: 2s;
+      margin-top: 20px;
+    }
+
+    #Gene_btn:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+
+    input.check {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <div class="container">
+      <h1>  Password Generator </h1>
+      <div id="ou">
+        <span id="out"></span>
+        <span><button id="copy_btn">copy</button> </span>
+      </div>
+
+      <div class="left"> Password Length </div>
+      <div class="right"> <input type="number" name="pass" id="nim_inp" required />  </div>
+
+
+      <div class="left"> Include Uppercase Letters </div>
+      <div class="right"> <input type="checkbox" value="Uppercase" name="pass" class="check" id="upper" /></div>
+
+
+      <div class="left">Include Lowercase Letters </div>
+      <div class="right"> <input type="checkbox" value="Lowercase" name="pass" class="check" id="lower" /></div>
+
+
+      <div class="left"> Include Number </div>
+      <div class="right"> <input type="checkbox" value="Number" name="pass" class="check" id="numb" /></div>
+
+
+      <div class="left"> Include Symbols </div>
+      <div class="right"> <input type="checkbox" value="Symbols" name="pass" class="check" id="symb" /></div>
+
+
+      <input type="submit" id="Gene_btn" value="Generate Password" />
+
+
+    </div>
+  </div>
+
+  <script>
+
+
+    let Number = "1234567890";
+    let Uppercase = "QWERTYUIOPASDFGHJKLZXCVBNM";
+    let Lowercase = "qwertyuiopasdfghjklzxcvbnm";
+    let Symbols = "!@#$%^&*";
+    let out = document.getElementById("out");
+    let len = document.getElementById("nim_inp");
+    let uppercheck = document.getElementById("upper");
+    let lowercheck = document.getElementById("lower");
+    let numcheck = document.getElementById("numb");
+    let symbcheck = document.getElementById("symb");
+
+
+    function pas(casee) {
+      return casee[Math.floor(Math.random() * casee.length)];
+    }
+    function Genpass(pass = "") {
+      if (uppercheck.checked) {
+        pass += pas(Uppercase);
+
+      }
+      if (lowercheck.checked) {
+        pass += pas(Lowercase);
+
+      }
+      if (numcheck.checked) {
+        pass += pas(Number);
+
+      }
+      if (symbcheck.checked) {
+        pass += pas(Symbols);
+
+      }
+      if (pass.length < len.value) {
+        return Genpass(pass);
+      }
+      pass = pass.substr(0, len.value)
+      out.textContent = pass;
+
+    }
+
+    let Gene_btn = document.getElementById("Gene_btn");
+    Gene_btn.addEventListener("click", function () {
+      Genpass();
+    });
+
+
+    //copy
+    document.getElementById('copy_btn').addEventListener('click', function copy() {
+
+      let copyText = out.textContent
+
+      /*        copyText.select();
+       copyText.setSelectionRange(0, 99999); */
+      if (copyText == "") {
+        alert("Please Generet Password")
+      } else {
+        navigator.clipboard.writeText(copyText)
+        alert("Cpoied Password: " + copyText)
+      }
+
+    })
+
+  </script>
+</body>
+
+</html>
