@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.8em;
+    flex-wrap: wrap;
+    border:2px solid black;
+    margin: auto;
+    background-color: rgb(255, 255, 255,0.1);
+    cursor: pointer;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:1rem;
+    width:1rem;
+    border:2px solid rgba(68, 46, 46, 0.5);
+    border-radius: 0.2rem;
+    margin:0 0.75rem 0.5rem 0;
+    color:white;
+}
+h3{
+    text-align: center;
+    margin:1rem 0 1rem 0;
+    color:white;
+}
+
+input{
+    width:9rem;
+    margin: 0.2rem 0 1rem 0;
+    border:1px dotted gray;
+    background-color: rgb(255, 255, 255,0.9);
+    outline: none;
+}
