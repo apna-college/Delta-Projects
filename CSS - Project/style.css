@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#mainbar {
+  background-image: url("WhatsApp\ Image\ 2023-07-29\ at\ 14.19.26.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+#check {
+  display: none;
+}
+#btnone {
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  font-size: 20px;
+  top: 18px;
+  cursor: pointer;
+  left: 18px;
+}
+#mainbar #btnone i {
+  font-size: 27px;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+#mainbar #btnone i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#sidebar {
+  left: -250px;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  width: 20vw;
+  top: 1px;
+  background-color: rgba(255, 255, 255, 0.143);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+#sidebar #logo {
+  height: 37px;
+  position: relative;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+#sidebar #logo a {
+  position: absolute;
+  color: white;
+  left: 39px;
+  top: 1px;
+  text-decoration: none;
+  font-size: 30px;
+}
+#sidebar #logo i {
+  font-size: 20px;
+  position: absolute;
+  top: 9px;
+  left: 212px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+#sidebar #logo i:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+ul {
+  list-style: none;
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 20px;
+}
+#list a {
+  color: white;
+  text-decoration: none;
+}
+#list a i {
+  margin-right: 15px;
+}
+#list li {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 40px;
+}
+#list li:hover {
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+#foot {
+  position: absolute;
+  bottom: 10px;
+  left: 65px;
+}
+#foot a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px;
+}
+#foot a i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+#check:checked ~ #sidebar {
+  animation: side 0.5s linear 0s 1 normal forwards;
+}
+@keyframes side {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 0px;
+  }
+}
+#check:checked ~ #btnone {
+  display: none;
+}
