@@ -1,1 +1,1 @@
-# create mini project of simon says in different design
+# created mini project of Simon Says in different design
