@@ -1,11 +1,9 @@
-# Delta-Projects
-All Delta students can create a PR to this repo to merge their projects.
+# CALCULATOR FUNCTIONS
 
-## How to add your project in this repository?
-1. Fork this repository.
-2. Add your project in a folder with your First & Last Name. <br>
-   Eg - "Rahul Kumar" is the folder name. And this folder should contain all project related files.<br>
-   Make sure to create your own README.md in the project that contains a brief description about your project.
-4. Create a PR to merge your project to the repository.
+Numbers : Buttons representing numbers from 0 to 9
 
+Decimal Point (.): Add a decimal point button to allow users to input decimal numbers.
 
+ '=' : Include an "=" button to evaluate the entered expression and display the result.
+
+ 'C': Implement a "C" button to clear the current input or calculation, and a backspace    button to delete the last digit.
