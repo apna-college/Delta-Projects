@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            position: relative;
+            margin-top: 5rem;
+            width: 100%;
+            padding: 3rem;
+            display: flex;
+            justify-content: center;
+            color: white;
+
+            background: url('https://image.tmdb.org/t/p/original/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg');
+            background-color: rgba(0, 0, 0, 0);
+            background-size: cover;
+            background-position: center center;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(18, 2, 31, 0.75);
+        }
+        .left{
+            width: 30%;
+            padding: 1rem;
+            z-index: 2;
+        }
+        .left img{
+            margin-left: 2rem;
+            width: 80%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .right{
+            padding: 1rem;
+            width: 70%;
+            z-index: 2;
+        }
+        .info{
+            display: flex;
+        }
+        .info>*{
+            margin: 0.7rem 0.7rem 0.7rem 0rem;
+        }
+        .showCase{
+            display: flex;
+        }
+        .showCase>*{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(36, 0, 119);
+            margin: 0px 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            
+        }
+        .tagline{
+            font-size: 1rem;
+            margin: 1rem 0px;
+            color: rgba(212, 212, 212, 0.7);
+        }
+        .overview{
+            margin: 1rem 0rem;
+        }
+
+        .overview h3{
+            margin: 0.5rem 0rem;
+        }
+
+        .overview p{
+            text-align: justify;
+            font-size: 0.9rem;
+            letter-spacing: 0.04rem;
+        }
+        .cast{
+            display: flex;
+            flex-direction: column;
+        }
+        .cast .top , .bottom{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0rem;
+
+        }
+        .cast>* p{
+            margin: 0.3rem 0rem;
+            font-size: 0.8rem;
+        }
+
+        .cast .top>* , .bottom>*{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <!-- <div class="left">
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" alt="">
+        </div>
+        <div class="right">
+            <h1 class="original_title">
+                Spider-Man: Across the Spider-Verse (2023)
+            </h1>
+            <div class="info">
+                <p class="release_date">
+                    12/3/2023
+                </p>
+                <div class="genres">
+                    Animation,Action,Adventecture
+                </div>
+                <div class="runtime">
+                    140 minitues
+                </div>
+            </div>
+            <div class="showCase">
+                <div><i class="fa-solid fa-bars"></i></div>
+                <div><i class="fa-solid fa-heart"></i></div>
+                <div><i class="fa-solid fa-bookmark"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+            </div>
+            <p class="tagline">It's how you wear the mask that matters.</p>
+            <div class="overview">
+                <h3>Overview</h3>
+                <p>
+                    After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.
+                </p>
+            </div>
+            <div class="cast">
+                <div class="top">
+                    <div>
+                        <h4>Joaquim Dos Santos</h4>
+                        <p>Director</p>
+                    </div>
+                    <div>
+                        <h4>Joaquim Dos Santos</h4>
+                        <p>Director</p>
+                    </div>
+                    <div>
+                        <h4>Joaquim Dos Santos</h4>
+                        <p>Director</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <h4>Joaquim Dos Santos</h4>
+                        <p>Director</p>
+                    </div>
+                    <div>
+                        <h4>Joaquim Dos Santos</h4>
+                        <p>Director</p>
+                    </div>
+                    <div>
+                        <h4>Joaquim Dos Santos</h4>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- </div> -->
+    <script src="../js/movie-details.js"></script>
+
+</body>
+</html>
