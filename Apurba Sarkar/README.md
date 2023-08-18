@@ -7,9 +7,11 @@
 # Technologies used:
 
 1.HTML
+
 2.CSS
+
 3.JavaScript
 
 # API used:
 
-Joke API - https://v2.jokeapi.dev/joke/Any?safe-mode 
+Joke API - https://v2.jokeapi.dev/joke/Any?safe-mode
