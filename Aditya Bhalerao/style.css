@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+}
+
+.btn{
+    
+    
+    height: 200px;
+    width: 200px;
+    
+    border: 2px solid black;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    
+}
+.red{
+    border-radius: 90% 20% 20% 20%;
+    background-color: red;
+    margin: 5px;
+}
+.green{
+    background-color: green;
+    border-radius: 20% 20% 20% 90%;
+    margin: 5px;
+}
+.blue{
+    background-color: blue;
+    border-radius: 20% 90% 20% 20%;
+    margin: 5px;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 20% 20% 90% 20%;
+    margin: 5px;
+}
+
+.black{
+    align-items: center;
+    background-color: black;
+    height: 480px;
+    width: 480px;
+    border-radius: 80% 80% 80% 80%;
+    
+}
+.flashWhite{
+    background-color: white;
+}
+.flashGreen{
+    background-color: chartreuse;
+}
