@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.info-player{
+    height: 5rem;
+    width: 70%;
+    /* border: 1px solid black;*/
+    background-color: whitesmoke; 
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.player-align{
+    width: 50%;
+    height: 100%;
+}
+
+/* .info-playerA{
+    background-color: aqua;
+}
+
+.info-playerB{
+    background-color: red;
+} */
+
+.player-sign{
+    height: 50%;
+    width: 100%;
+    /* background-color: beige; */
+}
+
+.player-score{
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.mid{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   margin-left: 12rem;    
+}
+
+.game-container{
+    height: 30rem;
+    width: 30rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    height: 8rem;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+.l-two{
+    margin-top: 3rem;
+}
+
+.l-three{
+    margin-top: 3rem;
+}
+
+.box{
+    height: 100%;
+    width: 8rem;
+    background-color: white;
+}
+
+.b-11{
+    margin-right: 3rem;
+}
+
+.b-12{
+    margin-right: 3rem;
+}
+
+.b-21{
+    margin-right: 3rem;
+}
+
+.b-22{
+    margin-right: 3rem;
+}
+
+.b-31{
+    margin-right: 3rem;
+}
+
+.b-32{
+    margin-right: 3rem;
+}
+
+.game-info-status{
+    font-size: 1.5rem;
+}
+
+.signStyle{
+   font-size: 7rem;
+   text-align: center;    
+}
+
+.resetBtn{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 6rem;
+    border-radius: .5rem;
+}
