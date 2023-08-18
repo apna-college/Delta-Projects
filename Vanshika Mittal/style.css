@@ -1,0 +1,76 @@
+.calculator {
+    height: 500px;
+    width: 350px;
+    margin: auto;
+}
+.container {
+    height: 500px;
+    width: 350px;
+    border: 5px solid black;
+    border-top: 2px solid black;
+    background-image: url("kitty.jpg");
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+}
+
+.kitty {
+    height: 120px;
+    width: 350px;
+    background-image: url("kittens.jpg");
+    background-size: cover;
+    transition: background 0.6s;
+}
+.input {
+    font-size: 2.5rem;
+    text-align: right;
+    height: 70px;
+    width: 330px;
+    margin: 0.5rem;
+    background-image: url("kitten.png");
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: background 0.8s;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+.btn-row {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-row button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    margin: 10px;
+    border: none;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.4);
+}
+.eql-btn {
+    background-color: pink;
+}
+
+.main-btns {
+    color: rgb(155, 14, 155);
+}
+
+/* Add the glowing box-shadow */
+.glowing {
+    animation: glow 1s ease-in-out;
+}
+
+@keyframes glow {
+    0%,100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 15px 5px #a0a0a0;
+    }
+}
