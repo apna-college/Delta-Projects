@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="project.css"/>
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+   <div class="container">
+    <div class="calculator">
+      
+    <form>
+        <div class="display">
+            <input type="text" name="dis">
+        </div>
+        
+        <div>
+            <input type="button" value="AC" class="s" onclick=" dis.value=''">
+            <input type="button" value="DE" onclick=" dis.value=dis.value.slice(0,-1)">
+            <input type="button" value="." onclick=" dis.value+='.'">
+            <input type="button" value="/" onclick=" dis.value+='/'">
+        </div>
+        <div>
+            <input type="button" value="7" onclick=" dis.value+='7'">
+            <input type="button" value="8" onclick=" dis.value+='8'">
+            <input type="button" value="9" onclick=" dis.value+='9'" >
+            <input type="button" value="*" onclick=" dis.value+='*'">
+        </div>
+        <div>
+            <input type="button" value="4" onclick=" dis.value+='4'">
+            <input type="button" value="5" onclick=" dis.value+='5'">
+            <input type="button" value="6" onclick=" dis.value+='6'">
+            <input type="button" value="-" onclick=" dis.value+='-'">
+        </div>
+        <div>
+            <input type="button" value="1" onclick=" dis.value+='1'">
+            <input type="button" value="2" onclick=" dis.value+='2'">
+            <input type="button" value="3" onclick=" dis.value+='3'">
+            <input type="button" value="+" id="plus" onclick=" dis.value+='+'">
+        </div>
+        <div>
+            <input type="button" value="00" onclick=" dis.value+='00'">
+            <input type="button" value="0" onclick=" dis.value+='0'">
+            <input type="button" value="=" id="eq" onclick=" dis.value=eval(dis.value)">
+        </div>
+    </form>
+    </div>
+   </div>
+    <script src="project.js"></script>
+</body>
+</html>
