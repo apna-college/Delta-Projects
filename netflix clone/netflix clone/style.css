@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+     background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.573), rgba(0, 0, 0, 0.527)),
+    url('./assets/netflix_img.jpg');
+    background-position: right center;
+    background-size: auto;
+    color: #fff;
+    overflow: hidden;
+    }
+
+
+.border-radius{
+    border-radius: 5px;
+}
+.line{
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    height: 0.5rem;
+}
+.nav-content{
+   margin: 0 auto;
+    padding: 0 1rem;
+}
+.nav{
+    padding: 2rem;
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center; 
+}
+
+.nav-logo{
+    width: 148px;
+    height: 40px;
+}
+.nav-logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-1{
+    font-size: 1rem;
+     background-color: rgba(0, 0, 0, 0.529);
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    font-weight: 500;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    margin-right: 1.1rem;
+    width: 126px;
+    height: 32px;  
+}
+
+.nav-span{
+    margin: 0 0.1rem;
+    font-weight: 500;
+}
+
+.btn-2{
+    padding: 0.3rem 1rem;
+    background-color: #e50914;
+    border: none;
+    font-size: 0.8rem;
+    color: #fff;
+     font-weight: 600;
+     height: 32px;
+     width: 77px;
+     letter-spacing: 0.2px;
+     cursor: pointer;
+}
+
+.btn-2:hover{
+    background-color: #c11119;
+}
+.fa-globe{
+   
+    margin-right: 0.2rem;
+}
+
+.fa-sort-down{
+    margin-left: 0.3rem;
+}
+
+/* hero container */
+.hero-items{
+    margin: 7.75rem auto;
+}
+.hero{
+    text-align: center;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+.hero-input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-bts{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.hero-p1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem 0 0;
+    margin: 1rem;
+    margin-bottom: 0.4rem;
+}
+.hero-p2{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.email-btn{
+    background-color: rgba(0, 0, 0, 0.668);
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    width: 23.875rem;
+     height: 3.5rem;
+    display: inline-block;
+}
+
+.hero-btn{
+    height: 3.5rem;
+    background-color: #e50914;
+    color: #fff;
+    margin-left: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;  
+}
+
+
+.hero-btn:hover{
+    background-color: #c11119;
+}
+.features{   
+    padding: 50px 12%;
+    font-size: 22px;
+    padding: 3.5rem 12%;
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;    
+    margin: auto;
+    justify-content: center;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;  
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;  
+}
+ h2{
+    font-size: 2.8rem;
+    margin-top: 1.25rem;
+    font-weight: 600;
+    
+}
+.features_p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.text-col{
+    width: 31.25rem;
+}
+.img-col{
+    width: 500px;
+} 
+
+/* faq */
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform  0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+/* email */
+
+.email-signup{
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 36.25rem;
+    margin: 1rem auto 0;
+
+}
+
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.529);
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    color: white;
+}
+.email-signup button{
+    background-color: #E50914;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin-left: 15px;
+}
+
+.email-signup button:hover{
+    background-color: #c11119;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-span{
+        display: none;
+    }
+
+    .nav-options .btn-1{
+        width: 58px
+    
+    }
+    .nav-content{
+        padding: 0;
+    }
+    .email-signup{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hero-items{
+        margin: 0;
+    }
+    .features{
+        padding: 3.5rem 0rem;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2{
+        font-size: 1.8rem;
+    }
+    .features_p{
+        font-size: 1rem;
+    }
+
+    .hero-p2{
+        font-size: 1rem;
+    }
+    .hero-items{
+        margin: 3.5rem auto;
+    }
+
+    .features .row{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    
+    header{
+        height: 100%;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 962px) {
+    .nav-logo{
+        width: 89px;
+        height: 24px;
+    }
+    .features .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+}
+
+@media screen and (max-width: 900px) {
+    h1,
+    h2{
+        font-size: 2rem;
+    }
+    .hero-p2, 
+    .hero-p1,
+    .features_p{
+        font-size: 1.125rem;
+    }
+}
+@media screen and (max-width : 500px) {
+    .text-col{
+        width: auto;
+    }
+    .img-col{
+        width: auto;
+        height: auto;
+    }
+    h1,
+     h2{
+        font-size: 1.8rem;
+    }
+    .features_p{
+        font-size: 1rem;
+    }
+
+}
