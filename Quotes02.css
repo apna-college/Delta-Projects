@@ -1,0 +1,17 @@
+body {
+    background: #831159;
+    background: -webkit-linear-gradient(138deg, #831159 0%, #dd88dd 50%, #ffb697 100%);
+    background: linear-gradient(138deg, #831159 0%, #dd88dd 50%, #ffb697 100%);
+    background-size: cover;
+ }
+ h1 {
+    font-family: 'Montserrat', sans-serif;
+ }
+ div {
+    background: radial-gradient(circle, transparent 20%, #002b74 20%, #002b74 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, #002b74 20%, #002b74 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(#aaaaaa 2px, transparent 2px) 0px -1px / 32px 32px, linear-gradient(90deg, #aaaaaa 2px, #002b74 2px) -1px 0px / 32px 32px #002b74;
+    background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+    background-color: #002b74;
+ }
+ .card-body {
+    color: aliceblue;
+ }
