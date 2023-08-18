@@ -6,4 +6,4 @@ Decimal Point (.): Add a decimal point button to allow users to input decimal nu
 
  "=" button to evaluate the entered expression and display the result.
 
- 'C': Implement a "C" button to clear the current input or calculation, and a backspace    button to delete the last digit.
+  "C" button to clear the current input or calculation, and a backspace button to delete the last digit.
