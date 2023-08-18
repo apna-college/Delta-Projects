@@ -1,0 +1,85 @@
+body{
+    background-image: linear-gradient(90deg,rgb(0, 0, 0),rgb(46, 46, 192));
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 3.2rem;
+    text-align: center;
+    text-shadow: 0 0 5px white;
+
+} 
+span{
+    color: goldenrod;
+    text-shadow: 0 0 5px black;
+}
+.container{
+    display: flex;
+    align-items: start;
+    /* background-color: green; */
+    /* position: static; */
+}
+.box{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mam{
+    background-image: url(p.png);
+    background-color: transprent;
+    background-size: cover;
+    margin-top: 9.8rem;
+    margin-right: 4rem;
+    height: 25rem;
+    width: 400px;
+    display: inline-block;
+    z-index: 5;
+}
+.text-container{
+    border: 15px solid rgba(175, 51, 125, 0.844);
+    display: inline-block;
+    width: 95%;
+    color: white;
+    font-size: 1.6rem;
+    background-image: linear-gradient(90deg,rgb(11, 11, 128),black);
+    transform: skewX(-15deg);
+    margin: .5rem 1rem 2rem 0;
+    padding: 2.5rem;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    
+    /* position: relative;
+    bottom: 1rem; */
+}
+
+button{
+    font-size: 2rem;
+    font-weight: 900;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0.25rem 0.25rem 3px white;
+    margin-top: 6rem;
+    color: rgb(9, 3, 96);
+    background-color: skyblue;
+}
+button:active {
+    background-color: blue;
+    position: relative;
+    left: 0.25rem;
+    top: 0.25rem;
+    box-shadow: none;
+}
+
+.animation{
+    border: 15px solid rgb(231, 190, 214)!important;
+    box-shadow: 0 0 50px rgb(218, 82, 168)!important;
+    
+}
