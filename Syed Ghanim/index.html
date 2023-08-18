@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand "> <span class="material-symbols-outlined">
+                    partly_cloudy_day
+                </span> The Weather App</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" value="Lucknow" placeholder="Delhi, Mumbai, Hyderabad..."
+                    aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+
+        <main>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 text-center d-flex justify-content-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal"></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="feels_like
+                                "></li>
+                                <li class="humidity"></li>
+                                <li class="wind_speed
+                                "></li>
+                                <li></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tBlur">
+                <h2 class="display-6 text-center mb-4">Popular Cities</h2>
+
+                <div class="table-responsive row-cols-md-10 ">
+                    <table class="table text-center ">
+                        <thead>
+                            <tr>
+                                <th style="width: 0%;"></th>
+                                <th style="width: 2%;">Temperature</th>
+                                <th style="width: 2%;">Wind speed</th>
+                                <th style="width: 2%;">Humidity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Delhi</th>
+                                <td class="dtemp"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="dwind"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="dhumidity"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Mumbai</th>
+                                <td class="mtemp"></td>
+                                <td class="mwind"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="mhumidity"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Hyderabad</th>
+                                <td class="htemp"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="hwind"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="hhumidity"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Kolkata</th>
+                                <td class="ktemp"></td>
+                                <td class="kwind"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="khumidity"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Bengaluru</th>
+                                <td class="btemp"></td>
+                                <td class="bwind"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                                <td class="bhumidity"><svg class="bi" width="24" height="24">
+                                        <use xlink:href="#check"></use>
+                                    </svg></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
