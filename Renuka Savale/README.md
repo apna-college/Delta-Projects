@@ -17,5 +17,5 @@ https://home.openweathermap.org
             https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key};
 
 # Parameters: 
-            1. City : The name of city entered in input bar is assigned.
-            2. Application Id : Personal Id (Will be given during signup).
+1. City : The name of city entered in input bar is assigned.
+2. Application Id : Personal Id (Will be given during signup).
