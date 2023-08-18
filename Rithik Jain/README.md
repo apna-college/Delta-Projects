@@ -1,6 +1,6 @@
 # Get Recipe With Ingredient
 
-## This Web Apllication is designed to provide you all recipes which can be prepared from your ingredient. 
+## This Web Application is designed to provide you all recipes which can be prepared from your ingredient. 
 
 ## You can view the recipe in text as well as youtube video of the recipe.
 
