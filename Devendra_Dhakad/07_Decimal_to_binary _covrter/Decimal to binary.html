@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(rgb(205, 85, 195),rgb(62, 78, 221),rgb(72, 214, 20))center center/cover;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            overflow: hidden;
+            height: 100vh;
+            font-family: cursive;
+        }
+        .container{
+            text-align: center;
+           position: absolute;
+           top: 20%;
+           left: 50%;
+           transform: translateX(-50%);
+           background-color: white;
+           height: 500px;
+           width: 600px;
+           border: 3px solid black;
+           border-radius: 30px;
+           background-color: rgb(214, 198, 173);
+           
+         
+        
+        }h1{
+font-family: cursive;
+        }
+        .inp{
+            height: 40%;
+            border-radius:20px ;
+            font-size: 25px;
+            text-align: center;
+            width: 45%;
+            position: absolute;
+            top: 25%;
+            left: 10px;
+            font-family: cursive;
+            border: 2px solid green;
+            overflow: auto;
+
+        }#btn{
+            height: 60px;
+            border-radius:10px ;
+            background-color:rgb(232, 203, 88);
+            width: 150px;
+            font-size: 20px;
+            font-weight: 700;
+            transition-duration: 1s;
+            position: absolute;
+        bottom: 12%;
+        left: 40%;
+        font-family: cursive;
+           
+        }#btn:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            margin-left: 10px;
+          
+        }.ou{
+            height: 40%;
+            border-radius:20px ;
+            font-size: 25px;
+            text-align: center;
+            border: 2px solid black;
+            width: 45%;
+            position: absolute;
+            right: 10px;
+            top: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 2px solid green;
+            overflow: auto;
+        }#d-none{
+            opacity: .6;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <h1>Decimal to Binary Coverter</h1>
+    <input type="number" placeholder="Enter Decimal number" class="inp">
+    <button id="btn" >Convert</button>
+ 
+    <div class="ou"> <span id="d-none">Get Binary Number</span>  <span id="spn"></span></div>
+</div>
+    <script>
+       
+        let btn = document.getElementById("btn")
+        let spn = document.getElementById("spn")
+        let spn1 = document.getElementById("d-none")
+       
+        
+     
+        btn.addEventListener('click', func)
+         function func(e){
+         let currbtn = e.currentTarget
+            let currinp = currbtn.previousElementSibling
+         let num = currinp.value
+          
+         currinp.value = ""
+           
+         function binary(decimal) {
+	var str = ""
+	while(decimal > 1)
+		{
+			str = str.concat(decimal % 2)
+			decimal = parseInt(decimal / 2)
+		}
+	if(decimal == 1)
+				{
+					str = str.concat(1)
+				}
+			else
+				{
+					str = str.concat(0)
+				}
+	return str.split("").reverse().join("")
+	
+}
+
+let bin = binary(num)
+ spn1.style.display ="none"
+ 
+ 
+spn.textContent = num + " = " + bin;
+     
+        }
+        
+    </script>
+
+</body>
+</html>
