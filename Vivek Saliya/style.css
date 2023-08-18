@@ -100,3 +100,8 @@ button:active{
 }
 
 
+@media screen and (max-width: 720px){
+    .main .quote-area {
+        width: 95vw;
+    }
+}
