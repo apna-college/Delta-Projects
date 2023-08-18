@@ -1,0 +1,160 @@
+:root {
+	--body-bg: #a084e8;
+	--heading-color: #fef2bf;
+}
+body {
+	align-items: center;
+	background-color: var(--body-bg);
+	display: flex;
+	flex-direction: column;
+	font-family: "Press Start 2P", cursive;
+	height: 100dvh;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+}
+h1 {
+	color: var(--heading-color);
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.title {
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+.wrapper {
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto;
+	padding: 2rem;
+	position: relative;
+	width: fit-content;
+}
+.container {
+	background-color: #000;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	padding: 0.7rem;
+}
+.row {
+	display: flex;
+	gap: 0.7rem;
+}
+.btn {
+	/* border: 0.7rem solid black; */
+	height: 12rem;
+	opacity: 0.5;
+	width: 12rem;
+}
+.green {
+	background-color: green;
+	border-radius: 100% 0 0 0;
+}
+.red {
+	background-color: red;
+	border-radius: 0 100% 0 0;
+}
+.yellow {
+	background-color: yellow;
+	border-radius: 0 0 0 100%;
+}
+.blue {
+	background-color: blue;
+	border-radius: 0 0 100% 0;
+}
+
+.inner-container {
+	align-items: center;
+	background-color: #000;
+	border-radius: 50%;
+	display: flex;
+	height: 40%;
+	justify-content: center;
+	position: absolute;
+	width: 40%;
+}
+
+.scoreboard {
+	background-color: white;
+	border-radius: 1rem;
+	padding: 1rem;
+	width: 60%;
+}
+
+.level {
+	align-items: center;
+	display: flex;
+	font-size: 1.3rem;
+	justify-content: center;
+	line-height: 2rem;
+	text-align: center;
+}
+
+.flash {
+	opacity: 1;
+}
+.flash-screen {
+	background-color: red;
+}
+.mobile-btn {
+	visibility: hidden;
+}
+
+@media screen and (max-width: 550px) {
+	.title {
+		visibility: hidden;
+	}
+	h1 {
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+	.wrapper {
+		padding: 0.8rem;
+	}
+	.container {
+		gap: 0.4rem;
+		padding: 0.5rem;
+	}
+	.row {
+		gap: 0.4rem;
+	}
+	.btn {
+		/* border: 0.4rem solid black; */
+		height: 9rem;
+		width: 9rem;
+	}
+	.scoreboard {
+		border-radius: 1rem;
+		width: 50%;
+	}
+	.level {
+		font-size: 1rem;
+		line-height: 1.6rem;
+		padding: 0 0.5rem;
+	}
+	.mobile-btn {
+		background-color: rgb(111, 49, 200);
+		border: none;
+		border-radius: 1rem;
+		box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+		color: white;
+		font-family: "Press Start 2P", cursive;
+		font-size: 1.2rem;
+		height: 4rem;
+		/* transition: box-shadow 0.1s ease; */
+		transition: all 0.4s ease;
+		visibility: visible;
+		width: 8rem;
+	}
+	.mobile-btn:active {
+		/* box-shadow: none; */
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+		transform: translateY(-0.4rem);
+	}
+}
