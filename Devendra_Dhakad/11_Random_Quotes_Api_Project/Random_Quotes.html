@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get funny jocks</title>
+</head>
+<style>
+    body{
+        background-color: rgb(4, 247, 255);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #btn{
+        background-color: yellow;
+        position: absolute;
+        bottom: 25%;
+        left: 30%; 
+         margin: auto;
+        transition-duration: 3s;
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 20px 40px 20px 40px;
+
+    }#btn:hover{
+        transform: scale(1.4);
+        cursor: pointer;
+        border-radius: 300px;
+       
+        
+    }#contain{
+        background-color: rgb(225, 255, 0);
+    height: 200px;
+    width: 291px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    border: 3px solid black;
+    padding: 30px 3px 30px 3px;
+    /* margin-left: 5px; */
+    /* margin-right: 20px; */
+}
+
+    .conatiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+</style>
+<body> 
+    <div class="conatiner">
+    <button id="btn">Get Quotes</button>
+    <div id="contain"><span id="spn">Click on the Button and Get Quotes.........😎😉</span><span id="spn1"> </span></div>
+</div>
+    <script>
+        let btn = document.getElementById('btn')
+        let spn1 = document.getElementById('spn1')
+        let spn = document.getElementById('spn')
+        let contain = document.getElementById("contain")
+ 
+
+        btn.addEventListener('click',jok)
+        function jok() {
+           let  math = Math.floor(Math.random()*9)
+             let color = ["red","blue","green","hotpink","hwb(208 6% 38%)","hwb(115 6% 38%)"][math]  
+           let data = fetch("https://quote-garden.onrender.com/api/v3/quotes")
+           data.then((res)=>{
+           return res.json()
+           }).then((v)=>{
+            let data  = v
+            let quotes = data.data[math].quoteText
+            spn1.textContent = quotes 
+            contain.style.backgroundColor = color
+             spn1.style.color = "white"
+             spn.style.display="none"
+           }).catch ((err)=>{
+              console.log(err)
+           })     
+        }
+
+    </script>
+</body>
+</html>
