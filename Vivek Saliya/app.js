@@ -12,6 +12,7 @@ btn.addEventListener("click", async() => {
 
     let ath = document.querySelector("#author");
     ath.innerText = "- " + quote[1];
+
 });
 
 async function getQuote() {
