@@ -1,0 +1,45 @@
+
+body{
+    margin: 0;
+    background-image: url(programming.webp);
+    background-size: cover;
+}
+
+.header{
+    font-size: 70px;
+    position: absolute;
+    left: 950px;
+    top: 100px;
+    text-decoration: underline;
+}
+.head{
+    padding: 10px 10px;
+    background-color: #ffff8b;
+    width: fit-content;
+}
+.jokArea{
+padding: 50px;
+    width: 600px;
+    height: 450px;
+    background-color: #eef06a
+}
+.para{
+    font-size: 30px;
+    background-color: #c2bb27;
+}
+button{
+    border-radius: 10px;
+    color: white;
+    border: none;
+    height: 30px;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        background-color: blue;
+    }
+    100%{
+        background-color: green;
+    }
+}
