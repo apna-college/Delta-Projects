@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+.btn {
+  height: 175px;
+  width: 175px;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin: 20px;
+}
+h3 {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+}
