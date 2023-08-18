@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+      .main_div {
+        height: 500px;
+        width: 500px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .inner_div {
+        width: 200px;
+        height: 200px;
+
+        border: 10px solid rgb(0, 0, 0);
+        margin: 2px 15px;
+        display: flex;
+        border-radius: 50px;
+      }
+      h2 {
+        margin-top: 20px;
+        font-size: 30px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 25px;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: rgb(47, 128, 0);
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .blue {
+        background-color: blueviolet;
+      }
+      .flash {
+        background-color: white;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <h2>Simon Game</h2>
+    <p>Press any key to start game</p>
+    <div class="main_div">
+      <div class="inner_div red" type="button" id="red"></div>
+      <div class="inner_div blue" type="button" id="blue"></div>
+      <div class="inner_div green" type="button" id="green"></div>
+      <div class="inner_div yellow" type="button" id="yellow"></div>
+    </div>
+
+    <script>
+      let gameSeq = [];
+      let userSeq = [];
+      let started = false;
+      let level = 0;
+      let p = document.querySelector("p");
+      let btns = ["red", "blue", "green", "yellow"];
+
+      document.addEventListener("keypress", function () {
+        if (!started) {
+          console.log("game started");
+          started = true;
+          levelUp();
+        }
+      });
+
+      function btnFlash(btn) {
+        btn.classList.add("flash");
+        setTimeout(() => {
+          btn.classList.remove("flash");
+        }, 200);
+      }
+ 
+
+      function levelUp() {
+   //     userSeq = []
+        level++;
+        p.innerText = `Level ${level}`;
+        let randomIndx = Math.floor(Math.random() * 3);
+        let randColor = btns[randomIndx];
+        let randbtn = document.getElementsByClassName(`${randColor}`)[0];
+        btnFlash(randbtn);
+       gameSeq.push(randColor)
+       console.log('gameSeq = ',gameSeq)
+       console.log('userSeq = ',userSeq)
+      }
+
+      let allBtn = document.querySelectorAll(".inner_div");
+      for (let btn of allBtn) {
+            btn.addEventListener("click", btnPress);
+
+      }
+      function btnPress() {
+        let btn = this
+        btnFlash(btn)
+        let usercolor = btn.getAttribute('id');
+        userSeq.push(usercolor)
+        console.log(userSeq)
+        checkAns()
+      }
+
+      function checkAns(){
+        console.log("curr lev ",level)
+        let ind = level-1;
+        if(userSeq[ind] === gameSeq[ind]){
+            console.log('same value')
+           if(userSeq.length == gameSeq.length){
+            setTimeout(levelUp,1000)
+           
+           }
+        }
+        else{
+            p.innerText = `Game Over!Your Score is ${level} press any start key`;
+            document.querySelector('body').style.backgroundColor = 'red'
+            setTimeout(()=>{
+                document.querySelector('body').style.backgroundColor = 'white'
+            },500)
+          reset()
+        }
+      }
+    
+      function reset(){
+        started = false;
+            level = 0;
+            gameSeq =[]
+            userSeq = []
+      }
+    </script>
+  </body>
+</html>

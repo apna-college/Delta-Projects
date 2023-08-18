@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }.out{
+        height: 100px;
+        color: black;
+        background-color: rgb(34, 199, 136);
+        width: 300px;
+        margin: 0px 0px 50px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        border-radius: 30px;
+        border: 2px solid red;
+        text-align: center;
+
+      }.center{
+width: 300px;
+padding-top: 50px;
+      }
+      .btn{
+        margin: 6px 15px 6px 15px;
+        width: 65px;
+        height: 65px;
+        font-size: 40px;
+        border-radius: 20px;
+        transition-duration: 2s;
+        background-color: rgb(242, 238, 3);
+        border: 2px solid red;
+      }.btn:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+      }.orange{
+        background-color: rgb(216, 106, 9);
+        width: 165px;
+      }
+    </style>
+</head>
+
+<body>
+     <div class="center">
+      
+      <input class="out" id="ou" type="text" >
+      <button class="btn"  value="B" >B</button>
+        <button class="btn" value="C" >C</button>
+        <button class="btn" value="/">/</button>
+        <button class="btn" value="*">x</button>
+        <button class="btn" value="+">+</button>
+        <button class="btn" value="-">-</button>
+        <button class="btn" value="9">9</button>
+        <button class="btn" value="8">8</button>
+        <button class="btn" value="7">7</button>
+        <button class="btn" value="6">6</button>
+        <button class="btn" value="5">5</button>
+        <button class="btn" value="4">4</button>
+        <button class="btn" value="3">3</button>
+        <button class="btn" value="2">2</button>
+        <button class="btn" value="1">1</button>
+        <button class="btn " value=".">.</button>
+        <button class="btn orange" value="=">=</button>
+    </div> 
+     <script>
+        let string = ""
+        let btns = document.querySelectorAll('.btn')
+        Array.from(btns).forEach((btn)=>{
+            btn.addEventListener('click',func)
+            function func(e){
+                let out =  document.getElementById('ou')
+                let val = btn.value
+
+
+                if(btn.value == "="){
+                    string = eval(string)
+                  out.value = string
+                }
+
+
+                else if(btn.value == "C"){
+                string = " ";
+                out.value = string
+                }
+
+
+          else if(btn.value == "B"){
+  var a = out.value;
+ out.value = a.substring(0,a.length -1)
+  string = out.value
+          }
+             
+              else{ 
+                 string = string + val
+                out.value = string
+            }
+            }
+
+        })
+ 
+    </script> 
+</body>
+</html>

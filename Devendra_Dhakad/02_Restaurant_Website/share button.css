@@ -1,0 +1,69 @@
+.body{
+    font-family: sans-serif;
+
+}
+.sharebtn{
+width: 280px;
+height: 80px;
+background-color: blanchedalmond;
+border-radius: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+transition: .3s linear; 
+font-size: 25px;   
+}
+
+
+.sharebtn:hover{
+transform: scale(1.1);
+}.sharebtn span{
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgb(57, 53, 53);
+color: bisque;
+text-align: center;
+line-height: 80px;
+z-index: 999;
+transition: .6s linear;
+border-radius: 40px;
+
+
+}.sharebtn span i{
+font-size: 14px;
+padding: 10px;
+}
+.sharebtn:hover span{
+transform: translateX(-100%);
+transition-delay: .3s;
+}
+.sharebtn a{
+flex: 1;
+font-size: 26px;
+color: rgb(44, 40, 40);
+transform: translateX(-100%);
+opacity: 0;
+transition: 0.3s linear;
+}
+
+.sharebtn:hover a{
+opacity: 1;
+transform: translateX(0);
+}
+.sharebtn a:nth-of-type(1){
+transition-delay: 1s;
+}
+.sharebtn a:nth-of-type(2){
+transition-delay: 0.8ss;
+}
+.sharebtn a:nth-of-type(3){
+transition-delay: 0.6s;
+}.sharebtn a:nth-of-type(4){
+transition-delay: 0.4s;
+}.fab{
+padding-left: 20px;
+}

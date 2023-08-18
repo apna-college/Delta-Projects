@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="share button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Dev resto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(220 206 212);
+        }
+
+        .container {
+            box-sizing: border-box;
+
+
+        }
+
+        .nav {
+
+            display: flex;
+            justify-content: space-between;
+            height: 10%;
+            width: 100%;
+
+        }
+
+        .nav::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 10%;
+            width: 100%;
+            background-color: black;
+            z-index: -1;
+            opacity: 12;
+        }
+
+        .nav ul {
+            display: flex;
+            padding-right: 21px;
+        }
+
+        .nav ul li {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: beige;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .a {
+            color: antiquewhite;
+            font-size: 25px;
+        }
+
+        .nav ul li:hover {
+            background-color: #555;
+        }
+
+        .restonam {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 33px;
+            font-size: 30px;
+        }
+
+        .in-1 {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .srched {
+            width: 207px;
+            height: 29px;
+            font-size: 18px;
+            border-radius: 3px;
+            padding-left: 24px;
+
+
+        }
+
+        .btnhed {
+            width: 37px;
+            height: 29px;
+            border-radius: 3px;
+            color: white;
+            background-color: rgb(113, 182, 243);
+
+        }
+
+        .btnhed-img {
+            width: 23px;
+            height: 23px;
+            border-radius: 3px;
+            color: white;
+            background-color: rgb(113, 182, 243);
+
+        }
+
+        .secthed::before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            height: 70%;
+            width: 100%;
+            background: url(resto-back.jpg)center center/cover;
+            opacity: 0.88;
+            top: 0;
+
+        }
+
+        .renamhed {
+            color: white;
+            font-size: 64px;
+            text-align: center;
+            padding-top: 86px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .shar {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 56px;
+        }
+        .rivew ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 11px;
+
+        }
+
+        .rivew ul li {
+            list-style: none;
+            color: black;
+            flex-direction: column;
+            font-weight: bold;
+            font-size: 22px;
+            display: flex;
+            padding: 30px 70px 18px 70px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .rivew ul li img {
+            height: 47px;
+            width: 55px;
+        }
+
+        .rivew ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .rivew li:hover {
+            background-color: rgb(226, 209, 209);
+            opacity: 0.9;
+            border-radius: 20px;
+            transition: .3s linear;
+            transform: translateX(-10px);
+        }
+
+        .hed-box {
+            height: 812px;
+            width: 970px;
+            border: 2px solid black;
+            float: right;
+            border-radius: 10px;
+            margin-top: 34px;
+            margin-right: 70px;
+    background-color: rgb(132 140 143);
+
+        }
+
+        .box {
+            height: 200px;
+            width: 390px;
+            margin: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 4px 5px 24px black;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
+            background-color: #cfc5b8;
+        }.box:hover{
+            transform: scale(1.1);
+            
+            
+        }
+        #boxes-2 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+
+        }.box h2{
+            padding: 20px 0 7px 0;
+    font-size: 36px;
+        }.box p{
+            font-size: 20px;
+    padding-top: 13px
+        }
+.qu-h1p h2{
+    background-color: rgb(145, 199, 198);
+    font-size: 34px;
+    padding: 10px;
+    margin: 20px 70px 20px 70px;
+    padding-left: 43px;
+    border-radius: 4px;
+
+}.qu-h1p .p-qus{
+    
+    font-size: 25px;
+    padding: 9px 10px 1px 10px;
+    margin: 20px 70px 0px 70px;
+    padding-left: 43px;
+}.p-ans{
+    padding-left: 73px;
+    padding-right: 10px;
+    margin: 7px 77px 0px 70px;
+    font-size: 18px;
+}.con-box{
+display: flex;
+}.con-box1{
+    height: 100px;
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 34px;
+}.con-box1 img{
+    height: 100px;
+    width:130px ;
+    transition-duration: .4s;
+            transition-timing-function: ease-in-out;
+            border-radius: 5px;
+}.con-box1 img:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+}.mid{
+    color: black;
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 350px;
+}.mid-p{
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: bold;
+}.mid-p-img{
+    height:20px;
+    padding-right: 20px;
+    
+}.mid-h2{
+    padding-top: 20px;
+}.mid-ptim{
+padding-top: 10px;
+padding-bottom: 10px;
+}.mid-serv ul {
+padding-left: 20px;
+padding-bottom: 10px;
+}.futer{
+    padding: 40px;
+    margin: 5px;
+    background-color:#c4b7b7;
+    margin-top: 20px;
+}
+.futer-p{
+
+    padding: 30px 250px 20px 250px;
+
+    background-color:#c4b7b7;
+
+}.futer-btm{
+    background-color: rgb(39, 33, 33);
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <div class="restonam">
+                    <font color="red">DEV</font>-<font color="yellow">RESTO</font>
+                </div>
+                <div class="in-1"> <input type="search" placeholder="search" class="srched">
+                    <button class="btnhed"><img src="search-icon.png" class="btnhed-img"></button>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="mailto:devendradhakad745@gmail.com">Contact</a></li>
+                    <li>
+                        <p class="a">Language <select>
+                                <option value="">--select language--</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                                <option value="Urdu">Urdu</option>
+                            </select></p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            <section class="secthed">
+                <h1 class="renamhed">New Dev Restorant Mandsaur</h1>
+                <div class="shar">
+                    <div class="sharebtn">
+                        <span> <i class="fas fa-share-alt"></i>share!</span>
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="rivew">
+                    <ul>
+                        <li><img src="share_icon.png"><a href="">SMS/Email</a></li>
+                        <li><img src="write_icon.png"><a href="">Write a Review</a></li>
+                        <li><img src="edit_icon.png"><a href="">Edit This</a></li>
+                        <li><img src="customer_icon.png"><a href="">Manage Compaign</a></li>
+                        <li><img src="wp_icon.png"><a href="">Whatsapp</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="hed-box">
+                <div id="boxes-2">
+                    <div class="box">
+                       <h2> More Information</h2>
+                       <p >Phone number, Address,<br> Official website,<br> Get Directions/Map etc .
+                        <br><a href="#">Get More Information</a></p>
+                       
+                    </div>
+                    <div class="box">
+                        <h2>Price Range</h2>
+                        <p>&#x20B9; 500 Below<br>
+                       <font color="orange" size="25px">&#x20B9; </font> <font size="25px">&#x20B9; &#x20B9; &#x20B9;</font></p>
+                        
+                    </div> 
+
+
+                </div>
+            <div class="qu-h1p">    <h2>Frequently Asked Question</h2>
+                <p class="p-qus">1. What are the various mode of payment accepted here ?
+
+                </p>
+            <p class="p-ans">   You can make payment Via Cash.</p>
+            <p class="p-qus">2. What are its hours of operation ?</p>
+            <p class="p-ans">The establishment is functional on<br>
+                Monday:- 9:30 Am - 11:00 Pm<br>
+                Tuesday:- 9:30 Am - 11:00 Pm<br>
+                Wednesday:- 9:30 Am - 11:00 Pm<br>
+                Thursday:- 9:30 Am - 11:00 Pm<br>
+                Friday:- 9:30 Am - 11:00 Pm<br>
+                Saturday:- 9:30 Am - 11:00 Pm<br>
+                Sunday:- 9:30 Am - 11:00 Pm</p>
+                <h2>Most Searched</h2>
+                <p class="p-ans">Hostels Cable TV Operators Tattoo Parlours Beauty Parlours Dermatologists Yoga Classes Laptop Dealers Mobile Phone Dealers-iPhone Builders Dance Classes</p>
+            </div>
+            </div>
+        <div class="con-box">
+            <div class="con-box1"><img src="resto-1.jpg"></div>
+            <div class="con-box1"><img src="resto-2.jpg"></div>
+            <div class="con-box1"><img src="resto-3.jpg"></div>
+        </div>
+<div class="mid"><p class="mid-p"><img src="phone-icon.png" class="mid-p-img">7617290091,6265236905</p></div>
+
+
+<div class="mid"><p class="mid-p"><img src="address.png" class="mid-p-img">C/O Hotel dev Palace,Nimach Road, Mandsaur City, Mandsaur - 458001</p></div>
+
+<div class="mid"><p class="mid-p"><img src="hotel.png" class="mid-p-img">Restaurants<br>
+    Restaurants (Below Rs 500) <br>
+    Indian Restaurants<br>
+    Pure Veg Thali Restaurants (Below Rs 500) <br>
+    Dinner Restaurants<br>
+    All Day Dining Restaurants<br>
+    Thali Restaurants (Below Rs 500) <br>
+    Pure Veg Restaurants (Below Rs 500) <br>
+    Gujarati Restaurants<br>
+    Pure Veg Restaurants<br>
+    Pure Veg Thali Restaurants<br>
+    Thali Restaurants<br>
+    Gujarati Restaurants (Below Rs 500) <br>
+    Indian Restaurants (Below Rs 500) </p>
+
+    <div class="mid"><p class="mid-p"><img src="rupee.png" class="mid-p-img">Inexpensive (Below  &#x20B9; 500)</p>
+    <hr>
+    <h2 class="mid-h2">Hours of opretion </h2>
+    <p class="mid-ptim">Everyday:9:30am-11:00pm </p> <hr>
+<h2 class="mid-h2"> Services & Amenities </h2>
+<div class="mid-serv">
+    <ul> 
+        <li>Dine-in</li>
+        <li>Valet Parking</li>
+        <li> Birthday / Group Parties</li>
+    </ul> </div>
+    
+</div>
+</div>
+<hr>
+<footer  class="futer">
+   <p class="futer-p">
+        Meals on Train /Order Flowers /Order Food Online /Book a table /Shop Online /Order Books /Movies /Entertainment /Grocery Shopping /Chemists /Laundry Pick Up /Courier Pick Up /Doctors /Bills & Recharge /Insurance /AC Repair /Flights /Bus /Train /Hotels /International Sim /Cab & Car Rental /Spa & Salon /Car service /Water Purifier Service /Hospitals /Lab Test /Jobs /Automobile /On Demand Service /JD Social Blog /JD Mart /Real Estate /Loans</p><hr>
+        <p class="futer-p">Greeting Card Dealers in Ahmedabad /Greeting Card Dealers in Bangalore /Greeting Card Dealers in Chandigarh /Greeting Card Dealers in Chennai /Greeting Card Dealers in Coimbatore /Greeting Card Dealers in Delhi /Greeting Card Dealers in Ernakulam /Greeting Card Dealers in Goa /Greeting Card Dealers in Hyderabad /Greeting Card Dealers in Indore /Greeting Card Dealers in Jaipur /Greeting Card Dealers in Kolkata /Greeting Card Dealers in Mumbai /Greeting Card Dealers in Mysore /Greeting Card Dealers in Nagpur /Greeting Card Dealers in Nashik /Greeting Card Dealers in Pune /Greeting Card Dealers in Surat /Greeting Card Dealers in Vadodara /Greeting Card Dealers in Vizag /Latest Reviews</p>
+        <p class="futer-p">ReviewsBody Massage Centres /Cinema Halls /Schools /Beauty Spas /Dermatologists /Hospitals /Malls /Gyms /Beauty Parlours /Estate Agents /Banquet Halls /ENT Doctors /Book Shops /Bike On Rent /Sexologist Doctors /Neurologists /Gynaecologist & Obstetrician Doctors /Tiffin Services /Travel Agents /Paying Guest Accommodations /General Physician Doctors /Dentists /Orthopaedic Doctors /Chemists /Motor Training Schools /Gastroenterologists /Car Rental /Salons /Courier Services /Dance Classes /Pathology Labs /Taxi Services /Cake Shops /AC Repair & Services /Mobile Phone Dealers /Pet Shops /Dmart /Packers And Movers /Psychiatrists /Dharamshalas /Urologist Doctors /Bakeries /Bicycle Dealers /Coffee Shops /Paediatricians /Sonography Centres /Yoga Classes /Hostels /Cardiologists /Electrical Shops /Skin Care Clinics /Diagnostic Centres /Homeopathic Doctors /Physiotherapists /Photo Studios /Plumbers /Music Classes /Electricians /Sports Goods Dealers /Shoe Dealers /Hair Stylists /Gift Shops /Ophthalmologists /Car Repair & Services /Ayurvedic Doctors /Eye Clinics /Restaurants /Carpenters /Jewellery Showrooms /Cooks On Hire /Stationery Shops /Nephrologists /Caterers /Interior Designers /Rehabilitation Center /Drug De Addiction Center /Grocery Stores</p>
+      
+</footer>
+<p class="futer-btm">Copyrights 2008-22. All Rights Reserved. Privacy | Terms | Infringement | View dev resto on Mobile</p>
+</body>
+
+</html>
+

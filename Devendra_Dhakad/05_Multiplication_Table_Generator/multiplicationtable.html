@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication table</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+           
+        }body{
+            background: linear-gradient(rgb(255, 0, 0),rgb(0, 88, 230),rgb(255, 0, 200))center center/cover;
+        }
+        .center{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+ 
+flex-direction: column;
+        }.out{
+background-color: rgb(207, 251, 209);
+border: 1px solid black;
+height: 520px;
+width: 300px;
+padding-top:20px ;
+margin: 20px;
+border-radius: 20px;
+ overflow: auto;
+display:flex;
+justify-content: center;
+ 
+font-size: 30px;
+font-family: cursive;
+        }#inp{
+            height: 40px;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 20px;
+            font-family: cursive;
+        }#btn{
+            margin-top: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 3px;
+            background-color: rgb(245, 222, 78);
+            font-family: cursive;
+            transition-duration: 2s;
+        } #btn:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        
+        #ou-ul li{
+list-style: none;
+        }#btn-2{
+       
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 12px;
+            background-color: rgb(1, 211, 95);
+            font-family: cursive;
+            color: black;
+            transition-duration: 2s;
+            position: absolute;
+            bottom: 10%;
+
+        }#btn-2:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <input type="number" placeholder="Enter the number" id="inp">
+        <button id="btn">Get Table</button>
+        <div class="out">
+<ul id="ou-ul" class="ou-ul-c">
+ 
+</ul>
+
+<button id="btn-2">Clear</button>  </div>
+       
+    </div>
+
+
+    <script>
+        let btn = document.getElementById("btn")
+        btn.addEventListener('click',table)
+        function table(e){
+       
+
+       
+let inp = document.getElementById("inp")
+let num = inp.value 
+inp.value = ""
+console.log(num)
+let i = 1
+let j = 0
+while(i<=10 && j<10){
+  let tab=  num * i;
+    ++i;
+    j++;
+let ul = document.getElementsByClassName("ou-ul-c")[0]
+ 
+let list = document.createElement('li')
+list.textContent = num + "   *  " + j +"  =  "+ tab + "  ";
+ ul.appendChild(list)
+console.log(tab)
+
+}
+        }
+
+
+
+
+
+
+        //clear 
+        let btn2 = document.getElementById('btn-2')
+        btn2.addEventListener('click',clear)
+        function clear(el){
+           let bt =  el.currentTarget
+           let li = bt.previousElementSibling.textContent=""
+        
+  
+   
+ 
+
+        }
+        
+    </script>
+</body>
+</html>

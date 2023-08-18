@@ -1,0 +1,123 @@
+@media screen and (max-width:1080px) {
+  
+    .foot{
+     
+        height: 700px;
+        padding: 0 50px;
+        
+    }
+    .foot_body{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width:792px) {
+    header{
+        height: 60%;
+    }
+    .heading_1{
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+    }
+    .head_para{
+        font-size: 30px;
+    }
+    nav{
+        display: none;
+        
+    }
+    .sidebar{
+        display: inline-block;
+     }
+     .sidebar_menu{
+        height: 60%;
+    }
+    .main_para{
+        margin:0;
+    }
+    .main_cont_div_head{
+        margin: 20px;
+        width: 90%;
+         margin: auto;
+    }
+    .con_head{
+        margin: 0;
+        text-align: center;
+    }
+   
+    .foot{
+        height: fit-content;  
+    }
+    .foot_head{
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .foot_head > div > h2{
+        font-size: 30px;
+        padding: 30px;
+ 
+    }
+    .foot_body{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header{
+        height: 50%;
+    }
+    .heading_1{
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    .head_para{
+        font-size: 25px;
+    }
+    .sidebar_menu{
+        height: 50%;
+        width: 100%;
+    }
+    .main_para{
+        margin:0;
+    }
+    .main_cont_div_head{
+        margin: 10px;
+        width: 90%;
+         margin: auto;
+    }
+    .con_head{
+        margin: 0;
+        text-align: center;
+    }
+    
+    .foot{
+        height: fit-content;  
+        padding: 10px;
+    }
+    .foot_body{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .foot_body_divs h3{ 
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+    .foot_body_divs ul li a{
+        text-decoration: none;
+        color: black;
+        opacity: 0.9;
+        font-weight: 200;
+        font-size: 13px;
+       }
+       .cw_para{
+ font-size: 13px;
+ padding: 20px;
+ margin-top: 5px;
+    }
+ }
