@@ -1,0 +1,75 @@
+*{
+    font-family: 'Borel', cursive;
+    font-size: 1.2rem;
+    font-weight: 2000;
+}
+li{
+    text-align: center;
+    font-size: medium;
+    
+}
+.ex{
+    background-image: url("scene.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.in{
+    border: 2px solid black;
+    height: 70vh;
+    width: 95vh;
+    background-color: rgb(253, 253, 253);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+    align-self: center;
+    margin-left: 1rem;
+}
+button{
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(249, 124, 145);
+}
+.para{
+    background-color: aliceblue;
+    height: 30%;
+    width: 60%;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+.para:hover{
+    background-color: rgb(176, 226, 245);
+    transition: 1s;
+}
+@media (max-width:640px){
+    .in{
+        overflow:scroll;
+    }
+}
