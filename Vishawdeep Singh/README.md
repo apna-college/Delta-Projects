@@ -17,5 +17,5 @@ Technologies Used:
 HTML 
 CSS 
 JavaScript
-External API -: https://newsapi.org
+External API -: https://newsapi.org.
  
