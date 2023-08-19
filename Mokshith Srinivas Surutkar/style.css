@@ -1,0 +1,113 @@
+*{
+    font-family: eurostile;
+}
+body{
+    background-color:#87CEEB ;
+    color: rgb(0, 11, 57);
+    text-align: center;
+}
+h1{
+    font-size: 75px;
+    margin-bottom: 0;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+    padding: 1rem;
+    font-family: roboto;
+    background-color: #b8e2f3;
+}
+input{
+    height:20px;
+    padding:0.5rem;
+    border: 2px solid rgb(70, 130, 180);
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: #bfe2ff;
+    color: rgb(0, 11, 57);
+    text-align: center;
+    outline: none;
+}
+input:focus{
+    border-color: rgb(70, 130, 180);
+    box-shadow: 0 0 16px rgba(70, 130, 180, 1);
+}
+#randombtn{
+    margin-left: 1rem;
+    width: 200px;
+    height:35px;
+}
+button{
+    font-weight: 500;
+    letter-spacing: 0.5px;;
+    width: 100px;
+    height:35px;
+    border: none;
+    background-color: #bfe2ff;
+    border-radius: 1rem;
+    padding: 5px;
+    color: rgb(0, 11, 57);
+    transition: all 200ms ease-in-out 50ms;
+    font-size: 14px;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color:rgb(0, 11, 57);
+    color: white;
+}
+button:active{
+    background-color: rgb(126, 72, 172);
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width : 350px;
+    height : 450px;
+    background-color:#d0f2ff ;
+    border-radius: 1rem;
+    margin: 2rem;
+    transition: all 200ms ease-in-out 50ms;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px rgba(0, 11, 57, 0.4);
+}
+.card-body {
+    flex: 1; /* Allow the body to expand and take available space */
+    display: flex;
+    flex-direction: column;
+  } 
+.card-img-top{
+    width : 90%;
+    height : 300px;
+    /* border-radius: 0.8rem 0.8rem 0 0; */
+    margin-top: 1rem;
+    border-radius: 0.8rem 0.8rem ;
+
+}
+.card-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 0.5rem;
+    margin-top: 0.35rem;
+}
+.card-text{
+    font-style: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.card-btn{
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    border-radius:0 0 0.8rem 0.8rem ;
+}
+.card-btn:hover{
+    transform: scale(1);
+}
