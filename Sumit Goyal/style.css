@@ -80,7 +80,7 @@ h3 {
 }
 .meaning {
     text-align: center;
-    width: 25rem;
+    /* width: 25rem; */
 }
 .example {
     text-align: right;
