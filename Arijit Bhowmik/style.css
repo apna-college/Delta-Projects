@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Lobster&family=Poppins:ital,wght@1,200&family=Righteous&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-color: black;
+    width: 100vw;
+}
+header{
+    background-image: url(netflixHeader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+.headerChild{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, black, transparent);
+}
+.navBar{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+.navBar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar ul li{
+    list-style: none;
+}
+.navBar ul li span{
+    margin-right: 15px;
+}
+#signInBoxAndLanguage{
+    margin-right: 200px;
+}
+#netflixLogo{
+    margin-left: 200px;
+}
+.signIn{
+    padding: 6px 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer !important;
+    background-color: #e50914
+}
+#language{
+    padding: 2px;
+    font-size: 15px;
+    margin-left: 2px;
+    color: black;
+    border: 0;
+    color: inherit;
+    background: inherit;
+}
+
+#languageAndWebBox{
+    cursor: pointer;
+    padding: 4px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+}
+.mainHeaderBox{
+    color: white;  
+}
+.mainHeaderBox div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.mainHeaderBox div h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mainHeaderBox div h2{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 0;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: 'Anek Malayalam', sans-serif;
+/* font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif; */
+}
+.headerCloser{
+    width: 100vw;
+    height: 8px;
+    background-color: gray;
+}
+.inputUserBox .input{
+    width: 400px;
+    height: 55px;
+    border-radius: 5px;
+    /* background: transparent; */
+    outline: 0;
+    border: 1px solid gray;
+    color: grey;
+}
+.inputUserBox button{
+    cursor: pointer;
+    width: 200px;
+    height: 55px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #e50914;
+    color: white;
+    margin-left: 7px;
+    font-weight: 700;
+}
+.inputUserBox{
+    margin-top: 20px;
+    display: flex;
+}
+.inputGroup{
+    position: relative;
+}
+.input{
+    color: white !important;
+    font-size: 17px;
+    padding-left: 10px;
+    align-items: center;
+    transition: 0.2s;
+    background-color: rgba(27, 27, 27, 0.707);
+}
+.placeholder{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: white;
+    transition: 0.5s;
+    color: #adacac;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #firstOpt{
+   display: none;     
+  }
+.input:focus{
+    /* background-color: rgba(128, 128, 128, 0.079); */
+    border: 2px solid white;
+}
+.input:focus + .placeholder, 
+.input:not(:placeholder-shown) + .placeholder{
+  top: 0px;
+  font-size: 17px;
+  background: none;
+}
+.nextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nextDiv .description{
+    color: white;
+}
+.description{
+    
+    height: 350px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+#enjoyTv{
+    /* margin-left: 50px; */
+}
+#enjoyTvImg{
+    /* margin-right: 50px; */
+}
+.description h1{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.description h2{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 15px;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+.imageBox{
+    margin: 50px;
+    height: 350px;
+    width: 450px;
+    background-image: url(tv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#downloadShows{
+    background-image: url(mobile-0819.jpg);
+}
+#watchEverywhere{
+    background-image: url(device-pile-in.png);
+}
+#children{
+    background-image: url(AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png);
+}
+.faqs{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faqs h1{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.faqs label{
+    position: relative;
+}
+.faqs label i{
+    position: absolute;
+    right: 8px;
+    font-size: 17px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.question{
+    font-family: 'Anek Malayalam', sans-serif;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+    align-items: center;
+    background-color: #2d2d2d;
+    font-size: 25px;
+    width: 800px ;
+    text-align: left;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.answer{
+    padding: 10px;
+    margin-top: 2px;
+    background-color: #2d2d2d ;
+    font-size: 20px;
+    font-family: 'Anek Malayalam', sans-serif;
+    width: 800px;
+    display: none;
+    cursor: pointer;
+    
+}
+.answer div{
+    margin: 10px;
+}
+#questionBox1:checked ~ #answer1{
+    display: block;
+}
+
+#questionBox2:checked ~ #answer2,#questionBox3:checked ~ #answer3,#questionBox4:checked ~ #answer4,#questionBox5:checked ~ #answer5,#questionBox6:checked ~ #answer6{
+    display: block;
+}
+.endContainer h2{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+}
+.endContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    color: white !important;
+}
+.footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer div ul{
+    margin: 20px 150px;   
+}
+.footer div ul li{
+    font-weight: 100;
+    font-family: 'Anek Malayalam', sans-serif;
+    color: white !important;
+    list-style: none;
+    margin: 15px;
+}
+.footer div ul li a{
+    color: gray !important;
+    list-style: none;
+    margin: 5px;
+}
+.footer p{
+    color: gray !important;
+    font-family: 'Anek Malayalam', sans-serif;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+.footer span{
+    color: #adacac;
+    margin-left: 200px;
+    margin-bottom: 0;
+}
+.footer p a{
+    color: gray !important;
+    list-style: none;
+}
+.footer p:hover{
+    transition: 0.4s;
+    transform: translateX(5px) !important; 
+}
+.footer div ul li:hover{
+    transition: 0.4s;
+    transform: translateX(5px) !important;
+}
+.selfFooter{
+    margin: 20px;
+    font-size: 20px;
+    color: #adacac;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+.selfFooter a {
+    color: white;
+    margin-left: 4px;
+}
+.selfFooter a:hover{
+    transition: 0.3s;
+    transform: scale(1.05) !important;
+}
+
+@media screen and (max-width:1278px) {
+    #signInBoxAndLanguage{
+        margin-right: 20px;
+    }
+    #netflixLogo{
+        margin-left: 20px;
+    }
+    .description{
+        width: 400px;
+    }
+    .imageBox{
+        width: 440px;
+        background-size: contain;
+    }
+    
+}
+@media screen and (max-width:968px) {
+    li img{
+        height: 80px !important;
+    }
+    .navBar ul li span{
+        margin-right: 5px;
+    }
+    .mainHeaderBox div h1{
+        font-size: 40px;
+    }
+    .mainHeaderBox div h2{
+        font-size: 20px;
+    }
+    .description{
+        width: 80%;
+        text-align: center;
+    }
+    .nextDiv{
+        flex-direction: column;
+    }
+    .imageBox{
+        width: 440px !important;
+        height: 380px !important;
+        background-size: contain;
+        width: 600px;
+    }
+    .faqs h1{
+        font-size: 47px;
+    }
+    .question, .answer{
+        width: 600px;
+        
+    }
+}  
+@media screen and (max-width:610px) {
+    .inputUserBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputUserBox button{
+        margin-top: 20px;
+    }
+    #firstOpt{
+
+    }
+    .inputUserBox .input{
+        width: 500px;
+        
+    }
+    .imageBox{
+        width: 400px !important;
+        height: 350px !important;
+        background-size: contain;
+        width: 600px;
+    }
+
+    .faqs h1{
+        font-size: 37px;
+    }
+    .question, .answer{
+        width: 450px;
+        
+    }
+}
+@media screen and (max-width:510px) {
+    .inputUserBox .input{
+        width: 400px;
+        
+    }
+    .faqs h1{
+        font-size: 35px;
+    }
+    .question{
+        font-size: 22px;
+        padding: 10px;
+    }
+    .answer{
+        font-size: 17px;
+        padding: 5px;
+    }
+    .question, .answer{
+        width: 420px;   
+    }
+    .footer p{
+        margin-left: 35px;
+    }
+    .footer span{
+        margin-left: 35px;
+    }
+    .footer div ul{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:420px) {
+    .inputUserBox .input{
+        width: 350px;
+        
+    }
+    .faqs h1{
+        font-size: 30px;
+    }
+    .question, .answer{
+        width: 385px;   
+    }
+    
+    .selfFooter{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:392px) {
+    .signIn{
+        padding: 6px 10px;
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 0;
+        outline: 0;
+        cursor: pointer !important;
+        background-color: #e50914
+    }
+    #language{
+        padding: 0px;
+        font-size: 14px;
+        margin-left: 2px;
+        color: black;
+        border: 0;
+        color: inherit;
+        background: inherit;
+    }
+    
+    #languageAndWebBox{
+        cursor: pointer;
+        font-size: 14px;
+        padding: 4px 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+    }
+    #signInBoxAndLanguage{
+        margin-right: 10px;
+    }
+    #netflixLogo{
+        margin-left: 10px;
+    }
+    .inputUserBox .input{
+        width: 330px;
+        
+    }
+    .mainHeaderBox div{
+        margin: 20px 15px;
+    }
+    .description{
+        height: 550px;
+    }
+    .faqs h1{
+        font-size: 26px;
+    }
+    .question, .answer{
+        width: 325px;   
+    }
+    .footer p{
+        margin-left: 35px;
+    }
+    .footer span{
+        margin-left: 35px;
+    }
+    .footer div ul{
+        margin: 0 20px;
+    }
+    .selfFooter{
+        font-size: 15px;
+    }
+}
