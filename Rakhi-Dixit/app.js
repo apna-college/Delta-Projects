@@ -54,9 +54,9 @@ async function getName(){
     
     return (res.data[idx].author);
     }
-    catch(err){
+    catch(error){
     
-        console.log("ERROR=",err);
+        console.log("ERROR=",error);
         return "No result found";
         }}
     
