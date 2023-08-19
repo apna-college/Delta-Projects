@@ -1,0 +1,45 @@
+body{
+    margin: 50px;
+    background-color: rgb(62, 62, 85);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.mydiv{
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
+    height: 200px;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 4px 4px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+.btn{
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
