@@ -1,0 +1,139 @@
+body{
+   background-image: url("alexander-grey-eMP4sYPJ9x0-unsplash (1).jpg");
+   background-size:cover;
+   position: static;
+
+}
+.search:hover{
+    box-shadow: 5px 5px 10px black;
+    transition:  1s ease-in-out;
+}
+button{
+    height:30px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: yellow;
+    
+}
+input{
+   margin-top: 10px;
+    height: 25px;
+    width: 250px;
+    border: 2px solid ;
+    border-radius: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    text-align:unset;
+}
+input:hover{
+    border-color:red;
+    box-shadow: 2px 2px 8px black;
+    transition: 1s;
+}
+p{
+    color: white;
+}
+#head{
+  text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+#head:hover{
+    font-size:33px;
+    transition: 1s;
+}
+.def{
+    height: 500px;;
+    width: 70%;
+    border-radius: 20px;
+     background-color: rgba(116, 121, 119,0.4);
+     margin-left: 180px; 
+    padding-bottom: 20px;
+    overflow: auto;
+     margin-top: 8px; 
+
+
+}
+.def:hover{
+    box-shadow: 5px 5px 10px black;
+    transition:  1s ease-in-out;
+    font-size:17px;
+
+}
+.h3{
+   padding-top:20px;
+    margin-left: 17px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+p{
+    margin-left: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+button:hover{
+    background-color:green;
+    box-shadow: 2px 2px 8px black;
+
+}
+
+.search{
+    position:sticky;
+    top: 0;
+    height: 150px;
+    width: 70%;
+    display: inline-block;
+      background-color: rgba(116, 121, 119,0.4);  
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 180px;
+    /* z-index:10; */  
+}
+
+.sound{
+    height: 28px;
+    width: 28px;
+   margin-top:37px; 
+}
+.sound:hover{
+    height: 31px;
+    width: 31px;
+    transition: 1s;
+}
+
+.social_media{
+    height: 40px;
+    width:70%; 
+     margin-left: 180px; 
+     /* background-color: aqua; */
+      color:black;
+     /* position:fixed; */
+     /* top:75vh; */
+     /* left:50px; */
+     /* padding:6px; */
+     font-size: 30px;
+     text-align: center;
+     border-radius: 20px;
+
+     /* margin-top: 8px; */
+ }
+ .social_media a:hover{
+    font-size:35px;
+    box-shadow: 4px solid white;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.social_media i{
+    color: black;
+
+}
+.ul li{
+    font-size: 20px;
+}
+.ul-synhn li{
+    font-size: 20px;
+}
