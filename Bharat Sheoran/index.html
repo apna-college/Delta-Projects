@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="shortcut icon" href="/Assets/LibraryLogo.svg" type="image/icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img class="logo" src="/Assets/LibraryLogo.svg" alt="Library Book">
+            <h2>Library</h2>
+        </div>
+        <div class="nav-mid">
+            <input class="searchBook" id="searchBook" type="text" placeholder="Search Book">
+            <button class="btnSearchBook" id="btnSearchBook">Search</button>
+        </div>
+    
+        <button id="quote-btn" class="btn">Quote</button>
+    </nav>
+
+    <div id="quote-outer">
+        <h2 id="quote"></h2>
+    </div>
+
+    <div class="searchResult" id="searchResult">
+        
+    </div>
+
+    <main>
+
+        <div class="dictionary">
+             <h2>Dictionary</h2>
+             <div class="search-word-container">
+                <div class="search-word">
+                    <input class="input" type="text" placeholder="Search Meaning">
+                    <button class="sbtn">Search</button>
+                 </div>
+             </div>
+        </div>
+        <div class="potter">
+            
+        </div>
+
+        <div class="cat-fact">
+            <h1 class="fact">Facts</h1>
+            <p class="onlyCat">~onlyCats</p>
+            <p class="fact-only-cat"></p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
