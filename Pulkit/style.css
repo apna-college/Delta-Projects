@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#results {
+    margin: 20px;
+    padding: 20px;
+}
+
+.word-container h2 {
+    display: flex;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: .7rem solid #f3f3f3;
+    border-top: .7rem solid #3498db;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 2s linear infinite;
+}
+
+.word-container h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.word-container span {
+    color: #fff;
+}
+
+.word-container p {
+    margin-bottom: 5px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.word-container p{
+    margin: 10px 0;
+}
+.word-container strong {
+    font-weight: bold;
+}
+
+.speaker-icon {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+audio {
+    display: block;
+    margin-top: 10px;
+}
+
+.suggested p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media (width<1000px) {
+    .word-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        font-size: 1.3rem;
+        overflow-y: scroll;
+    }
+
+    .suggested {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        font-size: 1.2em;
+        flex-wrap: wrap;
+    }
+}
+
+@media (width>1000px) {
+    .word-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        font-size: 2rem;
+    }
+
+    .suggested {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        font-size: 1.2em;
+        flex-wrap: wrap;
+    }
+}
