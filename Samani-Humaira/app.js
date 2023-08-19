@@ -1,43 +1,56 @@
-let url = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=";
-let btn = document.querySelector("button");
+let url= "https://api.dictionaryapi.dev/api/v2/entries/en/";
+let btn=document.querySelector("button");
+let list=document.querySelector("ul");
 
-// Event that will be perform when the button is clicked
-btn.addEventListener("click", async () =>{
-    let name = document.querySelector("input").value;
-    let product= await proinfo(name);
-   show(product);
+btn.addEventListener("click",async()=>{
+    list.innerText= " ";
+    let inp=document.querySelector("input").value;
+
+   let ite = await getSentence(inp);
+   show(ite);
 });
-
-// function that will iterate over the element and print only the revelant data
-function show(product){
-let div=document.querySelector("#app");
-    let ul = document.querySelector("ul");
-    ul.innerText = " ";
-    for(pp of product){
-       div.style.padding="2rem";
-        let li= document.createElement("li");
-        li.classList.add("alllist");
-       li.innerHTML=`<br><span style="color:#40F8FF;"> Name:</span>${pp.name}  <br><br> 
-       <span style="color:#40F8FF;"> Description:</span> ${pp.description} <br><br> 
-       <span style="color:#40F8FF;"> Created-at:</span>${pp.created_at} <br><br>
-        <span style="color:#40F8FF;"> Updated-at:</span>:${pp.updated_at} <br><br> 
-        <span style="color:#40F8FF;"> Product-link:</span>: ${pp.product_link} }<br><br> 
-         <span style="color:#40F8FF;"> Website-link::</span> ${pp.website_link}`;
-        ul.appendChild(li);
-         let img=document.createElement("img");
-        img.setAttribute("src",pp.image_link);
-        li.insertAdjacentElement("afterbegin",img);
-        img.classList.add("images");
+function show(ite){
+      for(arr of ite){
+        
+        let li=document.createElement("li");
+        li.innerText=`Word: ${arr.word}`;
+      list.appendChild(li);
+        let meaning =  arr.meanings;
+        def(meaning);
+      }
+}
+function def(meaning){                                     
+    
+    
+    for(arr2 of meaning){
+        let li=document.createElement("li");
+        li.classList.add("my");
+        li.innerText=`Part-of-speech: ${arr2.partOfSpeech} `  ;      ;
+        list.insertAdjacentElement("beforeend",li);
+       let fed= arr2.definitions;
+     
+       fedd(fed);   
     }
 }
+let count = 0;
+function fedd(fed){
+    let list=document.querySelector("ul");
+    for(finite of fed){
+        count++;
+        let li=document.createElement("li");
+       li.innerText=`EX ${count}: ${finite.definition} `;
+       list.appendChild(li); 
+    }
+}
+let word=document.querySelector(".word");
+word.style.display="block";
 
-// Accessing the data from API
-async function proinfo(name){
+async function getSentence(inp){
     try{
-    let res = await axios.get(url + name);
-    return res.data;
+   let res = await axios.get(url+inp);
+   return res.data;
     }
     catch(err){
-        return err;
+       console.log("error");
     }
 }
