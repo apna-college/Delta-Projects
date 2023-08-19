@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        MakeupMingle
-    </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Dictionary.css">
+    <title>Dictionary</title>
 </head>
 <body>
-
-<!-- Main div -->
-<div id="bg-img">
-    <h1>MakeUp Brands and Product Information</h1>
-    <!-- div that takes user input -->
-       <div id="userinp">
-         <input type="text" placeholder="Search Your Favourite Brands (Maybelline,colourpop,revlon etc)">
-         <button>Show Products</button>
-       </div >
-    
-       <!-- div in which the dynamic data will reflect -->
-    <div id="app">
-        <ul class="unorder">
-        </ul>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vOKxUGfoFGcO6j0jGsZ1JrTmWaDaaVh3jQ&usqp=CAU"> -->
+    <h1>Dictionary</h1>
+    <div class="searchh">
+    <input type="text" placeholder="Search">
+    <button id="srch">Search</button>
     </div>
+  <div class="word">
+    <ul class="ulist">
+        
+    </ul>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src = "app.js"></script>
+    <script src="Dictionary.js"></script>
 </body>
 </html>
