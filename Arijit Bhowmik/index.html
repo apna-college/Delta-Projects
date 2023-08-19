@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone | CodingArijit</title>
+    <link rel="shortcut icon" href="netflixFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="headerChild">
+            <nav class="navBar">
+                <ul>
+                    <li id="netflixLogo"><img src="netflixLogo.png" alt="logo" height="100px"></li>
+                    <li id="signInBoxAndLanguage">
+                        <span id="languageAndWebBox"><i class="fa-solid fa-globe"></i><select name="language" id="language">
+                            <option id="firstOpt" value="">English</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                        </select></span>
+                        <span><button class="signIn">Sign In</button></span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mainHeaderBox">
+                <div>
+                    <h1>Unlimited movies, TV shows and more</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+                </div>
+            </div>
+            <div class="inputUserBox">
+                <div class="inputGroup">
+                    <input type="email" name="email" id="emailId" class="input" placeholder=" ">
+                    <label for="emailId" class="placeholder">Email address</label>
+                </div>
+                <button type="button">Get Started &gt;</button>
+            </div>
+        </div>
+    </header>
+    <div class="headerCloser"></div>
+    <section class="nextDiv">
+        <div class="description" id="enjoyTv">
+            <h1>Enjoy on your TV</h1>
+            <h2>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+        </div>
+        <div class="imageBox" id="enjoyTvImg"></div>
+    </section>
+    <div class="headerCloser"></div>
+    <section class="nextDiv">
+        <div class="imageBox" id="downloadShows"></div>
+        <div class="description">
+            <h1>Download your shows to watch offline</h1>
+            <h2>Save your favourites easily and always have something to watch.</h2>
+        </div>
+        
+    </section>
+    <div class="headerCloser"></div>
+    <section class="nextDiv">
+        
+        <div class="description">
+            <h1>Watch everywhere</h1>
+            <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
+        </div>
+        <div class="imageBox" id="watchEverywhere"></div>
+        
+    </section>
+    <div class="headerCloser"></div>
+    <section class="nextDiv">
+        <div class="imageBox" id="children"></div>
+        <div class="description">
+            <h1>Create profiles for kids</h1>
+            <h2>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h2>
+        </div>
+    </section>
+    <div class="headerCloser"></div>
+    <section class="faqs">
+        <h1>Frequently Asked Questions</h1>
+        <br>
+        <input type="checkbox" name="checkBox" id="questionBox1">
+        <label for="questionBox1" class="question">What is Netflix ? <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></label>
+        <div id="answer1" class="answer">
+            <div >Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices.</div>
+            <div>  You can watch as much as you want, whenever you want, without a single ad - all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+        </div>
+        <input type="checkbox" name="checkBox" id="questionBox2">
+        <label for="questionBox2" class="question">How much does Netflix cost ? <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></label>
+        <div id="answer2" class="answer">
+        <div >Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</div>
+    </div>
+        <input type="checkbox" name="checkBox" id="questionBox3">
+        <label for="questionBox3" class="question">Where can I watch ? <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></label>
+        <div id="answer3" class="answer">
+            <div >Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+            </div>
+            <div>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+        </div>
+        <input type="checkbox" name="checkBox" id="questionBox4">
+        <label for="questionBox4" class="question">How do I cancel ? <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></label>
+        <div id="answer4" class="answer">
+        <div >Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.</div>
+    </div>
+        <input type="checkbox" name="checkBox" id="questionBox5">
+        <label for="questionBox5" class="question">What can I watch on Netflix ? <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></label>
+        <div id="answer5" class="answer">
+        <div >Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+    </div>
+    <input type="checkbox" name="checkBox" id="questionBox6">
+    <label for="questionBox6" class="question">Is Netflix good for kids ? <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></label>
+    <div id="answer6" class="answer">
+        <div >The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</div>
+        
+        <div>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</div>
+    </div>
+
+    </section>
+
+    <div class="endContainer">
+        <div>
+            <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+        </div>
+        <div class="inputUserBox">
+            <div class="inputGroup">
+                <input type="email" name="email" id="emailId" class="input" placeholder=" ">
+                <label for="emailId" class="placeholder">Email address</label>
+            </div>
+            <button type="button">Get Started &gt;</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="headerCloser"></div>
+    </div>
+
+    <footer class="footer">
+        <p>Questions? Call<a href="tel:+"> 000-800-919-1694</a></p>
+        <div>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+            </ul>
+        </div>
+        <span id="languageAndWebBox"><i class="fa-solid fa-globe"></i><select name="language" id="language">
+            <option id="firstOpt" value="">English</option>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+        </select></span>
+        <p>Netflix India</p>
+        <hr>
+        
+        <div class="selfFooter">
+            This is a clone website of Netflix made by <a href="#">Arijit Bhowmik.</a> Thanks with &#10084; 
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/1f724f9433.js" crossorigin="anonymous"></script>
+</body>
+</html>
