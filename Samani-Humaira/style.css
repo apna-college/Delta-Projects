@@ -1,0 +1,85 @@
+/* Some initial styling */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: linear-gradient(90.6deg, rgb(1, 162, 221) 10.8%, rgb(237, 98, 168) 48.5%, rgb(239, 232, 100) 84%);
+}
+
+/* styling header (h1) */
+h1{
+    text-align:center;
+   margin-top:2rem;
+   margin-bottom: 2rem;
+}
+/* Styling the div that has a input field and  a button*/
+#userinp{
+    margin-left:1rem;
+    display:flex;
+    justify-content:center;
+    margin-right:1rem;
+}
+/*Styling the input field*/
+input{
+    width:70%;
+    height:2rem;
+    margin-right:1rem;
+   background-color:rgba(255,255,255,0.3);
+   color:white;
+   border-radius: 10px;
+   padding-left:10px;
+   border:4px solid black;  
+   cursor: pointer; 
+}
+input:hover{
+    background-color:rgba(255,255,255,0.8);
+    color:black;
+}
+/*styling the submit button*/
+button{
+    padding:7px;
+    background-color: rgba(0,0,0,0.8);
+    color:rgb(8, 226, 241);
+    border-radius: 8px;
+    font-size:15px;
+    font-weight: 600;
+    opacity:0.7;
+}
+button:hover{
+   opacity:1;
+   color:white;
+}
+/* styling the div that contain all the product info */
+#app{
+    margin-bottom:3rem;
+}
+/* styling images that will dynamically insert when the request will be accepted*/
+.images{
+   width:250px;
+   display:flex;
+   margin:auto;
+   border-radius: 20px;
+}
+/* styling the individual list(li) that insert dynamically */
+.alllist{
+  margin-top:2em;
+  border:1px solid black;
+  background-color: rgba(0,0,0,0.6);
+  color:#FFF0F5;
+  padding:3rem;
+  text-align:center;
+}
+/* styling the placeholder of for input field */
+::placeholder { 
+    color: black;
+    opacity: 0.7;
+  }
+
+/* media to adjust images according to the device width */
+@media(max-width:400px){
+    .images{
+        width:90%;
+    }
+  }
