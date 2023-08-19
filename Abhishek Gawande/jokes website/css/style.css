@@ -1,0 +1,169 @@
+@import url('../css/fonts.css');
+
+* {
+    font-family: 'Nunito';
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    flex-direction: column;
+    background-color: #181818;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* utility classes */
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.filter {
+    filter: drop-shadow(2px 2px 1px #00000021);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: #0d6ff8;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff0f;
+}
+
+/* header */ 
+
+header {
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100vw;
+}
+
+.logo img {
+    height: 2.5rem;
+    padding: 0 1rem;
+}
+
+.logo p {
+    font-size: 25px;
+    color: #22fb58;
+    font-weight: 700;
+}
+
+.dark-mode {
+    background-color: rgb(26, 167, 255);
+    border-radius: 10rem;
+    box-shadow: 0 0 1rem #00000021;
+    justify-content: space-evenly;
+    width: 9rem;
+}
+
+.light-mode {
+    justify-content: end;
+}
+
+.lightMode {
+    background-color: #ec2755 !important;
+}
+
+.light-header {
+    box-shadow: 0 0 1rem #00000021;
+}
+
+.light-theme {
+    background-color: #fff;
+}
+
+.toggle {
+    width: 1.3rem;
+    height: 0.75rem;
+    border: 2px solid #181818;
+    border-radius: 0.5rem;
+}
+
+.circle {
+    height: 0.4rem;
+    width: 0.4rem;
+    margin-inline: 0.1rem;
+    border-radius: 0.5rem;
+    background-color: #181818;
+}
+
+.dark-mode p {
+    padding: 0.5rem 0;
+    color: #181818;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* section */
+
+section {
+    flex: 1;
+}
+
+.jokes-container {
+    background-color: #ffffff05;
+    width: fit-content;
+    height: fit-content;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 1rem #00000021;
+    margin: 1rem;
+}
+
+#joke {
+    color: #782dc9;
+    font-size: 25px;
+    padding: 0.5rem 1rem;
+}
+
+#ans {
+    color: #c92d7e;
+    font-size: 25px;
+    padding: 0.5rem 1rem;
+}
+
+#ans-btn {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #181818;
+    background-color: #c92d51;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+#more-btn {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    width: 6rem;
+    font-weight: 600;
+    color: #181818;
+    background-color: #2dc99f;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+}
