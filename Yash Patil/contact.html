@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Patil - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/"><b>Home</b></a></li>
+                    <li class="list"><a href="/intro.html"><b>My Intro</b></a></li>
+                    <li class="list"><a href="/skills.html"><b>Skills</b></a></li>
+                    <li class="list"><a href="/projects.html"><b>Projects</b></a></li>
+                    <li class="list"><a href="contact.html"><b>Contact Me</b></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main" style="background-color: rgb(108, 104, 104);">
+            <div class="hamburger">
+                <img class="ham" src="menu.png" alt="" style="width: 30px;">
+                <img class="cross" src="close.png" alt="" style="width: 23px;">
+            </div>
+            <div class="contactForm">
+                <h1> <b>Contact me for work/general Enquires</b></h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientEmail1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="clientEmail1" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="clientEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="clientEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email & phone number with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientPhone" class="form-label">Phone</label>
+                      <input type="phone" class="form-control" id="clientPhone">
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-check-label" for="Text">Enquiry</label>
+                        <textarea name="msg" class="form-check-label" id="Text"  rows="2" ></textarea>
+                        
+                    </div>
+                    <div class="mb-3" id="form-check">
+                      <input type="checkbox" class="form-check-input" id="isClient">
+                      <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+                    </div>
+                    <div class="button" style="width: 130px; margin-top: -35px; margin-left: -15px;">
+                        <button type="submit" style="font-size: 13px;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
