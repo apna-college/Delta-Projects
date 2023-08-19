@@ -1,0 +1,513 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles for the entire document */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: General Sans;
+  font-size: 16px;
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Hide the scrollbar in Webkit browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling for the custom cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Styling for the cursor's text content */
+.cursor #cursor {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 0.5rem;
+  opacity: 0;
+}
+
+/* Main container */
+.main {
+  width: 100%;
+}
+
+.loadingPage {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #a3a3a3;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.loadingPage h1 {
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Styling for the navigation bar */
+.nav {
+  width: 100%;
+  padding: 2.2vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for the h3 headings in the navigation bar */
+.nav h3 {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Styling for the h4 headings in the navigation bar */
+.nav h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+/* Styling the underline animation of menu */
+.bottom-side {
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+}
+
+/* Animation effect for revealing content */
+.revealAnime {
+  overflow: hidden;
+}
+/* nav styling end */
+
+/* Styling for the hero section */
+.hero {
+  width: 100%;
+  height: calc(100vh - 77px - 6vw);
+  /* height = (total vh - nav height - margin-top) */
+  margin: 6vw 0 0;
+  padding: 0 2.75vw 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Styling for various h1 headings in the hero section */
+.heroTop h1 {
+  font-size: 10.5vw;
+  line-height: 0.85;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: General Sans Medium;
+  opacity: 0.6;
+  /* margin-left: 20px; */
+}
+
+.heroText1,
+.heroText2 {
+  width: fit-content;
+}
+
+.heroText2 h1 {
+  padding-left: 153px;
+}
+
+/* Styling for the h5 headings in the hero section */
+.subText h5 {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.heroText3 {
+  text-align: right;
+  margin-top: 100px;
+}
+
+/* Styling for the h5 headings in the hero section */
+.heroText3 h5 {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+/* Styling for bottom part of hero section */
+.heroBottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for links in the bottom part of hero section */
+.heroBottom a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.heroBottom > div {
+  margin-left: 150px;
+}
+
+/* Styling for circles in the hero section */
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+/* Styling for the arrow icon */
+.ri-arrow-down-line {
+  color: #000000;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsive design */
+/* Media query for screens with width less than 768px */
+@media screen and (width < 768px) {
+  .hero {
+    width: 100%;
+    height: calc(100vh - 77px - 18vw);
+    margin: 18vw 0 0;
+    padding: 0 2.75vw 1.7vw;
+  }
+
+  .heroButtom a {
+    font-size: 0.8rem;
+  }
+
+  .circles {
+    display: none;
+  }
+}
+
+/* Media query for screens with width less than 500px */
+@media screen and (width < 500px) {
+  .hero {
+    width: 100%;
+    height: calc(100vh - 77px - 32vw);
+    margin: 25vw 0 0;
+    padding: 0 2.75vw 2vw;
+  }
+
+  .heroText2 h1 {
+    padding-left: 120px;
+  }
+
+  .subText h5 {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+  .heroText3 h5 {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+
+  .heroButtom a {
+    font-size: 0.6rem;
+  }
+}
+
+/* hero styling end */
+
+/* Styling for work elements */
+.work {
+  width: 100%;
+  margin: 12vw 0 0;
+  padding: 0 2.75vw;
+}
+
+/* Styling for dividers */
+.divider {
+  opacity: 0.7;
+}
+
+/* Styling for elements inside work section */
+.elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw 0;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Styling for the h1 headings in work elements */
+.elem h1 {
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  opacity: 0.6;
+  flex: 1;
+  transition: all 0.3s ease-out;
+}
+
+/* Styling for images in work elements */
+.elem img {
+  position: absolute;
+  z-index: -1;
+  height: 24vw;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+
+@media screen and (width < 500px) {
+  .work {
+    width: 100%;
+    margin: 18vw 0 0;
+    padding: 0 2.75vw;
+  }
+
+  .elem h1 {
+    font-size: 10vw;
+  }
+}
+/* work styling end */
+
+/* Styling for the about section */
+.about {
+  width: 100%;
+  margin: 12vw 0 0;
+  padding: 0 2.75vw;
+}
+
+.aboutContainer {
+  margin-right: 5vw;
+}
+
+/* Styling for the top part of the about section */
+.aboutTop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5vw;
+}
+
+/* Styling for images in the about section */
+.about img {
+  width: 250px;
+}
+
+/* Styling for the text content in the about section */
+.aboutText {
+  width: 450px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Styling for the h5 headings in the about section */
+.aboutText h5 {
+  opacity: 0.6;
+}
+
+/* Styling for paragraphs in the about section */
+.aboutText p {
+  text-align: justify;
+}
+
+/* Styling for the button in the about section */
+.aboutText button {
+  margin-top: 30px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+  }
+}
+
+/* Media query for screens with width less than 900px */
+@media screen and (width < 900px) {
+  .about img {
+    width: 200px;
+  }
+
+  .aboutContainer {
+    width: 100%;
+  }
+  .aboutTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .aboutText {
+    width: 90%;
+    text-align: center;
+  }
+
+  .aboutText p {
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+}
+
+/* Styling for the Bottom part of the about section */
+.aboutBottom {
+  width: fit-content;
+  margin-top: 10vw;
+}
+
+/* Styling the first h5 in the bottom part of the about section */
+.aboutBottom h5:nth-child(1) {
+  opacity: 0.6;
+}
+
+/* Styling the second h5 in the bottom part of the about section */
+.aboutBottom h5:nth-child(2) {
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+/* Media query for screens with width less than 600px */
+@media screen and (width < 600px) {
+  .aboutBottom {
+    font-size: 0.9rem;
+  }
+}
+/* about styling end */
+
+/* footer styling start */
+.footer {
+  width: 100%;
+  margin-top: 8vw;
+  padding: 0 2.75vw 2vw;
+}
+
+/* Styling for the footer container */
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for year and time section and social media links */
+.yearTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Styling for a tag inside social media links */
+.socialLinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+/* Media query for responsive design in the footer section */
+/* Media query for screens with width less than 850px */
+@media screen and (width < 850px) {
+  .footer {
+    width: 100%;
+    margin-top: 15vw;
+    padding: 0 2.75vw 3vw;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .yearTime {
+    font-size: 1rem;
+  }
+
+  .socialLinks a {
+    font-size: 1rem;
+  }
+}
+
+/* Media query for screens with width less than 550px */
+@media screen and (width < 550px) {
+  .yearTime {
+    font-size: 0.7rem;
+  }
+
+  .socialLinks a {
+    font-size: 0.7rem;
+  }
+}
+/* footer styling end */
+
+/* CSS STYLE END */

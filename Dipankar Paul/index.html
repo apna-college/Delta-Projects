@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Define the document type and language -->
+<html lang="en">
+  <head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Configure the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set a shortcut icon (favicon) for the website -->
+    <link rel="shortcut icon" href="./images/cynthia.png" type="image/x-icon" />
+    <!-- Set the title of the webpage -->
+    <title>Cynthia Ugwu Landing Page Clone</title>
+    <!-- Link to the Remix Icon font stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Link to the Locomotive Scroll library stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <!-- Link to a custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Create a div for a custom cursor element with the text "view" -->
+    <div class="cursor"><span id="cursor">view</span></div>
+    <!-- Create a main container div -->
+    <div class="main">
+      <div class="loadingPage">
+        <h1>Cynthia Ugwu</h1>
+      </div>
+
+      <!-- Create a navigation bar container -->
+      <nav class="nav">
+        <div class="revealAnime">
+          <h3 class="revealNav">Cynthia Ugwu</h3>
+        </div>
+        <div class="revealAnime">
+          <h4 class="revealNav line">Menu+<span class="bottom-side"></span></h4>
+        </div>
+      </nav>
+      <!-- Nav end -->
+
+      <!-- Hero section start -->
+      <section class="hero">
+        <!-- Create a div for the top part of the hero section -->
+        <div class="heroTop">
+          <div class="heroText1 revealAnime">
+            <h1 class="revealUp">PRODUCT</h1>
+          </div>
+          <div class="heroText2">
+            <div class="revealAnime">
+              <h1 class="revealUp">DESIGNER</h1>
+            </div>
+            <div class="subText revealAnime">
+              <h5 class="revealUp">BASED IN TORONTO</h5>
+            </div>
+          </div>
+          <div class="heroText3">
+            <div class="revealAnime">
+              <h5 class="revealDown">AVAILABLE FOR FREELANCE</h5>
+            </div>
+            <div class="revealAnime">
+              <h5 class="revealDown">WORK FROM MAY 23'</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Create a div for the bottom part of the hero section -->
+        <div class="heroBottom">
+          <!-- Create a link with text and an arrow icon -->
+          <a class="line" href=""
+            >CURRENTLY WORKING AT YML<i class="ri-arrow-right-up-line"></i
+            ><span class="bottom-side"></span
+          ></a>
+          <a class="line" href=""
+            >PROTOPIE AMBASSADOR<i class="ri-arrow-right-up-line"></i
+            ><span class="bottom-side"></span
+          ></a>
+          <div class="circles">
+            <!-- Create a circle with a down arrow icon -->
+            <div class="circle"><i class="ri-arrow-down-line"></i></div>
+            <div class="circle"><i class="ri-arrow-down-line"></i></div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero section end -->
+
+      <!-- Work section start -->
+      <section class="work">
+        <!-- Create a div for the work container -->
+        <div class="workContainer">
+          <!-- Create a horizontal rule element as a divider -->
+          <hr class="divider" />
+          <!-- Create a div for an individual work element -->
+          <div class="elem">
+            <img src="./images/plug.png" />
+            <h1 class="elemText">The Plug</h1>
+            <h5>2022</h5>
+          </div>
+          <!-- Create another divider -->
+          <hr class="divider" />
+          <!-- Create another div for an individual work element -->
+          <div class="elem">
+            <img src="./images/ixperience.png" />
+            <h1 class="elemText">ixperience</h1>
+            <h5>2022</h5>
+          </div>
+          <!-- Create another divider -->
+          <hr class="divider" />
+          <!-- Create another div for an individual work element -->
+          <div class="elem">
+            <img src="./images/hudu.png" />
+            <h1 class="elemText">Hudu</h1>
+            <h5>2021</h5>
+          </div>
+          <!-- Create another divider -->
+          <hr class="divider" />
+        </div>
+      </section>
+      <!-- Work section end -->
+
+      <!-- About section start -->
+      <section class="about">
+        <!-- Create a div for the about container -->
+        <div class="aboutContainer">
+          <!-- Create a div for the top part of the about section -->
+          <div class="aboutTop">
+            <!-- Insert an image of Cynthia Ugwu -->
+            <img src="./images/cynthia.png" alt="" />
+            <!-- Create a div for the text content of the about section -->
+            <div class="aboutText">
+              <h5>(ABOUT ME)</h5>
+              <p>
+                I'm a product designer with a passion for creating products that
+                not only look good but also solve real problems. When I'm not
+                sketching ideas on paper, you can find me binge-watching a
+                Netflix series or playing video games. My design philosophy is
+                simple: make it visually appealing, functional, and bring a
+                smile to people's faces. I'm the designer you want on your team
+                if you want to make people say 'I need that in my life!'.
+              </p>
+              <!-- Create a button for initiating contact -->
+              <button type="button">Let's talk</button>
+            </div>
+          </div>
+          <div class="aboutBottom">
+            <h5>(FORGOT TO MENTION)</h5>
+            <h5 class="line">
+              SUBSCRIBE TO MY YOUTUBE CHANNEL<i
+                class="ri-arrow-right-up-line"
+              ></i
+              ><span class="bottom-side"></span>
+            </h5>
+          </div>
+        </div>
+      </section>
+      <!-- About section start -->
+
+      <!-- Footer start -->
+      <footer class="footer">
+        <!-- Create a div for the footer container -->
+        <div class="footerContainer">
+          <!-- Create a div for the year and time section -->
+          <div class="yearTime">
+            <!-- Create a div for the current year with a copyright symbol -->
+            <div class="year line">Made with &hearts; by Dipankar Paul</div>
+            <!-- Create a div for displaying the current date and time -->
+            <div class="time line"><span id="date"></span></div>
+          </div>
+          <!-- Create a div for social media links -->
+          <div class="socialLinks">
+            <a
+              href="https://dribbble.com/CynthiaU"
+              target="_blank"
+              class="link line"
+              >DRIBBBLE<span class="bottom-side"></span
+            ></a>
+            <a
+              href="https://www.instagram.com/cynthiaugwudesigns/"
+              target="_blank"
+              class="link line"
+              >INSTAGRAM<span class="bottom-side"></span
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/cynthia-ugwu/"
+              target="_blank"
+              class="link line"
+              >LINKEDIN<span class="bottom-side"></span
+            ></a>
+            <a
+              href="https://twitter.com/CynthiiaUgwu"
+              target="_blank"
+              class="link line"
+              >TWITTER<span class="bottom-side"></span
+            ></a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+
+    <!-- Load external JavaScript libraries and scripts -->
+    <!-- Load Locomotive Scroll library -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- Load GSAP (GreenSock Animation Platform) library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Load a custom JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
