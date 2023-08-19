@@ -1,0 +1,44 @@
+body {
+  background-color: lavender;
+}
+.card {
+  height: 400px;
+  width: 600px;
+  margin-left: 30rem;
+  margin-top: 10rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.searchbox {
+  height: 75px;
+}
+.search {
+  height: 50px;
+  width: 500px;
+}
+.sentencebox {
+  height: 30px;
+  width: 500px;
+  border-left: 5px solid rgb(191, 191, 255);
+}
+.pos {
+  opacity: 0.4;
+}
+
+@media (max-width: 1050px) {
+  .card {
+    /* width: 450px; */
+    margin-left: 10rem;
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 520px) {
+  .card {
+    width: 450px;
+    margin-left: 2rem;
+    margin-top: 10rem;
+  }
+  .search {
+    width: 350px;
+  }
+}
