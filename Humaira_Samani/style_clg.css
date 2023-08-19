@@ -1,0 +1,50 @@
+body{
+   
+    background-image: linear-gradient(315deg, #f8e0e3 0%, #0ccef0 74%);
+    height:100%;
+
+}
+
+/* #search div */
+.search{
+    display:flex;
+    margin-top:3rem;
+    padding:1rem;
+}
+
+/* input field */
+input{
+    width:70%;
+    height:2rem;
+    margin:0 auto;
+    background-color:#000;
+    color:#fff;
+    border-left-color: aqua;
+    border-right-color:rgb(13, 249, 5);
+    border-top-color:rgb(240, 10, 137);
+    border-bottom-color:yellow;
+    border-radius:6px;
+    padding-left:5px;
+}
+
+/* search button */
+button{
+    background-color:#BCECE0;
+    border-radius:9px;
+}
+input:hover{
+    transform:scale(1.1,1.1);
+}
+button:hover{
+    transform:scale(1.1,1.1);
+    background-color:aquamarine;
+}
+
+/* ul list in which all the name of college will be displayed */
+#result{
+    background-color: rgba(0,0,0,0.7);
+    margin:1rem;
+    padding:1rem;
+    border-radius:10px;
+    display:none;
+}
