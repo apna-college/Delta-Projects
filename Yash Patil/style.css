@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Heebo:wght@500&family=Montserrat:wght@300;400;500;600;700&family=Narnoor&family=Noto+Serif:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Heebo:wght@500&family=Montserrat:wght@300;400;500;600;700&family=Narnoor&family=Noto+Serif:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital@1&family=Source+Code+Pro&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    /* width: 350px; */
+    height: 100rem;
+
+    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
+    transition: transform 0.3s ease-in;
+    
+    
+}
+.sidebar nav {
+    padding: 50px;
+    
+}
+
+.sidebar nav li {
+    font-size: 30px;
+    font-family:sans-serif;
+    list-style: none;
+    padding: 33px 0;
+}
+
+
+.sidebar nav li a{
+    font-weight: 100;
+    text-decoration: none; 
+    color: black;
+}
+
+
+.main {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100rem;
+    padding: 20px;
+    
+}
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: pink;  */
+    color: white;
+    background-color: black;
+    width: 80vw;
+    height: 66vh;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    /* flex-wrap: wrap; */
+}
+.devInfo { 
+    font-size: 20px;
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    padding-right: 100px;
+    /* margin: 144px auto; */
+}
+.devPic img{
+    width: 100%;
+    height: 100%;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.moreAbout a{
+    text-decoration: none; 
+    color:rgb(215, 216, 169);
+}
+
+.name {
+    font-size: 3.1em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.moreAbout { 
+    font-size: 1.25em;
+    color:rgb(215, 216, 169);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.button {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.button button{
+    padding: 6px 24px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+.button button:hover { 
+    color: dodgerblue;
+    background-color: white;
+}
+
+.contactForm h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.contactForm { 
+    padding: 50px 34px; 
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contactForm form div {
+    padding: 15px 0px; 
+    display: flex; 
+    flex-direction: column;
+}
+.contactForm form div input{
+    width: 50vw; 
+    border-radius: 5px; 
+    margin: 6px 0 0 0; 
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 11px; 
+    color: rgb(254, 254, 254);
+    margin: 0 5px;
+    padding: 3px;
+}
+
+.form-check-label {
+    padding: 15px 0px; 
+    width: 50vw;
+}
+
+#form-check { 
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 15px; 
+    margin: 10px;
+}
+
+.projectItem { 
+    margin-top: 55px;
+    margin-left: 30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.projectContainer h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+.projectItem p {
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(133, 125, 115);
+}
+.abtMe {
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.skillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.skills {
+    padding-right: 50px;
+}
+
+.card {
+    width: 250px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 70px;
+    padding: 18px;
+    background-color: rgb(135, 130, 130);
+
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#hov:hover {
+    box-shadow: 10px 10px 30px rgb(143, 138, 138);
+    border: 3px solid white;
+    
+}
+
+.card-text a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.skillButton {
+    
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 90px;
+    cursor: pointer;
+    
+}
+
+.card-body a button:hover { 
+    color: dodgerblue;
+    background-color: white;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 10px;
+    top: 10px; 
+    left: 10px;
+}
+
+.cross {
+    margin-left: 210px;
+    /* margin-top: 8px; */
+}
+
+.sidebarGo {
+    transform: translate(-270px, 0px);
+    position: absolute;
+}
+
+
+
+@media(max-width: 1150px) {
+    /* .sidebar {
+        transform: translate(-450px, 0px);
+        position: absolute;
+    } */
+
+    .devPic {
+        display: none;
+    }
+
+    .intro, .contactForm, .devInfo{
+        margin: 500px 8px;   
+    }
+    .infoContainer {
+        margin-top: 250px;
+    }
+}
+
+@media(max-width: 1150px) {
+    
+    .devPic {
+        display: none;
+    }
+    .button {
+        font-size: 12px;
+    }
+    .devInfo {
+        font-size: 10px;
+        margin-top: 250px;
+    }
+
+    .intro{
+        margin: 400px 8px;   
+    }
+    .contactForm{
+        margin: 100px 8px;   
+    }
+    .infoContainer {
+        margin-top: 0px;
+    }
+} 
+
+@media(max-width: 465px) {
+   
+    .devInfo h1{
+        margin-top: 500px ;   
+    } 
+
+   
+
+    .card {
+        margin-left: 10px;
+    }
+
+    .infoContainer {
+        margin-top: 100px;
+    } 
+} 
+
+
