@@ -32,11 +32,11 @@ body{
 
 
 #container{
-    /* display: flex; */
+    
  margin-left: 300px;
 align-items: center;
 justify-content: center;
-/* position: relative;z-index: 10; */
+
 
 }
 
@@ -69,7 +69,7 @@ margin-bottom:0rem ;
     animation-duration: 6s;
     animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
-/* margin-left: 200px; */
+
 color:#325D79;
 
 }
