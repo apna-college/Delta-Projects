@@ -12,6 +12,7 @@ Cynthia Ugwu(https://cynthiaugwu.com/) is a visually stunning website that demon
 - Responsive design for various screen sizes and devices.
 - Interactive animations and transitions.
 - Smooth scrolling and navigation.
+- This is not a feature but I tried to add proper comment in my code, so that everyone can understand easily.
 
 # Technologies Used
 
