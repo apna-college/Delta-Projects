@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  background: url(https://wallpaperset.com/w/full/b/c/c/413012.jpg);
+  background-size: cover;
+}
+
+#p-head {
+  font-size: 40px;
+  color: red;
+  text-decoration: solid 5px black underline;
+}
+
+.d-none {
+  display: none;
+}
+
+.box {
+  margin: auto;
+  margin-top: 50px;
+  border: 2px solid black;
+  width: fit-content;
+  max-width: 400px;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: orangered;
+  background: url(https://wallpapers.com/images/featured/dark-floral-63tgui541zr7652p.jpg);
+  background-size: cover;
+  box-shadow: 0px 0px 20px white;
+}
+
+.q-generator {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px;
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.r-button {
+  position: absolute;
+  top: 15px;
+  right: 200px;
+}
+
+#author {
+  position: relative;
+  left: 50px;
+  bottom: 0px;
+}
