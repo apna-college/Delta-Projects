@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Web</title>
+    <link rel="icon" href="./imgs/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="d-flex">
+
+    <!-- header -->
+    <header class="d-flex">
+        <!-- logo -->
+        <a href="#logo" class="logo d-flex">
+            <img src="./imgs/logo.svg"><p>The Jokes Web</p>
+        </a>
+
+        <!-- current-location -->
+        <div class="dark-mode d-flex">
+            <div class="toggle d-flex"><div class="circle"></div></div>
+            <p class="current-location-text">Dark mode</p>
+        </div>
+    </header>
+
+    <section class="d-flex">
+        <div class="jokes-container d-flex">
+            <p id="joke" class="filter"></p>
+            <p id="ans" class="filter"></p>
+            <button id="ans-btn" class="d-flex">Show why?</button>
+            <button id="more-btn">More</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
