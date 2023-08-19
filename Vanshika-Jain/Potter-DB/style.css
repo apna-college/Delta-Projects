@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+}
+
+h1 {
+  /* opacity: 1; */
+  font-size: 50px;
+  color: white;
+}
+/* .output {
+  opacity: 1;
+} */
+.main {
+  height: 350px;
+  width: 1200px;
+  background-color: grey;
+  background-image: url("image/hogwarts-legacy-video-games-dragon-owl-harry-potter-hd-wallpaper-preview.jpg");
+  background-size: cover;
+  margin: 10px auto;
+  opacity: 0.7;
+  margin-top: 50px;
+  /* color: ; */
+}
+.Sbtn {
+  margin-left: 10px;
+  height: 50px;
+  border: 3px solid black;
+  background-color: purple;
+}
+.option {
+  border: 3px solid black;
+}
+.select {
+  text-align: center;
+  margin-left: 450px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+}
+
+.output {
+  /* opacity: 1; */
+  color: white;
+  padding: auto;
+  width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  height: 450px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid purple;
+  background-color: rgba(22, 22, 22);
+  color: white;
+  margin: 10px;
+}
+.image {
+  height: 250px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 38px;
+  border-radius: 10px;
+}
+.info {
+  padding: 10px;
+  line-height: 5%;
+  color: white;
+}
+.footer {
+  margin: 10px auto;
+  /* margin-top: 275px; */
+  width: 1200px;
+  /* border: 2px solid purple; */
+}
+/* .made {
+  margin-left: 700px;
+  color: white;
+} */
