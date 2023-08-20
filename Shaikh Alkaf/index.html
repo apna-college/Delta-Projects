@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ruwudu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/Shaikh Alkaf/asset/bookPng.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Our Dictionary</title>
+  </head>
+  <body>
+    <div class="loaderOut">
+      <div class="loadIn"></div>
+    </div>
+    <div class="containor">
+      <div class="main-nav">
+        <nav>
+          <a href=""><i class="fa-solid fa-book"></i></a>
+          <h1>Our Dictionary</h1>
+          <div class="bars">
+            <div class="bar bars1"></div>
+            <div class="bar bars2"></div>
+            <div class="bar bars3"></div>
+          </div>
+          <div class="burger ">
+            <a href="#">More Info</a>
+            <a href="#">About Us</a>
+          </div>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="sub-main">
+          <div class="input">
+            <input type="text" placeholder="Enter a world" class="worldInput" />
+            <i class="fa-solid fa-arrow-right inputBtn"></i>
+          </div>
+          <div class="speak">
+            <select name="accent" id="accent">
+              <option value="uk">United Kingdom</option>
+              <option value="us">United State</option>
+            </select>
+            <i class="fa-solid fa-volume-high sound"></i>
+            <audio class="worldSound"></audio>
+          </div>
+        </div>
+        <div class="main-containt">
+          <p class="quote"></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="subFooter">
+        <img src="/Shaikh Alkaf/asset/bookPng.png" alt="book" />
+        <h1>Keep Learning Keep Exploring</h1>
+      </div>
+      <a href=""
+        >All Rights Reserved <i class="fa-solid fa-copyright"></i>Our Dictionary
+        PVT.LMT</a
+      >
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
