@@ -12,5 +12,4 @@ without any input if you try to press the 'enter' button to get the answer then 
 Each and every time you perform the calculation the output which you get will remain on the display screen 
 so that you can use that output as an input for further calculations
 
-Whenever you want to clear the display screen then press the button 'C' in upperCase 
-however backspace button can also be used to erase the display screen...
+Whenever you want to clear the display screen then press the button 'C' in upperCase or Lowercase however backspace button can also be used to erase the display screen...
