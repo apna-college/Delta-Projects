@@ -1,0 +1,439 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        body {
+            background-image: url(android_weather_app.webp);
+        }
+        
+        section {
+            padding: 60px 12%;
+        }
+        
+        .search {
+            background-color: rgba(44, 126, 151, 0.5);
+            height: auto;
+            width: auto;
+            padding: 40px;
+            margin: 100px;
+            margin-top: 160PX;
+            box-shadow: 15px 15px 15px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 20px;
+        }
+        
+        .search h1 {
+            color: rgb(255, 251, 246);
+        }
+        
+        .search input {
+            width: 90%;
+            height: 3.5rem;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+        
+        .search button {
+            width: 85%;
+            height: 3rem;
+            background-color: #2b5692;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 900;
+            font-weight: 500;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+        
+        .details {
+            margin-left: 40px;
+        }
+        
+        .current {
+            background-color: rgba(44, 126, 151, 0.8);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+            grid-gap: 50px;
+            width: 100%;
+            align-items: center;
+            /* padding: 20px 70px 25px 20px; */
+            height: auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px black;
+        }
+        
+        .img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .current h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(240, 240, 240);
+        }
+        
+        .rain {
+            margin-top: -40px;
+        }
+        
+        .weather-data h4 {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(240, 240, 240);
+        }
+        
+        .current .img img {
+            width: 140px;
+            height: 140px;
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+        
+        .f-day h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .f-day {
+            margin-top: 240px;
+        }
+        
+        .card {
+            background-color: rgba(44, 126, 151, 0.8);
+            text-align: center;
+            padding-bottom: 20px;
+            border-radius: 10px;
+        }
+        
+        .card h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+            grid-gap: 10px;
+        }
+        
+        .head {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2000;
+            padding: 22px 12%;
+        }
+        
+        .logo {
+            position: relative;
+            top: 4px;
+            right: 30px;
+        }
+        
+        .logo img {
+            width: 120px;
+            max-width: 100%;
+            height: auto;
+            mix-blend-mode: multiply;
+        }
+        
+        .nav-menu {
+            display: flex;
+        }
+        
+        .nav-menu li {
+            position: relative;
+        }
+        
+        .nav-menu a {
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            transition: all .5s;
+            padding: 15px 25px;
+        }
+        
+        .nav-menu a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            bottom: -2px;
+            left: 0;
+            transition: all .5s;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .btn-icon {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-btn {
+            font-size: 17px;
+            color: white;
+            font-weight: 500;
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin-right: 20px;
+            transition: all .5s;
+        }
+        
+        .nav-btn:hover {
+            background-color: white;
+            color: #2b5692;
+        }
+        
+        #menu-icon {
+            cursor: pointer;
+            font-size: 35px;
+            color: white;
+            z-index: 5000;
+        }
+        
+        .contact {
+            margin-top: 80px;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .first {
+            max-width: 100%;
+            width: 120px;
+            height: auto;
+        }
+        
+        .first h6 {
+            color: white;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 500;
+            margin-top: 15px;
+            transition: all 0.4s;
+        }
+        
+        .first h6:hover {
+            color: #d46951;
+        }
+        
+        .head.sticky {
+            background-color: rgba(44, 126, 151, 1);
+            ;
+            padding: 22px 12%;
+            box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+            transition: 0.43s;
+        }
+        
+        .contact-info h4 {
+            font-size: 18px;
+            color: black;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info p {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin-bottom: 6px;
+            transition: all 0.4s;
+        }
+        
+        .contact-info p:hover {
+            color: #d46951;
+        }
+        
+        .fifth .icons a {
+            color: black;
+            font-size: 20px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            padding-top: 6px;
+            background-color: white;
+            display: inline-flex;
+            justify-content: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            margin-right: 15px;
+            margin-bottom: 20px;
+            transition: all .4s;
+        }
+        
+        .fifth .icons a:hover {
+            background-color: #080809;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .fifth h5 {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            transition: all 0.4s;
+        }
+        
+        .fifth h5:hover {
+            color: #d46951;
+        }
+        
+        .app-img img {
+            width: 100px;
+            height: auto;
+            margin-right: 12px;
+        }
+        
+        @media(max-width: 1260px) {
+            head {
+                padding: 25px 4%;
+                transition: 0.4s;
+            }
+            section {
+                padding: 60px 4%;
+                transition: .3s;
+            }
+        }
+        
+        @media(max-width: 1050px) {
+            .home {
+                grid-template-columns: 1fr;
+                height: 100%;
+                transition: .3s;
+            }
+            .home-text {
+                padding-top: 100px;
+                text-align: center;
+                transition: .3s;
+            }
+            .home-img img {
+                padding-top: 50px;
+                transition: .3s;
+            }
+        }
+        
+        @media(max-width:1180) {
+            .home-text h1 {
+                font-size: 56px;
+                transition: .3s;
+            }
+            .home-text h4 {
+                font-size: 18px;
+                transition: .3s;
+            }
+            .home-text p {
+                font-size: 15px;
+                transition: .3s;
+            }
+        }
+        
+        @media(max-width:415px) {
+            .home-text h1 {
+                font-size: 30px;
+                line-height: 35px;
+                transition: .3s;
+            }
+            .home-text p {
+                font-size: 16px;
+                transition: .3s;
+            }
+            .nav-btn {
+                display: none;
+            }
+        }
+        
+        @media(max-width:1000px) {
+            .test-text {
+                grid-template-columns: 1fr;
+                height: 100%;
+                text-align: center;
+                transition: .3s;
+            }
+        }
+        
+        @media(max-width:970px) {
+            #menu-icon {
+                display: block;
+            }
+            .nav-menu {
+                position: absolute;
+                top: -500px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: rgba(44, 126, 151, 1);
+                text-align: left;
+                transition: all .4s;
+            }
+            .nav-menu a {
+                display: block;
+                padding: 16px;
+                margin: 8px;
+                border-left: 2px solid #212832;
+            }
+            .nav-menu.open {
+                top: 100%;
+            }
+        }
+        
+        @media(max-width:600px) {
+            section {
+                padding: 10px 5%;
+            }
+            .search {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .fifth {
+                display: none;
+            }
+            .contact {
+                margin: 30px;
+                margin-bottom: 30px;
+            }
+            .search input {
+                font-size: 15px;
+            }
+        }
