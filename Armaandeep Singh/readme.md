@@ -18,5 +18,5 @@ _> API_
 
 ### Special Thanks to
   **Apna College** for this Project
-  **Dictionaryapi** for Providing Free API 
+  **Dictionaryapi** for Providing API 
 
