@@ -7,7 +7,7 @@
 **_> Pronunciations_** <br>
 **_> Many Other things_** <br>
 
-### Used Technology =>
+### Used Technology :
 _> HTML 5_ <br>
 _> JavaScript_ <br>
 _> CSS_ <br>
