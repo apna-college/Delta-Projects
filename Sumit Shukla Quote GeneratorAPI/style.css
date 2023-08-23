@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+   color: crimson;
+   font-size: 60px;
+   font-weight: 800;
+   text-align: center;
+   text-shadow: 5px 6px 20px white;
+   border: 0px solid pink;
+   box-shadow: 2px 3px 25px crimson;
+   margin-top: 20px;
+   border-radius: 12px;
+}
+
+.text{
+    width: 82%;
+    height: 98px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(104, 7, 26);
+    text-align: center;
+    border: 0px solid pink;
+    text-shadow: 2px 3px 20px crimson;
+    box-shadow: 2px 3px 20px rgb(121, 23, 43);
+    transition: all 0.8s linear;
+    border-radius: 20px;
+}
+
+.text:hover{
+    scale: 0.92;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 22px;
+    font-weight: 500;
+    color: red;
+    text-shadow: 2px 3px 15px yellow;
+    box-shadow: 2px 3px 20px crimson;
+    transition: all 0.6s linear;
+    margin-top: 100px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    text-shadow: 2px 3px 14px black;
+}
+
+#result{
+    width: 55%;
+    height: 150px;
+    border: 0px solid pink;
+    text-align: center;
+    margin-top: 35px;
+    color:darkred;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 2px 3px 15px crimson;
+    box-shadow: 2px 3px 20px rgb(103, 14, 32);
+    border-radius: 22px;
+}
+
+footer{
+    position: fixed;
+    bottom: 2px;
+}
+
+footer p{
+    font-size: 23px;
+    text-shadow: 2px 3px 10px white;
+    font-weight: 500;
+}
+
+
+@media (max-width:650px) {
+   h1{
+    font-size: 55px;
+    margin-top: 8px;
+   } 
+   .text{
+    width: 88%;
+    height: 220px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(85, 5, 5);
+    text-align: center;
+    text-shadow: 2px 3px 20px white;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 22px;
+    font-weight: 500;
+    color: red;
+    text-shadow: 2px 3px 15px yellow;
+    box-shadow: 2px 3px 20px crimson;
+    transition: all 0.6s linear;
+    margin-top: 10px;
+}
+#result{
+    width: 95%;
+    height: 140px;
+    border: 0px solid pink;
+    text-align: center;
+    margin-top: 12px;
+    color:darkred;
+    font-size: 17px;
+    
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+footer p{
+    font-size: 20px;
+    text-shadow: 2px 3px 10px white;
+    font-weight: 500;
+}
+    
+}
