@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>API_Use_project</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="fullpage">
+     <div id="sideBar">
+      <div id="nav">
+          <div class="nav-option">
+            <i class="fa-solid fa-house"></i>
+            <a href="#" style="color: ghostwhite;">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" style="color: ghostwhite;">Search</a>
+          </div> 
+
+          <div id="navfeature">
+            <div class="navfeature-option">
+               <h3>Create your own Quotes</h3>
+               <i class="fa-solid fa-plus"></i>
+               <p1>it's easy, we'll help you</p1>
+               <br>
+               <button class="navbtn">Create Quote</button>
+            </div>
+            <div class="navfeature-option">
+               <h3>Here are some tips for creating a quotes</h3>
+               <i class="fa-solid fa-plus"></i>
+               <p1>Famouse auther will help you<p1>
+               <button class="navbtn">Find tips</button>
+            </div>
+            <div class="navfeature-option">
+               <h3>Create your joke</h3>
+               <i class="fa-solid fa-plus"></i>
+               <p1>it's easy, we'll help you<p1>
+               <br>
+               <button class="navbtn">Create joke</button>
+            </div>
+          </div>
+          <div id="nav-about" style="color: ghostwhite;">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <br>
+            <i class="fa-solid fa-circle-info"></i>
+            <p1>about us</p>
+          </div>
+      </div> 
+     </div>
+
+     <div id="upper-bar">
+        <div id="upper-in-bar">
+          <i id="icon" class="fa-solid fa-user"></i>
+           <input type="text" placeholder="serach" style="border-radius: 5px;">
+         <div class="upp-gp">
+           <button class="upp-btn" style=" margin-right: 20px;">sing in</button>
+           <button class="upp-btn" style=" margin-right: 40px;">sing up</button>
+           <i class="fa-solid fa-bookmark" style="margin-right: 20px;"></i>
+           <i class="fa-solid fa-filter"></i>
+         </div>
+        </div>
+     </div>
+
+     <div id="main">   
+        <div class="main-sec">
+          <h3>*Find Joke</h3>
+          <p class="p-main" id="main-p1">Check a below button to find a random <b>joke</b></p>
+          <br>
+          <p class="p-main" id="main-sec-p1"></p>
+          <button class="btn-main" id="main-btn1">Find</button>
+        </div>
+        <div class="main-sec">
+          <h3>*Find Quote</h3>
+          <p class="p-main" id="main-p2">Check a below button to find a inspiring <b>Quote</b></p>
+          <br>
+          <p class="p-main">Author:-</p>
+          <p class="p-main" id="main-sec-p2"></p>
+          <button class="btn-main" id="main-btn2">Find</button>
+        </div>
+        <div class="main-sec">
+          <h3>*Find Fact</h3>
+          <p class="p-main" id="main-p3">Check a below button to find a amazing <b>Fact</b></p>
+          <button class="btn-main" id="main-btn3">Find</button>
+        </div>
+
+     </div>
+   </div>
+   
+   
+   <script src="app.js"></script>
+</body>
+</html>
