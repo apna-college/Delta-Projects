@@ -1,0 +1,157 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    color: ghstwhite;
+    background-color: #003b46;
+    overflow: hidden;
+}
+
+#fullpage {
+    display: flex;
+}
+
+#sideBar {
+    position: relative;
+    background-color: #07575b;
+    height: 570px;
+    width: 350px;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    padding: 0.05rem;
+}
+
+#nav {
+    width: 300px;
+    height: 4rem;
+    background-color: #66a5ad;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    padding: 3px;
+}
+
+.nav-option {
+    margin: 8px;
+    color: ghostwhite;
+    padding-left: 0.3rem;
+}
+
+#navfeature {
+    width: 300px;
+    height: 25rem;
+    background-color: #66a5ad;
+    border-radius: 1rem;
+    
+}
+
+.navfeature-option {
+    margin: 9px;
+    margin-top: 1rem;
+    padding: 0.3rem;
+}
+
+.navbtn {
+    border-radius: 25%;
+}
+
+#nav-about {
+    margin-left: 90px;
+    padding: 15px;
+}
+
+#upper-bar {
+    width: 850px;
+    height: 80px;
+    background-color: #07575b;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 1.5rem;
+    position: sticky;
+}
+
+#upper-in-bar {
+    width: 800px;
+    height: 60px;
+    background-color: #66a5ad;
+    padding-left: 25px;
+    margin: 10px;
+    border-radius: 1.5rem;
+    display: flex;
+} 
+
+input {
+    width: 350px;
+    height: 18px;
+    border-radius: 8px;
+    margin: 18px;
+}
+
+#icon {
+   margin-top: 20px;
+   font-size: large;
+}
+
+.upp-gp {
+    margin: 18px;
+    padding-left: 50px;
+}
+
+.upp-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    width: fit-content;
+    box-shadow: 4px 4px 4px black;
+    height: 1.5rem;
+}
+
+.upp-btn:active {
+    box-shadow: 2px 2px 5px black;
+}
+
+#main {
+    width: 845px;
+    height: 450px;
+    background-color: #07575b;
+    position:absolute;
+    margin: 150px 200px 100px 450px;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.main-sec {
+    width: 400px;
+    height: 390px;
+    background-color: #66a5ad;
+    margin: 2rem;
+    border-radius: 1.5rem;
+}
+
+.main-sec h3 {
+    margin: 1rem;
+    text-decoration: underline  white;
+}
+
+.p-main{
+    margin: 1rem;
+    text-decoration: underline black;
+    background-color: #c4dfe6;
+    border-radius: 0.4rem;
+}
+
+.btn-main {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0 1rem;
+    height: 2rem;
+    width: fit-content;
+    box-shadow: 4px 4px 4px black;
+}
+
+
+.btn-main:active {
+    box-shadow: 2px 2px 5px black;
+}
