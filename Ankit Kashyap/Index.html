@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="weather.css" />
+    <script type="module" src="weather.js"></script>
+
+    <title>CitySkies</title>
+  </head>
+  <body>
+    <header class="navigation">
+      <!-- <img
+        src="https://images.pexels.com/photos/716666/pexels-photo-716666.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+        class="bg-image"
+      /> -->
+
+      <video autoplay loop muted class="bg-video">
+        <source
+          src="https://player.vimeo.com/external/431298207.sd.mp4?s=23a9f2fd7ad9d8aebe887242aea8a8c976fa5db0&profile_id=164&oauth2_token_id=57447761"
+          type="video/mp4"
+          class="bg-video-src"
+        />
+      </video>
+    </header>
+
+    <div class="nav-logo">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/7079/7079774.png"
+        alt=""
+      />
+      <span>CitySkies</span>
+    </div>
+
+    <div class="nav-search">
+      <form>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/2811/2811806.png"
+          alt=""
+          class="search-icon"
+        />
+        <input
+          class="search-box"
+          type="search"
+          placeholder="Search City Name"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+
+    <div class="recent-search">
+      <p>Recent Locations</p>
+
+      <div class="cards-container">
+        <!-- <div class="cards">
+          <div class="cityName">Patna</div>
+          <p class="countryName">India</p>
+          <div class="temp">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3222/3222791.png"
+              alt=""
+            />
+            <span>35&#8451;</span>
+          </div>
+          <div class="feelsLike">
+            <p>realFeel 39&#8451;</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <main class="mainSection">
+      <div class="current-weather">
+        <div class="weather-details-card hidden">
+          <!-- Top Section -->
+
+          <!-- <div class="top">
+            <div class="current-text">
+              <p>Current Weather</p>
+            </div>
+
+            <div class="timing">
+              <p>As of 3:41</p>
+            </div>
+          </div>
+
+          <hr /> -->
+
+          <!-- Middle Section -->
+
+          <!-- Temperature Showing section -->
+
+          <!-- <div class="middle"> 
+         
+            <div class="middle-left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2930/2930014.png"
+                alt="" class ="temp-icon"
+              />
+              <span>36&#8451;</span>
+            </div>
+
+            <div class="middle-right">
+              <p class="feelslike">RealFeel 43&#8451;</p>
+              <p class="type">Cloudy</p>
+            </div>
+          </div>
+
+          <div class="main-section">
+            <div class="detail">
+              <span>Max Temp:</span>
+              <span class="value">36&#8451;</span>
+              <hr />
+            </div>
+
+            <div class="detail">
+              <span>Min Temp:</span>
+              <span class="value">36&#8451;</span>
+              <hr />
+            </div>
+
+            <div class="detail">
+              <span>Humidity:</span>
+              <span class="value">56</span>
+              <hr />
+            </div>
+
+            <div class="detail">
+              <span>Pressure:</span>
+              <span class="value">56</span>
+              <hr />
+            </div>
+
+            <div class="detail">
+              <span>Wind Speed:</span>
+              <span class="value">56</span>
+              <hr />
+            </div>
+
+            <div class="detail">
+              <span>Wind Degree:</span>
+              <span class="value">56</span>
+            </div>
+
+            <div class="detail">
+              <span>Sunrise:</span>
+              <span class="value">5:30</span>
+              <hr />
+            </div>
+
+            <div class="detail">
+              <span>Sunset:</span>
+              <span class="value">18:30</span>
+              <hr />
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Not found Modal -->
+
+    <div class="not-found">
+      <div class="modal modal-hidden">
+        <div class="data">
+          "We're sorry, but the city/state you searched for could not be found
+          in our database. Please make sure you've entered the correct spelling
+          and try again."
+        </div>
+
+        <div class="cross">&times;</div>
+      </div>
+    </div>
+  </body>
+</html>
