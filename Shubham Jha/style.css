@@ -1,0 +1,168 @@
+*
+{
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+
+body
+{
+    background-color: #FBC12A;
+}
+
+.container
+{
+    /* width: 35vw;
+    margin: 20px auto;
+    background-color: white;
+    padding: 1.8rem;
+    box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.62rem;
+    position: relative; */
+    position: relative;
+    background-color: white;
+    font-size: 16px;
+    padding: 3em 2.8em;
+    width: 90vw;
+    max-width: 32em;
+    margin: 50px auto 0;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.5em rgba(42, 32, 0, 0.2);
+}
+.search-container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+
+}
+
+.search-container input
+{
+    /* flex: 1; */
+    /* width: 80%; */
+    padding: 0.6em;
+    /* padding-left: 0.8em; */
+    font-size: 1em;
+    border: 0;
+    outline: 0;
+    position: relative;
+    border-bottom: 2px solid #202030;
+
+
+}
+
+
+.search-container button
+{
+    padding: 0.62rem 1.56rem;
+    border-radius: 5px;
+    color: black;
+    background-color: #FBC12A;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.result img
+{
+    display: block;
+    width: 50%;
+    margin: 1.5rem auto 0 auto;
+    position: relative;
+}
+
+
+.details
+{
+    background-color: #FBC12A;
+    position: relative;
+    margin: -4.3em auto 0 0;
+    text-align: center;
+    padding: 0.6em 0;
+
+}
+
+.details h2
+{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.details h4
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+#recipe
+{
+    position: absolute;
+    background-color: white;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.6em;
+    display: none;
+
+}
+
+
+#recipe pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.5em;
+    padding: 2.5em 1.2em 1.2em 1.2em;
+}
+
+#show-recipe
+{
+    font-size: 1em;
+    position: relative;
+    left: 75%;
+    padding: 0.9em 0.6em;
+    background-color: #FBC12A;
+    border: none;
+    top: 1.5em;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+
+#hide-recipe
+{
+    font-size: 1em;
+    position: relative;
+    height: 1.8em;
+    width: 1.8em;
+    background-color: #FBC12A;
+    border: none;
+    top: 1.2em;
+    left: 90%;
+    border-radius: 0.3em;
+
+}
+
+ul
+{
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+
+}
+
+@media screen and (max-width:500px) {
+    .container
+    {
+        font-size: 14px;
+
+    }
+}
