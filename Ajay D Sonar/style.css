@@ -1,0 +1,184 @@
+/* global colors {
+    #2CD3E1 : aqua;
+    #A459D1 : purple;
+    #F266AB : pink;
+    #FFB84C : yellow;
+}  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(199, 224, 160);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 80%;
+  height: 80%;
+  background-color: aqua;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .score{
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.header .right-ans{
+  color: green;
+}
+.header .wrong-ans{
+  color: red;
+}
+.score span{
+  margin-right: 10px;
+}
+.game-container {
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: #ffb84c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.question{
+    width: 100%;
+    height: 100px;
+    background-color:  #A459D1;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.options{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    height: calc(100% - 100px);
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.opt{
+    margin: 10px;
+    background-color: #A459D1;
+    color: #fff;
+    border-radius: 10px;
+    width: 450px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    transition: all 0.1s linear;
+    border:2px solid aqua;
+  }
+  .opt p{
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center ;
+}
+.opt:hover{
+  background-color: aqua;
+  color: black;
+  cursor: pointer;
+  box-shadow: -5px 5px 40px aqua;
+}
+
+.hoverMe:hover{
+  background-color: red;
+}
+.green{
+  background-color: green;
+  color: white;
+  
+}
+.green:hover{
+  background-color: green;
+  color: white;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.red:hover{
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 1250px){
+  .box{
+    height: 100%;
+    /* margin: 10px 0; */
+  }
+  
+}
+
+#overg{
+  background-color: #000;
+  color: aqua;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+#Swrong{
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+#Scorrect{
+  background-color: yellowgreen;
+  color: white;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+#btn{
+  background-color: aqua;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px pink;
+  outline: none;
+  border: none;
+}
+#btn:hover{
+  box-shadow: -10px 10px 20px hotpink;
+  cursor: pointer;
+}
+
