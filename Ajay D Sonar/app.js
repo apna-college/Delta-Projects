@@ -1,4 +1,4 @@
-const url = "https://quizapi.io/api/v1/questions?limit=5";
+const url = "https://quizapi.io/api/v1/questions?limit=10";
 var quizQuestions = {};
 var quizOptions;
 var quizAnsers = [];
@@ -115,7 +115,7 @@ function gameStart(res) {
       correctAnsCount.innerHTML = `${defaultCorrectAns}`;
       setTimeout(() => {
         papa.classList.toggle("green");
-        if (idx === 5) {
+        if (idx === 10) {
           gameO();
         } else {
           nextQuestion(idx, res, str3);
