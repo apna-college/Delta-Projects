@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(127, 12, 127);
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+input[type="text"]{
+   margin-top: 2%;
+   margin-left: 44%;
+   text-align: center;
+}
+
+div{
+    margin-left: 300px;
+    margin-top: 4%;
+    background-color: rgb(238, 233, 171);
+    height: 500px;
+    width: 900px;
+    border-radius: 10px;
+    border: 1.5px solid red;
+    padding: 20px;
+}
+
+p{
+    color:red;
+    font-family: sans-serif;
+}
