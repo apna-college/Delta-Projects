@@ -1,8 +1,8 @@
-# Random Quote Generator
+# RECIPE APP
 
-## This Quote Generator Web Application is a platform designed to provide users with a diverse range of quotes for inspiration, motivation, and reflection. 
+## The Recipe API Project offers a simple and straightforward way to retrieve recipes based on the dish name. With just a few easy steps, you can access detailed instructions and ingredient lists to make your favorite dishes at home.
 
-## With just a few clicks, you can browse through a vast collection of quotes from famous authors, thought leaders, and other inspiring figures.
+## With just a writing the Name of the Dish you can get the Recipe and even the Steps on how to make it.
 
 ## Technologies used :
    1. HTML
@@ -10,4 +10,4 @@
    3. JavaScript
 
 ## API used :
-   Quote Garden API - https://quote-garden.onrender.com/api/v3/quotes
+   TheMealDB API - https://www.themealdb.com/api.php
