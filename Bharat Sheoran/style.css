@@ -1,0 +1,439 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calibri' , 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+h2 h4{
+    margin: 2rem 1rem 0rem 1rem;
+}
+
+.card{
+    width: 190px;
+    height: 230px;
+    border-radius: 17px;
+    background-color: #3B3B3B;
+    box-shadow: 5px 3px 30px rgba(199, 199, 199, 0.082);
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: all 0.5s;
+    margin: 1rem;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card:active{
+    transform: scale(0.95);
+}
+
+
+#searchResult{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.mainHeadCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentCard{
+    display: none;
+    align-self: flex-start;
+    margin: 20px 0px 0px 10px;
+}
+
+.card:hover .contentCard{
+    display: inline;
+    transition: all 0.5s;
+}
+
+#quote-outer{
+    width: 30rem;
+    height: 10rem;
+    border: 2px solid #5c5c5c;
+    position: fixed;
+    left: 35%;
+    top: 40%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    box-shadow: 10px 10px 30px rgba(226, 226, 226, 0.197);
+    color: #d7d7d7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+}
+
+
+.btn{
+    width: 9em;
+    height: 3em;
+    border: 0.125em solid #3B3B3B;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: all .3s;
+    cursor: pointer;
+    color: #3B3B3B;
+    touch-action: manipulation;
+}
+
+.btn:hover{
+    background-color: #3B3B3B;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(138, 138, 138, 0.129);
+    transform: translateY(-2px);
+}
+
+.btn:active{
+    box-shadow: none;
+    transform: translateY(0px);
+}
+
+.nav-mid{
+    display: flex;
+    flex-direction: row;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: #2f3640;
+    border-radius: 50px;
+    padding: .3rem;
+}
+
+.searchBook{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+.btnSearchBook{
+    color: white;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0% , #009EFD 100%));
+    font-weight: bold;
+    padding: 0.4rem;
+    transition: 0.25s;
+}
+
+.btnSearchBook:hover{
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.674);
+}
+
+.btnSearchBook:active{
+    box-shadow: none;
+    transform: translateY(0px);
+}
+
+nav{
+    background-color: rgba(39, 6, 39, 0.875);
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+.logo{
+    width: 3rem
+}
+
+.nav-left{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left>h2{
+    background-color: transparent;
+    color: #cdcdcd;
+}
+
+main{
+    display: flex;
+}
+
+.dictionary{
+    min-width: 40%;
+    height: 50vh;
+    margin-left: 15px;
+    background-color: rgba(106, 106, 106, 0.195);
+    border-radius: 25px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.dictionary:hover{
+    box-shadow: 2px 6px 20px rgba(179, 179, 179, 0.078);
+}
+
+.dictionary>h2{
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    color: #aeaeae;
+}
+
+.potter{
+    max-width: 56%;
+    margin-left: 15px;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: rgba(106, 106, 106, 0.195);
+    transition: all 0.3s;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.potter:hover{
+    box-shadow: 2px 6px 20px rgba(179, 179, 179, 0.078);
+}
+
+.card-potter{
+    height: 40vh;
+    width: 190px;
+    --background: linear-gradient(to left, #f7ba2b 0% , #ea5358 100%);
+    padding: 5px;
+    border-radius: 1rem;
+    background: #f7ba2b;
+    background: var(--background);
+    cursor: pointer;
+    margin-left: 2.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.card-potter-info{
+    --color: #181818;
+    background-color: var(--color);
+    color: var(--color);
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+    background: url(Assets/sample.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    border-radius: 0.7rem 0.7rem 0 0;
+    background-color: rgba(209, 209, 209, 0.501);
+    padding: 5px;
+}
+
+.card-potter:hover{
+    transform: scale(1.05);
+}
+
+.author{
+    font-size: 0.6rem;
+}
+
+.summary{
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgba(209, 209, 209, 0.459);
+    position: relative;
+    top: 500px;
+    transition: all 0.2s ease-out;
+}
+
+.card-potter:hover .summary{
+    top: 0;
+}
+
+
+::-webkit-scrollbar{
+    height: 6px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    border-radius: 50px;
+}
+
+.audio::-webkit-media-controls-panel{
+    background-color: rgba(122, 56, 126, 0.732);
+}
+
+.search-word-container{
+    padding: 10px;
+    border-radius: 1000px;
+    background: linear-gradient(135deg, rgba(207, 39, 207, 0.195) 0% , rgb(131, 172, 222) 100%);
+    display: grid;
+    place-content: center;
+    z-index: 0;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+.search-word{
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg , rgba(249, 224, 249, 0.195) 0% , rgb(214,229,247) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    color: #37414a;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+}
+
+.input:focus{
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+}
+
+.sbtn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-left: 2px solid white;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.sbtn:hover{
+    border-left: 3px solid white;
+}
+
+.result{
+    width: 85%;
+    height: 60%;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: #4747474e;
+}
+
+.ml{
+    margin-left: 10px;
+    color: rgb(219, 219, 219);
+    margin-bottom: 7px;
+}
+
+.mt{
+    margin-top: 10px;
+}
+
+.cat-fact{
+    width: 90vh;
+    height: 30vh;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 25px;
+    background-color: rgba(106, 106, 106, 0.195);
+    background: linear-gradient(45deg , rgba(0,0,0,1) , rgba(0,0,0,0)) , url(Assets/Cat.jpg);
+    background-size: cover;
+    background-position: bottom 70% left 70%;
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fact{
+    color: #cacaca;
+    display: inline;
+    margin: 3rem 0 0 2rem;
+}
+
+.onlyCat{
+    color: #cacaca;
+    display: inline;
+    font-size: x-small;
+}
+
+.fact-only-cat{
+    color: #cacaca;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 2rem 0 2rem;
+}
+
+@media (max-width:1000px){
+    .dictionary{
+        min-width: 47%;
+    }
+
+    .potter{
+        width: 47%;
+    }
+}
+
+@media (max-width:800px){
+    .dictionary{
+        width: 95%;
+    }
+
+    .potter{
+        min-width: 95%;
+        margin-top: 1rem;
+    }
+
+    .cat-fact{
+        width: 95%;
+    }
+}
