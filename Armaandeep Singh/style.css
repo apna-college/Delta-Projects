@@ -1,0 +1,106 @@
+body{
+    text-align: center;
+    background-color: rgb(6, 109, 146);
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    
+}
+.con{              /* Container of query */
+    font-size: 1.8rem;
+}
+
+.con li{            /* Container's List items */
+       list-style: none;
+}
+
+#inp{               /* Input box */
+    width: 55%;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.btn{                        /* Query button */
+     width: 3rem;
+     height: 2.5rem; 
+     margin-left:1rem;
+     font-size: 1.4rem;
+}
+
+
+audio{                        /* Pronunications audio*/
+    margin: 2px;
+}
+
+a{                              /* Anchor Tag */
+    text-decoration: none;
+    font-size: 1.8rem; 
+    color: red;
+}
+
+p{
+font-size: 2rem;
+}
+
+
+.hov:hover{
+ transition: 0.8s ease-out;
+ scale: 1.07;
+}
+.shd:hover{
+box-shadow:2px 2px 8px rgb(48, 194, 251);
+transition: 0.8s ease-out;
+}
+
+.trans{
+    background-color: inherit;
+    border: 0px ;
+}
+
+h2{
+    color: black;
+}
+
+
+                        /* Hover */
+
+
+.ring{
+ margin: 2rem auto auto auto;
+ display: flex;
+ width: 5rem;
+ height: 5rem;
+ box-shadow: 2px solid rgba(255, 255, 255,0.5);
+ border-radius: 50%;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ animation: ring 2s linear infinite;
+ 
+}
+
+@keyframes ring{
+0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+}
+50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+}
+100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px crimson;
+}
+}
+
+.hide{
+    display: none;
+}
+
+.abt{
+color: deepskyblue;
+}
+
