@@ -3,7 +3,7 @@
 console.log("API Project \n\n");
 console.log("RandomJokes.com \n\n");
 console.log("\n");
-
+    
 
 let url = "https://v2.jokeapi.dev/joke/Any?safe-mode";
 
