@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    
+}
+
+body{
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    background: #3498dbec;
+    justify-content: center;
+  }
+
+.container {
+    height: 265px;
+    max-width: 410px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 20px 25px 0;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.container.active{
+    height: 530px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+}
+header p{
+    margin-top: 5px;
+    color: #575757;
+    font-size: 16px;
+}
+
+.container .box {
+    margin: 20px 0 25px;
+
+}
+
+.box :where(input, button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease;
+}
+
+.box input{
+    font-size: 18px;
+    padding: 0 17px;
+    border: 1px solid #999;
+  }
+
+.box input:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+  }
+
+.box input::placeholder{
+    color: #999;
+  }
+
+.box button{
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: #3498DB;
+  }
+
+.image {
+    opacity: 0;
+    display: flex;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.container.active .image{
+
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.image img{
+    width: 170px;
+  }
+  
+
+  @media (max-width: 430px){
+
+    .container{
+      height: 255px;
+      padding: 16px 20px;
+    }
+    .container.active{
+      height: 510px;
+    }
+    header p{
+      color: #696969;
+      font-size: 14px;
+    }
+
+    .box :where(input, button){
+        height: 52px;
+      }
+
+    .image img{
+      width: 160px;
+    }  
+  }
