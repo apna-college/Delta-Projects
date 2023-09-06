@@ -1,0 +1,113 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.main_box{
+    background-image: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+
+}
+.btn_one i{
+    font-size: 30px;
+    color: white;
+    font-weight:700;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    line-height:16px ;
+    cursor:pointer;
+    transition: all 0.2s linear;
+
+}
+.sidebar_menu{
+    position: fixed;
+    left:-330px ;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+    transition: all 0.4s linear;
+}
+.sidebar_menu .logo{
+    width: 100%;
+    line-height:60px ;
+    box-shadow:0 2px 4px rgba(255,255,255,0.5);
+
+}
+.sidebar_menu .logo  a {
+    position: absolute;
+    left: 90px;
+    color: white;
+    font-size: 20px;
+    font-weight:500 ;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+.sidebar_menu .btn_two i {
+    color: rgba(255, 255, 255,0.6);
+    font-size: 25px;
+    line-height:40px;
+    position: absolute;
+    top:10px;
+    right:15px;
+    opacity: 0;
+    cursor:pointer;
+    transition: all 0.2s linear;
+
+}
+.sidebar_menu .menu li{
+    margin-top: 10px;
+    padding: 7px;
+}
+.sidebar_menu .menu li i,a{
+    color: white;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+    padding-right:10px ;
+}
+ .sidebar_menu .social_media{
+   
+
+    position: absolute;
+    left: 90px;
+    bottom: 20px;
+  
+}
+.sidebar_menu .social_media i{
+    padding:5px ;
+    opacity: 0.5;
+    color: white;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+}
+.btn_one i:hover{
+    font-size:35px ;
+}
+.btn_two i:hover{
+    font-size:30px;
+
+}
+.sidebar_menu .social_media i:hover{
+opacity: 1;
+transform: scale(1.3);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0px;
+}
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
