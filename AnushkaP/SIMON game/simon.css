@@ -1,0 +1,95 @@
+body {
+  text-align: center;
+  font-family: fantasy;
+  color: white;
+  background-color: black;
+}
+h1 {
+  text-decoration: underline dotted 2px;
+
+  text-underline-offset: 7px;
+}
+h2 {
+  font-family: "Lucida Sans";
+  font-weight: 500;
+  color: black;
+  position: relative;
+  bottom: 240px;
+  text-shadow: 1px 1px 20px black;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 410px;
+  margin: 0 auto;
+  border-radius: 60%;
+  background-color: rgb(255, 255, 255);
+  /* border: 3px solid white; */
+  box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.571);
+}
+
+.btn {
+  border: 50%;
+}
+.green {
+  border-top-left-radius: 100%;
+  border: green 100px solid;
+  border-bottom-right-radius: 60%;
+  margin: 0 5px 10px 0;
+}
+
+.red {
+  border-top-right-radius: 100%;
+  border: red 100px solid;
+  border-bottom-left-radius: 60%;
+  margin: 0 0 10px 5px;
+}
+.blue {
+  border-bottom-left-radius: 100%;
+  border: blue 100px solid;
+  border-top-right-radius: 60%;
+  margin: 5px 5px 0 0;
+}
+.yellow {
+  border-bottom-right-radius: 100%;
+  border: rgb(239, 179, 0) 100px solid;
+  border-top-left-radius: 60%;
+  margin: 5px 0 0 5px;
+}
+.flash1 {
+  --neon: #ff0019;
+  --neon-glow: #d30302;
+  border: var(--neon) 100px solid;
+
+  box-shadow: 0 0 50px var(--neon-glow), inset 0 0 50px var(--neon-glow);
+
+  --neon-glow: color(display-p3 1 0 0);
+}
+.flash2 {
+  --neon: #0a02ff;
+  --neon-glow: #4003e6;
+  border: var(--neon) 100px solid;
+
+  box-shadow: 0 0 50px var(--neon-glow), inset 0 0 50px var(--neon-glow);
+
+  --neon-glow: color(display-p3 0 0 1);
+}
+.flash3 {
+  --neon: #008d31;
+  --neon-glow: #02c435;
+  border: var(--neon) 100px solid;
+
+  box-shadow: 0 0 50px var(--neon-glow), inset 0 0 50px var(--neon-glow);
+
+  --neon-glow: color(display-p3 0 1 0);
+}
+.flash4 {
+  --neon: #ffdb4e;
+  --neon-glow: #b48505;
+  border: var(--neon) 100px solid;
+
+  box-shadow: 0 0 50px var(--neon-glow), inset 0 0 50px var(--neon-glow);
+
+  --neon-glow: color(display-p3 1 1 0);
+}
