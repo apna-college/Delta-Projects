@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #eff3ff;
+}
+
+.container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 350px;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    background: radial-gradient(circle at 50% 0%, rgb(56, 0, 0) 41%, #ffffff 36%);
+    padding: 30px 20px;
+    /* border: 2px solid black; */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.card img{
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 50px auto;
+    margin-block-end: 25px;
+}
+
+.hp{
+    width: 80px;
+    background-color: white;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.name{
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.types{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.hp span,
+.types span{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats p{
+    color: #404060;
+}
+
+button{
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: white;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

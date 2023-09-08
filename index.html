@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>pokemon card generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <p class="hp">
+                <span>HP</span>
+                80
+            </p>
+            <img id="img" src="Demo img.svg" alt="">
+            <h2 class="name">Geotude</h2>
+            <div class="types">
+                <span class="type">type 1</span>
+                <span class="type">type 2</span>
+            </div>
+            <div class="stats">
+                <div>
+                    <h3 class="attack-stat">60</h3>
+                    <p>Attack</p>
+                </div>
+                <div>
+                    <h3 class="defence-stat">60</h3>
+                    <p>Defence</p>
+                </div>
+                <div>
+                    <h3 class="speed-stat">60</h3>
+                    <p>Speed</p>
+                </div>
+            </div>
+        </div>
+        <button id="btn">Generate</button>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
