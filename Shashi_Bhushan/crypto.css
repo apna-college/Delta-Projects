@@ -1,0 +1,99 @@
+body {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    border: solid green 3px;
+    text-align: center;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+input {
+    /* position: relative; */
+    margin-top: 20px;
+    border: solid orangered 2px;
+    height: 20px;
+    width: 30%;
+    left: 35%;
+    right: 35%;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 20px;
+    border: solid orangered 2px;
+    height: 40px;
+    width: 7%;
+    left: 46%;
+    right: 46%;
+    padding: 5px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: aqua;
+}
+.crypto-details {
+    position: relative;
+    height: 300px;
+    width: 55%;
+    border: solid rgb(0, 0, 0) 3px;
+    margin-left: 40%;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 8px 8px 2px 1px rgba(39, 39, 41, 0.479);
+    overflow: auto;
+}
+.Clear {
+    height: 40px;
+    position: sticky;
+    width: 100px;+
+    margin-left: 605px;
+    margin-top: 80px;
+    background-color: aquamarine;
+}
+.crypto-details:hover {
+    box-shadow: 8px 8px 2px 1px rgb(39, 39, 41);
+} 
+.crypto-names {
+    position: relative;
+    height: 300px;
+    width: 35%;
+    border: solid rgb(0, 0, 0) 3px;
+    bottom: 314px;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 25px;
+    box-shadow:8px 8px 2px 1px rgba(39, 39, 41, 0.479);
+}
+.crypto-names:hover {
+    box-shadow: 8px 8px 2px 0.2px rgb(39, 39, 41);
+}
+.crypto-names-list {
+    text-align: left;
+    font-size: 18px;
+}
+
+.result {
+    text-align: left;
+    font-size: 18px;
+}
+.footer {
+    position: relative;
+    bottom: 250px;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: goldenrod;
+}
