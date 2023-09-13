@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="./assets/pokeballIcon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="backgroundArtifacts">
+        <div class="artifacts" id="art1"></div>
+        <div class="artifacts" id="art2"></div>
+        <div class="artifacts" id="art3"></div>
+        <div class="artifacts" id="art4"></div>
+        <div class="artifacts" id="art5"></div>
+    </div>
+    <div id="backgroundContainer">
+        <div class="elements topHorizontal leftVertical" id="topLeft"><img src="./assets/pokeballIcon.png" alt="pokeball"></div>
+        <div class="elements topHorizontal middleVertical" id="top">
+            <div>Pokédex</div>
+        </div>
+        <div class="elements topHorizontal rightVertical" id="topRight">
+            <a href="https://github.com/Templight41" id="githubContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+        </div>
+        <div class="elements middleHorizontal leftVertical" id="left"></div>
+        <div class="elements middleHorizontal middleVertical" id="middle">
+            <div id="searchContainer">
+                <form id="form" action="">
+                    <div id="searchBar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search" style="height: 22px;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        <input type="text" placeholder="Search Pokemon" id="search">
+                    </div>
+                    <div id="searchResults">
+
+                    </div>
+                </form>
+            </div>
+            <div id="nameInfoContainer">
+                <div id="miniColorLineOnName"></div>
+                <div id="nameInfo">
+                    <div id="name"></div>
+                    <div id="info">TYPE: <span id="type"></span> <br> EVOLUTION: <span id="evolutionNum"></span></div>
+                </div>
+            </div>
+            <button id="nextEvolution"><p>See Next Evolution</p></button>
+            <div id="details">
+                <div class="detailsElements">
+                    <p>HP :</p>
+                    <p>ATTACK :</p>
+                    <p>DEFENSE :</p>
+                    <p>SPEED :</p>
+                    <p>SPECIAL DEFENSE :</p>
+                    <p>SPECIAL ATTACK :</p>
+                </div>
+                <div class="detailsElements" style="align-items: center;">
+                    <p id="HPVal"></p>
+                    <p id="atkVal"></p>
+                    <p id="defVal"></p>
+                    <p id="spdVal"></p>
+                    <p id="sDefVal"></p>
+                    <p id="sAtkVal"></p>
+                </div>
+                <div class="detailsElements" id="barEnclosure">
+                    <div class="barContainer">
+                        <div class="bar" id="HPBar"></div>
+                    </div>
+                    <div class="barContainer">
+                        <div class="bar" id="atkBar"></div>
+                    </div>
+                    <div class="barContainer">
+                        <div class="bar" id="defBar"></div>
+                    </div>
+                    <div class="barContainer">
+                        <div class="bar" id="spdBar"></div>
+                    </div>
+                    <div class="barContainer">
+                        <div class="bar" id="sDefBar"></div>
+                    </div>
+                    <div class="barContainer">
+                        <div class="bar" id="sAtkBar"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="infoContainer">
+                <div id="miniColorLineOnInfo"></div>
+                <div id="mainInfo">
+                    <div></div>
+                    <p>Strengths: <span id="strengths" class="mainInfoElements"></span></p>
+                    <p>Weakness: <span id="weakness" class="mainInfoElements"></span></p>
+                    <p>Resistant: <span id="resistant" class="mainInfoElements"></span></p>
+                    <p>Vulnerable: <span id="vulnerable" class="mainInfoElements"></span></p>
+                    <div></div>
+                </div>
+            </div>
+            <img src="./assets/transparent.png" alt="circle" id="pokemonHolder">
+            <img src="./assets/transparent.png" alt="pokemon" id="pokemonImg">
+        </div>
+        <div class="elements middleHorizontal rightVertical" id="right"></div>
+        <div class="elements bottomHorizontal leftVertical" id="bottomLeft"></div>
+        <div class="elements bottomHorizontal middleVertical" id="bottom"></div>
+        <div class="elements bottomHorizontal rightVertical" id="bottomRight"></div>
+        <!-- <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png" alt="pokemon" style="height: 400px; width: 400px;"> -->
+        <!-- <button>picture</button> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
