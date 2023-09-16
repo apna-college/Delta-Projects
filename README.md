@@ -1,11 +1,29 @@
-# Delta-Projects
-All Delta students can create a PR to this repo to merge their projects.
 
-## How to add your project in this repository?
-1. Fork this repository.
-2. Add your project in a folder with your First & Last Name. <br>
-   Eg - "Rahul Kumar" is the folder name. And this folder should contain all project related files.<br>
-   Make sure to create your own README.md in the project that contains a brief description about your project.
-4. Create a PR to merge your project to the repository.
+# CLOCK
+
+In this project, I created a clock using `HTML` `CSS` `JAVASCRIPT`.
 
 
+## Authors
+
+- [@aanshuyadavv](https://github.com/aanshuyadavv)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at https://www.instagram.com/aanshuyadavv/
+
+
+## 🚀 About Me
+I'm a frontend developer...
+
+
+# Hi, I'm Anshu Yadav! 👋
+
+
+## Other Common Github Profile Sections
+👩‍💻 I'm currently working on my speaking skills.
+
+🧠 I'm currently learning full stack development.
+
+⚡️ The name of my college is `Hansraj` and the name of my father is `Hansraj`.
