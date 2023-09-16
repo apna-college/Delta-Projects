@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(320deg, rgba(0, 140, 255, 0.678), rgba(128, 0, 128, 0.308));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    position: relative;
+    height: 70vh;
+    width: 70vh;
+    margin: auto;
+    background-size: cover;
+    background-image: url(clock.png);
+    background-repeat: no-repeat;
+}
+.hr ,.min ,.sec {
+    position: absolute;
+    transform-origin: bottom;
+}
+.hr {
+    background-color: black;
+    height: 24%;
+    top: 26%;
+    width: 2%;
+    position: relative;
+    left: 49.6%;
+}
+
+.min {
+    background-color: black;
+    height: 29%;
+    top: -3%;
+    width: 1.3%;
+    position: relative;
+    left: 49.7%;
+} 
+
+.sec {
+    background-color: black;
+    width: 1%;
+    height: 37%;
+    top: -40%;
+    position: relative;
+    left: 49.8%;
+}
