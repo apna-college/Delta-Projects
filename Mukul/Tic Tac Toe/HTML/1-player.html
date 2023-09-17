@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="../Images/Tic Tac Toe.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/Player-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="head flex">
+        <div class="tic-tac">
+          <img src="../Images/cross.svg" alt="" width="50rem">
+          <img src="../Images/circle.svg" alt="" width="50rem">
+        </div>
+        <div class="turn case flex">
+          <img src="../Images/circle-turn.svg" alt="" class="player-turn" width="50rem">
+          <span>Turn</span>
+        </div>
+        <div class="restart case" id="restart">
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+      </div>
+      <div class="line1 flex">
+        <div class="box case" id="11"></div>
+        <div class="box case" id="12"></div>
+        <div class="box case" id="13"></div>
+      </div>
+      <div class="line2 flex">
+        <div class="box case" id="21"></div>
+        <div class="box case" id="22"></div>
+        <div class="box case" id="23"></div>
+      </div>
+      <div class="line3 flex">
+        <div class="box case" id="31"></div>
+        <div class="box case" id="32"></div>
+        <div class="box case" id="33"></div>
+      </div>
+      <div class="foot flex">
+        <div class="player-1 flex case" style="padding-inline: 3rem;">
+          <p>X(You)</p>
+          <p><b id="player1-points">0</b></p>
+        </div>
+        <div class="ties flex case">
+          <p>Ties</p>
+          <p><b id="ties-points">0</b></p>
+        </div>
+        <div class="player-2 flex case">
+          <p>O(CPU)</p>
+          <p><b id="player2-points">0</b></p>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/1-player-app.js"></script>
+  </body>
+</html>
