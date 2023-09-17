@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: #192A33;
+}
+.main {
+    margin-block: 5rem;
+    margin-inline: auto;
+    width: 40%;
+    overflow: hidden;
+}
+.game {
+    display: flex;
+    justify-content: center;
+}
+.game-img {
+    margin: 0.5rem;
+    width: 4rem;
+}
+.box {
+    border-radius: 1%;
+    width: 98%;
+    background-color: #1F3641;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px #132027;
+}
+.box p {
+    margin-block: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+}
+.choice {
+    display: flex;
+    gap: 5px;
+}
+.choice:hover {
+    cursor: pointer;
+}
+.choice1, .choice2 {
+    background-color: #192A33;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+}
+.choice1 {
+    transition: all 1s ease-in-out;
+    margin-left: 2%;
+}
+.choice2 {
+    transition: all 1s ease-in-out;
+    margin-right: 2%;
+}
+.white {
+    background-color: rgb(211, 205, 205);
+}
+.cpu, .player {
+    width: 98%;
+    margin-block: 1rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5%;
+}
+.cpu:hover, .player:hover {
+    cursor: pointer;
+}
+.cpu {
+    background-color: #F2B137;
+    box-shadow: 5px 5px 1px #cb952e;
+}
+.player {
+    background-color: #31C3BD;
+    box-shadow: 5px 5px 1px #24928e;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

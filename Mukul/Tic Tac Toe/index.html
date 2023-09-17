@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="../Images/Tic Tac Toe.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="game">
+            <img src="../Images/cross.svg" alt="cross" class="game-img">
+            <img src="../Images/circle.svg" alt="circle" class="game-img">
+        </div>
+        <div class="box">
+            <p>Pick Player 1's Mark</p>
+            <div class="choice">
+                <div class="choice1 white">
+                    <img src="../Images/cross.svg" alt="cross" class="game-img">
+                </div>
+                <div class="choice2">
+                    <img src="../Images/circle.svg" alt="circle" class="game-img">
+                </div>
+            </div>
+            <p class="first">Remember: X goes first</p>
+        </div>
+        <div class="cpu">
+            <a href="../HTML/1-player.html" class="player-1" id="1">
+                <p>NEW GAME(VS CPU)</p>
+            </a>
+        </div>
+        <div class="player">
+            <a href="../HTML/2-Player.html" class="player-2">
+                <p>NEW GAME(VS PLAYER)</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="../JS/app.js"></script>
+</body>
+</html>

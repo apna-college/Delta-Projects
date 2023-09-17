@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.flex {
+    display: flex;
+}
+body {
+    height: 100vh;
+    background-color: #192A33;
+}
+.main {
+    margin: auto;
+    width: 35rem;
+    height: 46rem;
+}
+.head {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+}
+.cross, .circle {
+    margin: 1rem;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+p {
+    text-align: center;
+}
+.case {
+    margin: 1rem;
+    background-color: #1F3641;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20%;
+}
+.height {
+    height: auto;
+}
+.turn {
+    padding: 1rem;
+    height: auto;
+    border-radius: 8%;
+    color: #778D98;
+}
+.player-turn {
+    margin-right: 1rem;
+}
+span {
+    font-size: 2.5rem;
+}
+.foot {
+    justify-content: space-between;
+}
+.player-1, .player-2, .ties {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8%;
+    font-size: 1rem;
+}
+.player-1 {
+    background-color: #31C3BD;
+}
+.ties {
+    padding-inline: 4rem;
+    background-color: #A8BFC9;
+}
+.player-2 {
+    background-color: #F2B137;
+}
+.restart {
+    background-color: #A8BFC9;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 10%;
+}
