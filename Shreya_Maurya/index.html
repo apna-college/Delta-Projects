@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:wght@200;300;400;500&family=Moon+Dance&family=Poppins:wght@200&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="nav container flex">
+            <div class="logo">
+                <a href="#">
+                    <img onclick="reload()" class="logo_img" src="assets/logo.png" alt="News pg logo">
+                </a>
+            </div>
+            <div class="options ">
+                <ul class="flex">
+                    <li class="nav_link escape">Chess</li>
+                    <li class="nav_link escape">India</li>
+                    <li class="nav_link remove">Finance</li>
+                    <li class="nav_link withdraw">Technology</li>
+                </ul>
+            </div>
+            <div class="search flex">
+                <input type="text" class="news_input" name="news" placeholder="e.g. Humanity">
+                <button class="search_btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="card_container container flex">
+                     
+        </div>
+    </main>
+
+    <template id="template_card">
+        <div class="card">
+            <div class="image">
+                <img class="new_image" width="300px"  max-height="200px" src="https://via.placeholder.com/300x200" alt="news image">
+            </div>
+            <div class="content">
+                <h3 class="news_title" id="news_title">Title is present</h3>
+                <h6 class="news_date" id="news_date">top news 32/4/2020</h6>
+                <p class="news_details" id="news_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum sapiente sequi, aspernatur odio neque quidem omnis illum necessitatibus? Laudantium perferendis eum quaerat eaque explicabo magnam quam esse qui quis.</p>
+            </div>
+        </div> 
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
