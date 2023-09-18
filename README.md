@@ -1,11 +1,30 @@
-# Delta-Projects
-All Delta students can create a PR to this repo to merge their projects.
+# -MyWeatherapp
+## Weather API Project
 
-## How to add your project in this repository?
-1. Fork this repository.
-2. Add your project in a folder with your First & Last Name. <br>
-   Eg - "Rahul Kumar" is the folder name. And this folder should contain all project related files.<br>
-   Make sure to create your own README.md in the project that contains a brief description about your project.
-4. Create a PR to merge your project to the repository.
+### Description
+This pull request introduces a Weather API project that provides real-time weather information for a given location. The project is built using [html,javascript,css], and it offers a range of functionalities including:
+
+- **Current Weather**: Retrieve current weather conditions such as temperature, humidity, wind speed, and more for a specified location.
+
+
+- **API Key Authentication**: Ensure secure access to the API by implementing API key authentication.
+
+
+
+### How to Use
+To use this Weather API, follow these steps:
+
+1. **Obtain an API Key**: Sign up on our platform and obtain an API key for access.
+2. **Make API Requests**: Use the API key to make requests to the following endpoints:
+   - `/current`: Get current weather conditions.
+3. **Response Format**: Explain the format of the API responses and any optional parameters.
+
+
+
+
+
+
+Please review and merge this PR at your earliest convenience. Feel free to reach out if you have any questions or need further clarification on any aspect of this project.
+
 
 
