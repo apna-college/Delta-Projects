@@ -1,5 +1,5 @@
-# Alexa Weather Station (Weather-App) ⛈️
-- I have created a weather-app using OpenWeatherMap API (https://openweathermap.org/api) for Alexa Developers SRM Recruitment round which allows users to check the weather for a specific location.
+# Pulkit's Weather Station (Weather-App) ⛈️
+- I have created a weather-app using OpenWeatherMap API (https://openweathermap.org/api) which allows users to check the weather for a specific location.
 - Web Link -> https://pulkitshringi02.github.io/weather-app/
 ###  My weather App is filled with lot of features such as :-
 - The project has a user-friendly and visually appealing interface.
@@ -20,4 +20,5 @@
 - Loading spinners are displayed while data is being fetched from the API to provide feedback to the user.
 ### Error Handling:
 - There are error handling mechanisms in place to handle cases where the city name is not valid or there are issues with fetching data from the API.
-
+***
+Linkedin -> https://www.linkedin.com/in/pulkitshringi/
