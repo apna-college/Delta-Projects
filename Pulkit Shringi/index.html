@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+    <title>Weather App</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel =stylesheet href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Pulkit's Weather Station <img src="./images//icon.png"><br><button class="celcius">Celsius (°C)</button> &nbsp;&nbsp; <button class="fahren">Fahrenheit (°F)</button></h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3 class="bgheadingcolor">Enter a City Name</h3>
+            <input class="city-input" type="text" placeholder="E.g. Chennai, Mumbai, Kota">
+            <button class="search-btn">Search &nbsp;  <i class=""></i></button>
+            <div class="separator"></div>
+            <button class="location-btn">Use Current Location &nbsp;  <i class=""></i></button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>City</h2>
+                    <h4>Temperature : ____ °C</h4>
+                    <h4>Wind: ____ M/S</h4>
+                    <h4>Humidity: ____ %</h4>
+                </div>
+                <div class="icon">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h4>Moderate Rain</h4>
+                </div>
+            </div> 
+            <div class="days-forecast">
+                <h2 class="bgheadingcolor">5-Day Forecast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h3>( ______ )</h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h4>Temperature :___°C</h4>
+                    <h4>Wind: ___ M/S</h4>
+                    <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>( ______ )</h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h4>Temperature :___°C</h4>
+                    <h4>Wind: ___ M/S</h4>
+                    <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>( ______ )</h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h4>Temperature :___°C</h4>
+                    <h4>Wind: ___ M/S</h4>
+                    <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>( ______ )</h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h4>Temperature :___°C</h4>
+                    <h4>Wind: ___ M/S</h4>
+                    <h4>Humidity: ___%</h4>
+                    </li>
+                    <li class="card">
+                        <h3>( ______ )</h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                    <h4>Temperature :___°C</h4>
+                    <h4>Wind: ___ M/S</h4>
+                    <h4>Humidity: ___%</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="credits">
+    <hr><br>
+<a class="bgheadingcolor" href="https://www.linkedin.com/in/pulkitshringi/" target=”_blank”><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Pulkit Shringi&nbsp;&nbsp;<i class="fa-sharp fa-regular fa-heart"></i></a>
+<br>
+<a href="https://github.com/pulkitshringi02/weather-app" target="_blank">
+<img src="./images/github.png">
+</a>
+</div>
+    <script src="app.js" defer></script>
+</body>
+</html>

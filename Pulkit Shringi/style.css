@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing:border-box;
+    font-family : 'Open Sans' , sans-serif;
+}
+body{
+    overflow: auto;
+     background: #E3F2FD;
+     /* background-image: url('./images/plain.jpeg');  */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+h1{
+    color:#fff;
+    padding:18px 0;
+    text-align: center;
+    font-size:1.75rem;
+    background:#5372f099;
+}
+.container{
+    display:flex;
+    gap:35px;
+    padding:30px;
+}
+.weather-input{
+    width:550px;
+}
+.weather-input h3{
+    color:white;
+    text-align:center;
+}
+.weather-input input{
+    padding:0 15px;
+    width:100%;
+    height:46px;
+    outline:none;
+    background-color:#ffffffc6;
+    margin : 10px 0 20px 0;
+    font-size:1.07rem;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+.weather-data{
+    width:100%;
+}
+.weather-input button{
+    width:100%;
+    padding: 10px 0;
+    border-radius:4px;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    color:#fff;
+    background:#5372f0f1;
+}
+.weather-input .location-btn {
+    background: #6C757D;
+}
+.weather-input .separator {
+    position:relative;
+    height:1px;
+    width:100%;
+    margin:25px 0;
+    background:#bbb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index: -999999;
+}
+.current-weather{
+    color:#fff;
+    background-color:#5372F0c1;
+    border-radius:5px;
+    padding:20px 70px 20px 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.days-forecast h2{
+    text-align:center;
+}
+.current-weather h2{
+    font-size:1.7rem;
+}
+.weather-data h4{
+    margin-top:12px;
+    font-size:1rem;
+    font-weight:500;
+}
+.current-weather .icon{
+    text-align:center;
+}
+.current-weather .icon img{
+    max-width:120px;
+    margin-top: -15px;
+}
+.current-weather .icon h4{
+    margin-top:-10px;
+    text-transform:capitalize;
+}
+.current-weather h2{
+    text-transform:capitalize;
+}
+.days-forecast h2{
+    color:white;
+    font-size: 1.5rem;
+    margin:20px 0;
+}
+.weather-cards{
+    display:flex;
+    gap:20px;
+}
+.weather-cards .card{
+    list-style:none;
+    color: #fff;
+    background:#6C757Dc1;
+    padding:18px 16px;
+    border-radius:5px;
+    width: calc(100% / 5);
+}
+.weather-cards .card img{
+    max-width:70px;
+    margin: 5px 0 -12px 0;
+}
+@media (max-width: 1400px){
+    .weather-data .current-weather{
+        padding:20px;
+    }
+    .weather-cards{
+        flex-wrap:wrap;
+    }
+    .weather-cards .card{
+        width: calc(100% / 4 - 15px);
+    }
+}
+@media (max-width: 1200px){
+    .weather-cards .card{
+        width: calc(100% / 3 - 15px);
+    }
+}
+@media (max-width: 950px){
+    .weather-input {
+        width:450px;
+    }
+    .weather-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 750px){
+    .container{
+        flex-wrap:wrap;
+        padding:15px;
+    }
+    .weather-input{
+        width:100%;
+    }
+}
+h1 button {
+    outline : none;
+    background:none;
+    border:none;
+    font-size:1rem;
+    cursor:pointer;
+    color:black;
+}
+h1 .celcius:hover {
+    color:#C59E01 !important;
+}
+h1 .fahren:hover {
+    color:#C59E01 !important;
+}
+.celcius{
+    color:gold;
+}
+.credits{
+    text-align:center;
+}
+.credits img {
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+    height:30px;
+    width:30px;
+    color:white;
+}
+.credits hr{
+border: black solid 1px;
+}
+.credits a {
+    text-decoration:none;
+    color:white;
+    cursor: pointer;
+}
+.credits a:hover {
+
+    transform: scale(1.1);
+
+}
+h1 img{
+    border-radius:50%;
+    position:relative;
+    top:4px;
+    height:30px;
+    width:30px;
+}
+.current-weather{
+    box-shadow: 4px 3px 6px black;
+    transition:0.2s;
+}
+.current-weather:hover{
+transform:scale(1.02);
+box-shadow: 5px 5px 7px black;
+}
+.card{
+    box-shadow: 3px 3px 3px black;
+    transition:0.2s;
+}
+.card:hover{
+    transform:scale(1.02);
+box-shadow: 5px 5px 5px black;
+}
