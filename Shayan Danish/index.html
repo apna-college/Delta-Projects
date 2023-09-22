@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="titleicon.png">
+    <title>
+        Forecast360° - Your only weather app
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <header>
+        <nav>
+            <div class="name">
+               <h1>Forecast360°</h1>
+            </div>
+            <div class="search-bar">
+                <button>
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </button>
+                <input type="search" name="" id="" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./video (2160p).mp4" type="video/mp4">
+    </video>
+
+    <main>
+        <div class="temp-details">
+            <div class="upper-bound">
+                <div class="temp">--</div>
+                <div class="desc">--</div>
+            </div>
+            
+            <div class="city">--</div>
+            <div class="feelsLike"></div>
+        </div>
+
+        <div class="other-info">
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <td scope="row"><span class="humidity">Humidity: -</span></td>
+                    <td> <span class="pressure">Pressure: -</span></td>
+                    <td><span class="max_temp">Maximum Temperature: -</span></td>
+                    <td><span class="min_temp">Minimum Temperature: -</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="wind_speed">Wind Speed: -</span></td>
+                    <td><span class="wind_deg">Wind Degree: -</span></td>                    
+                    <td><span class="no_of_clouds">Number of Clouds: -</span></td>
+                    <td><span class="country_code">Country Code: -</span></td>
+                  </tr>
+                  </tbody>
+              </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
