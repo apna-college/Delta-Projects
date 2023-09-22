@@ -1,0 +1,153 @@
+nav{
+    /* display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    /* animation: airflow 120s linear infinite; */
+    /* position: sticky; */
+    /* right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; */ 
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    position: fixed; /* Set to fixed instead of sticky */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Position at the left of the viewport */
+    width: 100%;
+    padding: 10px 10px; 
+    z-index: 1000;
+}
+
+main{
+    
+        position: fixed;
+        bottom: 0;
+        /* background: rgba(0, 0, 0, 0.5); */
+        color: black;
+        width: 100%;
+        padding: 20px;
+      
+}
+
+
+
+.name{
+    margin-top: 0.05rem;
+    margin-left: 0rem;
+}
+
+.search-bar{
+    /* margin-top: 2em; */
+    /* margin-right: 2em; */
+    /* margin-bottom: 2em; */
+    display: flex;
+}
+
+input{
+    width: 600px;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    width: 300px;
+
+}
+button{
+
+    background-color: white;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border: 0;
+    padding: 5.5px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+
+/* ---------main------------ */
+.temp-details{
+    height: 400px;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp{
+    display: inline-block;
+}
+.city{
+    display: inline-block;
+    font-size: 50px;
+}
+.symbol{
+    display: inline-block;
+}
+.icon{
+    font-size: 100px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  @media (max-width: 415px){
+    .other-info{
+        overflow-x: auto;/*scroll-bar*/
+    }
+    .table{
+        table-layout: fixed; /*no auto adjusting*/
+        width: 100%; /*parents width k equal*/
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 400px){
+    .other-info{
+        overflow-x: auto;/*scroll-bar*/
+    }
+    .table{
+        table-layout: fixed; /*no auto adjusting*/
+        width: 100%; /*parents width k equal*/
+        font-size: 9px;
+    }
+  }
+
+  @media (max-width: 700px){
+    .search-bar{
+        width: 250px;
+    }
+  }
+  @media (max-width: 540px){
+    .search-bar{
+        width: 220px;
+        margin-right: 15px;
+    }
+  }
+   @media (max-width: 460px){
+    .search-bar{
+        width: 220px;
+    }
+    input[type="search"]{
+        margin-right: 1px;
+
+    }
+  } 
+  @media(max-height: 1024px){
+    .temp-details{
+        margin-bottom: 256px;
+    }
+  }    
+
+
