@@ -7,5 +7,8 @@
    2. CSS
 
 ## Author :
-    Akash Deep
-    Email: ad3500476@gmail.com
+   Akash Deep
+   Email: ad3500476@gmail.com
+
+## Link :
+   url : https://akashdeep023.github.io/Amazon-Clone/
