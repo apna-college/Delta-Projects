@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VocalizeMe</title>
+    <link rel="icon" href="fav.png" type="image/x-icon">
+    <meta property="og:title" content="TempTracker App">
+    <meta property="og:description" content="Experience Cutting-Edge TTS Technology - Your Words, Our Voice">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/128/9100/9100208.png">
+    <meta property="og:image:width" content="100">
+<meta property="og:image:height" content="100">
+    <meta property="og:site_name" content="VocalizeMe">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TTS 626732aca1a6401f8e3df43fb6256d3f -->
+<div class="container-fluid text-dark" style="position: absolute; background-color: rgba(255, 255, 0, 0.897); height:10%; display: none;justify-content:center ; align-items: center;text-align: center;" id="warning" >
+  <h1 class="shake">!! Write Something To SPEAK IT !!</h1>
+</div>
+    <div class="container">
+      <div class="row">
+        <h1>Put Text-to-Speech into action</h1>
+        <p>
+          Type what you want, select a language then click “Speak It” to hear.
+        </p>
+      </div>
+      <div class="row mt-lg-3 mt-4">
+        <div class="col-lg-12">
+          <label for="">Text to speak</label>
+          <textarea
+            spellcheck="false"
+            name=""
+            id="inp"
+            class="w-100 bd"
+            rows="1"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row mt-lg-3 mt-2 align-items-center">
+        <div class="col-lg-4 col-12">
+          <label class="pb-lg-2 pb-1" for="">Languages</label>
+          <select id="select-languages" class="bd w-100">
+            <!-- <option>Select Languages</option> -->
+
+            <option value="en-us">Femail - English</option>
+            <option value="en-ie">Man - English</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-12">
+          <label class="pb-lg-2 pb-1 mt-3 mt-lg-0" for="">Speed</label>
+          <select id="speed" class="bd w-100">
+            <option value="-10">-10 (slowest speed)</option>
+            <option value="-9">-9</option>
+            <option value="-8">-8</option>
+            <option value="-7">-7</option>
+            <option value="-6">-6</option>
+            <option value="-5">-5</option>
+            <option value="-4">-4</option>
+            <option value="-3">-3</option>
+            <option value="-2">-2</option>
+            <option value="-1">-1</option>
+            <option value="0" selected>Neutral</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10 (fastest speed)</option>
+          </select>
+        </div>
+        <div class="col-lg-2 col-6 mt-5 mt-lg-0">
+          <button
+            id="btn"
+            class="w-100 rounded py-2 bg-dark text-white d-flex justify-content-center align-items-center"
+          >
+            <span id="button-text">SPEAK IT</span>
+            <span
+              class="material-symbols-outlined anim"
+              id="loading-icon"
+              style="display: none"
+            >
+              sync
+            </span>
+            <span
+              class="material-symbols-outlined anim2"
+              id="speaking-icon"
+              style="display: none"
+            >
+              volume_up
+            </span>
+          </button>
+        </div>
+        <div class="col-lg-2 col-6 mt-5 mt-lg-0">
+          <a href="" download id="download" class="w-100">
+            <button
+              class="w-100 bg-dark text-white py-2 rounded d-flex justify-content-evenly align-items-center"
+            >
+              Download
+              <span class="material-symbols-outlined text-white">
+                download
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <audio autoplay src=" " id="play" class="d-none">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <!-- <input type="text" name="" id="inp" /> -->
+
+    <!-- <select id="select-languages">
+      <option>Select Languages</option>
+
+      <option value="en-us">Femail English (Us)</option>
+      <option value="en-ie">Man In English</option>
+    </select> -->
+    <!-- <select id="speed">
+      <option value="-10">-10 (slowest speed)</option>
+      <option value="-9">-9</option>
+      <option value="-8">-8</option>
+      <option value="-7">-7</option>
+      <option value="-6">-6</option>
+      <option value="-5">-5</option>
+      <option value="-4">-4</option>
+      <option value="-3">-3</option>
+      <option value="-2">-2</option>
+      <option value="-1">-1</option>
+      <option value="0" selected>0 (neutral speed)</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10 (fastest speed)</option>
+    </select> -->
+
+    <!-- <button id="btn">send</button> -->
+    <!-- <audio controls src=" " id="play">
+      Your browser does not support the audio element.
+    </audio> -->
+
+    <!-- <a href="" download id="download">
+      <button>Download Audio</button>
+    </a> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
