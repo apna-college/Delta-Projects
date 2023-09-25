@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.bd {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ 
+select {
+    /* appearance: none; */
+    outline: none;
+    background-color: transparent;
+    color: white;
+    
+}
+option {
+    background-color: black;
+}
+
+
+button {
+    border: none;
+}
+.anim{
+    animation: spin 1.3s linear infinite;
+}
+@keyframes spin {
+    from{
+        transform: rotate(360deg);
+    }
+    }
+.shake{
+    position: absolute;
+    
+    margin: auto;
+    transition: position 0.5s linear;
+     animation:   shake 0.5s ease-in-out alternate;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+  } 
+
+  #speaking-icon{
+    animation: fadeInOut 0.7s ease-in-out infinite;
+  }
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  button:focus{
+    outline: none;
+  }
