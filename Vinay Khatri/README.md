@@ -12,6 +12,7 @@ Welcome to WordHub, your go-to online dictionary that not only provides the mean
 - CSS
 - JavaScript
 - [Dictionary API](https://api.dictionaryapi.dev/api/v2/entries/en/digital)
+- [Random Word API](https://random-word-api.herokuapp.com/word)
 
 # Author
 - vinay khatri
