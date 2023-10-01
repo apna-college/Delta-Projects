@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #4a55a2, #5161aa, #586db3, #6179ba, #6a85c2, #718ec7, #7997cc, #81a0d1, #88a8d5, #8fb0d9, #97b7dc, #a0bfe0);
+}
+
+
+.container{
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 30px;
+}
+
+.dict li{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 50px;
+}
+
+
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #4a55a2, #5161aa, #586db3, #6179ba, #6a85c2, #718ec7, #7997cc, #81a0d1, #88a8d5, #8fb0d9, #97b7dc, #a0bfe0);
+    height: 2.5rem;
+    width: 8rem;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+
+section{
+    text-align: center;
+    width: 60%;
+    background-image: linear-gradient(to right, #4a55a2, #5161aa, #586db3, #6179ba, #6a85c2, #718ec7, #7997cc, #81a0d1, #88a8d5, #8fb0d9, #97b7dc, #a0bfe0);
+    border-radius: 40px;
+    padding: 1rem;
+    color:white;
+    transition: all 0.8s linear;
+    box-shadow: 0px 4px 8px black;
+}
+
+section:hover{
+    box-shadow: 0px 12px 16px black; 
+}
+.wod{
+    background-color: white;
+    color: #6a85c2;
+    border-radius: 50px;
+    margin: auto;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: white;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+
+
+
+
