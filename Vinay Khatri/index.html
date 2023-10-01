@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dictionary</h1>
+        <br><br><br>
+        <input type="text" placeholder="type a word">
+        <button>Search
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <br><br>
+        <ul class="dict"></ul>
+        <h3></h3>
+
+        <br><br>
+        <section>
+            <div class="wod">Word of the Day</div>
+            <br>
+            <h2></h2>
+            <ul class="wodL"></ul>
+
+            <br><br>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
