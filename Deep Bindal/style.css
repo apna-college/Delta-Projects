@@ -1,0 +1,71 @@
+.container{
+    margin-top: 40px;
+}
+/* .card-info{
+    text-align: start;
+}
+
+.card-body{
+    display: flex;
+
+}
+.card-body-1{
+    width: 60%;
+}
+.card-body-2{
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+.card-body-2 img{
+    height: 50px;
+    width: 50px;
+    margin: 0 0 20px 10px ;
+}
+.weather-card{
+    background: linear-gradient(135deg, #02fdba, #5b548a);
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.detail-col p{
+    padding: 0;
+    margin: 0;
+}
+.detail-col img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.detail-col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+@media (max-width: 420px){
+    .weather-card{
+        height: 75vh;
+        width: 95vw;
+        border-radius: 10px;
+    }
+    *{
+        overflow: hidden;
+    }
+    .card-body-1{
+        padding: 40px;
+        height: 40%;
+    }
+    .detail-col{
+        width: 33%;
+    }
+    .details{
+        height: 30%;
+    }
+}
+
+.w-card-icon{
+    height: 100px;
+    width: 100px;
+}
