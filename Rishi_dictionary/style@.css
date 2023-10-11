@@ -1,0 +1,38 @@
+body{
+   padding:0 300px;
+    position: fixed;
+    top:80px;
+    overflow-y:auto;
+    background-image: url("library2.jpg");
+    background-size: cover;
+}
+.head{
+    text-transform: capitalize;
+    font-size: 56px;
+    letter-spacing: 4px;
+    position: relative;
+    left:250px;
+    width: 100%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.inpBox{
+    border: 2px solid rgb(51, 210, 227);
+}
+.input-group{
+    width:830px;
+}
+.itemColor{
+background-color: rgb(170 170 170);
+color: #fff;
+}
+.containBox{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+.list{
+    position: relative;
+   margin-top:80px;
+    overflow-y:auto;
+    height: 100vh;
+}
