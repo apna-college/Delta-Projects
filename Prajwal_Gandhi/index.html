@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                    <div class="nav-option">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="./assets/library_icon.png" alt="icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="lib-box">
+                        <div class="box">
+                            <p class="box-p1">Create youe first playlist</p>
+                            <p class="box-p2">It's easy, we'll help you</p>
+                            <button class="badge">Create playlist</button>
+                        </div>
+                        <div class="box">
+                            <p class="box-p1">Let's find some podcasts to follow</p>
+                            <p class="box-p2">We'll keep you updated on new episodes</p>
+                            <button class="badge">Browse podcasts</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="#" class="ind-link">Legal</a>
+                    <a href="#" class="ind-link">Privacy Center</a>
+                    <a href="#" class="ind-link">Privacy Policy</a>
+                    <a href="#" class="ind-link">Cookies</a>
+                    <a href="#" class="ind-link">About Ads</a>
+                    <a href="#" class="ind-link">Accessibility</a>
+                    <a href="#" class="ind-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="" class="hide">
+                    <img src="./assets/forward_icon.png" alt="" class="hide">
+                    <button class="badge nav-item dark-badge" id="btn-install"><i class="fa-regular fa-circle-down"
+                        style="margin-right: 5px;"></i>Install App</button>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge" id="btn-install-hide"><i class="fa-regular fa-circle-down"
+                            style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card left-card" id="card-sz">
+                    <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card left-card" id="card-sz">
+                    <img src="./assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+                <div class="card" id="card-sz">
+                    <img src="./assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+                <div class="card" id="card-sz">
+                    <img src="./assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+                <div class="card" id="card-sz">
+                    <img src="./assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+                <div class="card" id="card-sz">
+                    <img src="./assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card left-card" id="card-sz">
+                    <img src="./assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title "id="card-title-sz">Top Songs - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+                <div class="card left-card" id="card-sz">
+                    <img src="./assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top Songs - India</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+                <div class="card left-card" id="card-sz">
+                    <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title" id="card-title-sz">Top 50 - Global</p>
+                    <p class="card-info" id="card-info-sz">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player" id="music-player-hide">
+            <div class="album" id="album-width-inc">
+                <img src="./Homework Assets/album_picture.jpeg" alt="" class="album-img">
+                <div class="album-info">
+                    <h5>Daylight</h5>
+                    <p>David Kushner</p>
+                </div>
+                <div class="album-icons">
+                    <img src="./Homework Assets/album_icon1.png" alt="" class="album-icon" style="width: 25px; height: 25px;">
+                    <img src="./Homework Assets/album_icon2.png" alt="" class="album-icon" style="width: 30px; height: 30px; margin-top: 1rem;">
+                </div>
+            </div>
+            <div class="player" id="player-width-dec">
+                <div class="player-controls" id="player-control-hide">
+                    <img src="./assets/player_icon1.png" alt="" class="player-control-icons">
+                    <img src="./assets/player_icon2.png" alt="" class="player-control-icons">
+                    <img src="./assets/player_icon3.png" alt="" class="player-control-icons" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" alt="" class="player-control-icons">
+                    <img src="./assets/player_icon5.png" alt="" class="player-control-icons">
+                </div>
+                <div class="playback-bar" id="playback-bar-hide">
+                    <span class="curr-time">00.00</span>
+                    <input type="range" name="" id="" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3.33</span>
+                </div>
+            </div>
+            <div class="controls" id="controls-width-inc">
+                <img src="./Homework Assets/controls_icon1.png" alt="" class="control-icons" style="width: 2rem; height: 3rem;" id="control-icon-1">
+                <img src="./Homework Assets/controls_icon2.png" alt="" class="control-icons" id="control-icon-0">
+                <img src="./Homework Assets/controls_icon3.png" alt="" class="control-icons" id="control-icon-2">
+                <img src="./Homework Assets/controls_icon4.png" alt="" class="control-icons" style="width: 2rem; height: 1.5rem;">
+                <img src="./Homework Assets/controls_icon5.png" alt="" class="control-icons" style="width: 2rem; height: 3rem;" id="vol-img-hide">
+                <input type="range" name="" id="vol-range-hide" class="vol-rnge" step="1" min="0" max="100">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
