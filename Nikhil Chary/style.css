@@ -1,0 +1,54 @@
+/* body {
+    background-color: rgba(228, 228, 228, 0.884);
+} */
+#weatherFor{
+    font-weight: 450;
+}
+#howToUsePara{
+    padding: 0 5px 0 5px;
+}
+#howToUse{
+    padding-right: 200px;
+}
+
+
+/* Style for the entire "About This App" section */
+.about-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  #imgNavbar{
+    height: 40px;
+    width: 36px;
+  }
+  
+  /* Style for individual paragraphs */
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for headers */
+  .about-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+/* CSS for the specific LinkedIn link */
+#linkedin-link {
+  color: #0077B5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#linkedin-link:hover {
+  color: #004471;
+}
+
+
+ 
