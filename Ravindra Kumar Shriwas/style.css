@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Patua One', cursive;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/header-image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    position: relative;
+    
+}
+
+.logo{
+    width: 148px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    
+}
+
+nav select{
+    background-color: red;
+    width: 125px;
+    height: 32px;
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+
+.sign-in{
+    background-color: red;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 4px 16px;
+    width: 85px;
+    height: 32px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.header-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 600px;
+    
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-signup{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/* featurs */
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Frequently asked questions */
+
+
+.faq{
+    padding: 10px 13%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.faq h2{
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ,padding 0.5s ;
+}
+
+.accordian input[type="radio"]:checked+label+.content{
+ max-height: 600px;
+ padding: 30px 20px;
+
+}
+
+.accordian input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+
+.faq small{
+    font-size: 13px;
+
+}
+
+
+/* footer design  */
+
+footer{
+    margin-top: 15px;
+}
+
+
+
+.foot-panel2{
+    display: flex;
+    justify-content: space-evenly;
+    
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3{
+    background-color: black;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.logo{
+    background-image: url("/images/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pages{
+    
+    padding-top:  25px; 
+
+}
+
+.copyright{
+    
+    padding-top: 5px;
+}
