@@ -1,0 +1,130 @@
+.btn-color {
+    background-color: #ff4949;
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-size: 12px;
+    height: 23px;
+
+}
+
+.offer-design {
+
+    color: #ffffff;
+    background-color: #ff0000;
+    height: 44px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.account-icon {
+    margin-right: 0.5rem;
+}
+
+.icon-div {
+    /* display: inline; */
+    margin-right: 5rem;
+}
+
+/* 
+width
+540px 
+height 90px */
+.design {
+    width: 540px;
+    height: 90px;
+    background-color: #ff4949;
+    color: #ffffff;
+    border-radius: 1rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-size {
+    height: 2rem;
+    width: 30px;
+}
+
+.start {
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.start:hover {
+    background-color: rgb(134, 123, 123);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-side{
+    width: 600px;
+    height: 100vh;
+    opacity: 0.8;
+    background-color: #ff0000;
+    color: whitesmoke;
+    font-size: 90px;
+}
+
+.right-side{
+    background-color: rgba(220, 225, 227, 0.773);
+   
+    height: 100vh;
+    width: 1000px;
+}
+
+.form-box{
+    margin-top: 80px;
+    margin-left: 180px;
+    width: 450px;
+    height: 350px;
+    border-radius: 2rem;
+    opacity: 0.8;
+    background-color: #fff;
+}
+.form-box h1{
+    text-align: center;
+    color: #ff0000;
+}
+
+.input-group{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.input-field{
+    margin-top: 5px;
+}
+
+.btn-field{
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+.btn-field button{
+   
+    background-color:#ff0000;
+    color: #ffffff;
+    
+}
+
+
+
+@media(max-width:420px){
+    .trial{
+        width: 50%;
+    }
+    
+}
+
+@media(max-width:768px){
+    .trial{
+        width: 100%;
+    }
+}
+
