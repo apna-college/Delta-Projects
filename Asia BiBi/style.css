@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+h1 {
+    text-shadow: 2px 2px 4px crimson;
+}
+
+body{
+    height: 100vh;  
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+#game{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+button,input{
+    border: 1px solid crimson;
+    background-color: white;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+label{
+    font-size: 18px;
+    font-weight: 900;
+}
+button:hover{
+    background-color: crimson;
+    color: white;
+
+}
+button:active{
+    transform: scale(0.89);
+}
+#p{
+    font-size: 20px;
+}
+
+.circle{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: crimson;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:win 2s ease-in 0s infinite alternate; 
+}
+
+#win img{
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 50%;
+}
+.box {
+    display: flex;
+    position: absolute;
+    top: -300px;
+    transition: all 0.7s linear;
+
+}
+
+.box.active {
+    top: 300px;
+   
+}
+
+
+@keyframes win{
+    10% {
+    background-color: aqua;
+    }
+    20% {
+    background-color: yellow;
+    }
+    30%{
+        background-color: tomato;
+    }
+    40%{
+        background-color: rgb(224, 64, 211);
+    }
+    50%{
+        background-color:slateblue;
+    }
+    60%{
+        background-color: peru;
+    }
+    70%{
+        background-color: rgb(179, 245, 191);
+    }
+    80%{
+        background-color: darkblue;
+    }
+    90%{
+        background-color: brown;
+    }
+    100%{
+        background-color: coral;
+    }
+}
+
