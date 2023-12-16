@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Simon Game</title>
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <audio id="audioPlayer" src="" type="audio/mp3"></audio>
+    <div class="contain">
+        <h2 id="start">Press Start button or any key to start the game.</h2>
+        <button type="button" class="start-btn" onclick="startGame()">Start</button>
+    </div>
+    
+
+    <div class="btn-container">
+        <div class="line-1">
+            <div class="btn red" type="button" id="red"></div>
+            <div class="btn green" type="button" id="green"></div>
+        </div>
+        <div class="line-2">
+            <div class="btn yellow" type="button" id="yellow"></div>
+            <div class="btn purple" type="button" id="purple"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
