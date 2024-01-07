@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="weather-2021-12-07.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Weather App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" spellcheck="false">
+          <button id ="search" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <h1 class="my-4 text-center" id="name"></h1>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Temperature</h4>
+          </div>
+          <div class="card-body">
+            <img src = "" alt="" id="conditionIcon">
+            <h1 id="temp" class="card-title pricing-card-title"><small class="text-body-secondary fw-light">°C</small></h1>
+            <h6 id="conditionText"></h6>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Current Temperature: <span id="temp_c"></span><li>
+              <li>Feels like <span id="feelslike_c"></span></li>
+              <li>Max. Temperature: <span id="maxtemp_c"></span></li>
+              <li>Min. Temperature: <span id="mintemp_c"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Other Info</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li id="humidity"><b>Humidity:</b></li>
+              <li id="pptn"><b>Precipitation:</b></li>
+              <li id="ws"><b>Wind Speed:</b></li>
+              <li id="wd"><b>Wind Direction:</b></li>
+              <li id="uv"><b>UV:</b></li>
+              <li id="aqi"><b>AQI:</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Sun & Moon</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li id="sunr"><b>Sunrise:</b></li>
+              <li id="suns"><b>Sunset:</b></li>
+              <li id="moonr"><b>Moonrise:</b></li>
+              <li id="moons"><b>Moonset:</b></li>
+              <li id="moonp"><b>Moon Phase:</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="display-6 text-center mb-4">Weather of Famous Cities</h2>
+
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 14%;"></th>
+            <th style="width: 13.2%;">Condition</th>
+            <th style="width: 13.2%;">Max.Temp</th>
+            <th style="width: 13.2%;">Min.Temp</th>
+            <th style="width: 13.2%;">AQI</th>
+            <th style="width: 13.2%;">Humidity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">New York</th>
+            <td id="nyCondition"></td>
+            <td id="nyMaxTemp"></td>
+            <td id="nyMinTemp"></td>
+            <td id="nyAQI"></td>
+            <td id="nyHum"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">London</th>
+            <td id="lonCondition"></td>
+            <td id="lonMaxTemp"></td>
+            <td id="lonMinTemp"></td>
+            <td id="lonAQI"></td>
+            <td id="lonHum"></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Paris</th>
+            <td id="pCondition"></td>
+            <td id="pMaxTemp"></td>
+            <td id="pMinTemp"></td>
+            <td id="pAQI"></td>
+            <td id="pHum"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Dubai</th>
+            <td id="dbCondition"></td>
+            <td id="dbMaxTemp"></td>
+            <td id="dbMinTemp"></td>
+            <td id="dbAQI"></td>
+            <td id="dbHum"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Tokyo</th>
+            <td id="tkCondition"></td>
+            <td id="tkMaxTemp"></td>
+            <td id="tkMinTemp"></td>
+            <td id="tkAQI"></td>
+            <td id="tkHum"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Bangkok</th>
+            <td id="bkkCondition"></td>
+            <td id="bkkMaxTemp"></td>
+            <td id="bkkMinTemp"></td>
+            <td id="bkkAQI"></td>
+            <td id="bkkHum"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
