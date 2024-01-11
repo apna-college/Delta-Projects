@@ -19,14 +19,12 @@
 }
 
 ::-webkit-scrollbar {
-    /* width: 400px; */
     background: #000000;
     width: 5px;
 }
 
 ::-webkit-scrollbar-track {
     background: #000000;
-    /* width: 100px; */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -49,14 +47,10 @@ body {
     background-color: var(--dark-navy);
     font-family: Impact;
     font-family: 'Josefin Sans', sans-serif;
-    /* margin: 0px 40px; */
     height: 100vh;
 }
 
-
-
 /* ---------------new------------ */
-
 
 /* default css start */
 .containerrrrr {
@@ -67,15 +61,12 @@ body {
     height: 50px;
     background-color: rgba(0, 0, 0, 0.795);
     box-shadow: 0px 10px 20px 10px rgb(0, 0, 0);
-    /* padding: 0 15px; */
-    /* border: 2px solid red; */
     position: fixed;
     border-radius: 20px;
 }
 
 .header-area {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)),
-        url(https://images.unsplash.com/photo-1528353518104-dbd48bee7bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
     background-position: center center;
     background-size: cover;
 }
@@ -114,12 +105,10 @@ body {
     font-size: 16px;
     display: block;
     text-decoration: none;
-    /* text-transform: uppercase; */
     transition: 0.2s;
 }
 
 .site-navbar ul li a:hover {
-    /* background: rgb(255, 0, 0); */
     color: #0ef;
 }
 
