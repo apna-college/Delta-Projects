@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem black;
+    box-shadow: 0 0 1rem rgb(245, 200, 4);
+}
+
+.btn{
+    background-color: rgba(251, 255, 0, 1);
+    color: black;
+    font-size: 1rem;
+    border-radius: 25px ;
+}
+
+.content{
+    padding: 0rem 1rem;
+    margin: 0rem 1rem;
+}
+
+.header{
+    margin: 3rem 0;
+}
+
+.facts{
+    margin: 2rem 0;
+}
+
+.result{
+    margin-top: 0.75rem;
+    font-size: 2rem;
+    padding: 0;
+}
