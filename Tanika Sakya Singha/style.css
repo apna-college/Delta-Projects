@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    background-color: #CAF0F8;
+}
+#heading{
+    height: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align:center;
+    background-color: #0077B6;
+    color: white;
+    letter-spacing: 3px;
+}
+.inputseg{
+    display: flex;
+    margin: 0.75rem;
+    height: 3.5rem;
+    padding: 0.75rem;
+    align-items: center;
+    justify-content: center;
+}
+#inputbox{
+    height: 3rem;
+    width: 75rem;
+    margin: 1.5rem;
+    padding: .25rem;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: white;
+}
+#searchbtn{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #0077B6;
+    font-size: 20px;
+}
+.fa-magnifying-glass{
+    background-color: #0077B6;
+}
+#searchbtn:hover{
+    cursor: pointer;
+    height: 4.1rem;
+    width: 4.1rem;
+}
+.div1{
+    background-color: #00B4D8;
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    margin: 1.5rem 2rem;
+    height: 10rem;
+    width: auto;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-self: center;
+}
+h4,h3{
+    background-color: #00B4D8;
+    border-radius: 20px;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+.buttondiv{
+    background-color: #0077B6;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttondiv:hover{
+    width: 4.1rem;
+    height: 4.1rem;
+    cursor: pointer;
+}
+.fa-volume-high{
+    background-color: #0077B6;
+}
+.div2{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+
+}
+.meanings{
+    font-size: 1.75rem;
+    font-weight: 600;
+    background-color: white;
+    margin: 1rem;
+}
+.bgcolor{
+    background-color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.pos{
+    font-size:2rem;
+}
+
+
