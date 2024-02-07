@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-size: 12px;
+}
+body{
+    background-color: #f4efef;
+}
+/*ooper wali navbar*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-1{
+    height: 25px;
+    width: 100%;
+    background-color: #ff6801;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*navbar right side wali list*/
+
+.navbar-1 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+    height: 14.4px;
+    width: 100%;
+
+
+}
+.navbar-1 li{
+    height: 14.4px;
+    width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+/*right side wala box*/
+
+.save-more{
+    height: 18px;
+    width: 120px;
+    background-color: #f85606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.save-more-img{
+    height: 18px;
+    width: 18px;
+    background-image: url(/daraz-mini-logo.png);
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.save-more p{
+    color: white;
+    margin-left: 5px;
+}
+
+/*main navbar*/
+
+.navbar-main{
+    height: 66px;
+    width: 100%;
+    background-color: #ff6801;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    z-index: 1;
+}
+.daraz-logo-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.125rem;
+    width: 13.625rem;
+    cursor: pointer;
+}
+.daraz-logo-navbar img{
+    height: 4.125rem;
+    width: 10rem;
+}
+
+
+/* search bar */
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 70%;
+}
+.search-bar input{
+    height: 38px;
+    width: 70%;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+.search-bar i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 4px;
+    background-color: #ffe1d2;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+/* login */
+
+.login{
+    height: 40px;
+    width: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+    font-weight: bold;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.login i{
+    font-size: 2rem;
+    margin-right: 0.7rem;
+}
+
+/* language select */
+
+.language select{
+    border: none;
+    background-color: #ff6801;
+    font-size: large;
+}
+
+/*hero section*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 24.5rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1.5rem;
+    padding-top: 7rem;
+}
+
+.catagory-list{
+    width: 20%;
+    height: 23.5rem;
+    padding: 10px 10px 0 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+.catagory-list ul{
+    list-style: none;
+    margin: 1rem;
+}
+.catagory-list li{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+    opacity: 0.85;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1220px) {
+    .catagory-list li {
+        font-size: 8px;
+    }
+}
+.catagory-list i{
+    height: 18px;
+    width: 18px;
+    font-size: 1.4rem;
+    padding-right: 0.5rem;
+}
+
+/* hero image */
+
+.hero-image{
+    height: 100%;
+    width: 80%;
+    margin-left: 1.5rem;
+}
+.hero-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* button wala section */
+
+.button-list-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 42px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff1eb;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1220px) {
+    .button {
+        font-size: 0.7rem;
+    }
+}
+
+/*mini card section*/
+
+.mini-card-section{
+    height: 136px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+.mini-card{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.mini-card img{
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+}
+@media screen and (max-width: 1220px) {
+    .mini-card img{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/*flash sale section*/
+.flash-sale{
+    margin-top: 0.2rem;
+    width: 90%;
+    margin-left: 5%;
+}
+.flash-sale-h1{
+    font-size: 1.8rem;
+    opacity: 0.8;
+}
+
+/*sale section*/
+
+.on-sale-now{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 10px 10px 0 0;
+}
+.on-sale-now-p1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.p1{
+    font-size: 1.4rem;
+    color: #f85606;
+    cursor: pointer;
+}
+
+.time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #ff6801;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+    
+.shop-more-btn button{
+    height: 40px;
+    width: 9rem;
+    background-color: #ff6801;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/*flash sale cards*/
+hr{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.flashsale-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+}
+@media  screen and (max-width: 1220px) {
+    .flashsale-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.card{
+    width: 150px;
+    height: 250px;
+    padding: 1rem;
+    background-size: cover;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card-img img{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+.card p{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+.card h1{
+    font-size: 1.5rem;
+    color: #f85606;
+    margin-top: 4px;
+}
+.decor{
+    display: flex;
+    align-items: center;
+}
+.decor .linethrough{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+.load-more-btn{
+    height: 40px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-more-btn button{
+    height: 40px;
+    width: 25%;
+    font-size: 1.3rem;
+    border: 2px solid #f85606;
+    color: #ff6801;
+    background: #fff;
+    border-radius: 5px;
+}
+
+footer{
+    width: 90%;
+    height: fit-content;
+    margin-left: 5%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+}
+
+.footer-material{
+    width: 25%;
+    height: fit-content;
+    margin: 1.5rem;
+    /* background-color: pink; */
+}
+
+.footer-material h1{
+    font-size: 1.4rem;
+    color: #f85606;
+    font-weight: 700;
+}
+.footer-material li{
+    list-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.like-dislike{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.like-dislike i{
+    font-size: 2rem;
+    color: #f85606;
+    cursor: pointer;
+}
+.like-dislike i:hover{
+    font-size: 2.5rem;
+    transition: 0.5s;
+    color: black;
+}
+
+
+
