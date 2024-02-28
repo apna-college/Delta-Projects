@@ -1,33 +1,64 @@
 
 let btn=document.querySelector("button");
-let h1=document.querySelector(".meaning1 h1");
-let h5=document.querySelector(".meaning1 h5");
 let body=document.querySelector("body");
+let main=document.querySelector(".mainContent");
 
-// let p1=document.querySelector(".meaning1 .pOs");
 
+// adding a eventListener to call the api's
 
 btn.addEventListener("click",async()=>{   
     
- let res2=await callApi();
- 
- console.log(res2);
- h1.innerText=` Word : "${res2[0].word}"`;
-  let meanings=res2[0].meanings;
-  let phonetic=res2[0].phonetics;
-  console.log(phonetic);
-  show(meanings);
-  listen(phonetic);
+    let child=document.querySelector(".mainContent");
+    child.innerHTML="";
+   
+   
+
+
+    let res2=await callApi();
+    
+    console.log(res2);
+
+    let meaning=document.createElement("div");
+    meaning.classList.add("meaning1");
+    let h1=document.createElement("h1");
+    h1.classList.add("word");
+    h1.innerText=` Word : "${res2[0].word}"`;
+    meaning.appendChild(h1);
+    main.appendChild(meaning);
+
+     let meanings=res2[0].meanings;
+     let phonetic=res2[0].phonetics;
+     console.log(phonetic);
+     show(meanings);
+
+
+//   listen(phonetic);
+let inpval=document.querySelector("input");
+inpval.value="";
 })
 
 
+
+// function show that print the definitions of word...
+
 function show(meanings){
     for(let i=0;i<meanings.length;i++){
-         
-        h5.innerText=` Definiton : ${(meanings[i].definitions[0].definition)}`;
-        let p1=document.querySelector(".pOs");
-        p1.innerText=`Part Of Specch : ${(meanings[i].partOfSpeech)}`;
+        if(i==0){
+            for(j=0;j<1;j++){
+
+                let h5=document.createElement("h4");
+                h5.classList.add("definition");
+                h5.innerText=` Definiton : ${(meanings[i].definitions[0].definition)}`;
         
+                let meaning=document.querySelector(".meaning1");
+                meaning.appendChild(h5);
+                main.appendChild(meaning);
+    
+            }
+
+        }
+       
+
         let div1=document.createElement("div");
         let synArr=(meanings[i].synonyms);
         let h6 =document.createElement("h3");
@@ -40,16 +71,17 @@ function show(meanings){
             let li2=document.createElement("li");
                 li2.innerText=` ----No Synonyms Words----`;
                 div1.appendChild(li2);
-               
-                body.appendChild(div1);
+                main.appendChild(div1);
+              
         }
+        
         else{
             for(let i=0;i<synArr.length;i++){
                 let li2=document.createElement("li");
                 li2.innerText=` ${synArr[i]}`;
                
                 div1.appendChild(li2);
-                body.appendChild(div1);
+                main.appendChild(div1);
             }
         }
        
@@ -58,10 +90,11 @@ function show(meanings){
         let definitions=(meanings[i].definitions);
         let div3=document.createElement("div");
         let h4=document.createElement("h2");
+
         h4.innerText=`${i+1} Part Of Speech "${meanings[i].partOfSpeech}"`;
         div3.classList.add("div3")
         div3.appendChild(h4);
-        body.appendChild(div3);
+        main.appendChild(div3);
         (meanings[i].partOfSpeech);
         show2(definitions); 
         // yaha se hamare pass fir se ek array aayega;
@@ -71,21 +104,19 @@ function show(meanings){
 
 
 
-
+// function that show the examples of words...
 
 function show2(definitions){
-   let div2=document.createElement("div");
-   
-   
-   let i=1;
+
+    let div2=document.createElement("div");
+    let i=1;
     let h3=document.createElement("h3");
     h3.innerText=`Definintons & Examples ...`
     div2.appendChild(h3);
     let ul=document.createElement("ul");
+
   
     for(definition of definitions){
-       
-
        
         let li =document.createElement("li");
         li.innerText=`definition ${i} : ${definition.definition}`;
@@ -100,23 +131,35 @@ function show2(definitions){
             ul.appendChild(li2);
             div2.appendChild(ul); 
          }
+
+
          else{
             ul.appendChild(li2);
             div2.appendChild(ul); 
            
          }
 
-         
          i++;
     }
 
 
     let hr=document.createElement("hr");
-    body.appendChild(div2);
+    main.appendChild(div2);
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 // error -----your browser not supported audio element------
 

@@ -1,5 +1,5 @@
 .meaning1{
-    /* border: 2px solid black; */
+  
     text-align: center;
 }
 h1{
@@ -9,12 +9,12 @@ h1{
 }
 
 body{
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;? */
+    
     font-weight: 300;
 }
 
 div{
-    /* border: 2px solid black; */
+   
     margin: 2rem auto;
     padding: 1rem;
     box-shadow: 4px 4px 8px rgb(221, 222, 221);
@@ -25,8 +25,9 @@ div{
     margin-bottom: 0px;
     text-align: center;
     color: rgb(237, 79, 17);
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
+
 li::marker{
     content: "🤩 ";
     line-height: 2rem;
@@ -56,3 +57,15 @@ input{
 .new::marker{
     content: "🤔 ";
 }
+
+ .search{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+ }
+
+ .mainContent,:first-child{
+    box-shadow: none;
+ }
+
