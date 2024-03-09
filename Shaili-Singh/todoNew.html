@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="stylesheet" href="todo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <h1> To do list</h1> 
+  </header>
+  <form>
+    <input type="text" class ='todo-inputs'>
+    
+    <button class='todo-button'> 
+           <i class='fas fa-plus-square'>
+           </i>
+    </button>
+    
+    <div class='select'>
+      <select name="todo" class='filter-todo'>
+        <option value="all">All</option>
+               <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+      
+    </div>
+  </form>
+  
+   <div class="todo-container">
+    <ul class="todo-list">
+      <li>Code
+        <button class="delete">
+             <i class="fa-solid fa-trash" >
+             </i>
+             </button>
+      </li>
+    </ul>
+  </div>
+  <script src="todo.js"></script>
+</body>
+</html>
