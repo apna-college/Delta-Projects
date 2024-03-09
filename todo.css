@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+    min-height:100vh;
+  }
+
+  header {
+    margin-top:2rem;
+    font-size: 1.3rem;
+  }
+  
+  header,
+  form { 
+    display: flex;
+    align-items: center;
+    justify-content : center;
+  }
+  
+  form input,
+  form button {
+      padding: 0.5rem;
+    border: none;
+    background: white;
+    font-size: 2rem; 
+    margin-top:5rem;
+  }
+  
+  form button {
+    width: 5rem;
+    color: rgb(63,43,150);
+    background: white;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  
+  .todo-button:hover{
+    color :white;
+    background:rgb(63,43,150);
+  }
+  
+  .todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  select{
+    -web-kit-appearance: none;
+    padding:1rem;
+    border:none;
+    width:10rem;
+    cursor:pointer;
+    color:rgb(63,43,150);
+    outline:none;
+    margin-left:1rem; 
+    margin-top:5.1rem;
+  }
+  .select:after{ 
+      background: #ff6f47;
+    color: white;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .todo-list{
+    margin: 3rem;
+    font-size: 1.8rem;
+    color: black;  
+  }
+
+  .delete {
+     font-size: 1.2rem;
+     background: none;
+     border: none;
+     padding-left: 2rem;
+  }
+ 
