@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Roboto' , sans-serif;
+    color: #fff;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+}
+
+/* ------------Header----------------- */
+header{
+    height: 555px;
+    width: 100%;
+    background-image: url(Images/main.jpg);
+    background-size: cover;
+}
+.background-layer{
+    background-color: rgba(28, 24, 24, 0.833);
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    padding: 1rem 8.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 2.5rem;
+}
+.buttons .lang-btn{
+    width: 6.4rem;
+    height: 1.7rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.buttons select i{
+    position: absolute;
+    color: #fff;
+    font-size: large;
+}
+.buttons select{
+    background-color: transparent;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+}
+.buttons select option{
+    color: #000;
+}
+
+.buttons .signIn{
+    font-size: 0.7rem;
+    width: 4.2rem;
+    border: none;
+    background-color: #C11119;
+}
+
+/* -----------------Intro Text-------------- */
+
+.intro{
+    text-align: center;
+    position: relative;
+    top: 8rem;
+}
+#intro-line1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#intro-line2{
+    font-size: 1.2rem;
+    font-weight: 480;
+    margin: 1rem 0rem;
+}
+.email-signin{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-signin input{
+    margin-right: 0.5rem;
+    padding: 0.7rem 1rem;
+    width: 18rem;
+    background-color: #1e253383;
+    border: 1px solid rgba(255, 255, 255, 0.421);
+    color: #fff;
+    font-size: 0.8;
+    border-radius: 4px;
+}
+.email-signin button{
+    background-color: #C11119;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.email-signin button:hover, .buttons .signIn:hover{
+    background-color: #900108;
+}
+
+
+/* -----------------sections------------- */
+.section {
+    background-color: #000;
+    margin: 0.5rem 0rem;
+    height: 460px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+.section-description, .section-graphics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47%;
+}
+.section-description{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section-graphics video{
+    height: 75%;
+    width: 100%;
+}
+
+/* --------------Opposite Sections-------------- */
+
+.offline-access, .for-kids{
+    flex-direction: row-reverse;
+}
+.for-kids .section-graphics img{
+    width: 100%;
+    height: 80%;
+}
+.offline-access .section-graphics img{
+    height: 70%;
+    width: 100%;
+}
+.offline-access .section-graphics{
+    flex-direction: column;
+}
+.offline-access .section-graphics .download{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0.2rem 0rem;
+    background-color: #000;
+    z-index: 2;
+    position: relative;
+    bottom: 6.8rem;
+    left: 0rem;
+    border: 2px solid rgba(128, 128, 128, 0.575);
+    border-radius: 0.7rem;
+}
+.offline-access .section-graphics .download .first-image{
+    height: 5rem;
+    width: 20%;
+}
+.offline-access .section-graphics .download .movie p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.offline-access .section-graphics .download .second-image{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+/* --------------FAQs Section--------------*/
+.faqs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 0rem;
+}
+.faqs .accordion{
+    margin: 1rem 0rem;
+    width: 78%;
+    font-size: 1.2rem !important;
+    height: 70% !important;
+}
+.accordion-item{
+    background-color: #333 !important;
+    border-bottom: 7px solid #000 !important;
+}
+.accordion-button{
+    background-color: #333 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+}
+.accordion-button i{
+    font-size: 1.9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-weight: 100;
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.accordion-button::after{
+    content: none !important;
+}
+
+/* --------------Footer--------------- */
+
+.footer{
+    padding: 2rem;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.footer div, .footer-list ul li a{
+    color: #A8B3B3;
+    font-size: 0.69rem;
+}
+.footer-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    width: 100%;
+    padding: 0px;
+    margin: 1rem 0rem;
+}
+
+.footer-list ul li{
+    list-style: none;
+    width: 25%;
+    text-align: left;
+}
+.wrapper{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wrapper .buttons{
+    margin: 0 0 1rem -1rem;
+}
+.wrapper div span{
+    text-decoration: underline;
+    color: #A8B3B3;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    /*---------------Header----------- */
+    .heading{
+        padding: 1rem;
+    }
+    .logo img{
+        height: 1.8rem;
+    }
+    .buttons .lang-btn{
+        height: 2rem;
+        width: 5rem;
+        margin: 0 0.5rem 0 0;
+    }
+    .buttons .signIn{
+        font-size: 1rem;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 4rem;
+        width: 100%;
+    }
+    #intro-line1{
+        font-size: 1.9rem;
+        font-weight: 700;
+        width: 85%;
+        margin: 0%;
+    }
+    .email-signin{
+        display: flex;
+        flex-direction: column;
+    }
+    #membership{
+        width: 60%;
+        font-weight: 480;
+        margin: 0;
+    }
+    .email-signin input{
+        margin-bottom: 1rem;
+    }
+
+    /* -----------Sections----------- */
+
+    .section{
+        flex-direction: column;
+        padding: 2.1rem 0;
+        align-items: center;
+        height: 100%;
+    }
+    .section-description, .section-graphics{
+        width: 90%;
+        height: 50%;
+        text-align: center;
+        align-items: center;
+    }
+    .section-graphics video{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* ------------------Special Sections---------------------*/
+    .offline-access .section-graphics .download{
+        padding: 0;
+        width: 80%;
+        bottom: 5.5rem;
+        height: 4rem;
+    }
+    .offline-access .section-graphics .download .first-image{
+        height: 3.5rem;
+        width: 2.5rem;
+    }
+
+    /* -----------FAQs section------------ */
+    .faqs .accordion{
+        width: 87%;
+    }
+    .accordion-button{
+        font-size: 1.1rem !important;
+        padding: 1.5rem !important;
+    }
+    .accordion-button i{
+        font-size: 1.4rem;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        font-weight: 100;
+    }
+    .faqs #intro-line1{
+        text-align: center;
+    }
+    .faqs .bottom-signin{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .faqs .bottom-signin p{
+        text-align: center;
+        width: 80%;
+        margin: 0%;
+    }
+    .faqs .bottom-signin input{
+        margin: 1rem 0;
+    }
+
+    /*  ------------Footer Section--------------------*/
+    .footer{
+        height: 420px;
+        padding: 2rem 0rem;
+        margin-bottom: 0;
+    }
+    .wrapper{
+        width: 90%;
+        height: 100px;
+        justify-content: center;
+    }
+    .footer-list ul{
+        height: 80%;
+    }
+    .footer div, .footer-list ul li a{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .footer-list ul li{
+        width: 50%;
+        margin-bottom: 0.5rem;
+    }
+    .wrapper .buttons{
+        margin: 0 0 1rem 0;
+    }
+}
