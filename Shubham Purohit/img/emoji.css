@@ -1,0 +1,40 @@
+.round{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 145, 0);
+    /* margin: 0 auto;
+    margin-top: 60px; */
+    border-radius: 50%;
+    position: absolute;
+    top: 100px  ;
+    left: 220px;
+
+}
+.eye{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+#le{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+}
+#re{
+    position: absolute;
+    top: 18%;
+    right: 20%;
+}  
+.lips{
+    background-color: rgb(132, 11, 11);
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 15%;
+    left: 33%;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+}
