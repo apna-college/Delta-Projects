@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+}
+#Hide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+#Tool-Select{
+    width:70%;
+    padding: 5px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* Exchange Rate Calculator */
+
+.container {
+    display: none;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 30vh;
+}
+form {
+    margin: 2rem 0 1rem 0;
+}
+#type {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+#amount1{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+#from{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+#to{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+#getResult{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  height: 3rem;
+  background-color: #af4d98;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.select-container img {
+    max-width: 2rem;
+}
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+}
+.select-container select {
+    font-size: 1rem;
+    width: auto;
+}
+.msg {
+    margin: 2rem 0 2rem 0;
+}
+/* Age Calculator */
+
+
+.main-age-calculator-container{
+    display: none;
+    flex-direction: column;
+    background-color:#4942E4;
+    max-width: 330px;
+    height: 450px;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+.main-age-calculator-container h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    padding:1.5rem;
+    color: #F8FAE5;
+    font-family: 'Poppins', sans-serif;
+}
+.doBContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    gap: 0.3rem;
+}
+.toDateContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    gap: 0.3rem;
+}
+#doB{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    justify-content: center;
+    color: #F8FAE5;
+}
+#doB1{
+    text-align: justify;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border:1px solid lightgray;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#toDate{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    justify-content: center;
+    color: #F8FAE5;
+}
+#ToDate1{
+    text-align: justify;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid lightgrey;
+    color: rgba(0, 0, 0, 0.5);
+}
+.calculatorContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+#ageCal{
+    height: 2rem;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 15rem;
+    background-color: #222831;
+    border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    color:#F3F8FF;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+#ResultDisplay{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color:#DA0037;
+    font-size: small;
+    background-color: #FBFFDC;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 1px;
+}
+
+/* Length Converter */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+
+.main_container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: 23px;
+}
+.main_container h2{
+    display: block;
+    text-align: center;
+    margin: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.display_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    color: #CDFADB;
+}
+.tool-container-field{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #7F27FF;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.tool-input-group{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px,auto;
+    position: relative;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(222, 228, 228);
+}
+.tool-input-group :last-child{
+    border: none;
+}
+.tool-input-label{
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    min-width: 60px;
+}
+
+.tool-input-field{
+    display: block;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 150px;
+    height: 25px;
+    border: None;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tool-btn{
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 5px;
+    color: aliceblue;    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.tool-btn-reset{
+    width: 150px;
+    margin-left: 0px;
+    background: #FAEF5D;
+    color: rgb(58, 25, 25);
+}
+.tool-btn-calculate{
+    width: 150px;
+    margin-right: 0px;
+    background: #0C2D57;
+}
+.tool-btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.tool-select-group{
+    float: right;
+    border: none;
+    height: 35px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 700;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.tool-output-box{
+    display: none;
+    width:100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tool-output-box ul{
+    margin: 5px 5px 5px 25px;
+}
+.tool-output-box ul li{
+    padding: 2px;
+    font-size: 15px;
+}
+#OutputInfo{
+    display: flex;
+}
+.tool-output-box h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.tool-output-box p{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.tool-error-border{
+    border: 2px solid red;
+}
+.tool-error-message{
+    display: block;
+    color:black;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 800;
+    /* margin: 5px 5px 0px 5px; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.readonly-background{
+    background: #E5E5E5;
+}
+
+#lengthResult{
+    text-align: center;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+@media only screen and (max-width: 900px) {
+    .main-container{
+        width: 300px;
+        margin: 10px;
+        box-sizing: border-box;
+        padding: 5px;
+        align-items:center;
+    }
+    .main-container h1{
+        margin: 10px 5px;
+        font-size: 25px;
+    }
+    .display_container{
+        width: 90%;
+        flex-direction: column;      
+    }
+    .tool-container-field{
+        width: 98%;
+    }
+}

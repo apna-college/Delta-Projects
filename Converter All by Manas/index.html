@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="head-container">
+    <h1>Select Your Tool 🛠️</h1>
+    <select id="Tool-Select" onchange="updateLayOut()">
+        <option value="" disabled selected>Choose an option</option>
+        <option  value="Age">Age Calculator</option>
+        <option  value="Length">Length Converter</option>
+        <option value="Currency">Currency Converter</option>
+    </select> 
+    </div>
+    <div class="allTools" id="Hide"> <!-- Currency Converter start -->
+
+        <div class="container" id="Currency">
+            <h2>Currency converter</h2>
+            <form>
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input id="amount1" value="100" type="text" />
+                </div>
+                <div class="dropdown">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/IN/flat/64.png">
+                            <select id="from"></select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/flat/64.png">
+                            <select id="to"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg">1USD = 80 INR</div>
+                <button id="getResult">Get Converted Value</button>
+            </form>
+        </div>
+        
+    
+        <!-- Currency Converter End -->
+
+        <!-- Age Calculator Start -->
+
+        <div class="main-age-calculator-container" id="Age">
+            <h2>Check Your Age 🕵️‍♂️</h2>
+            <div class="doBContainer">
+                <label id="doB">Birth Date :</label>
+                <input type="date" id="doB1">
+            </div>
+            <div class="toDateContainer">
+                <label id="toDate">To Date :</label>
+                <input type="date" id="ToDate1">
+            </div>
+            <div class="calculatorContainer">
+                <button id="ageCal">Calculate</button>
+            </div>
+            <div class="result">
+                <P id="ResultDisplay"></P>
+            </div>
+        </div>
+
+        <!-- Age Calculator End -->
+
+        <!-- Length Converter Start -->
+    
+        <div class="main_container" id="Length">
+            <h2>Length Converter</h2>
+            <div id="tool_box" class="display_container">
+                <div class="tool-container-field">
+                    <div class="tool-input-group">
+                        <div class="tool-input-label">
+                            <label for="from unit">From</label>
+                        </div>
+                        <select class="tool-select-group" id="fromUnit">
+                            <option selected value="Millimeter">Millimeter</option>
+                            <option value="Centimeter">Centimeter</option>
+                            <option value="Decimeter">Decimeter</option>
+                            <option value="Meter">Meter</option>
+                            <option value="Kilometer">Kilometer</option>
+                            <option value="Foot">Foot</option>
+                            <option value="Inch">Inch</option>
+                            <option value="Mile">Mile</option>
+                            <option value="Yard">Yard</option>
+                        </select>
+                        <input placeholder="Type Your value here" id="fromLength" type="number" name="from-length" min="0" class="tool-input-field">
+                    </div>
+    
+                    <div class="tool-input-group">
+                        <div class="tool-input-label">
+                            <label for="to unit">To</label>
+                        </div>
+                        <select class="tool-select-group" id="toUnit">
+                            <option value="Millimeter">Millimeter</option>
+                            <option selected value="Centimeter">Centimeter</option>
+                            <option value="Decimeter">Decimeter</option>
+                            <option value="Meter">Meter</option>
+                            <option value="Kilometer">Kilometer</option>
+                            <option value="Foot">Foot</option>
+                            <option value="Inch">Inch</option>
+                            <option value="Mile">Mile</option>
+                            <option value="Yard">Yard</option>
+                        </select>
+                        <input readonly placeholder="Output" id="toLength" type="number" name="to-length" min="0" class="tool-input-field readonly-background">
+                    </div>
+                    <div class="tool-input-group">
+                        <button class="tool-btn tool-btn-reset">Reset</button>
+                        <button class="tool-btn tool-btn-calculate">Calculate</button>
+                    </div>
+                </div>
+                <div class="tool-container-field">
+                    <div id="OutputInfo" class="tool-output-information tool-output-box">
+                        <h2>Basic Information</h2>
+                        <ul>
+                            <li>1 millimeter (mm) = 1 millimeter (mm)</li>
+                            <li>10 millimeters (mm) = 1 centimeter (cm)</li>
+                            <li>100 millimeters (mm) = 1 decimeter (dm)</li>
+                            <li>1000 millimeters (mm) = 1 meter (m)</li>
+                            <li>1000000 millimeters (mm) = 1 kilometer (km)</li>
+                            <li>304.8 millimeters (mm) = 1 foot (ft)</li>
+                            <li>25.4 millimeters (mm) = 1 inch (in)</li>
+                            <li>1609344 millimeters (mm) = 1 mile (mi)</li>
+                            <li>914.4 millimeters (mm) = 1 yard (yd)</li>
+                        </ul>
+                    </div>
+                    <div id="OutputResult" class="tool-output-result tool-output-box">
+                        <h2>Result</h2>
+                        <p id="lengthResult"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="common.js"></script>
+    <script src="app.js"></script>
+</body>
