@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto';
+}
+
+main{
+    margin-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Banner */
+.banner{
+    height: 465px;
+    width: 305px;
+    margin: 0px 32px 12px 0px;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Login Content */
+.login-content{
+    margin-top: 12px;
+    height: 465px;
+    width: 280px;
+}
+
+.login-form{
+    height: 300px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border: 0.8px solid #dbdbdb;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.login-form img{
+    height: 40px;
+    width: 140px;
+    margin: 30px 0px 12px;
+}
+
+.login-form input{
+    width: 195px;
+    height: 28px;
+    background-color: #fafafa;
+    border: 0.833px solid #dbdbdb;
+    border-radius: 2px;
+    font-size: 9px;
+    padding: 0px 8px;
+    margin-bottom: 5px;
+}
+
+.login-button{
+    width: 210px;
+    height: 25px;
+    background-color: #4cb5f9;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.seperation{
+    display: flex;
+    align-items: center;
+    margin: 15px 40px 20px;
+}
+
+.decorative-line{
+    height: 0.833px;
+    width: 80px;
+    background-color: #dbdbdb;
+}
+
+.or{
+    margin: 0px 12px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #737373;
+}
+
+.fb-button{
+    width: 210px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    font-size: 12px;
+    color: #385185;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 35px;
+}
+
+.fb-button img{
+    margin: 0px 5px;
+    width: 14px;
+    height: 14px;
+}
+
+.forget-password a{
+    color: #00376b;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+.go-to-signup{
+    height: 30px;
+    border: 0.8px solid #dbdbdb;
+    padding: 15px 0px 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.go-to-signup p{
+    font-size: 12px;
+}
+
+.go-to-signup a{
+    color: #0095f6;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.get-app{
+    height: 75px;
+    text-align: center;
+}
+
+.get-app p{
+    font-size: 12px;
+    margin: 12px 0px;
+}
+
+.get-app img{
+    width: 100px;
+    height: 30px;
+}
+
+/* Footer */
+footer{
+    margin-bottom: 30px;
+    height: 65px;
+}
+
+.references{
+    display: flex;
+    justify-content: center;
+}
+
+.references span{
+    margin: 0px 8px 12px;
+}
+
+.references span a{
+    color: #737373;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+.hover-property:hover{
+    text-decoration: underline;
+}
+
+.site-settings{
+    display: flex;
+    justify-content: center;
+}
+
+.site-settings select{
+    border: none;
+    color: #737373;
+    font-size: 9px;
+}
+
+.site-settings span{
+    color: #737373;
+    font-size: 9px;
+    margin-left: 16px;
+}
