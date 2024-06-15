@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TO-DO List</h1>
+        <div class="input-container">
+            <input class="todo-input" id="input-box" placeholder="Add a new task...">
+            <button class="add-button" onclick="addTask()">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </div>
+        <div class="todos-container">
+            <ul id="list-container">
+            </ul>
+            <img class="empty-image" src="img 2/empty.svg">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

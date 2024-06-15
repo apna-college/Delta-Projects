@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("img 2/background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    background: transparent;
+    border: 2px solid #e6b7eca1;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+h1 {
+    color: #eee;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.todo-input {
+    flex: 1;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    background-color: transparent;
+    border: 2px solid #e6b7eca1;
+    border-radius: 30px;
+    color: #eee;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.todo-input::placeholder {
+    color: #bfbfbf;
+}
+
+.add-button {
+    border: none;
+    outline: none;
+    background: #e6b7eca1;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.empty-image {
+    margin: 55px auto 0;
+    display: none;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    font-weight: 500;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("img 2/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #e6b7eca1;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("img 2/checked.png");
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #edeef0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover {
+    background: #e6b7eca1;
+}
+
+.todos-container {
+    height: 200px;
+    overflow: overlay;
+}
+
+.todos-container::-webkit-scrollbar-track {
+    background: rgb(247, 247, 247);
+    border-radius: 20px
+}
+
+.todos-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.todos-container:hover::-webkit-scrollbar {
+    width: 7px;
+}
+
+.todos-container::-webkit-scrollbar-thumb {
+    background: #d5d5d5;
+    border-radius: 20px;
+}
