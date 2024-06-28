@@ -1,0 +1,75 @@
+@keyframes fader{
+   0%{
+    opacity: 0;
+   }25%{
+    opacity: 0.25;
+   }50%{
+    opacity: 0.5;
+   }75%{
+    opacity: 0.75;
+   }100%{
+    opacity: 1;
+   }
+}
+
+body{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+h1{
+    text-decoration: underline solid 2px black;
+}
+
+h3{
+    margin-top: 45px;
+}
+
+.content{
+    animation: fader 1.75s;
+}
+
+.center{
+    text-align: left;
+    margin: 50px 80px;
+    line-height: 35px;
+}
+
+#trans{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#exp{
+    font-weight: 500;
+}
+
+#sans{
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+#gen{
+    margin-top: 25px;
+    padding: 15px 60px;
+    border: 3px solid green;
+    border-radius: 60px;
+    background-color: white;
+    color: green;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    transition: 0.2s ease-in-out;
+}
+
+#gen:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+#chap{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline solid 2px;
+}
