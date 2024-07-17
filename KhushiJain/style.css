@@ -1,0 +1,20 @@
+
+body {
+    background-image: url('cat.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1{
+    color: #ffffff;
+    font-size: 80px;
+}
+button{
+    width: 370px;
+    height: 100px;
+    font-size: 40px;
+}
+p{
+    color: white;
+    font-size: 50px;
+}
