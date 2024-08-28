@@ -1,0 +1,54 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: #e5eaf5;
+    text-align: center;
+}
+
+h1 {
+    font-family: inherit;
+    font-size: xx-large;
+    font-weight: 600;
+    background-color: #f5f5f5;
+    color: #0c0c0b;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: inherit;
+
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    text-align: start;
+    font-size: x-large;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+button {
+    font-family: inherit;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: #333333;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}

@@ -1,0 +1,60 @@
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  background-color: #00ddff;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+input {
+  background-color: #fff;
+  border: 2px solid;
+  font-size: large;
+  cursor: pointer;
+  width: 50%;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+div {
+  height: 100%;
+  width: 85%;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p {
+  word-wrap: break-word;
+  margin: 0;
+  font-size: larger;
+}
+
+.copy-button {
+  background-color: white;
+  border: 2px solid;
+  color: rgb(15, 15, 15);
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .copy-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

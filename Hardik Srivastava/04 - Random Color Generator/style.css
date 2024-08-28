@@ -1,0 +1,51 @@
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  background-color: #e5eaf5;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  margin: 10px auto;
+}
+
+.btn {
+  background-color: #fff;
+  border: 2px solid;
+  font-size: medium;
+  cursor: pointer;
+  padding: 7px;
+  margin: 5px;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.btn:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+div {
+  height: 300px;
+  width: 90%;
+  max-width: 500px;
+  border: 2px solid black;
+  border-radius: 05px;
+  color: black;
+  padding: 10px;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

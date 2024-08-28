@@ -1,0 +1,109 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #e5eaf5;
+  text-align: center;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: xx-large;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  color: #0c0c0b;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+h2 {
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  color: #333333;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+
+#startButton {
+  font-family: inherit;
+  font-size: x-large;
+  font-weight: 500;
+  background-color: #333333;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 20%;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.green {
+  background-color: #00ff00;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.flash {
+  background-color: white;
+}
+
+.userflash {
+  background-color: green;
+}
+
+iframe {
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    height: 100px;
+    /* Adjusted height */
+    width: 100px;
+    /* Adjusted width */
+    margin: 0.5rem;
+  }
+
+  iframe {
+    height: 315px;
+    width: 90%;
+  }
+}

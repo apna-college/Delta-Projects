@@ -1,0 +1,71 @@
+body {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    background-color: #d0bdf4;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+input {
+    padding: 10px;
+    font-size: large;
+    border: 2px solid;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+    width: calc(100% - 50px);
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+input:hover,
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+button {
+    background-color: #fff;
+    border: 2px solid;
+    font-size: large;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: all 235ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+    border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 20px auto 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.deleteBtn {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
