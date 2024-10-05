@@ -1,0 +1,248 @@
+.mainbody {
+    height: 450px;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    border-radius: 3px;
+    margin: 10px auto;
+    margin-top: 100px;
+  }
+  .heading {
+    margin-top: 40px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .mainbody1 {
+    height: 80px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px auto;
+    margin-top: 50px;
+  }
+  #input1 {
+    height: 30px;
+    width: 270px;
+    font-size: 13px;
+    opacity: 0.7;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    padding-left: 5px;
+  }
+  input[type="text"]:hover {
+    height: 30px;
+    width: 270px;
+    font-size: 13px;
+    opacity: 1;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: azure;
+    padding-left: 5px;
+  }
+  #input2 {
+    height: 30px;
+    width: 270px;
+    font-size: 13px;
+    opacity: 0.7;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    padding-left: 5px;
+  }
+  input[type="password"]:hover {
+    height: 30px;
+    width: 270px;
+    font-size: 13px;
+    opacity: 1;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: azure;
+    padding-left: 5px;
+  }
+  .mainbody2 {
+    height: 30px;
+    width: 277px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .button1 {
+    height: 30px;
+    width: 280px;
+    font-size: 13px;
+    opacity: 1;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: #3897f0;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+  .button1:hover {
+    height: 30px;
+    width: 280px;
+    font-size: 13px;
+    opacity: 1;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgb(51, 114, 230);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+  .or {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .mainbody4 {
+    height: 30px;
+    width: 277px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .facebookimage {
+    height: 17px;
+    width: 17px;
+  }
+  #facebooklogin {
+    color: rgb(43, 101, 247);
+  }
+  #facebooklogin:hover {
+    text-decoration:  rgb(43, 101, 247) underline;
+  }
+  .mainbody5 {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: 15px;
+  }
+  #forgetpassword {
+    color: blue;
+    opacity: 0.7;
+  }
+  #forgetpassword:hover {
+    color: blue;
+    opacity: 1;
+    text-decoration: blue underline;
+  }
+  .lowerbody {
+    height: 50px;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    border-radius: 3px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #signup {
+    color: blue;
+    opacity: 0.7;
+  }
+  #signup:hover {
+    color: blue;
+    opacity: 1;
+    text-decoration: blue underline;
+  }
+  #gettheapp {
+    text-align: center;
+  }
+  
+  #app {
+    height: 80px;
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+  .googleplay {
+    height: 35px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  .get {
+    margin: 0px 0px 0px 2px;
+    font-size: 11px;
+    width: 60px;
+    color: white;
+  }
+  .link {
+    margin: 0px 0px 0px 2px;
+    font-size: 16px;
+    width: 80px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(33, 185, 250);
+    font-weight: 500;
+  }
+  #img1 {
+    width: 28px;
+    height: 28px;
+    margin-top: 3px;
+  }
+  .microsoft {
+    height: 35px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  #img2 {
+    width: 28px;
+    height: 28px;
+    margin-top: 3px;
+  }
+  
+  @media (max-width: 450px) {
+    .mainbody {
+      height: 400px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+    .mainbody1 {
+      margin-top: 25px;
+    }
+    .mainbody2 {
+      margin-top: 20px;
+    }
+    .or {
+      margin-bottom: 23px;
+    }
+    .mainbody5 {
+      margin-top: 15px;
+    }
+    .heading {
+      margin-top: 25px;
+    }
+    .lowerbody {
+      height: 50px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+  }
