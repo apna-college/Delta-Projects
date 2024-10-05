@@ -1,0 +1,334 @@
+@font-face {
+    font-family: minecraftSeven;
+    src: url(https://ik.imagekit.io/talib/minecraft%20assets%20/fonts/Minecraft-Seven_v2.woff2?updatedAt=1719744276254);
+}
+
+@font-face {
+    font-family: minecraftTen;
+    src: url(https://ik.imagekit.io/talib/minecraft%20assets%20/fonts/MinecraftTen.woff?updatedAt=1719744276677);
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(https://ik.imagekit.io/talib/minecraft%20assets%20/fonts/Helvetica.woff2?updatedAt=1719744278192);
+}
+
+:root {
+    --them-bg: #51FF95;
+    --pixel-cursor-color: rgba(0, 0, 0, 0.039);
+    --btn-shadow-1: #ffffff80;
+    --btn-shadow-2: #0000003d;
+}
+ 
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #18171b;
+    /* display: block; */
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--them-bg);
+    border-radius: 20px;
+}
+
+/* .hide-scrollbar::-webkit-scrollbar {
+    display: hidden;
+} */
+
+/* 1st page */
+.minecraft-text {
+    filter: drop-shadow(3px 7px 5px black);
+    opacity: 0.8;
+}
+
+.btn-shadow {
+    box-shadow: 0 6px 0 0 #ffffff80 inset, -6px 0 0 0 #ffffff80 inset, 0 -6px 0 0 #0000003d inset, 6px 0 0 0 #0000003d inset;
+}
+
+/* cursor pixel animation  */
+
+.block-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blocks {
+    /* background-color: #131313; */
+    background-color: transparent;
+    width: 105vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow: hidden;
+    /* z-index: 99999; */
+    flex-wrap: wrap;
+}
+
+#blocks>.block {
+    width: 50px;
+    height: 50px;
+    /* border: 0.5px solid rgba(255, 255, 255, 0.075); */
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease;
+}
+
+#blocks .highlight {
+    /* border-color: #ebfb1d; */
+    /* background-color: #42E983; */
+    /* background-color: rgba(255, 255, 255, 0.2) ; */
+    /* background-color: #135d30 !important; */
+    background-color: var(--pixel-cursor-color);
+    backdrop-filter: blur(10px);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 999;
+    pointer-events: none;
+    gap: 20px;
+}
+
+.content>h1 {
+    font-size: 10vh;
+    font-family: "Minecraft Ten", sans-serif;
+    color: #393939;
+}
+
+.content>p {
+    width: 60%;
+    text-align: center;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    color: #555;
+    font-size: 18px;
+    line-height: 1.3;
+
+}
+
+.content>button {
+    border: none;
+    outline: none;
+    background: #51FF95;
+    padding: 20px 40px;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 16px;
+    box-shadow: inset 0px 10px 0px 0px #B6FFD2, inset 0px -10px 0px 0px #03E059;
+    margin-top: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+    font-weight: 800;
+    color: #135d30;
+}
+
+
+
+
+.fjslkfjslk {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* z-index: 10; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kljdfslkj {
+    background-color: transparent;
+    width: 105vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#kljdfslkj>.lksdjflkjsd {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease;
+}
+
+#kljdfslkj .lkjsdflkjsdf {
+    background-color: #ffffff !important;
+    backdrop-filter: blur(10px);
+}
+
+.aldkfjlaksj {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 999;
+    pointer-events: none;
+    gap: 20px;
+}
+
+.aldkfjlaksj>h1 {
+    font-size: 10vh;
+    font-family: "Minecraft Ten", sans-serif;
+    color: #393939;
+}
+
+.aldkfjlaksj>p {
+    width: 60%;
+    text-align: center;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    color: #555;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.aldkfjlaksj>button {
+    border: none;
+    outline: none;
+    background: #51FF95;
+    padding: 20px 40px;
+    font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 16px;
+    box-shadow: inset 0px 10px 0px 0px #B6FFD2, inset 0px -10px 0px 0px #03E059;
+    margin-top: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+    font-weight: 800;
+    color: #135d30;
+}
+
+
+
+.pixel-background {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 8;
+    pointer-events: none;
+}
+
+.column {
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockn {
+    width: 100%;
+    height: 5vw;
+    background-color: #51FF95;
+    opacity: 0;
+}
+
+.pixel-background.active .blockn {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.gradient-earth-bg {
+    background: #2094f8;
+    background: radial-gradient(circle, rgba(32, 148, 248, 1) 0%, rgba(208, 233, 252, 1) 67%);
+}
+
+.gradient-green-bg {
+    background: var(--them-bg);
+    background: radial-gradient(circle, #26d120ad 0%, #26d1201a 67%);
+}
+
+.bg-command {
+    background: #ffac47;
+    background: radial-gradient(circle, #ffa537 0%, #ffac4771 67%);
+}
+
+.bg-table {
+    background: #ffdf43;
+    background: radial-gradient(circle, #feb918d8 0%, #ffe04354 67%);
+}
+
+.bg-bedrock {
+    background: #545553;
+    background: radial-gradient(circle, #545553ca 0%, #54555320 67%);
+}
+
+.bg-enchant {
+    background: #9979cf;
+    background: radial-gradient(circle, #9979cf 0%, #9979cf38 67%);
+}
+
+.bg-redial-white {
+    background: rgb(32, 148, 248);
+    background: radial-gradient(circle, rgba(32, 148, 248, 0) 30%, rgba(255, 255, 255, 1) 45%);
+}
+
+
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9990;
+    pointer-events: none;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: var(--them-bg);
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.text-stroke-2 {
+    -webkit-text-stroke: 1px white;
+}
+
+#pufferFish {
+    height: 1800px !important;
+    scale: 0.5 !important;
+}
+
+.feature1,
+.feature2,
+.feature3,
+.feature4 {
+    cursor: pointer;
+}

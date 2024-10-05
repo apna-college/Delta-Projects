@@ -1,0 +1,21 @@
+#dotsCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+ 
+#enchantHeading span {
+    --to: left;
+    background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+
+}
+
+#enchantHeading span.right {
+    --to: right;
+}

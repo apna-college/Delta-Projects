@@ -1,0 +1,194 @@
+/* .biomeImg{
+    position: relative;
+    &:hover{
+        
+    }
+}
+
+
+
+
+.biomeMusicPlayerContainer {
+
+    &:hover {
+        #biomeMusicPlayer {
+            border-radius: 0;
+            transform: rotate(0deg) translateY(0);
+            scale: 0.8;
+            transition: scale 0.4s ease-in-out;
+            animation: rotateAndMoveY 3s linear infinite, radius 1s linear forwards;
+        }
+    }
+
+    &:not(:hover) {
+        #biomeMusicPlayer {
+            animation: rotateBackAndMoveYBack 0.4s ease-in-out forwards, radiusBack 0.7s ease-in-out forwards;
+        }
+    }
+}
+
+@keyframes rotateAndMoveY {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(-20px);
+    }
+}
+
+@keyframes rotateBackAndMoveYBack {
+    0% {
+        transform: rotate(360deg) translateY(-20px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+}
+
+@keyframes radius {
+    0% {
+        border-radius: 0;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}
+
+@keyframes radiusBack {
+    0% {
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 0;
+    }
+} */
+
+
+
+
+.dropShadow {
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.biomeImg {
+    transition: all 0.3s ease-in-out;
+}
+
+.biomeImg img {
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+}
+
+.biomeImg:hover {
+    padding: 20px 20px 150px;
+}
+
+.biomeImg:hover img {
+    border-radius: 30px;
+}
+
+.gradientPlayer {
+    background: linear-gradient(180deg, #a600ff53, #00000034);
+}
+
+.scrollText {
+    font-size: 38vw;
+    color: #ffffff07;
+    margin: 0 auto;
+    filter: drop-shadow(10px 12px 2px black);
+}
+
+.biomeMusicPlayerContainer {
+    border: 1px solid #525252;
+}
+
+.biomeMusicPlayerContainer:hover #biomeMusicPlayer {
+    border-radius: 0;
+    transform: rotate(0);
+    scale: 0.8;
+    margin-top: 0;
+    transition: scale 0.4s ease-in-out;
+    animation: rotate 3s linear infinite, radius 1s linear 1 forwards,
+        moveY 1s linear 1 forwards;
+}
+
+.biomeMusicPlayerContainer:hover .pinHover {
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+.biomeMusicPlayerContainer:not(:hover) #biomeMusicPlayer {
+    animation: rotateBack 0.4s ease-in-out 1 forwards,
+        radiusBack 0.7s ease-in-out 1 forwards, moveYBack 0.3s linear 1 forwards;
+    z-index: 4;
+}
+
+.biomeMusicPlayerContainer:not(:hover) .pinHover {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes moveY {
+    0% {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -13px;
+    }
+}
+
+@keyframes moveYBack {
+    0% {
+        margin-top: -13px;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes radius {
+    0% {
+        border-radius: 0;
+    }
+
+    to {
+        border-radius: 50%;
+    }
+}
+
+@keyframes radiusBack {
+    0% {
+        border-radius: 50%;
+    }
+
+    to {
+        border-radius: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateBack {
+    0% {
+        transform: rotate(60deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}

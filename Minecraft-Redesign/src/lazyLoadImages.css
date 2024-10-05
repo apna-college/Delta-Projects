@@ -1,0 +1,128 @@
+.blurImgContainer {
+    /* width: 400px; */
+    overflow: hidden;
+
+}
+
+.blur-load {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    filter: blur(10px);
+    background-repeat: no-repeat;
+}
+
+.blur-load::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    animation: pulseBlur 2.5s infinite;
+}
+
+@keyframes pulseBlur {
+
+    /* pulsing effect */
+    0% {
+        background-color: rgba(250, 250, 250, 0);
+    }
+
+    50% {
+        background-color: rgba(250, 250, 250, 0.291);
+    }
+
+    100% {
+        background-color: rgba(250, 250, 250, 0);
+    }
+}
+
+.blur-load.loaded {
+    /* Remove blur after image loaded */
+    filter: none;
+    background-size: auto;
+}
+
+.blur-load.loaded::before {
+    content: none;
+    /* animation: none; */
+
+}
+
+.blur-load.loaded>img {
+    opacity: 1;
+    height: 100%;
+}
+
+.blur-load>img {
+    opacity: 0;
+    /* transition: opacity 200ms ease-in-out; */
+}
+
+/* For the bg Video load */
+
+.blur-load.loaded>video {
+    opacity: 1;
+    height: 100%;
+}
+
+.blur-load>video {
+    opacity: 0;
+    /* transition: opacity 200ms ease-in-out; */
+}
+
+/* ++++++++++++++++++++++++Spiderrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.blur-load-biomeSection {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* filter: blur(10px); */
+    background-repeat: no-repeat;
+}
+
+.blur-load-biomeSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    animation: biomePulseBlur 2s infinite;
+}
+
+@keyframes biomePulseBlur {
+
+    /* pulsing effect */
+    0% {
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.299);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+}
+
+.blur-load-biomeSection.loaded {
+    /* Remove blur after image loaded */
+    filter: none;
+    background-size: auto;
+}
+
+.blur-load-biomeSection.loaded::before {
+    content: none;
+    /* animation: none; */
+
+}
+
+.blur-load-biomeSection.loaded>img {
+    opacity: 1;
+    height: 100%;
+}
+
+.blur-load-biomeSection>img {
+    opacity: 0;
+    /* transition: opacity 200ms ease-in-out; */
+}

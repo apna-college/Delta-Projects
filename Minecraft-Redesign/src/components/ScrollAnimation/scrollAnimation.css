@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
+.ScrollWrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #18171b;
+    font-family: Anton, sans-serif;
+  }
+  .containerX {
+    display: flex;
+    width: 300vw;
+    color: #fff;
+  }
+  .containerX .sec1 {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #e200ffb0, #000);
+  }
+  .containerX .sec1 .end-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .containerX .sec1 .background-text {
+    position: absolute;
+    font-size: 50vw;
+    color: #ffffff05;
+    top: 0;
+  }
+  .containerX .sec1 .dragon-img {
+    position: absolute;
+    transform: scaleX(-1);
+  }
+  .containerX .sec2 {
+    background: linear-gradient(184deg, #3f5efbcd, #00000086);
+  }
+  .containerX .sec2 h1 {
+    font-size: 38vw;
+    color: #ffffff18;
+    margin: 0 auto;
+    filter: drop-shadow(10px 12px 2px black);
+  }
+  .containerX .sec2 .steve-img {
+    position: absolute;
+    width: 400px;
+    right: 50%;
+    transform: translate(50%);
+    cursor: pointer;
+  }
+  .containerX .sec2 .steve-img:hover {
+    filter: drop-shadow(0px 0px 2px rgb(0, 13, 255));
+  }
+  .containerX .sec3 {
+    background: linear-gradient(180deg, #0658189b, #000);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .containerX .sec3 .sec3Text {
+    position: absolute;
+    font-size: 27vw;
+    transform: scaleY(1.6);
+    color: #ffffff05;
+    filter: drop-shadow(9px -1px 0px black);
+  }
+  .containerX .sec3 .minecraftGroup {
+    width: 40vw;
+    border-radius: 30px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 0 10px #000;
+  }
+  .containerX .sec3 .mc {
+    width: 20vw;
+    border-radius: 30px;
+    position: absolute;
+    box-shadow: 0 0 10px #000;
+  }
+  .containerX .sec3 .skeleten,
+  .containerX .sec3 .creeper {
+    position: absolute;
+    width: 400px;
+    filter: drop-shadow(0px 0px 8px rgb(0, 0, 0));
+  }
+  .containerX .scrollSection {
+    width: 100vw;
+    height: 100vh;
+  }
