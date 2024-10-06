@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", sans-serif;;
+}
+
+body {
+    background-color: #F4EDED;
+}
+
+header{
+    background-color: #464D77;
+    color: #F4EDED;
+    /* width: 100vw; */
+    height: 12vmin;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    margin-bottom: 5vmin;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h1 span {
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 95vw;
+    height: 80vh;
+    background-color: #464d774d;
+    margin: auto;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+hr{
+    border: none;
+    border: 0.2vmin solid #464D77;
+    margin-top: 5vmin;
+    margin-bottom: 1vmin;
+}
+
+.input{
+    width: 50%;
+    height: 10vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.input input{
+    width: 60%;
+    height: 6vmin;
+    border: 0.1vmin solid #332f86;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.input button{
+    width: 15%;
+    height: 7vmin;
+    padding: 0.2rem;
+    border: 0.1vmin solid #332f86;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #332f86;
+    background-color: white;
+}
+
+.list-container{
+    /* background-color: pink; */
+    padding: 0vmin 10vmin;
+    max-height: 55vh;
+    overflow: auto;
+}
+
+h4{
+    margin: 2vmin 5vmin ;
+    margin-top: 5vmin;
+}
+
+ul li{
+    list-style: none;
+}
+
+.list-style{
+    background-color: #ffffff9a;
+    border: 0.1vmin solid #172887;
+    padding: 0.5vmin 2vmin;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1vmin 0vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delBtn {
+    outline: none;
+    width: 10%;
+    border-radius: 0.2rem;
+    border: 0.1vmin solid;
+}
+
+.feedback{
+    position: absolute;
+    bottom: 2vmin;
+    left: 10vmin;
+}
+
+.feedback a{
+    color: #6159f1;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    .input{
+        width: 80%;
+    }
+
+    .input button{
+        width: 30%;
+    }
+
+    .list-style{
+        margin: 2vmin 0vmin;
+    }
+
+    .delBtn{
+        width: 20%;
+    }
+
+    .feedback{
+        bottom: 5vmin;
+    }
+}
