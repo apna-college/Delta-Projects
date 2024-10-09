@@ -1,0 +1,7 @@
+<svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-330.43 226.43-584 283-640.57l197 197 197-197L733.57-584 480-330.43Z"/>
+<style>
+    .hoverable:hover {
+      fill: red;
+    }
+  </style>
+  <rect class="hoverable" fill="blue" /> </svg>

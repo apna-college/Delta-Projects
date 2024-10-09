@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture,Grocery,...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="header_div">
+        <div class="header_1">
+            <img src="./flipkart_header_logo.svg" alt="Flipkart">
+            <div class="searchbar">
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div><input class="input_box" type="text" placeholder="Search for Products, Brands and More"></div>
+            </div>
+        </div>
+        <div class="header_2">
+            <div class="login" id="login"><i class="fa-regular fa-circle-user user_icon"></i> <span
+                    class="login_text    ">Login</span> <i style="margin-bottom: -2px;" id="down_arrow"
+                    class="fa-solid fa-angle-down down_arrow"></i></div>
+            <div class="cart"><svg class="cart_icon" xmlns="http://www.w3.org/2000/svg" height="25px"
+                    viewBox="0 -960 960 960" width="25px" fill="#5f6368">
+                    <path
+                        d="M286.15-97.69q-29.15 0-49.57-20.43-20.42-20.42-20.42-49.57 0-29.16 20.42-49.58 20.42-20.42 49.57-20.42 29.16 0 49.58 20.42 20.42 20.42 20.42 49.58 0 29.15-20.42 49.57-20.42 20.43-49.58 20.43Zm387.7 0q-29.16 0-49.58-20.43-20.42-20.42-20.42-49.57 0-29.16 20.42-49.58 20.42-20.42 49.58-20.42 29.15 0 49.57 20.42t20.42 49.58q0 29.15-20.42 49.57Q703-97.69 673.85-97.69ZM240.61-730 342-517.69h272.69q3.46 0 6.16-1.73 2.69-1.73 4.61-4.81l107.31-195q2.31-4.23.38-7.5-1.92-3.27-6.54-3.27h-486Zm-28.76-60h555.38q24.54 0 37.11 20.89 12.58 20.88 1.2 42.65L677.38-494.31q-9.84 17.31-26.03 26.96-16.2 9.66-35.5 9.66H324l-46.31 84.61q-3.08 4.62-.19 10 2.88 5.39 8.65 5.39h457.69v60H286.15q-40 0-60.11-34.5-20.12-34.5-1.42-68.89l57.07-102.61L136.16-810H60v-60h113.85l38 80ZM342-517.69h280-280Z" />
+                </svg> <span class="cart_text">Cart</span></div>
+            <div class="seller"><svg style="margin-bottom: -3px;" class="store_icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path
+                        d="M830.61-521.08v318.77q0 30.31-21 51.31-21 21-51.3 21H202.92q-30.3 0-51.3-21-21-21-21-51.31v-319.54q-24.16-19.84-36.27-51.5-12.12-31.65-.5-68.34l40.46-132.16q8-25.23 27.15-40.69Q180.62-830 207.23-830h546q26.62 0 45.46 14.77 18.85 14.77 27.46 40.62l41.23 132.92q11.62 36.69-.5 68.11-12.11 31.43-36.27 52.5ZM568.62-550q32.77 0 49.27-20.04t13.5-43.04L607.08-770h-96.47v158q0 25.23 17.08 43.62Q544.77-550 568.62-550Zm-180 0q27.61 0 44.8-18.38 17.2-18.39 17.2-43.62v-158h-96.47l-24.3 158.46q-3.24 21.31 13.38 41.43Q359.85-550 388.62-550Zm-178 0q22.23 0 38.23-15.5 16-15.5 19.77-38.96L292.15-770h-84.92q-6.54 0-10.38 2.88-3.85 2.89-5.77 8.66l-38.47 130.15q-7.92 25.77 7.47 52.04Q175.46-550 210.62-550Zm540 0q32.46 0 49.69-25.5 17.23-25.5 8.31-52.81l-40.47-130.92q-1.92-5.77-5.76-8.27-3.85-2.5-10.39-2.5h-82.92l23.53 165.54q3.77 23.46 19.77 38.96t38.24 15.5Zm-547.7 360h555.39q5.38 0 8.84-3.46 3.47-3.46 3.47-8.85v-291.23q-6.54 2.39-10.93 2.96-4.38.58-9.07.58-27 0-47.5-9.77t-39.74-31.31q-16.84 18.77-39.84 29.93-23 11.15-52.46 11.15-25.46 0-48-10.58-22.54-10.57-42.46-30.5-18.54 19.93-42 30.5Q415.15-490 391.08-490q-27.08 0-50.77-9.81-23.69-9.81-41.69-31.27-25.24 25.23-46.51 33.16-21.26 7.92-41.49 7.92-4.7 0-9.7-.58-5-.57-10.31-2.96v291.23q0 5.39 3.47 8.85 3.46 3.46 8.84 3.46Zm555.39 0H202.92 758.31Z" />
+                </svg> <span>Become a Seller</span></div>
+            <div class="three_dots"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960"
+                    width="26px" fill="#5f6368">
+                    <path
+                        d="M480-189.23q-24.75 0-42.37-17.63Q420-224.48 420-249.23q0-24.75 17.63-42.38 17.62-17.62 42.37-17.62 24.75 0 42.37 17.62Q540-273.98 540-249.23q0 24.75-17.63 42.37-17.62 17.63-42.37 17.63ZM480-420q-24.75 0-42.37-17.63Q420-455.25 420-480q0-24.75 17.63-42.37Q455.25-540 480-540q24.75 0 42.37 17.63Q540-504.75 540-480q0 24.75-17.63 42.37Q504.75-420 480-420Zm0-230.77q-24.75 0-42.37-17.62Q420-686.02 420-710.77q0-24.75 17.63-42.37 17.62-17.63 42.37-17.63 24.75 0 42.37 17.63Q540-735.52 540-710.77q0 24.75-17.63 42.38-17.62 17.62-42.37 17.62Z" />
+                </svg></div>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div class="container">
+        <!-- menu photos  -->
+        <div class="menu_photos">
+            <div>
+                <img class="menu_ke_images" src="./images/grocery_img.webp" alt="">
+                <span>Grocery</span>
+            </div>
+            <div>
+                <img class="menu_ke_images" src="./images/mobiles_img.webp" alt="">
+                <span>Mobiles</span>
+            </div>
+            <div class="blue_color_div">
+                <img class="menu_ke_images" src="./images/fashion_img.webp" alt="">
+                <span style="display: flex; justify-content: center; align-items: center;"><span class="turnblue">Fashion</span><i style="margin-left: 4px; margin-bottom: -8px;"
+                        class="fa-solid fa-chevron-down turn_down_icon"></i></span>
+            </div>
+            <div class="blue_color_div">
+                <img class="menu_ke_images" height="97px" style="scale: 70%; margin-bottom: -14px;"
+                    src="./images/electronics_img.webp" alt="">
+                <span style="display: flex; justify-content: center; align-items: center;"><span class="turnblue">Electronics</span><i style="margin-left: 4px; margin-bottom: -6px;"
+                        class="fa-solid fa-chevron-down turn_down_icon"></i></span>
+            </div>
+            <div class="blue_color_div">
+                <img class="menu_ke_images" style="margin-left: 18px;" height="55%" width="55%"
+                    src="./images/furniture_img.webp" alt="">
+                <span style="display: flex; justify-content: center; align-items: center;"><span class="turnblue">Home & Furniture</span><i style="margin-left: 4px; margin-bottom: -7px;"
+                        class="fa-solid fa-chevron-down turn_down_icon"></i></span>
+            </div>
+            <div>
+                <img class="menu_ke_images" src="./images/appliances_img.webp" alt="">
+                <span>Appliances</span>
+            </div>
+            <div>
+                <img class="menu_ke_images" src="./images/travel_img.webp" alt="">
+                <span>Travel</span>
+            </div>
+            <div class="blue_color_div">
+                <img class="menu_ke_images" style="margin-left: 30px;" height="50%" width="50%"
+                    src="./images/toys_img.webp" alt="">
+                <span style="display: flex; justify-content: center; align-items: center;"><span class="turnblue">Beauty, Toys & More</span><i style="margin-left: 4px; margin-bottom: -7px;"
+                        class="fa-solid fa-chevron-down turn_down_icon"></i></span>
+            </div>
+            <div class="blue_color_div">
+                <img class="menu_ke_images" style="margin-left: 16px;" height="60%" width="60%"
+                    src="./images/two_wheelers_img.webp" alt="">
+                <span style="display: flex; justify-content: center; align-items: center;"><span class="turnblue">Two Wheelers</span><i style="margin-left: 4px; margin-bottom: -7px;"
+                        class="fa-solid fa-chevron-down turn_down_icon"></i></span>
+            </div>
+        </div>
+
+        <!-- carousel photos  -->
+        <div class="carousel" data-flickity='{ "autoPlay": 2200, "pauseAutoPlayOnHover": false, "pageDots": true }'>
+            <div class="carousel-cell one"><img class="img1" src="./images/carousel_1.webp" alt=""></div>
+            <div class="carousel-cell two"><img class="img2" src="./images/carousel_2.webp" alt=""></div>
+            <div class="carousel-cell three"><img class="img3" src="./images/carousel_3.webp" alt=""></div>
+            <div class="carousel-cell four"><img class="img4" src="./images/carousel_4.webp" alt=""></div>
+            <div class="carousel-cell five"><img class="img5" src="./images/carousel_5.webp" alt=""></div>
+            <div class="carousel-cell six"><img class="img6" src="./images/carousel_6.webp" alt=""></div>
+            <div class="carousel-cell seven"><img class="img7" src="./images/carousel_7.webp" alt=""></div>
+            <div class="carousel-cell eight"><img class="img8" src="./images/carousel_8.webp" alt=""></div>
+
+        </div>
+
+        <!-- deals on smartphone -->
+        <div class="smartphones">
+            <div class="smartphones_first">
+                <div class="smartphone_heading_div">
+                    <span class="smartphone_head_text">Deals On Smartphones</span>
+                    <i class="fa-solid fa-chevron-right right_arrow"></i>
+                </div>
+                <div class="smartphone_images_div">
+                    <div class="div">
+                        <img src="./images/smartphone1.webp" alt="">
+                        <span>CMF Phone 1</span>
+                        <span id="bold">Just &#8377;14,999</span>
+                    </div>
+                    <div class="div">
+                        <img src="./images/smartphone2.webp" alt="">
+                        <span>Vivo T3 Lite 5G</span>
+                        <span id="bold">Just &#8377;24,999</span>
+                    </div>
+                    <div class="div">
+                        <img src="./images/smartphone3.webp" alt="">
+                        <span>Motorola edge 50 pro</span>
+                        <span id="bold">From &#8377;27,999*</span>
+                    </div>
+                    <div class="div">
+                        <img src="./images/smartphone4.webp" alt="">
+                        <span>Redmi 13C 5G</span>
+                        <span id="bold">Just &#8377;13,999</span>
+                    </div>
+                    <div class="div">
+                        <img src="./images/smartphone5.webp" alt="">
+                        <span>Realme P1 pro 5G</span>
+                        <span id="bold">From &#8377;17,999*</span>
+                    </div>
+                    <div class="div">
+                        <img src="./images/smartphone6.webp" alt="">
+                        <span>Vivo T2X 5G</span>
+                        <span id="bold">From &#8377;34,999*</span>
+                    </div>
+                    <div class="div">
+                        <span><img src="./images/smartphone7.webp" alt=""></span>
+                        <span>Oppo F27 Pro</span>
+                        <span id="bold">Just &#8377;24,999*</span>
+                    </div>
+                    <div class="div">
+                        <img src="./images/smartphone8.webp" alt="">
+                        <span>Realme Pro 5G</span>
+                        <span id="bold">Just &#8377;15,999</span>
+                    </div>
+                </div>
+            </div>
+            <div class="smartphones_second">
+                <img class="smartphone_extra_img" src="./images/smartphone extra.webp" alt="">
+            </div>
+        </div>
+
+        <!-- Three divs in a row  -->
+        <div class="three_div_row">
+            <div><img src="./images/three_div_img1.webp" alt=""></div>
+            <div><img src="./images/three_div_img2.webp" alt=""></div>
+            <div><img src="./images/three_div_img3.webp" alt=""></div>
+        </div>
+
+        <!-- Top deals on fashio  -->
+        <div class="top_deals_on_fashion">
+            <div class="smartphone_heading_div">
+                <span class="smartphone_head_text">Top Deals on Fashion</span>
+                <i class="fa-solid fa-chevron-right right_arrow"></i>
+            </div>
+            <div class="smartphone_images_div">
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img1.webp" alt="">
+                    <span>Bras, Tops, Jeans...</span>
+                    <span id="bold">From &#8377;99 +Extra10%Off</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img2.webp" alt="">
+                    <span>Adidas, Puma & more</span>
+                    <span id="bold">Min 50% Off</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img3.webp" alt="">
+                    <span>Nike, Sketchers...</span>
+                    <span id="bold">Min 50% Off</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img4.webp" alt="">
+                    <span>Woodland, Crocs, Red Ta..</span>
+                    <span id="bold">Min 40% Off</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img5.webp" alt="">
+                    <span>Adidas, Puma & more</span>
+                    <span id="bold">Min 50% Off</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img6.webp" alt="">
+                    <span>Wallets & Belts</span>
+                    <span id="bold">Min 70% Off</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img7.webp" alt="">
+                    <span>Tops, Trousers,Nightsuits..</span>
+                    <span id="bold">Under &#8377;699</span>
+                </div>
+                <div class="div">
+                    <img src="./images/top_deals_on_fashion_img8.webp" alt="">
+                    <span>Metro Mochi</span>
+                    <span id="bold">Min 50% Off</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Brands  -->
+
+        <div class="featured_brands">
+            <div class="featured_brands_heading"><span class="featured_brands_heading_text">Featured Brands</span></div>
+            <div class="featured_brands_imgs">
+                <div class="div"><img src="./images/featured_brands_img1.webp" alt=""></div>
+                <div class="div"><img src="./images/featured_brands_img2.webp" alt=""></div>
+                <div class="div"><img src="./images/featured_brands_img3.webp" alt=""></div>
+                <div class="div"><img src="./images/featured_brands_img4.webp" alt=""></div>
+            </div>
+        </div>
+
+        <!-- Info section  -->
+
+        <section class="info">
+            <span style="font-size: larger; font-weight: 600; color: rgba(0, 0, 0, 0.719);">Top Stories: Brand
+                Directory</span><br><br><br>
+            <span><b>MOST SEARCHED FOR ON FLIPKART:</b> Aadi Sale | CMF by Nothing Phone 1 | Pocket Bazaar | Xiaomi 14
+                CIVI | iPhone 15 | Infinix Note 40 5G | iPhone 15 Plus | iPhone 15 Pro Blue | iPhone 15 Pro Max Black |
+                Vivo x 100 | OnePlus Nord CE 3 Lite 5G | Spoyl Store | SAMSUNG Flip5 | SAMSUNG Fold5 | Flipkart Axis
+                Bank Super Elite Credit card | 5G Mobile Phones | Primebook Laptops | Moto Edge 40 | Grievance Redressal
+                | OPPO Reno7 Pro 5G | iPhone 13 | Help Centre | Track Orders | Manage Orders | Return Orders | Gift
+                Cards Store | Flipkart Axis Bank Credit Card | Pay Later
+
+                <br><br>
+
+                <b>MOBILES:</b> Redmi 12 5G | Realme 12+ 5G | Motorola G84 | Realme C53 | Infinix Smart 8 | Samsung
+                Galaxy S23 5G | Samsung Galaxy S21 FE 5G Qualcomm | vivo V30 | Samsung Galaxy S24 5G | Samsung Galaxy
+                S24+ 5G | iPhone 12 64GB | iPhone 12 Pro 512GB | iPhone 12 128GB | Vivo Y15 | SAMSUNG Galaxy S21 FE 5G |
+                Infinix HOT 30 | Realme 10 Pro 5G | MOTOROLA G62 5G | Nothing Phone | REDMI Note 12 Pro 5G | Infinix
+                SMART 7 | Vivo Y12 | Oppo A12 | Motorola 5g Phone | Realme 5g Smartphone | Apple 5g Phone | Iqoo 5g
+                Phones | Oneplus 5g Phones | Vivo 5g Phones | Oppo 5g Smart Phones | Oppo F15 | Oppo A31 | Samsung A71 |
+                Samsung A51 | Samsung A31 | iPhone 11 | iPhone 11 Pro | 4G Mobile | Vivo Mobile | Nokia Mobile | Samsung
+                Mobile | iphone | Oppo Mobile | Vivo Mobile
+
+                <br><br>
+
+                <b>CAMERA:</b> GoPro Action Camera | Nikon Camera | Canon Camera | Sony Camera | Canon DSLR | Nikon DSLR
+
+                <br><br>
+
+                <b>LAPTOPS:</b> Asus ROG Ally | MacBook Pro M2 | Premium Laptop | ASUS ROG Strix SCAR 16 (2023) Core i9
+                13th Gen | ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen | ASUS Zenbook 14 OLED (2022) | Realme Book
+                Prime Core i5 11th Gen | Microsoft Surface Go Pentium 128GB | Apple Laptops | Acer Laptops | Lenovo
+                Laptops | Dell Laptops | Asus Laptops | HP Laptops | Gaming Laptops | 2 in 1 Laptops | Laptops | Dell
+                latest laptops 2022 | HP latest laptops 2022 | Infinix INBOOK Y1 Plus | SAMSUNG Galaxy Book3 | 12th Gen
+                Intel Core Laptops
+
+                <br><br>
+
+                <b>TVS:</b> Nokia TV | Panasonic TV | Thomson TV | Mi X Pro | Realme TV | Motorola TV | OnePlus TVs | LG
+                TV | TV | Sony TV | Samsung TV | Android Television | Iffalcon TV | Mi TV
+
+                <br><br>
+
+                <b>LARGE APPLIANCES:</b> Television | Washing Machines | Refrigerators | Air Conditioners | Electric
+                Cookers | Electric Jug(Heater) | Travel Kettles | Induction Cooktops | Inverters / stabilizer | Irons |
+                Mixer Grinder Juicer | Wet Grinders | Chimneys | Microwave Ovens | Vacuum Cleaners | Water Purifier |
+                Fan
+
+                <br><br>
+
+                <b>CLOTHING:</b> Green bridal lehenga | Tops | Shoes | Sunglasses | Bridal Blouse | Half saree blouse
+                designs | Designer blouses | Blouse designs | Shirts | Cotton saree blouse designs | Tshirts | Jeans |
+                Sarees | Dresses | One pieces | Groom wedding sherwani | Designer Salwar Suits | Bra | Cotton simple
+                blouse designs | Banarasi saree blouse designs | Stylish blouse astin design | Track Pant | Blouse neck
+                designs | Kurtas | Party Dresses | Palazzo Suits | Kurtis | Designer Sarees | Leggings | Shorts |
+                Georgette Sarees | Ethnic Wear | uppada pattu sarees | Blouse back design | Jodhpuri suits | Jodhpuri
+                pants | Salwar | Gowns | Cut out dress | Anarkali
+
+                <br><br>
+
+                <b>FOOTWEAR:</b> Adidas Shoes | Reebok Shoes | Nike Shoes | Puma Shoes | Boots | Bata Shoes | Woodland
+                Shoes | Skechers Shoes | Sandals | Womens Shoes | Asics Sports Shoes | Formal Shoes | School Shoes |
+                Sneakers | Womens Boots | Sports Shoes | Loafers | Casual Shoes | Womens Skechers
+
+                <br><br>
+
+                <b>GROCERIES:</b> PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs |
+                Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta
+                | Aashirvaad Atta | Tea
+
+                <br><br>
+
+                <b>BEST SELLING ON FLIPKART:</b> Headphones | Best Gas Geyser | Kitchen Geyser | Nutri Blenders |
+                Portable Air Cooler | Best Air Cooler | Best Geyser | Chocolates | Cycles | Calculators | Lipsticks |
+                Mask | Verify UPS | Fastrack Watches | Wallets | Earrings | Gold Coins | Realme Pad Mini | Handbags |
+                conekt SW2 Smartwatch | Miliv DuoPods a350 | Speaker Cleaner
+
+                <br><br>
+
+                <b>FURNITURE:</b> Furniture | Sofas | Beds | Dining Sets | Wardrobes | TV Units | Tables | Chairs |
+                Shelves | Bean Bags | Office Chair | Computer Table | Office Tables | Red Sofa | Wakefit Mattress |
+                Green Sofa | Black Sofa | Brown Sofa
+
+                <br><br>
+
+                <b>BGMH:</b> Whey Protein | Homeopathy | Cricket | Cycles | Treadmills | Christmas Gifts | Fitness
+                Accessories | Online Guitar | Books Store | Musical Instrument Store | Dabur Chyawanprash | Baidyanath
+                Chyawanprash | Energy Drinks | Toys | Milk Drink Mixes | Rakhi | Chyawanprash | Indian Flag | Protein
+                Supplements
+            </span><br><br><br>
+
+            <span><b>Flipkart: The One-stop Shopping Destination</b>
+
+                <br><br>
+
+                E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to
+                another in search of the latest phone when you can find it on the Internet in a single click? Not only
+                mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops,
+                tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and
+                lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances
+                that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving
+                kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to
+                toys and musical instruments, we got them all covered. You name it, and you can stay assured about
+                finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in
+                your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+
+                <br><br>
+
+                What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure
+                you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop
+                from Flipkart when there are multiple options available to you, well, the below will answer your
+                question.
+
+                <br><br>
+
+                <b>Flipkart Plus</b>
+
+                <br><br>
+
+                A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward
+                programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a
+                part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &
+                non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals,
+                exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short,
+                earn more when you shop more!
+
+                <br><br>
+
+                What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+                <br><br>
+                An annual Zomato Gold membership
+                <br>
+                An annual Hotstar Premium membership
+                <br>
+                6 months Gaana plus subscription
+                <br>
+                Rupees 550 instant discount on flights on ixigo
+                <br>
+                Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
+
+                <br><br>
+
+                <b>No Cost EMI</b>
+
+                <br><br>
+
+                In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with
+                us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and
+                small appliances, furniture, electronics and watches, you can now shop without burning a hole in your
+                pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI.
+                Take a look ASAP! Terms and conditions apply.
+
+                <br><br>
+
+                <b>EMI on Debit Cards</b>
+
+                <br><br>
+
+                Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore
+                credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping
+                accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with
+                us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis
+                Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers!
+                Terms and conditions apply.
+
+                <br><br>
+
+                <b>Mobile Exchange Offers</b>
+
+                <br><br>
+
+                Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new
+                one after the Flipkart experts calculate the value of your old phone, provided it is in a working
+                condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the
+                'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an
+                exchange wherever possible. Terms and conditions apply.
+
+                <br><br>
+
+                <b>What Can You Buy From Flipkart?</b>
+
+                <br><br>
+
+                <b>Mobile Phones</b>
+
+                <br><br>
+
+                From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether
+                you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
+                beautification apps, high-tech selfie cameras or just large internal space, we take care of all the
+                essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and
+                Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's
+                more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around
+                service centres. This plan entails you to a number of post-purchase solutions, starting at as low as
+                Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements
+                - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with
+                door-to-door services.
+            </span>
+        </section>
+        <!-- <section class="footer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section> -->
+    </div>
+
+    <!-- footer class  -->
+    <section class="footer">
+        <div>
+            <span class="lighter_text">ABOUT</span>
+            <br><br>
+            Contact Us <br>
+            About us <br>
+            Careers <br>
+            Flipkart Stories <br>
+            Press <br>
+            Corporate Information
+        </div>
+        <div>
+            <span class="lighter_text">GROUP COMPANIES</span> <br><br>
+            Myntra <br>
+            Cleartrip <br>
+            Shopsy
+        </div>
+        <div>
+            <span class="lighter_text">HELP</span> <br><br>
+            Payments <br>
+            Shipping <br>
+            Cancellation & Returns <br>
+            FAQ <br>
+            Report Infringement
+        </div>
+        <div>
+            <span class="lighter_text">CONSUMER POLICY</span> <br><br>
+            Cancellation & Returns <br>
+            Terms Of Use <br>
+            Security <br>
+            Privacy <br>
+            Sitemap <br>
+            Grievance Redressal <br>
+            EPR Compliance
+        </div>
+        <hr>
+        <div>
+            <span class="lighter_text">Mail Us:</span> <br><br>
+            Flipkart Internet Private Limited, <br>
+            Buildings Alyssa, Begonia & <br>
+            Clove Embassy Tech Village, <br>
+            Outer Ring Road, Devarabeesanahalli Village, <br>
+            Bengaluru, 560103, <br>
+            Karnataka, India <br><br>
+            <span class="lighter_text">Social:</span> <br>
+            <i class="fa-brands fa-facebook footer_icons"></i> <i class="fa-brands fa-x-twitter footer_icons"></i> <i
+                class="fa-brands fa-youtube footer_icons"></i>
+
+        </div>
+        <div>
+            <span class="lighter_text">Registered Office Address:</span> <br><br>
+            Flipkart Internet Private Limited, <br>
+            Buildings Alyssa, Begonia & <br>
+            Clove Embassy Tech Village, <br>
+            Outer Ring Road, Devarabeesanahalli Village, <br>
+            Bengaluru, 560103, <br>
+            Karnataka, India <br>
+            CN: U51109KA2012PTC066107 <br>
+            Telephone: <a class="phone" href="">044-45614700</a> / <a class="phone" href="">044-67415811</a>
+        </div>
+    </section>
+
+    <!-- footer of the page  -->
+     <footer>
+        <div>
+            <i class="fa-solid fa-store goldicon"></i> Become a Seller
+        </div>
+        <div>
+            <i class="fa-solid fa-star goldicon"></i> Advertise
+        </div>
+        <div>
+            <i class="fa-solid fa-gift goldicon"></i> Gift Cards
+        </div>
+        <div>
+            <i class="fa-regular fa-circle-question goldicon"></i> Help Center
+        </div>
+        <div>
+            &copy; 2007-2024 Flipkart.com
+        </div>
+        <div></div>
+     </footer>
+
+
+
+
+
+
+
+    <script>
+        // Arrow rotate in header
+        const login = document.getElementById('login');
+        const down_arrow = document.getElementById('down_arrow');
+        console.log(down_arrow);
+
+        login.addEventListener('mouseover', () => {
+            down_arrow.style.transform = 'rotate(180deg)';
+        });
+
+        login.addEventListener('mouseout', () => {
+            down_arrow.style.transform = 'rotate(0deg)';
+        });
+
+        //Arrow rotate in container first div
+        // const blue_color_div = document.getElementsByClassName('blue_color_div');
+        // const turnblue = document.getElementsByClassName('turnblue');
+        // const turn_down_icon = document.getElementById('turn_down_icon');
+
+        // blue_color_div.addEventListener('mouseover',()=>{
+        //     turnblue.style.color='blue';
+        //     turn_down_icon.style.color='blue';
+        //     turn_down_icon.style.transform='rotate(180deg)';
+
+        // });
+        // blue_color_div.addEventListener('mouseout',()=>{
+        //     turnblue.style.color='black';
+        //     turn_down_icon.style.transform='rotate(0deg)';
+        // });
+
+
+        //arrow rotate in first div
+        const blue_color_divs = document.getElementsByClassName('blue_color_div');
+        const turnblueElements = document.getElementsByClassName('turnblue');
+        const turn_down_icon = document.getElementsByClassName('turn_down_icon');
+
+        for (let i = 0; i < blue_color_divs.length; i++) {
+            blue_color_divs[i].addEventListener('mouseover', () => {
+
+                turnblueElements[i].style.color = 'blue';
+
+                turn_down_icon[i].style.color = 'blue';
+                turn_down_icon[i].style.transform = 'rotate(-180deg)';
+            });
+
+            blue_color_divs[i].addEventListener('mouseout', () => {
+
+                turnblueElements[i].style.color = 'black';
+
+                turn_down_icon[i].style.color = ''; // Reset to default color
+                turn_down_icon[i].style.transform = 'rotate(0deg)';
+            });
+        }
+
+
+
+    </script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
