@@ -1,0 +1,538 @@
+body{
+font-family: "Roboto", sans-serif;;
+margin:0;
+padding-left:0.5rem;
+overflow:auto;
+color: #fff;
+background-color: #000;
+}
+
+.main{
+    height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav{
+    background-color: #000;
+    width:100%;
+    height:3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    position: fixed;
+    top:0;
+    z-index:1;
+}
+
+.left-nav{
+    height:3.5rem;
+    width:10.56rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 1.2rem;
+}
+
+.left-nav i{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.nav-logo img{
+    width:8rem;
+    height:3rem;
+    
+}
+
+.nav-logo{
+    font-size:1.3rem;
+    padding: 1.1rem 0.9rem 1.1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-nav{
+    height:2.5rem;
+    width:45.75rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: #000;
+    padding: 0 0.25rem 0 1rem;
+    overflow: auto;
+}
+
+.right-nav{
+    height:2.5rem;
+    width:11rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.camera{
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.3rem;
+    height:1.2rem;
+    width:1.2rem;
+    padding: 8px;
+    background-color:#121212;
+   
+}
+
+.bell-icon{
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.3rem;
+    height:1.2rem;
+    width:1.2rem;
+    padding: 8px;
+    background-color:#121212;
+}
+
+.user-profile{
+    height: 2.1rem;
+    width: 3.9rem;
+    padding: 1px 6px;
+}
+.user-profile img{
+    border-radius: 50%;
+    height:2rem;
+    width:2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+.nav-search{
+    border:none;
+    color:#fff;
+    width: 35.5rem;
+    height:2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-search input{
+    width:33.5rem;
+    height: 2.2rem;
+    border-top-left-radius:1rem ;
+    border-bottom-left-radius:1rem ;
+    font-size: 1.3rem;
+    padding: 0 0.25rem 0 1rem;
+    background-color: #121212;
+    border-right:none;
+    border:0.2px solid rgba(255, 255, 255, 0.1)  ;
+    color: #fff;
+}
+
+.search-icon button{
+    height:2.1rem;
+    width: 3.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+    background-color: #232323;
+    border-right:none;
+    border:0.2px solid rgba(255, 255, 255, 0.1)  ;
+    color: #fff;
+}
+
+.search-icon i{
+    font-size: 1.2rem;
+   
+}
+
+.microphone{
+    height:2.5rem;
+    width:2.5rem;
+    border-radius: 50%;
+    background-color:#232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+   
+}
+
+.microphone i{
+    font-size: 1.2rem;
+}
+
+.sidebar{
+    background-color: #000;
+    width:5.2rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0.5rem;
+    padding-top: 3.5rem;
+    position: fixed;
+    left:0;
+  
+}
+ 
+.main-content{
+    background-color: #000;
+    flex:1;  
+    overflow: auto;
+    padding-top: 3.5rem;
+    padding-left: 5.2rem;
+}
+
+.sidebar-icon {
+    height:3.05rem;
+    width:4rem;
+    padding:1rem 0 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home{
+    height:100%;
+    width:100%;
+    font-size: 1.3rem;
+    display:flex;
+    justify-content: center;
+}
+
+.sidebar-icon span{
+    font-size:0.7rem
+}
+
+.banner{
+    padding: 0 4rem 0 4rem;
+}
+
+.banner img{
+    width:100%;
+    height:14.54rem;
+    border-radius: 2rem;
+}
+
+.page-header{
+    height:13rem;
+    width:100%;
+    padding:1rem 4rem 0.3rem;
+    display: flex;
+    align-items: center; 
+    line-height: 2rem;
+
+}
+
+.page-header span{
+    font-size: 0.9rem;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.channel-logo img{
+    border-radius: 50%;
+}
+.channel-logo{
+    height: fit-content;
+    width:fit-content;
+    margin:0 1rem 0 0;
+}
+#heading {
+    font-size:2.5rem;
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+.subscribed button{
+    width:12rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    background-color: #232323;
+   color: #f1f1f1;
+   border: none;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 0.5rem;
+}
+
+.subscribed i{
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    
+}
+
+.light{
+    opacity: 0.8;
+}
+
+.other-link a{
+    color: #3ea6ff;
+    text-decoration: none;
+}
+
+.option-nav{
+    width:100%;
+    height: 3rem;
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top:0
+
+}
+.inside-nav-options{
+    height:3rem;
+    width: 3rem;
+    margin-right:1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity:0.8;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaaaaa;
+}
+
+.videos{
+    width:3rem;
+}
+.shorts{
+    width:3rem;
+}
+.live{
+    width:2rem
+}
+.playlist{
+    width:4.3rem;
+}
+.community{
+    width:5.1rem;
+}
+.search{
+    width:1.5rem;
+}
+#home {
+    opacity:1;
+    color:#f1f1f1;
+    width:2.5rem;
+}
+
+.line{
+    width:93%;
+    height: 0.8px; 
+    background-color: #aaaaaa;
+    color: #aaaaaa;
+    margin: 0 3.5rem 0 3.5rem;
+    opacity: 0.5;
+}
+
+.lower-section{
+    padding: 0 3.5rem 0 3.5rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin:1.5rem 0 0 0;
+}
+
+.heading h2 {
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.lower-heading{
+    margin-top:0.5rem;
+    color: #aaaaaa;
+}
+.play{
+height:2.2rem;
+width:6.43rem;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+color: #ffffff;
+font-weight: 700;
+}
+
+.play i{
+    font-size: 1.2rem;
+}
+
+.videos img{
+    width:13.12rem;
+    height:7.35rem;
+    border-radius: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.video-text{
+    width:13.12rem;
+    height:5.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.videos a{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 700;
+} 
+.videos{
+    height:13.87rem;
+    width:100%;
+    margin:0 0 1.5rem;
+    padding:1rem 0 0 ;
+    display: flex;
+    
+    
+}
+.tick{
+    margin-left:0.3rem;
+}
+
+.button{
+    height: 1.5rem;
+    width:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;;
+}
+
+.video-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video-small-text{
+    font-size: 0.75rem;
+    color: #aaaaaa;
+}
+
+.video-1{
+    padding-right: 0.25rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.video-small-text i{
+    margin-left: 0.3rem;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sk-photo{
+    width:7.2rem;
+    height: 9.31rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+.sk-photo img{
+    border-radius: 50%;
+    height: 6.43rem;
+    width:6.43rem;
+}
+
+.name{
+    font-size:0.9rem;
+    font-weight: 700;
+}
+
+.fc-small-text{
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    display: flex;
+    height: 1.1rem;
+    display: flex;
+}
+
+.fc-button{
+    width:4.81rem;
+    height:2rem;
+    background-color: #232323;
+    color: #ffffff;
+    border:none;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-top:1rem ;
+    
+}
+
+.outer-fc{
+width:13.125rem;
+height: 12.31rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.fc-div{
+    display: flex;
+    justify-content: center;
+
+}
+
+.other-channel{
+    padding:1rem 0 0;
+    margin:0 0 1.5rem;
+    display: flex;
+}
+
+#talks{
+    width:11rem;
+    display: flex;
+    justify-content: center;
+}
+
+.lower-section:hover{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width:15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #232323;
+}
+
+.svg{
+    width:1.5rem;
+    height:1.5rem;
+}

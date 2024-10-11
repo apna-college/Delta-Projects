@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Assets/youtube_logo.png">
+    <title>Apna College - Youtube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="left-nav">
+                <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z" style="fill: white;"></path></svg></div>
+                <div class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-svg_yt8" width="93" height="20" viewBox="0 0 93 20" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                    <g>
+                      <path d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z" fill="#FF0033"></path>
+                      <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white"></path>
+                    </g>
+                    <g id="youtube-paths_yt8">
+                      <path d="M37.1384 18.8999V13.4399L40.6084 2.09994H38.0184L36.6984 7.24994C36.3984 8.42994 36.1284 9.65994 35.9284 10.7999H35.7684C35.6584 9.79994 35.3384 8.48994 35.0184 7.22994L33.7384 2.09994H31.1484L34.5684 13.4399V18.8999H37.1384Z" style="fill: white;"></path>
+                      <path d="M44.1003 6.29994C41.0703 6.29994 40.0303 8.04994 40.0303 11.8199V13.6099C40.0303 16.9899 40.6803 19.1099 44.0403 19.1099C47.3503 19.1099 48.0603 17.0899 48.0603 13.6099V11.8199C48.0603 8.44994 47.3803 6.29994 44.1003 6.29994ZM45.3903 14.7199C45.3903 16.3599 45.1003 17.3899 44.0503 17.3899C43.0203 17.3899 42.7303 16.3499 42.7303 14.7199V10.6799C42.7303 9.27994 42.9303 8.02994 44.0503 8.02994C45.2303 8.02994 45.3903 9.34994 45.3903 10.6799V14.7199Z" style="fill: white;"></path>
+                      <path d="M52.2713 19.0899C53.7313 19.0899 54.6413 18.4799 55.3913 17.3799H55.5013L55.6113 18.8999H57.6012V6.53994H54.9613V16.4699C54.6812 16.9599 54.0312 17.3199 53.4212 17.3199C52.6512 17.3199 52.4113 16.7099 52.4113 15.6899V6.53994H49.7812V15.8099C49.7812 17.8199 50.3613 19.0899 52.2713 19.0899Z" style="fill: white;"></path>
+                      <path d="M62.8261 18.8999V4.14994H65.8661V2.09994H57.1761V4.14994H60.2161V18.8999H62.8261Z" style="fill: white;"></path>
+                      <path d="M67.8728 19.0899C69.3328 19.0899 70.2428 18.4799 70.9928 17.3799H71.1028L71.2128 18.8999H73.2028V6.53994H70.5628V16.4699C70.2828 16.9599 69.6328 17.3199 69.0228 17.3199C68.2528 17.3199 68.0128 16.7099 68.0128 15.6899V6.53994H65.3828V15.8099C65.3828 17.8199 65.9628 19.0899 67.8728 19.0899Z" style="fill: white;"></path>
+                      <path d="M80.6744 6.26994C79.3944 6.26994 78.4744 6.82994 77.8644 7.73994H77.7344C77.8144 6.53994 77.8744 5.51994 77.8744 4.70994V1.43994H75.3244L75.3144 12.1799L75.3244 18.8999H77.5444L77.7344 17.6999H77.8044C78.3944 18.5099 79.3044 19.0199 80.5144 19.0199C82.5244 19.0199 83.3844 17.2899 83.3844 13.6099V11.6999C83.3844 8.25994 82.9944 6.26994 80.6744 6.26994ZM80.7644 13.6099C80.7644 15.9099 80.4244 17.2799 79.3544 17.2799C78.8544 17.2799 78.1644 17.0399 77.8544 16.5899V9.23994C78.1244 8.53994 78.7244 8.02994 79.3944 8.02994C80.4744 8.02994 80.7644 9.33994 80.7644 11.7299V13.6099Z" style="fill: white;"></path>
+                      <path d="M92.6517 11.4999C92.6517 8.51994 92.3517 6.30994 88.9217 6.30994C85.6917 6.30994 84.9717 8.45994 84.9717 11.6199V13.7899C84.9717 16.8699 85.6317 19.1099 88.8417 19.1099C91.3817 19.1099 92.6917 17.8399 92.5417 15.3799L90.2917 15.2599C90.2617 16.7799 89.9117 17.3999 88.9017 17.3999C87.6317 17.3999 87.5717 16.1899 87.5717 14.3899V13.5499H92.6517V11.4999ZM88.8617 7.96994C90.0817 7.96994 90.1717 9.11994 90.1717 11.0699V12.0799H87.5717V11.0699C87.5717 9.13994 87.6517 7.96994 88.8617 7.96994Z" style="fill: white;"></path>
+                    </g>
+                  </svg></div>
+            </div>
+
+            <div class="middle-nav">
+                <div class="nav-search"><input type="search" placeholder="Search"></div>
+                <div class="search-icon">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="microphone"><i class="fa-solid fa-microphone"></i></div>
+            </div>
+
+            <div class="right-nav">
+                <div class="camera svg"><svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
+                    <path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16" style="fill: white;"></path>
+                  </svg>
+                  </div>
+                <div class="bell-icon svg"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z" style="fill: white;"></path></svg></div>
+                <div class="user-profile"><img src="Assets/user icon.jpg"></div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+           <div class="sidebar-icon">
+                <div class="home svg"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m12 4.44 7 6.09V20h-4v-6H9v6H5v-9.47l7-6.09m0-1.32-8 6.96V21h6v-6h4v6h6V10.08l-8-6.96z" style="fill: white;"></path></svg></div>
+                <span>Home</span>
+           </div> 
+
+            <div class="sidebar-icon">
+            <div class="home svg"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z" style="fill: white;"></path></svg></div>
+            <span>Shorts</span>
+            </div> 
+
+            <div class="sidebar-icon">
+                <div class="home svg"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z" style="fill: white;"></path></svg></div>
+                <span>Subscriptions</span>
+                </div> 
+
+            <div class="sidebar-icon">
+                    <div class="home svg"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z" style="fill: white;"></path></svg></div>
+                    <span>You</span>
+                    </div> 
+        </div>
+
+        <div class="main-content">
+            <div class="upper-section">
+            <div class="banner"><img src="Assets/Banner.jpg"></div>
+            <div class="page-header">
+                <div class="channel-logo"><img src="Assets/apna college dp.jpg"></div>
+                <div class="header-content">
+                    <div>
+                        <span id="heading">Apna College</span>
+                    </div>
+                    <div class="light">
+                        <span>@ApnaCollegeOfficial</span>
+                        <span>.</span>
+                        <span>58.3 lakh subscribers</span>
+                        <span>.</span>
+                        <span>846 videos</span>
+                    </div>
+                    
+                    <div>
+                    <span class="light">I,m Shradha, Ex-Microsoft Engineer, DRDO. My journey started from a small</span><span style="font-weight: 700;">...more</span>
+                    </div>
+                    <div class="other-link">
+                        <a href="https://linktr.ee/apnacollege.in">linktr..ee/apnacollege.in</a><span style="font-weight: 700;"> and 2 more links.</span>
+                    </div>
+                    <div class="subscribed">
+                        <button class="subscribed"><i class="fa-solid fa-bell"></i>Subscribed<i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option-nav">
+                <div class="inside-nav-options" id="home">Home</div>
+                <div class="inside-nav-options">Videos</div>
+                <div class="inside-nav-options shorts">Shorts</div>
+                <div class="inside-nav-options live">Live</div>
+                <div class="inside-nav-options playlist">Playlists</div>
+                <div class="inside-nav-options community">Community</div>
+                <div class="inside-nav-options search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="line"></div> 
+            </div>
+            <div class="lower-section">
+                <div class="section-one">
+                    <div class="heading-outer">
+                        <div class="heading">
+                            <h2><span></span>Complete C++ DSA Course | Data Sturucture & Algorithms Playlist</span></h2>
+                            <div class="play"><i class="fa-solid fa-play"></i>Play all</div>
+                        </div>
+                        <div class="lower-heading">Let's start our DSA journey! Series will be consistent and will be completed ahead of schedule.</div>
+                    </div>
+                    <div class="videos">
+                        <div class="video-1">
+                            <img src="Assets/scard_1.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 1 : DSA Series by Shradha Ma'am | Flowc...</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>3.3 lakh views </span><span>.</span><span> 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_2.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 2 : DSA Series by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>2.5 lakh views </span><span>.</span><span> 3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_3.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Netflix Clone by Shradha Ma'am</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>10 lakh views </span><span>.</span><span> 10 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+
+            <div class="line"></div> 
+            </div>
+            <div class="lower-section">
+                <div class="section-one">
+                    <div class="heading-outer">
+                        <div class="heading">
+                            <h2><span></span>HTML,CSS,JavaScript, Project, Git & GitHub</span></h2>
+                            <div class="play"><i class="fa-solid fa-play"></i>Play all</div>
+                        </div>
+                        <div class="lower-heading">Let's start our Web development journey!</div>
+                    </div>
+                    <div class="videos">
+                        <div class="video-1">
+                            <img src="Assets/scard_1.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 1 : DSA Series by Shradha Ma'am | Flowc...</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>3.3 lakh views </span><span>.</span><span> 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_2.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 2 : DSA Series by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>2.5 lakh views </span><span>.</span><span> 3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_3.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Netflix Clone by Shradha Ma'am</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>10 lakh views </span><span>.</span><span> 10 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_4.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Git and Git-Hub by Shradha Ma"am || Part-1</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>1 lakh views </span><span>.</span><span> 20 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_4.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Git and Git-Hub by Shradha Ma"am || Part-2</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>11 lakh views </span><span>.</span><span> 1 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_6.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Python by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>1.5 lakh views </span><span>.</span><span> 2 month ago</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+            </div>
+
+        
+            <div class="line"></div> 
+            </div>
+            <div class="lower-section">
+                <div class="section-one">
+                    <div class="heading-outer">
+                        <div class="heading">
+                            <h2><span></span>Java & DSA Course for Placement</span></h2>
+                            <div class="play"><i class="fa-solid fa-play"></i>Play all</div>
+                        </div>
+                    </div>
+                    <div class="videos">
+                        <div class="video-1">
+                            <img src="Assets/scard_1.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 1 : DSA Series by Shradha Ma'am | Flowc...</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>3.3 lakh views </span><span>.</span><span> 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="video-1">
+                            <img src="Assets/scard_2.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 2 : DSA Series by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>2.5 lakh views </span><span>.</span><span> 3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_3.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Netflix Clone by Shradha Ma'am</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>10 lakh views </span><span>.</span><span> 10 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_4.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Git and Git-Hub by Shradha Ma"am || Part-1</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>1 lakh views </span><span>.</span><span> 20 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_4.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Git and Git-Hub by Shradha Ma"am || Part-2</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>11 lakh views </span><span>.</span><span> 1 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_6.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Python by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>1.5 lakh views </span><span>.</span><span> 2 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+
+            <div class="line"></div> 
+            </div>
+            <div class="lower-section">
+                <div class="section-one">
+                    <div class="heading-outer">
+                        <div class="heading">
+                            <h2><span></span>For You</span></h2>
+                            <div class="play"><i class="fa-solid fa-play"></i>Play all</div>
+                        </div>
+                    </div>
+                    <div class="videos">
+                        <div class="video-1">
+                            <img src="Assets/scard_1.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 1 : DSA Series by Shradha Ma'am | Flowc...</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>3.3 lakh views </span><span>.</span><span> 2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_2.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Lecture 2 : DSA Series by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>2.5 lakh views </span><span>.</span><span> 3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_3.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Netflix Clone by Shradha Ma'am</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>10 lakh views </span><span>.</span><span> 10 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_4.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Git and Git-Hub by Shradha Ma"am || Part-1</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>1 lakh views </span><span>.</span><span> 20 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-1">
+                            <img src="Assets/scard_4.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Git and Git-Hub by Shradha Ma"am || Part-2</a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>11 lakh views </span><span>.</span><span> 1 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+            
+                        
+            <div class="video-1">
+                            <img src="Assets/scard_6.webp">
+                            <div class="video-text">
+                                <div class="video-title">
+                                    <a href="#">Python by Shradha Ma'am </a>
+                                    <div class="button"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="video-small-text one">
+                                    <span>Apna College</span><i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="video-small-text two">
+                                    <span>1.5 lakh views </span><span>.</span><span> 2 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+         
+            <div class="line"></div> 
+            </div>
+            <div class="lower-section">
+                <div class="section-one">
+                    <div class="heading-outer">
+                        <div class="heading">
+                            <h2><span></span>Featured channel</span></h2>
+                            <div class="featured-channel">
+                                <div></div>
+                            </div>
+                        </div>  
+                    </div>
+
+        <div class="other-channel">
+            <div class="outer-fc">
+                <div class="photo">
+                    <div class="sk-photo"><img src="Assets/channels_logo_1.jpg">
+                    <span class="name">Shradha Khapra</span>
+                    <div class="fc-small-text">3.76 lakh subscribers</div> </div>
+           
+                    <div class="fc-div"><button class="fc-button">Subscribe</button></div>
+                </div>
+            </div>  
+
+            <div class="outer-fc">
+                <div class="photo">
+                    <div class="sk-photo"><img src="Assets/channels_logo_2.jpg">
+                    <span class="name">Aman Dhattarwal</span>
+                    <div class="fc-small-text">44.2 lakh subscribers</div> </div>
+           
+                    <div class="fc-div"><button class="fc-button">Subscribe</button></div>
+                </div>
+            </div>  
+
+            <div class="outer-fc">
+                <div class="photo">
+                    <div class="sk-photo"><img src="Assets/channels_logo_3.jpg">
+                    <span class="name" id="talks">Aman Dhattarwal Talks</span>
+                    <div class="fc-small-text">3.32 lakh subscribers</div> </div>
+           
+                    <div class="fc-div"><button class="fc-button">Subscribe</button></div>
+                </div>
+            </div>  
+
+        </div>
+
+        </div>  
+    </div>
+</body>
+</html>
