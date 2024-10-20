@@ -1,0 +1,330 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+}
+
+.main-content {
+    background-color: #2a2a2a;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding-left: 1.5rem;
+    margin-left: 0.6rem;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.library {
+    background-color: rgb(34, 34, 34);
+    height: 100%;
+    margin-top: 0.75rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+}
+
+.lboption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.2rem;
+}
+
+.ylb img {
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.ylb {
+    opacity: 0.7;
+}
+
+.icon1 i {
+    font-size: 1.4rem;
+    margin-left: 5rem;
+    opacity: 0.7;
+}
+
+.icon2 i {
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+
+.ylb:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.icon1 i:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.icon2 i:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.box1 {
+    height: 132px;
+    background-color: rgb(50, 50, 50);
+    padding: 0.2rem 1rem;
+    letter-spacing: 0.1px;
+    line-height: 0.5rem;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+}
+
+.box2 {
+    height: 132px;
+    background-color: rgb(50, 50, 50);
+    padding: 0.2rem 1rem;
+    letter-spacing: 0.1px;
+    line-height: 0.83rem;
+    margin-top: 10px;
+    border-radius: 0.5rem
+}
+
+.box1>p {
+    font-size: 14px;
+}
+
+.box2>p {
+    font-size: 14px;
+}
+
+.btn {
+    border-radius: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 0rem 1rem 0rem;
+    margin-left: -2rem;
+
+}
+
+.stickynavicons {
+    margin-left: 0.75rem;
+
+}
+
+.stickynavicons img {
+    height: 2rem;
+    width: 2rem;
+
+}
+
+.stickynavoption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badges {
+    border-radius: 1rem;
+    padding: 0.1rem 1rem;
+    margin-right: 1rem;
+}
+
+.stickynavoption .dark-badge {
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:1000px) {
+    .hide {
+        display: none;
+    }
+
+}
+
+@media(max-width:1000px) {
+    #invisible {
+        display: none;
+    }
+
+}
+
+.card {
+
+    width: 144px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+
+
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.card-title {
+    padding: 0rem;
+    font-weight: 600;
+}
+
+.card-info {
+    padding: 0rem;
+    font-size: 0.85rem;
+    opacity: 0.rem;
+}
+
+.card:hover {
+    transition: 0.3s;
+    background-color: rgb(50, 50, 50);
+
+}
+
+.music-player {
+    display: flex;
+}
+
+.albam {
+    width: 25%;
+    display: flex;
+    align-items: center;
+
+}
+
+.player {
+    width: 50%;
+}
+
+.control {
+    width: 25%;
+}
+
+.player-cantrol img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 1rem;
+    opacity: 0.5;
+    margin-top: 0.5rem
+}
+
+.player-cantrol img:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.player-cantrol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+
+.progress-bar {
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #bbb;
+    height: 0.2rem;
+    border-radius: 1rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(31, 141, 31);
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.albam-img {
+    height: 3.7rem;
+    width: 3.5rem;
+    margin-left: 2rem;
+    border-radius: 0.2rem;
+}
+
+.alb {
+    margin-left: 1rem;
+    line-height: 0.4rem;
+}
+
+.albam-icon {
+    margin-left: 3rem;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    justify-content: center;
+
+}
+
+.control-icon2 {
+    margin-left: 3rem;
+    margin-right: 0.3rem;
+}
+
+.control-input {
+    appearance: none;
+    height: 0.2rem;
+    border-radius: 2rem;
+}
+
+@media(max-width:840px) {
+    .albam {
+
+        display: none;
+    }
+}
