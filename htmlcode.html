@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website </title>
+</head>
+<link rel="stylesheet" href=first.css">
+<style>
+    body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url(img6.jpg);
+        color: white;
+    }
+    .header{
+
+    }
+    .left{
+        /* border: 3px solid lightgreen; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        width: 140px;
+        border-radius: 10px;
+    }
+    .left div{
+        line-height: 20px;
+        color: saddlebrown;
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+    }
+    .center{
+        /* border: 3px solid lightgreen; */
+        display: block;
+        
+        width: 55%;
+        margin: 30px auto;
+        
+        
+
+    }
+    .right{
+        /* border: 3px solid lightgreen; */
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 45px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 35px 25px;
+    }
+    .navbar li  a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: chartreuse;
+
+    }
+    .btn{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:crimson;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 100px 80px;
+        padding: 75px;
+        width: 30%;
+        border-radius: 10px;
+    }
+    .container h1{
+        text-align: center;
+
+    }
+    .container button{
+        display: block;
+        
+        margin: 20px auto;
+
+    }
+    .fgroup input{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 2px;
+        border: 2px solid black0;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 20px;
+
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img3.avif" alt=" logo">
+            <div>FitNess Gym Center</div>
+
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="#">Fitness packeges</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <button class="btn">Sign in</button>
+            <button class="btn">Call</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join Now!!!.</h1>
+        <form action="abc.php">
+            <div class="fgroup">
+                <input type="text" placeholder="Enter your name" name="" id="">
+
+            </div>
+
+            <div class="fgroup">
+                <input type="text" placeholder="Enter your name" name="" id="">
+
+            </div>
+
+            <div class="fgroup">
+                <input type="email" placeholder="Enter your Email Id" name="" id="">
+
+            </div>
+
+            <div class="fgroup">
+                <input type="text" placeholder="Enter your Gender" name="" id="">
+
+            </div>
+
+            <div class="fgroup">
+                <input type="tel" placeholder="Enter your Mobile number" name="" id="">
+
+            </div>
+
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
