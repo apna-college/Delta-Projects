@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS SPOTIFY FILE.css"/>
+</head>
+<body>
+    <div class="view">
+        <div class="navbar">
+            <div class="logo"><img src="logo.png"/></div>
+            <div class="nav-controls">
+                <button class="nav-controls-btn"><i class="fa-solid fa-house"></i></button>
+                <input type="text" class="searchbar" placeholder="what do you want to play?"> <i class="fa-solid fa-magnifying-glass"></i> 
+            </div>
+            <div class="btns">
+                <button class="navbar-btn1">Sign up</button>
+                <button class="navbar-btn2">Log in</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="library">
+                <img src="library_icon.png"/>
+                <h5>Your Library</h5>
+                <button class="library-icon"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="sidebar-main-content">
+                <div class="sidebar-main-content-box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button class="box-btn">Create Playlist</button>
+                </div>
+                <div class="sidebar-main-content-box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>we'll keep you updated on new episodes</p>
+                    <button class="box-btn" style="width: 10rem;">Browse Podcasts</button>
+                </div>
+            </div>
+            <div class="sidebar-fixed-content"></div>
+        </div>
+        <div class="main-content">
+            <h2>Popular artists</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img"/>
+                    <p class="card-title">Pritam</p>
+                    <p class="card-text">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img"/>
+                    <p class="card-title">A.R.Rahman</p>
+                    <p class="card-text">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img"/>
+                    <p class="card-title">Sachin-Jigar</p>
+                    <p class="card-text">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img"/>
+                    <p class="card-title">Arijit Singh</p>
+                    <p class="card-text">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img"/>
+                    <p class="card-title">Anirudh Ravichandar</p>
+                    <p class="card-text">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img"/>
+                    <p class="card-title">Vishal Mishra</p>
+                    <p class="card-text">Artist</p>
+                </div>
+            </div>
+            <h2>Popular albums</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img"/>
+                    <p class="card-title">GLORY</p>
+                    <p class="card-text">Yo Yo Honey Singh</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img"/>
+                    <p class="card-title">Aashiqui2</p>
+                    <p class="card-text">Mithoon,Ankit Tiwari,Jeet Ganguli</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img"/>
+                    <p class="card-title">Jo Tum Mere Ho</p>
+                    <p class="card-text">Anuv Jain</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img"/>
+                    <p class="card-title">Making Memories</p>
+                    <p class="card-text">Karan AUjla,ikky</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img"/>
+                    <p class="card-title">Yah Jawani Hai Dewaani,</p>
+                    <p class="card-text">Pritam</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img"/>
+                    <p class="card-title">Moosetape</p>
+                    <p class="card-text">Sidhu Moose Wala</p>
+                </div>
+            </div>
+            <h2>Popular radio</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">With Atif Aslam, Sachin-Jigar....</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">With Mohammad Rafi,Mukesh,Ash...</p>
+                </div>
+                <div class="card">
+                    <img src="apple.jpg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">With Karan Aujla, AP Dhillion, Ash...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">With Pritam, Mohit Chauhaan, Armaan...</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">With Abhijeet, Uttam Singh, Lata...</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">With A.R.Rahaman, Pritam, Vishal...</p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">Your weekly update for the most....</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">Your weekly update for the most....</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">Your weekly update for the most....</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">Your daily update for the most played....</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">Your daily update for the most played....</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img"/>
+                    <p class="card-title"></p>
+                    <p class="card-text">Your daily update for the most played....</p>
+                </div>
+            </div>
+        </div>
+        <div class="taskbar">
+            <p><b>Preview of spotify</b><br>Signup to get unlimited songs and podcasts with occasional ads.No credit card needed.</p>
+            <button class="taskbar-btn">Sign up free</button> 
+        </div>
+    </div>
+</body>
+</html>
