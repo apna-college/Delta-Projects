@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quiz</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="2-Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"/>
+</head>
+<body>
+    <div class="navpanel"> 
+        <div class="navcover">
+            <div class="navtop">
+                <div class="navinfo">
+                    <div class="logoname"><img src="Logo.png" id="logo">Daily <br>Quiz</div>
+                    <div class="line"></div>
+                    <span class="searchbar">
+                        <img src="Google.png" id="google">
+                        <form action="https://www.google.com/search" method="get" target="_blank">
+                            <input placeholder="Search Google..." name="q">
+                            <button type="submit" class="submit">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </form>
+                    </span>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="navbottom">
+                <div class="list">
+                    <p class="request" data-topic="React">React</p>
+                    <p class="request" data-topic="Linux">Linux</p>
+                    <p class="request" data-topic="DevOps">DevOps</p>
+                    <p class="request" data-topic="Docker">Docker</p>
+                    <p class="request" data-topic="">Random Questions</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="bottom">
+        <div class="content "> 
+            <div class="contenttop hide" >
+                <div class="content1" >
+                    <p class="category" ></p>
+                    <p class="difficulty" ></p>
+                </div>
+                <div class="content2">
+                    <p class="questionnum"></p>
+                    <p class="score" >Score : 0</p>
+                </div>
+            </div>
+
+            <div class="contentbottom hide">
+                <p class="questions"></p>
+                <form class="options" >
+                    <label>
+                        <input type="radio" name="option" value="a">
+                        <span class="option1"></span>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="b">
+                        <span class="option2"></span>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="c">
+                        <span class="option3"></span>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="d">
+                        <span class="option4"></span>
+                    </label>
+                </form>
+            </div>
+
+            <div class="contentend">
+                <p class="previousQue hide">< Prev</p>
+                <p class="submitQue hide">Submit</p>
+                <p class="nextQue hide">Next ></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="3-App.js"></script>   
+</body>
+</html>
