@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    /* display: inline-block; */
+    flex-direction: column;
+    text-align: center;
+}
+
+
+h1{
+    background-color: maroon;
+    color: white;
+}
+
+.post{
+    background-color: pink;
+}
+
+h2{
+    font-style: italic;
+}
+
+h3{
+    background-color: rgb(248, 236, 16);
+}
+
+img{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+}
+
+.new{
+    background-color: rgb(4, 137, 7);
+    font-size: 25px;
+    color: white;
+}

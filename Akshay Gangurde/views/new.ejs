@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+</head>
+<body>
+    <h3>Create a New Post</h3>
+    <form method="post" action="/posts">
+        <div>
+            <label for="username">Username:@</label>
+            <select name="username">
+                <option value="Lord_Krishna">Lord_Krishna</option>
+                <option value="Maha_Vishnu">Maha_Vishnu</option>
+                <option value="Garbo_Vishnu">Garbo_Vishnu</option>
+                <option value="Lord_Vishnu">Lord_Vishnu</option>
+            </select>
+        </div><br><br>
+        <div>
+            <label for="image">Select an Image</label>
+            <select name="image">
+                <option value="/ShriKrishn.jpg">Lord_Krishna</option>
+                <option value="/MahaVishnu.jpg">Maha_Vishnu</option>
+                <option value="/GarbhoVishnu.jpg">Garbo_Vishnu</option>
+                <option value="/Lordvishnu.jpg">Lord_Vishnu</option>
+            </select>
+        </div><br><br>
+        <div>
+            <label for="comment">Select an Comment</label>
+            <select name="comment">
+                <option>I am the path for your Moksh.</option>
+                <option value="Hare Krishna Hare Krishna">Hare Krishna Hare Krishna
+                    Krishna Krishna Hare Hare
+                    Hare Rama Hare Rama
+                    Rama Rama Hare Hare</option>
+                <option>Radhe Radhe</option>
+            </select>
+        </div><br><br>
+        <button>Create Post</button>
+    </form>
+</body>
+</html>
