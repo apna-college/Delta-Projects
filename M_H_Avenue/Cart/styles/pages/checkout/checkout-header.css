@@ -1,0 +1,156 @@
+.checkout-header {
+  height: 70px;
+  width: 100vw;
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+  background: linear-gradient(
+    90deg,
+    rgba(100, 179, 171, 1) 0%,
+    rgba(23, 182, 182, 1) 77%,
+    rgba(93, 163, 191, 1) 100%
+  );
+
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  width: 100vw;
+  /* max-width: 1100px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+
+.checkout-header-left-section {
+  width: 150px;
+}
+
+.amazon-logo {
+  width: 170px;
+  height: 100%;
+  margin-top: 3px;
+}
+
+.amazon-mobile-logo {
+  display: none;
+}
+
+/* @media is used to create responsive design (making the
+   website look good on any screen size). This @media
+   means when the screen width is 575px or less, different
+   styles (inside the {...}) will be applied. */
+@media (max-width: 575px) {
+  .checkout-header-left-section {
+    width: auto;
+  }
+
+  .amazon-logo {
+    display: none;
+  }
+
+  .amazon-mobile-logo {
+    display: inline-block;
+    height: 35px;
+    margin-top: 5px;
+  }
+}
+
+.checkout-header-middle-section {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+
+  font-size: 2vw;
+  text-shadow: 1px 0px 1px black;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.checkout_quantity{
+  color: white;
+}
+
+.return-to-home-link {
+  color: white;
+  font-size: 23px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  top: 7px;
+}
+
+@media (max-width: 1000px) {
+  .checkout-header-middle-section {
+    font-size: 20px;
+    margin-right: 60px;
+  }
+
+  .return-to-home-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .checkout-header-middle-section {
+    margin-right: 5px;
+  }
+}
+
+.checkout-header-right-section {
+  text-align: right;
+  width: 150px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .checkout-header-right-section {
+    width: auto;
+    color: white;
+  }
+}
+
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
+}
+
+.btn-grad {
+  margin-top: 10px;
+  width: 100px;
+  padding: 5px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* box-shadow: 0 10px 20px #c4c4c4; */
+  border-radius: 10px;
+  display: block;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px  black;
+  font-size: 0.8vw;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-decoration: none;
+}

@@ -1,0 +1,236 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(232, 232, 232);
+}
+
+.box1 {
+  width: 100vw;
+  height: 4vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 17.5%;
+  height: 114.5%;
+  background-size: cover;
+}
+
+.img_logo {
+  width: 80%;
+  height: 100%;
+}
+
+.logo_h1 {
+  font-size: 2vw;
+  font-weight: 900;
+  background: linear-gradient(
+    to right,
+    #62e5e7 19%,
+    #18f3ff 40%,
+    #9be6ea 18%,
+    #048482 100%
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate_text 5s linear infinite;
+}
+
+@keyframes animate_text {
+  to {
+    background-position: 200%;
+  }
+}
+
+.box2 {
+  height: 2.5vw;
+  width: 97.5vw;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(151, 150, 150, 0.199);
+  border-radius: 25px;
+  background-color: white;
+}
+
+.Logout {
+  background-image: linear-gradient(
+    to right,
+    #02aaab 0%,
+    #00cdac 51%,
+    #02aaab 100%
+  );
+}
+
+.Logout {
+  margin: 5px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: none;
+}
+
+.Logout:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.ancher_tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  font-size: 1.3vw;
+  margin-right: 10vw;
+}
+
+.ancher_tags p {
+  cursor: pointer;
+}
+
+.box2_h1 {
+  margin-left: 10vw;
+}
+
+.home_page {
+  background-color: rgba(218, 218, 218, 0.363);
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total_boxes {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.boxes {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 300px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(151, 150, 150, 0.733);
+}
+
+.add_products {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(151, 150, 150, 0.733);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 30%;
+  height: 17vw;
+  margin: 20px;
+}
+
+.inputs {
+  background-color: rgba(218, 218, 218, 0.452);
+  width: 95%;
+  height: 13%;
+  margin: 10px;
+  padding-left: 10px;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: black;
+}
+
+#files {
+  margin: 20px;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.products_grid {
+  width: 100%;
+  height: 200%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.products_boxes {
+  width: 370px;
+  height: 500px;
+  background-color: white;
+  margin: 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(151, 150, 150, 0.733);
+}
+
+#categories {
+  width: 15vw;
+  height: 2vw;
+  font-size: 1vw;
+  border: 2px solid black;
+}
+
+.products_boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.Product_buttons {
+  display: flex;
+}
+
+.boxes_images {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(151, 150, 150, 0.733);
+  background-color: #02aab0;
+  width: 70%;
+  height: 70%;
+}
+
+.Product_details {
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.p_p {
+  margin: 5px;
+  font-weight: bold;
+}
