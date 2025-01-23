@@ -1,0 +1,135 @@
+.topic {
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold;
+    color: #136325; /* Green color */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+    letter-spacing: 1px;
+}
+
+/* Search form section styling */
+.search-by-name {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual input containers */
+.search-by-name .col-md-4 {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.search-by-name .form-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field styling */
+.search-by-name .form-control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-by-name .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Search button styling */
+.search-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: #218838;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* HR styling */
+.search-by-name hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Initially hidden university info sections */
+.uni-info-name,
+.uni-list-country,
+.uni-list-state {
+    display: none;
+}
+
+/* Styling for each college block when it becomes visible */
+/* Styling for university info and list items with visible border */
+.uni-info-name span, .uni-list-country li, .uni-list-state li {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    border: 1px solid #28a745; /* Green border color */
+    display: block; /* Ensures the border is applied to the entire block */
+}
+
+/* Optional: Add border to top, right, bottom, and left */
+.uni-info-name span, .uni-list-country li, .uni-list-state li {
+    border-top: 1px solid #28a745; /* Green border for the top */
+    border-right: 1px solid #28a745; /* Green border for the right */
+    border-bottom: 1px solid #28a745; /* Green border for the bottom */
+    border-left: 1px solid #28a745; /* Green border for the left */
+}
+
+
+/* Styling for individual elements (name, country, state, etc.) */
+.uni-info-name span p, .uni-list-country li p, .uni-list-state li p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.uni-info-name span a, .uni-list-country li a, .uni-list-state li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.uni-info-name span a:hover, .uni-list-country li a:hover, .uni-list-state li a:hover {
+    text-decoration: underline;
+}
+
+/* Header for country/state lists */
+.uni-list-country h4, .uni-list-state h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Smooth transition for when displaying results */
+.uni-info-name span, .uni-list-country li, .uni-list-state li {
+    transition: all 0.3s ease;
+}
