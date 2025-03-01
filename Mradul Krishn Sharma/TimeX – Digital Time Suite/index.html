@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Master</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./clockIcon.jpg">
+</head>
+<body>
+    <h1 class="title">TimeX – Digital Time Suite</h1>
+    <div class="container">
+        
+
+        <div class="clock-section">
+            <h2>Digital Clock</h2>
+            <div class="digitalClock" id="currentDate" style="margin-bottom: 0.75rem;">00 / 00 / 0000</div>
+            <div class= "digitalClock" id="digitalClock" style="margin-bottom: 0.75rem;">00 : 00 : 00</div>
+            <button id="btn12">12-Hour Format</button>
+            <button id="btn24" disabled>24-Hour Format</button>
+        </div>
+
+        <div class="timer-section">
+            <h2>Timer</h2>
+            <div id="timerDisplay" style="margin-bottom: 0.75rem;">00 : 00</div>
+            <div class="timer-inputs">
+                <input type="number" id="timerMinutes" placeholder="Min">
+                <input type="number" id="timerSeconds" placeholder="Sec">
+            </div>
+            <button id="startTimer">Start</button>
+            <button id="pauseTimer" disabled>Pause</button>
+            <button id="resetTimer" disabled>Reset</button>
+        </div>
+
+        <div class="stopwatch-section">
+            <h2>Stopwatch</h2>
+            <div id="stopwatchDisplay" style="margin-bottom: 0.75rem;">00:00:00:00</div>
+            <button id="startStopwatch">Start</button>
+            <button id="pauseStopwatch" disabled>Pause</button>
+            <button id="resetStopwatch" disabled>Reset</button>
+            <button id="lapStopwatch" disabled>Lap</button>
+            <ul id="stopwatchLaps"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

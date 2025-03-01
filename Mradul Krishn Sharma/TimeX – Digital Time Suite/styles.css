@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:0 100px;
+}
+
+.title {
+    font-size: 5rem;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+.clock-section, .timer-section, .stopwatch-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    min-height: 250px;
+    margin: 20px;
+}
+
+.digitalClock, #timerDisplay, #stopwatchDisplay {
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff004c, #ff7300);
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+.timer-inputs input {
+    padding: 8px;
+    width: 60px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.time-up {
+    color: red;
+    font-size: 2rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
