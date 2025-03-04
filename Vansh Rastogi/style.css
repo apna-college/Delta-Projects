@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+.navbar{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 90px;
+    width: 200px;
+    background-image: url(netflix.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 150px;
+
+}
+.eng{
+    height: 32px;
+   
+display: flex;
+    
+}
+.eng select{
+    height: 32px;
+    width: 122px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-left: 800px;
+}
+
+
+.sb{
+    height: 32px;
+    width: 70px;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: red;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+.sb:hover{
+    background-color: rgb(219, 7, 7);
+}
+
+.started{
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.started h1{
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 170px;
+}
+
+.started p{
+    margin-top: 20px;
+}
+
+.started h3{
+    margin-top: 20px;
+}
+
+.gete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.email input{
+    height:56.5px;
+    width: 372px;
+    padding-left: 15px;
+    font-size: 15px;
+   border: 1.5px solid #CCCCCC;
+   border-radius: 3px;
+   background-color: transparent;
+   color: #ffffff;
+   
+}
+
+.getstart button{
+    height: 56px;
+    width: 207px;
+    font-size: 25px;
+    border: 0px solid transparent;
+    border-radius: 3px;
+}
+
+header{
+    background-image: url(bgnet.jpg);
+    background-size: cover;
+    height: 790px;
+    width: 100%;
+}
+
+.line{
+    height: 100px;
+    width: 100%;
+    border-top: 7px solid rgb(159, 14, 33);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: black;
+}
+
+.line h2{
+    color: white;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.trend{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.box{
+    height: 250px;
+    width: 180px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.reasons{
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.wr{
+    width: 250px;
+}
+
+main{
+    background-color: black;
+}
+
+.foot{
+    width: 100%;
+    height: 1300px;
+    background-color: black;
+}
+
+.qb{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 150px;
+    height: 84px;
+    width: 80%;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 24px;
+    color: white;
+    background-color: #323232;
+}
+
+.foothead{
+     margin-left: 150px;
+    padding-top: 50px;
+    color: white;
+}
+
+.buttonsq{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.restart{
+    text-align: center;
+    color: white;
+}
+
+.foot_p2{
+    height: 300px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foot_p2 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.foot_p2 p{
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pmain1{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.pmain2{
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+.help{
+    color: #CCCCCC;
+}
+
+.foot_p2 a{
+    color: #CCCCCC;
+}
+
+.foot_p2 {
+    color: #CCCCCC;
+}
+.qb:hover{
+    background-color: #535252;
+}
+.foot_p2 a:hover{
+    text-decoration: underline;
+}
+
+.trend2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.t2{
+    background-color: #1e1426;
+    height: 300px;
+    width: 20%;
+    border: 0px solid transparent;
+    border-radius: 20px;
+}
+
+.t2 h3{
+    color: white;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.t2 p{
+    color: white;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #CCCCCC;
+    font-size: 17px;
+}
+
+.phn{
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 75%;
+}
+
+.tv{
+    margin-top: 75px;
+    font-size: 50px;
+    color: white;
+    margin-left: 75%;
+}
+
+.b1{
+    border-radius: 10px;
+    background-image: url(MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.b2{
+    border-radius: 10px;
+    background-image: url(puspa.jpg);
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.b3{
+    border-radius: 10px;
+    background-image: url(venom.jpg);
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.b4{
+    border-radius: 10px;
+    background-image: url(squid\ game.jpeg);
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.b5{
+    border-radius: 10px;
+    background-image: url(lb.jpg);
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.no p{
+    color: rgb(0, 0, 0);
+    font-size: 120px;
+    margin-top: 150px;
+    margin-left: -25px;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.t1:hover{
+    transform: scale(1.25);
+}
