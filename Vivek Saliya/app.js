@@ -1,4 +1,5 @@
 let url = "https://quote-garden.onrender.com/api/v3/quotes/random";
+//this is API
 let btn = document.getElementById("btn");
 
 btn.addEventListener("click", async() => {
