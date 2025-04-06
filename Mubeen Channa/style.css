@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    background: linear-gradient(rgb(0, 0, 82), rgb(37, 37, 37));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 25rem;
+    height: 400px;
+    background: linear-gradient(150deg, rgb(54, 255, 255), rgb(167, 34, 167));
+    border-radius: 5px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 70px 60px 50px;
+}
+
+#search-bar{
+    border-radius: 20px;
+    border: none;
+    width: 11rem;
+    padding: 7px 0 7px 25px;
+}
+
+.icon{
+    background-color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fa-search{
+    font-size: 10px;
+    align-self: center;
+}
+
+.temp-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+
+.fa-cloud-sun{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+#temp{
+    font-size: 50px;
+    color: white;
+}
+
+#city{
+    font-size: 30px;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4{
+    color: white;
+    position: absolute;
+    bottom: 1px;
+}
