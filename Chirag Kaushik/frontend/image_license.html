@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Grid-like texture */
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg,#ffa751, #1c1802);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+h1::before, h1::after {
+    content: "🏎️";
+    position: absolute;
+    top: 0;
+    font-size: 1.2em;
+    animation: moveIcon 2s linear infinite;
+}
+
+h1::before {
+    left: -40px;
+}
+
+h1::after {
+    right: -40px;
+    animation-delay: 1s;
+}
+
+@keyframes moveIcon {
+    from { transform: translateX(-10px); }
+    to { transform: translateX(10px); }
+}
+
+#upload-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#upload-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed #ffa751;
+    border-radius: 8px;
+    background-color: #fff7e6;
+    color: #555;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+input[type="file"]:hover {
+    background-color: #ffe259;
+    transform: scale(1.03);
+}
+
+button {
+    background: linear-gradient(135deg, #ffa751, #ff6a00);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.4s, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff6a00, #ffa751);
+    transform: translateY(-3px) scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 3px solid #ffa751;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.info-box {
+    background: #fffae6;
+    padding: 15px 20px;
+    border-left: 5px solid #ffa751;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #444;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.info-box:hover {
+    background: #fff3cd;
+    transform: translateY(-3px);
+}
+
+/* Grid-like sports car vibe */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/O2UfbTQ.png') repeat; /* Placeholder car sketch */
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>License Plate Detection System</h1>
+
+    <div id="upload-form">
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Upload & Detect</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        function uploadImage() {
+            const input = document.getElementById('imageInput');
+            const file = input.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            fetch('http://127.0.0.1:5000/process', {  // Adjust URL if needed
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = '';  // Clear previous results
+
+    if (data.error) {
+        resultDiv.innerHTML = `<p style="color: red;">${data.error}</p>`;
+        return;
+    }
+
+    const { plate_number, vehicle_info, original_image, plate_image } = data;
+
+    // ✅ Paraphrased vehicle information
+    let vehicleDetails = '';
+    if (vehicle_info && Object.keys(vehicle_info).length > 0) {
+        vehicleDetails = `The vehicle with license plate number <strong>${plate_number}</strong> belongs to <strong>${vehicle_info.owner}</strong>. It is a <strong>${vehicle_info.car_model}</strong> model, manufactured in <strong>${vehicle_info.year}</strong>, and its current status is marked as <strong>${vehicle_info.status}</strong>.`;
+    } else {
+        vehicleDetails = `The license plate number <strong>${plate_number}</strong> does not match any records in our database. Please verify the number or try again with a clearer image.`;
+    }
+
+
+     // Odd-even checking logic
+     const lastDigit = parseInt(plate_number.slice(-1));
+            const today = new Date();
+            const todayDate = today.getDate();
+            const isPlateOdd = lastDigit % 2 !== 0;
+            const isDateOdd = todayDate % 2 !== 0;
+            let oddEvenMessage = '';
+
+            if (isPlateOdd === isDateOdd) {
+                oddEvenMessage = `<p style="color: green; font-weight: bold;">✅ No issues 🚗✅</p>`;
+            } else {
+                oddEvenMessage = `<p style="color: red; font-weight: bold;">⚠️ ALERT! This is a different car based on the odd-even rule! 🚨</p>`;
+                alert("⚠️ ALERT! This car violates the odd-even rule!");
+            }
+
+            
+
+
+    resultDiv.innerHTML = `
+        <div class="info-box">
+            <p>${vehicleDetails}</p>
+        </div>
+
+        <div class="image-container">
+            <div>
+                <h3>Original Image</h3>
+                <img src="${original_image}" alt="Original Image">
+            </div>
+            <div>
+                <h3>Detected Plate</h3>
+                <img src="${plate_image}" alt="License Plate Image">
+            </div>
+        </div>
+    `;
+})
+
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('result').innerHTML = `<p style="color: red;">Failed to process the image.</p>`;
+            });
+        }
+
+        
+    </script>
+</body>
+</html>
