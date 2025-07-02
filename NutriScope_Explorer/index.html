@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFacts Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🔬🍎 NutriScope Explorer</h1>
+            <p>Discover detailed nutrition information about your favorite food product 🧪🥦</p>
+        </header>
+
+        <div class="search-container">
+            <form class="search-form" id="searchForm">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput" 
+                    placeholder="Search for food products or enter barcode..."
+                    required
+                >
+                <button type="submit" class="search-btn" id="searchBtn">Search</button>
+            </form>
+            
+            <div class="suggestions">
+                <button class="suggestion-btn" data-query="coca cola">Coca Cola</button>
+                <button class="suggestion-btn" data-query="nutella">Nutella</button>
+                <button class="suggestion-btn" data-query="oreo">Oreo</button>
+                <button class="suggestion-btn" data-query="pizza">Pizza</button>
+                <button class="suggestion-btn" data-query="chocolate">Chocolate</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Searching for delicious products...</p>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="results" class="products-grid"></div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <h3>No products found</h3>
+            <p>Try searching with different keywords or check the spelling</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Product Details</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
