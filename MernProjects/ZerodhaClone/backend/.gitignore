@@ -1,0 +1,16 @@
+# Ignore node_modules (for Node.js projects)
+node_modules/
+
+# Ignore build/output directories
+dist/
+build/
+*.exe
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore OS/editor files
+.DS_Store       # macOS
+.idea/          # JetBrains IDE
+.vscode/        # VS Code

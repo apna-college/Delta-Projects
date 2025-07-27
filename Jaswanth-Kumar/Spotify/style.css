@@ -1,0 +1,311 @@
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 470;
+  margin:0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+.main {
+    display:flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar {
+    background-color:black;
+    width:345px;
+    border-radius: 1rem;
+}
+.main-content {
+    background-color: #121212;
+    border-radius: 1rem;
+    overflow: auto;
+    flex:1;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.music-player {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom:0px;
+    width:100vw;
+    height: 72px;
+}
+.navbar {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+    padding: 0.5rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav-opt {
+    line-height: 2.5rem;
+    padding: 0.5rem;
+    opacity: 0.7;
+}
+.nav-opt:hover {
+    
+    opacity: 1;
+}
+.nav-opt i {
+  font-size: 1.25rem;
+}
+.nav-opt a {
+    font-size: 1rem;
+    margin-left: 0.7rem;
+}
+.library {
+    background-color: #121212;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.library img {
+   height: 1.25rem;
+   width: 1.25rem;
+}
+.icons {
+    display: flex;
+    font-size: 1.25rem;
+   
+}
+.icons i {
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.icons i:hover {
+    opacity: 1;
+}
+.box {
+    background-color: #232323;
+    height: 8rem;
+    margin: 0.75rem 0rem 1.5rem 0rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+}
+.para-1 {
+    font-size:1rem ;
+    font-weight: 600;
+}
+.para-2 {
+    font-size:0.9rem ;
+    opacity: 0.9;
+}
+.badge {
+    background-color: #fff;
+    border:none;
+    border-radius: 100px;
+    font-weight: 600;
+    padding: 0.25rem 1rem ;
+    margin-top: 0.5rem;
+    height:2rem ;
+    width: fit-content;
+}
+.sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #121212;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.left-sticky-nav {
+   margin-left: 0.5rem;
+}
+.sticky-nav-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items {
+    margin-right: 1rem;
+}
+.black-badge {
+    background-color: black;
+    color: white;
+    
+}
+.download {
+    margin-right: 0.5rem;
+}
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+.card {
+    background-color: #232323;
+    width:150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+}
+.card-img {
+    width:100%;
+    border-radius: 0.5rem;
+}
+.card-tittle {
+  
+    font-weight: 600;
+}
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    height: 30%;
+    width: 90%;
+    border-top:1px solid white;
+    opacity: 0.5;
+
+}
+
+.album {
+    background-color: black;
+    width:25%;
+    height: 72px;
+    
+}
+.player {
+   
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+.controls {
+    background-color: black;
+    width:25%;
+}
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.player-controls-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-controls-icon:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.playback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+   
+}
+.album {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.play-img {
+    border-radius: 100px;
+    height: 3.5rem;
+    width: 100%;
+}
+.playing-img {
+
+ margin-left: 2rem;
+ margin-right: 1rem;
+}
+.play-icons .one{
+    height: 1.5rem;
+    width: 1.75rem;
+}
+.play-icons .two{
+    height: 1.75rem;
+    width: 1.75rem;
+    opacity: 1;
+}
+.play-icons {
+    margin-left: 1.5rem;
+    display: flex;
+}
+.play-icons img {
+    margin-right: 1rem;
+    opacity: 1;
+    font-weight: 700;
+}
+.play-name {
+    font-weight: 600;
+
+}
+
+.para1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.para2 {
+    font-size: 0.7rem;
+    opacity: 0.9;
+    
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+.controls img {
+    margin:0.5rem;
+    height: 1.75rem;
+    width:1.75rem;
+}
+#last {
+    margin-right: 0rem;
+}
+.progress-bar::-webkit-slider-runnable-track {
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+   height: 1rem;
+   width: 1rem;
+    border-radius: 50%;
+    margin-top: -6px;
+    cursor: pointer;
+}
