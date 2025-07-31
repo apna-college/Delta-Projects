@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.container {
+  width: 75vw;
+  box-shadow: -3px -2px 151px 12px rgb(0, 42, 255);
+  display: flex;
+  background-color: #232427;
+  border-radius: 25px;
+  overflow: hidden;
+  flex-direction: column;
+  color: white;
+}
+
+.col {
+  text-align: justify;
+  padding: 15px;
+  width: 95%;
+}
+
+#submit {
+  width: 100%;
+  box-shadow: rgb(255, 0, 162);
+  transition: 0.5s;
+  color: #232427;
+  /* background: aquamarine; */
+  outline: none;
+  border: none;
+  font-size: 25px;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #148f77;
+}
+
+.box {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 255, 0.5),
+    inset -2px -2px 5px rgb(27, 116, 139), 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  width: 100%;
+}

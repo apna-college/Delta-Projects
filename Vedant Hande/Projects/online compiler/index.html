@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePlayground - Modern Online Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rancho&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div id="text">CodePlayground</div>
+        <div class="theme-toggle" data-tooltip="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="code-editor">
+          <div class="controls">
+            <select id="language-select" data-tooltip="Select Language">
+              <option value="" disabled selected>Select a Language</option>
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="cpp">C++</option>
+              <option value="csharp">C#</option>
+            </select>
+            <button id="run-button" data-tooltip="Run Code (Ctrl + Enter)">
+              <i class="fas fa-play"></i>
+              Run Code
+            </button>
+            <button id="clear-button" data-tooltip="Clear Editor">
+              <i class="fas fa-trash"></i>
+              Clear
+            </button>
+          </div>
+          <div class="line-numbers-container">
+            <div class="line-numbers"></div>
+            <textarea
+              id="code-area"
+              class="code-area"
+              placeholder="// Write your code here...
+// Example:
+function hello() {
+    console.log('Hello, World!');
+}"
+              spellcheck="false"></textarea>
+          </div>
+        </section>
+
+        <section class="input-output">
+          <div class="para-code">
+            <i class="fas fa-info-circle"></i>
+            <span
+              >If your code takes input, add it in the above box before
+              running.</span
+            >
+          </div>
+          <div class="output-header">
+            <span>Output</span>
+            <button id="ai-generate">
+              <i class="fas fa-magic"></i> AI Write
+            </button>
+            <button id="ai-explain">
+              <i class="fas fa-lightbulb"></i> Code Clarity
+            </button>
+            <button id="ai-debug"><i class="fas fa-bug"></i> Find Bugs</button>
+            <button id="ai-simulate">
+              <i class="fas fa-robot"></i> Output Guess
+            </button>
+            <button id="copy-output" data-tooltip="Copy Output">
+              <i class="fas fa-copy"></i>
+              Copy
+            </button>
+          </div>
+          <textarea
+            id="inputArea"
+            class="input-area"
+            placeholder="Enter input for your code here..."></textarea>
+          <textarea
+            id="output-area"
+            class="output-area"
+            placeholder="Output will appear here..."
+            readonly
+            spellcheck="false"></textarea>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("ai-generate").onclick = function () {
+        alert("AI Generate Clicked!");
+      };
+      document.getElementById("ai-explain").onclick = aiExplainCode;
+      document.getElementById("ai-debug").onclick = aiDebugCode;
+      document.getElementById("ai-simulate").onclick = aiSimulateOutput;
+
+      async function aiExplainCode() {
+        const outputArea = document.querySelector(".output-area");
+        // ...rest of your code
+      }
+    </script>
+  </body>
+</html>

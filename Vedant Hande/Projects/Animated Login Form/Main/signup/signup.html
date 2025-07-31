@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="continer">
+      <form action="#" id="form">
+        <h2>signup</h2>
+        <div class="form-group">
+          <input type="text" placeholder=" Enter Your Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder=" Enter Your Email" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder=" Enter Your Password" id="" />
+        </div>
+        <p><input type="checkbox" /> Remember me</p>
+        <button type="submit" onclick="signup_completed()">signup</button>
+        <p>Create your own account &hearts;</p>
+      </form>
+    </div>
+    <script>
+      let account = document.getElementById("form");
+      function signup_completed() {
+        alert("Your Account is created sucessfully");
+        account.reset();
+      }
+    </script>
+  </body>
+</html>

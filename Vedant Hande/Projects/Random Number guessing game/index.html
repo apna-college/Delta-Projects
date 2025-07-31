@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+      }
+
+      h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
+
+      .input-group {
+        margin-bottom: 1rem;
+      }
+
+      input {
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        font-size: 1rem;
+        margin: 0.5rem;
+      }
+
+      button {
+        background: #4caf50;
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #45a049;
+      }
+
+      #message {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        min-height: 1.5rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Guessing Game</h1>
+      <div id="setup-screen">
+        <div class="input-group">
+          <label for="max-number">Enter the maximum number:</label>
+          <input
+            type="number"
+            id="max-number"
+            min="1"
+            placeholder="Enter a number" />
+        </div>
+        <button onclick="startGame()">Start Game</button>
+      </div>
+
+      <div id="game-screen" class="hidden">
+        <div class="input-group">
+          <label for="guess">Guess the number:</label>
+          <input
+            type="number"
+            id="guess"
+            min="1"
+            placeholder="Enter your guess" />
+        </div>
+        <button onclick="checkGuess()">Submit Guess</button>
+        <button onclick="quitGame()" style="background: #f44336">
+          Quit Game
+        </button>
+        <div id="message"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

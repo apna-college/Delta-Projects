@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fav_Movie guessing game</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+      :root {
+        --gradient-1: #ff6b6b;
+        --gradient-2: #4ecdc4;
+        --dark: #1a1b1e;
+        --darker: #141517;
+        --light: #ffffff;
+        --gray: #a1a1aa;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        min-height: 100vh;
+        background: var(--dark);
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+      }
+
+      .game-container {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        width: 100%;
+        max-width: 500px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      h1 {
+        background: linear-gradient(
+          135deg,
+          var(--gradient-1),
+          var(--gradient-2)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      input {
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        color: var(--light);
+        font-family: "Inter", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: var(--gradient-1);
+        box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+      }
+
+      input::placeholder {
+        color: var(--gray);
+      }
+
+      .button-group {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      button {
+        padding: 1rem 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #submitBtn {
+        background: linear-gradient(
+          135deg,
+          var(--gradient-1),
+          var(--gradient-2)
+        );
+        color: var(--light);
+      }
+
+      #submitBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+      }
+
+      #quitBtn {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--light);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      #quitBtn:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+
+      button:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      #message {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 0.875rem;
+        text-align: center;
+        transition: all 0.3s ease;
+        min-height: 3rem;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .success {
+        background: rgba(78, 205, 196, 0.1);
+        color: var(--gradient-2);
+        border: 1px solid rgba(78, 205, 196, 0.2);
+      }
+
+      .error {
+        background: rgba(255, 107, 107, 0.1);
+        color: var(--gradient-1);
+        border: 1px solid rgba(255, 107, 107, 0.2);
+      }
+
+      @media (max-width: 640px) {
+        .game-container {
+          padding: 1.5rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .button-group {
+          flex-direction: column;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+
+      /* Floating animation for container */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Movie Quest</h1>
+      <div class="input-group">
+        <input type="text" id="guessInput" placeholder="What's your guess?" />
+        <div class="button-group">
+          <button id="submitBtn">Make a Guess</button>
+          <button id="quitBtn">End Game</button>
+        </div>
+      </div>
+      <div id="message"></div>
+    </div>
+    <script src="fav_movie.js"></script>
+  </body>
+</html>

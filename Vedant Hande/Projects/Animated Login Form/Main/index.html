@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="continer">
+      <form action="#" id="form">
+        <h2>login</h2>
+        <div class="form-group">
+          <input type="email" placeholder="Email" />
+          <!-- <label for="">Email</label> -->
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" id="" />
+          <!-- <label for="">Password</label> -->
+        </div>
+        <p>
+          <input type="checkbox" /> Remember me<a
+            href="forget_pass/forget-password.html">
+            Forget Password</a
+          >
+        </p>
+        <button type="submit" onclick="submit_form()">login</button>
+        <p>
+          Don't Have accont?
+          <a href="signup/signup.html">Sign up</a>
+        </p>
+      </form>
+    </div>
+    <script>
+      let account = document.getElementById("form");
+      function submit_form() {
+        alert("You sucessfully Login");
+        account.reset();
+      }
+    </script>
+  </body>
+</html>

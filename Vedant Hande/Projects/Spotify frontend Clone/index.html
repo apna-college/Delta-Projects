@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Assets/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rancho&family=Rouge+Script&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./Assets/logo.png" alt="" />
+            <i class="fa-solid fa-house home1"></i>
+          </div>
+          <!-- <div class="Search"> -->
+          <!-- <img src="./svg/1.svg" alt="" /> -->
+          <input class="input" placeholder="   What do you want to play?" />
+          <!-- </div> -->
+          <button class="badge _nav">Explore Premium</button>
+          <button class="badge _nav _nav1">
+            <i class="fa-regular fa-circle-down icon_nav"></i> Install App
+          </button>
+          <div class="bell">
+            <i class="fa-regular fa-bell bell-icon"></i>
+          </div>
+          <div class="account">V</div>
+        </div>
+        <div class="side-bar">
+          <div class="lib-option">
+            <div class="you-lib">
+              <i class="fa-solid fa-bookmark"></i>
+              <a href="#">Your Library</a>
+            </div>
+            <div class="create-btn">
+              <i class="fa-solid fa-plus"></i>
+              <a href="#">Create</a>
+            </div>
+            <div class="arrow-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="create-playlist">
+            <div class="box-text-1">Create your first playlist</div>
+            <div class="box-text-2">It's easy, we'll help you</div>
+            <button class="badge">Create Playlist</button>
+          </div>
+          <div class="create-playlist brouse">
+            <div class="box-text-1">Let's find some podcasts to follow</div>
+            <div class="box-text-2">We'll keep you updated on new episodes</div>
+            <button class="badge badge_p">Browse podcasts</button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-btn">
+            <button class="all-btn">All</button>
+            <button class="music-btn">Music</button>
+            <button class="podcasts-btn">Podcasts</button>
+          </div>
+          <h2>Recently Played</h2>
+          <div class="card-cantainer">
+            <div class="card">
+              <img src="./Assets/card1img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">TOP 50</p>
+              <p class="card-info">Global Recently played..</p>
+            </div>
+          </div>
+          <h2>Episodes for you</h2>
+          <div class="card-cantainer">
+            <div class="card">
+              <img src="./Assets/card2img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Arijit Singh</p>
+              <p class="card-info">Tum Hi Ho..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card3img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">The Weeknd</p>
+              <p class="card-info">Blinding Lights..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card4img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Ed Sheeran</p>
+              <p class="card-info">Shape of You..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card2img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Taylor Swift</p>
+              <p class="card-info">Love Story..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card3img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Vijay (Joseph)</p>
+              <p class="card-info">Thalapati..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card4img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Arijit Singh</p>
+              <p class="card-info">Tum Hi Ho..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card2img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Ed Sheeran</p>
+              <p class="card-info">Shape of You..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card3img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">The Weeknd</p>
+              <p class="card-info">Blinding Lights..</p>
+            </div>
+          </div>
+          <h2>Featured Chart</h2>
+          <div class="card-cantainer">
+            <div class="card">
+              <img src="./Assets/card5img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Top Global</p>
+              <p class="card-info">Global Weekly music charts..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card6img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Top India</p>
+              <p class="card-info">India Weekly Music Charts..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card5img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Top Global</p>
+              <p class="card-info">Global Weekly music charts..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card6img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Top India</p>
+              <p class="card-info">India Weekly Music Charts..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card5img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Top Global</p>
+              <p class="card-info">Global Weekly music charts..</p>
+            </div>
+            <div class="card">
+              <img src="./Assets/card6img.jpeg" alt="card1" class="card-img" />
+              <p class="card-name">Top India</p>
+              <p class="card-info">India Weekly Music Charts..</p>
+            </div>
+          </div>
+          <br /><br /><br /><br /><b></b>
+        </div>
+        <div class="music-player">
+          <div class="alubm">
+            <div class="alubm-img">
+              <img src="./Assets/card2img.jpeg" alt="" />
+            </div>
+            <div class="album-content">
+              <p class="album-para1">Arijit Singh</p>
+              <p class="album-para2">Tum Hi Ho &hearts; ..</p>
+            </div>
+          </div>
+          <div class="player">
+            <div class="player-control">
+              <img
+                src="./Assets/player_icon1.png"
+                class="player-control-icon" />
+              <img
+                src="./Assets/player_icon2.png"
+                class="player-control-icon" />
+              <img
+                src="./Assets/player_icon3.png"
+                class="player-control-icon"
+                id="mid" />
+              <img
+                src="./Assets/player_icon4.png"
+                class="player-control-icon" />
+              <img
+                src="./Assets/player_icon5.png"
+                class="player-control-icon" />
+            </div>
+            <div class="playback-bar">
+              <span class="current-time">00:00</span>
+              <input
+                type="range"
+                min="0"
+                max="50"
+                value="1"
+                class="progress-bar input-range" />
+              <span class="final-time">03:33</span>
+            </div>
+          </div>
+
+          <div class="side-icon">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-solid fa-link"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input
+              type="range"
+              class="side-icon-range"
+              min="0"
+              max="100"
+              value="1" />
+            <i class="fa-solid fa-sliders"></i>
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

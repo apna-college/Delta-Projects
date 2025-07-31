@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* margin-top: 50px; */
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(120deg, #ffe4b5 0%, #f7cac9 50%, #b5d8ff 100%);
+  animation: fadeIn 1s ease, float 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+h1 {
+  /* margin-top: 100px; */
+  margin: 20px;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #7c4700;
+  text-shadow: 2px 2px 8px #fff2, 0 2px 4px #0002;
+  animation: popIn 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  font-size: 100px;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 4px 24px #0002;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+  outline: none;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 24px #0002, 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 8px 32px #0003, 0 0 24px 8px rgba(255, 255, 255, 0.15);
+  }
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.12);
+  box-shadow: 0 8px 32px #0003, 0 0 32px 8px #fff7;
+  filter: brightness(1.13);
+  z-index: 1;
+}
+
+button:active {
+  transform: scale(0.97);
+  filter: brightness(0.92);
+  box-shadow: 0 2px 8px #0002, 0 0 16px 4px #fff5;
+}
+
+.red {
+  background-color: #ff4d4d;
+  box-shadow: 0 0 16px 2px #ffb3b3 inset;
+}
+
+.green {
+  background-color: #4dff88;
+  box-shadow: 0 0 16px 2px #b3ffd9 inset;
+}
+
+.yellow {
+  background-color: #ffe94d;
+  box-shadow: 0 0 16px 2px #fff7b3 inset;
+}
+
+.blue {
+  background-color: #4d7cff;
+  box-shadow: 0 0 16px 2px #b3caff inset;
+}
+
+.purple {
+  background-color: #a259ff;
+  box-shadow: 0 0 16px 2px #e0b3ff inset;
+}
+
+.flash {
+  background-color: #fff;
+}
