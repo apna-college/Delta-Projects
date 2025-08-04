@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background: linear-gradient(90deg, #5AE2DD, #26D7D1, #90EBE8);
+}
+.container {
+    justify-self: center;
+    display: flex;
+    /* width: 70vw;
+    height: 70vw; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 3vw;
+    touch-action: manipulation;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.purple {
+    background-color: purple;
+}
+.flash {
+    background-color: white;
+}
+
+.startBtn {
+    background-color: deepskyblue;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.8em;
+    border: 2px solid black;
+    margin-top: 20px;
+    color: black;
+
+}
+
+@media (min-width: 750px) {
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+}
