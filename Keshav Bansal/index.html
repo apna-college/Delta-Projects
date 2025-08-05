@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says- Singleplayer game</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="assets/favicon.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Simon Says</h2>
+      <div class="buttons">
+        <button type="button" class="volume">
+          <<i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button type="button" class="rules">
+          <i class="fa-solid fa-book"></i>>
+        </button>
+      </div>
+      <div class="info hidden">
+        <h4><b>Objective: </b></h4>
+        <p>
+          Repeat the sequence of colors shown by the game. With each level, the
+          sequence gets longer. How far can you go?
+        </p>
+        <h4><b>Rules: </b></h4>
+        <ul>
+          <li>Press Play or any keyboard key to start.</li>
+          <li>
+            Watch carefully — one or more buttons will flash in a specific
+            order.
+          </li>
+          <li>Repeat the exact order by clicking the buttons.</li>
+          <li>Get it right? The game adds a new color to the sequence.</li>
+          <li>Make a mistake? Game over. Your final score is shown.</li>
+          <li>Try to beat your highest score, which is saved automatically!</li>
+        </ul>
+        <h4><b>Tip: </b></h4>
+        <ul>
+          <li>Focus and memorize the sequence — it speeds up as you go.</li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="red btn" type="button" id="red" tabindex="0"></div>
+      <div class="blue btn" type="button" id="blue" tabindex="0"></div>
+      <div class="yellow btn" type="button" id="yellow" tabindex="0"></div>
+      <div class="purple btn" type="button" id="purple" tabindex="0"></div>
+    </section>
+    <h3 class="score">Press <b>any key</b> or <b>play</b> to start.</h3>
+    <h3 class="restart"></h3>
+    <h3 class="high-score"></h3>
+    <button type="button" class="startBtn">Play</button>
+    <script src="app.js"></script>
+  </body>
+</html>

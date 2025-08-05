@@ -1,0 +1,89 @@
+
+@media (max-width: 500px) {
+  section{
+      width: 20rem;
+      margin: 2rem 0;
+  }
+
+  section div{
+      height: 7rem;
+      width: 7rem;
+  }
+
+  .startBtn{
+      opacity: 1;
+      cursor: pointer;
+  }
+
+  .restart{
+    display: none;
+  }
+
+  .info{
+    padding: 0.5rem 0.8rem;
+    width: 80%;
+  }
+
+  .info h4, .info p, .info ul, .info > ul > li{
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  h3{
+    font-size: 1rem;
+  }
+
+  .rules i{
+    font-size: 0.8rem;
+  }
+
+  .rules{
+  padding: 0rem 0.5rem;
+  }
+
+  header{
+    width: 80%;
+  }
+
+  .score, .high-score{
+  font-size: 0.8rem;
+  padding: 0.8rem 0.8rem;
+  width: 75%;
+  }
+
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-5px, 0px); }
+  40% { transform: translate(5px, 0px); }
+  60% { transform: translate(-5px, 0px); }
+  80% { transform: translate(5px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes slideDown {
+  from{
+    transform: translate(-50%, -500%);
+  } to {
+    transform: translate(-50%, -35%);
+  }
+}
+
+@keyframes slideUp {
+  from{
+    transform: translate(-50%, -35%);
+  } to {
+    transform: translate(-50%, -500%);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
