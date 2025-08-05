@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;  
+    background-color: ghostwhite;  
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.btn {
+    border: 5px solid black;
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    align-content: center;
+}
+
+.green {
+    background-color:#4CAF50;
+}
+
+.yellow {
+    background-color: #FFEB3B ;
+}
+
+.red {
+    background-color:#FF4C4C ;
+}
+
+.blue {
+    background-color: #2196F3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.flash {
+    background-color: white;
+}
