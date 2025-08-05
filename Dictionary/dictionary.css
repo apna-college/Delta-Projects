@@ -1,0 +1,17 @@
+body{
+    background-color: antiquewhite;
+    font-family: "Libertinus Serif", serif;
+}
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color: lightseagreen;
+}
+.search{
+    text-align: center;
+}
+.inpSearch{
+    border-radius: 25px;
+    font-family: "Libertinus Serif", serif;
+    height: 1.5rem;
+}
