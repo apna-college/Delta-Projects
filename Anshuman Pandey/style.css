@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fdf0d5;
+    
+}
+.Box{
+    border-radius: 2rem  ;
+    padding: 2rem;
+    min-height: 30vh;
+    width: 50vh;
+    background-color:#9db4c0;
+
+}
+#heading{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+
+}
+form select{
+    border: 1px solid blue;
+    font-size: large;
+    height: 2rem;
+    
+    
+}
+
+form input{
+    border: 1px solid blue;
+    font-size: large;
+    height: 2rem;
+}
+form button{
+    border: 1px solid #354f52 ;
+    font-size: medium;
+    height: 2rem;
+    background-color: #0077b6;
+    
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+}
+.name{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+.message-container{
+    text-align: center;
+    font-size: 1.75rem;
+    border: 1px solid #354f52;
+    border-radius: 2rem;
+    background-color: #c0c0c0;
+    margin-bottom: 1rem;
+    
+}
+#para{
+    text-align: center;
+    font-size:1.56rem;
+    font-style:initial;
+}
