@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header {
+    background: #C4E1E6;
+    /* background: transparent; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    box-shadow: 0 0 5px #9CAFAA;
+    z-index: 1;
+}
+.header .logo {
+    border: 7px solid #9CAFAA;
+    padding: 5px;
+    border-radius: 50%;
+    border-top: none;
+    border-right: none;
+    font-weight: 700;
+    color: #113F67;
+}
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+.sidebar {
+    transition: 0.2s linear;
+    background: #C4E1E6;
+    width: fit-content;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid blue;
+    /* display: none; */
+    margin-left: -252px;
+}
+.sidebar-topics {
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 20vh;
+    box-shadow: 0 0 5px #9CAFAA;
+}
+.sidebar-topics h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+}
+#open-sidebar-btn {
+    position: fixed;
+    top: 60px;
+    z-index: 100;
+    left: 2vw;
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: 0.3s linear ;
+    opacity: 0.7;
+}
+#closs-sidebar-btn {
+    padding: 5px;
+    transition: 0.3s linear;
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+#open-sidebar-btn:hover, #closs-sidebar-btn:hover {
+    background: #9CAFAA;
+    border-radius: 5px;
+    opacity: 1;
+}
+.sidebar button {
+    padding: 10px 0;
+    font-size: 1.15rem;
+    border: none;
+    background: #C4E1E6;
+    margin-bottom: 5px;
+}
+.sidebar button:hover {
+    background: #A4CCD9;
+    transition: 0.35s linear;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #9CAFAA;
+    padding-left: 10px;
+}
+.content {
+    background: #A4CCD9;
+    /* background: linear-gradient(130deg, #A4CCD9, #113F67); */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ctn {
+    display: flex;
+    flex-direction: column;
+    background-color: #A4CCD9;
+    padding: 5vw;
+    align-items: center;
+}
+.ctn h1 {
+    font-size: min(3.5rem, 8vw);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ctn .tag {
+    font-size: min(1rem, 4vw);
+    letter-spacing: 2px;
+    width: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+.ctn .box {
+    background: #C4E1E6;
+    padding: min(8vw, 5rem);
+    border-radius: 20px;
+    margin-bottom: 5vh;
+    position: relative;
+    z-index: 1;
+}
+.ctn .box .gen-text {
+    margin-bottom: 2vw;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #113F67;
+    font-weight: 500;
+    font-size: min(1.2rem, 4vw);
+}
+.gen-author {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ctn button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #113F67;
+    border: 2px solid #113F67;
+    background: #C4E1E6;
+    cursor: pointer;
+    transition: 300ms linear;
+}
+.ctn button:hover {
+    background: #113F67;
+    color: #C4E1E6;
+    border: 2px solid #113F67;
+    box-shadow: 0 0 15px aqua;
+    scale: 1.05;
+}
+#welcome-content {
+    background: transparent;
+}
+.ctn-wlcm h1 b {
+    -webkit-text-stroke: 3px #113F67;
+    font-family: cursive;
+    color: transparent;
+}
+
+#start-generate-btn {
+    background: linear-gradient(to right, rgb(43, 0, 255), rgb(195, 0, 255));
+    color: white;
+    border: 2px solid white;
+}
+#dictionary-ctn .word-content {
+    margin-top: 5vh;
+}
+#dictionary-ctn .word-content input {
+    height: 37px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 2px solid #113F67;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+#dictionary-ctn .res {
+    background: #C4E1E6;
+    border-radius: 20px;
+    padding: 4vw;
+    margin-top: 2vh;
+    
+}
+#dictionary-ctn .meaning {
+    padding: 0 0 4vw 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #113F67;
+}
+.error {
+    color: red;
+}
