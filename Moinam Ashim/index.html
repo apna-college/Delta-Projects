@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators with API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- first project -->
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <h2>Ashim</h2>
+            </div>
+        </div>
+        <div class="container">
+             <i class="fa-solid fa-bars" type="button" id="open-sidebar-btn"></i>
+            <div id="sidebar" class="sidebar">
+                <div class="sidebar-topics">
+                    <h2>
+                        Topics 
+                    </h2>
+                    <i class="fa-solid fa-xmark" id="closs-sidebar-btn"></i>
+                </div>
+                <button id="quote-content-btn">Quotes</button>
+                <button id="food-facts-btn">Food Facts</button>
+                <button id="dictionary-btn">Dictionary</button>
+            </div>
+            <div class="content" id="ctn">
+                <div id="welcome-content" class="ctn ctn-wlcm">
+                    <h1><b>Hello,</b> Explorer!</h1>
+                    <p class="tag"> Every day is a chance to learn something new. </p>
+                    <div class="box">
+                        <p class="gen-text">
+                            Click the button below to explore quotes, fun facts, and more.                          
+                        </p>
+                    </div>
+                    <button id="start-generate-btn">Select an option to start</button>
+                </div>
+
+                <div id="quote-content" class="ctn ctn-qg">
+                    <h1>Words That Inspire</h1>
+                    <p class="tag">Quotes that will inspire and enlighten you </p>
+                    <div class="box">
+                        <p id="quote-text" class="gen-text">
+                            Click the button below to get a quote.                          
+                        </p>
+                        <p id="quote-author" class="gen-author">Author</p>
+                    </div>
+                    <button id="qt-generate-btn">Generate a quotes</button>
+                </div>
+
+                <div id="food-facts" class="ctn ctn-ff">
+                    <h1>Bites the Knowledge</h1>
+                    <p class="tag">Discover fascinating facts about the food you love</p>   
+                    <div class="box">
+                        <p id="food-text" class="gen-text">
+                            Click the button below to get a fact on foods you eat. 
+                        </p>
+                        <p id="food-author" class="gen-author">Author</p>
+                    </div> 
+                    <button id="food-generate-btn">Get a fact</button>   
+                </div>
+
+                <div id="dictionary-ctn" class="ctn ctn-dic">
+                    <h1>English to English Dictionary</h1>
+                    <p class="tag">learn every single word</p>
+                    <div class="word-content">
+                        <input id="search-word-input" type="text" placeholder="Search your word">
+                        <button id="search-word-btn">Search </button>
+                    </div>
+                    <div class="res">
+                        <p id="word" class="meaning"></p> <br>
+                        <p id="meaning" class="meaning">Meaning will display here </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
