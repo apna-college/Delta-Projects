@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Kataria | Portfolio</title>
+        <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+            <p class="logo"><a href="index.html"><span class="red">P</span>ratham <span class="red">K</span>ataria</a></p>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="close" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+    <div id="header">
+        <div class="container">
+            
+            <div class="header-text">
+                <h1>Hi, I'm <span>Pratham</span><br>Kataria from <span id="India">India</span></h1>
+                <div class="typewriter"><h1 id="typewriter"></h1></div>
+            </div>
+        </div>
+        </div>
+        <!-- ---------------about------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user-cartoon.webp" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I’m a front-end developer and future full-stack developer. I enjoy solving problems and exploring new technologies to improve my skills and create useful projects.</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-end Development</span><br>HTML, CSS, JS</li>
+                                <li><span>Data Structures and Algorithms</span><br>Java</li>
+                                <li><span>MERN Stack Developer</span><br>MongoDB, Express JS, React JS, Node JS</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-24</span><br>Lakshya Institue of Sciences</li>
+                                <li><span>2022-23</span><br>Ramnarian Ruia Jr. College</li>
+                                <li><span>2009-22</span><br>Abhay International School (ICSE)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Projects">
+                            <ul>
+                                <li><span><a href="https://simon-says-nu-ten.vercel.app/">Simon Says Game</a></span><br>Developed a responsive, browser-based Simon Says memory game using HTML, CSS, and JavaScript, featuring dynamic animations, sounds, and increasing challenge levels.</li>
+                                <li><span><a href="https://spotify-clone-chi-ochre.vercel.app/">Spotify - clone</a></span><br>Built a responsive Spotify web UI clone using HTML and CSS, featuring a sleek dark theme, modern grid layout, and reusable components for a realistic streaming app experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------services--------------- -->
+        <div id="services">
+            <br>
+            <div class="container">
+            <h1 class="subtitle">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>HTML5, CSS3, JavaScript (ES6+), responsive design,Flexbox, CSS Grid, Bootstrap,APIs (REST/JSON).</p>
+                    <a href="https://www.google.com/search?q=Web Development" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Terminal</h2>
+                    <p>Command-line tools used for interacting with the system, managing files, running code, and controlling development workflows.</p>
+                    <a href="https://www.google.com/search?q=Terminal" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Git & Github</h2>
+                    <p>Proficient in using Git for version control and GitHub for collaborative code management.</p>
+                    <a href="https://github.com/Pratham21223" target="_blank">Learn More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- ----------portfolio----------- -->
+        <div id="portfolio">
+            <br>
+            <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Simon Says Game</h3>
+                        <p>A fun and interactive Simon Says game built with HTML, CSS, and JavaScript to test memory and focus.</p>
+                        <a href="https://simon-says-nu-ten.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>A great HTML & CSS project for improving front-end design skills.</p>
+                        <a href="https://spotify-clone-chi-ochre.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Pricing Page</h3>
+                        <p>A responsive pricing page built with Bootstrap showcasing service plans using cards, grids, and call-to-action buttons.</p>
+                        <a href="https://pricing-page-two-psi.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+            </div>
+            </div>
+            <!-- -----------contact------------- -->
+            <div id="contact">
+                <br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>prathamrk.7@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9326418140</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Pratham21223"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/pratham-kataria-prk/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" target="_blank" class="btn btn-2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required autocomplete="name">
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off"></textarea>
+                                <button type="submit" class="btn btn-2 btn-3">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="copyright">
+                        <p>Copyright © 2025. Made with ❤️ by Pratham Kataria.</p>
+                </div>
+                <script src="app.js"></script>
+                <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbysyn179SQiMMlCAYe1ln9IAnh5Awqu40HivvWcGsJSAziP_fsEXDLGDqQhETrnqyu93A/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg=document.getElementById("msg");
+
+                form.addEventListener('submit', e => {
+                e.preventDefault();
+                msg.innerText="Thanks for your message! I’ll get back to you soon on mail.";
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                setTimeout(()=>{
+                form.reset();
+                },5000)
+                msg.innerText=""
+            })
+            .catch(error => console.error('Error!', error.message))
+            })
+</script>
+</body>
+</html>
