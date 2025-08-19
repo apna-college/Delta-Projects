@@ -1,0 +1,175 @@
+html ,body{
+    margin : 0;
+    margin-top: -20px;
+    padding : 0;
+    display : flex;
+    overflow : hidden;
+    align-items: center;
+    justify-content: center;
+    width : 100vw;
+    height : 100vh;
+}
+.paused{
+    animation-play-state: paused;
+}
+.container{
+    height : 760px;
+    width : 430px;
+    background-image: url(./assets/flappy-bg.jpeg);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+.slider{
+    width : 385px;
+    height : 40px;
+    align-self: flex-end;
+    margin-bottom: 76px;
+    position: absolute;
+    animation: slide 1.5s linear infinite;
+    /* left : 100%; */
+    z-index: 1;
+}
+
+.slider2{
+    width : 385px;
+    height : 40px;
+    align-self: flex-end;
+    margin-bottom: 77.2px;
+    position: absolute;
+    animation : slide 1.5s linear infinite;
+    margin-left: 373px;
+    animation-delay: 0.5s;
+    z-index: 1;
+}
+
+.bird{
+    height : 3rem;
+    align-self : center;
+    position : absolute;
+    top : 191px;
+    z-index: 1;
+    /* animation-name : moveDown;
+    animation-duration : 1.5s;
+    animation-iteration-count: infinite; */
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes pipeSlide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+/* @keyframes pipeSlide2{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-150%);
+    }
+}
+@keyframes pipeSlide22{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-450%);
+    }
+} */
+/* @keyframes moveDown{
+    from{
+        top : 391px;
+    }
+    to{
+        top : 595px;
+    }
+} */
+.stopped{
+    animation: none;
+}
+
+p{
+    font-weight: 500;
+    color: #000;
+    font-size: 50px;
+    margin-left: 20px;
+    visibility: hidden;
+    z-index: 1;
+}
+.p2{
+    font-weight: 500;
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+    visibility: visible;
+}
+.pipeContainer{
+    display: flex;
+    gap: 200px;
+    width: 100%;
+    animation: pipeSlide 4s linear infinite;
+    margin-left: 530px;
+}
+.pipes1,.pipes2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.pipe1top{
+    height : 10rem;
+    width : 5rem;
+    margin-top: -8px;
+    /* margin-left : -200px; */
+    /* position: absolute; */
+    /* right: -100%; */
+    /* animation: pipeSlide 2.5s linear infinite; */
+    animation-delay: 1.5s;
+    transform: rotate(1deg);
+}
+.pipe1bottom{
+    height : 11rem;
+    width : 5rem;
+    margin: 0 auto;
+    /* margin-left : -200px; */
+    position: relative;
+    /* align-self: flex-end; */
+    bottom: 6.5rem;
+    /* right: -100%; */
+    /* animation: pipeSlide2 2.5s linear infinite; */
+    animation-delay: 1.5s;
+}
+.pipe2top{
+    height : 10rem;
+    width : 6rem;
+    position: absolute;
+    top : -0.198rem;
+    /* right: -50%; */
+    /* animation: pipeSlide22 3.5s linear infinite; */
+    animation-delay: 2.5s;
+    animation-play-state: paused;
+}
+.pipe2bottom{
+    height : 8rem;
+    width : 6rem;
+    /* align-self: flex-end; */
+    position: absolute;
+    /* right: -50%; */
+    bottom : 6.7rem;
+    /* animation: pipeSlide22 3.5s linear infinite; */
+    animation-delay: 2.5s;
+    animation-play-state: paused;
+}
