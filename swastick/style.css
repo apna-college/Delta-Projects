@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background-color: #5e63ba;
+}
+.outer {
+    width: 100%;
+    height: 100vh;
+    background-color: #5e63ba;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+.inner {
+    max-width: 1000px;
+    height: 60%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+.hangman {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.hangmanPic {
+    width: 80%;
+    height: 70%;
+    margin: 5%;
+    border: 1px solid black;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 2%;
+}
+
+.word {
+    list-style: none;
+    gap: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+.letter {
+    width: 7%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1%;
+    border-bottom: 5px solid black;
+}
+
+.guessed {
+    border-color: transparent;
+    margin-bottom: 8%;
+}
+
+.hint-guess {
+    text-align: center;
+    font-weight: 700;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.keyboard {
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1%;
+    padding: 2% 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: calc(100% / 9 - 5px);
+    padding: 1.5% 3%;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #5e63ba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    row-gap: 5;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.right {
+    background-color: #0db00d;
+}
+
+.wrong {
+    background-color: #c70303;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rules {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1%;
+    & li {
+        list-style: square;
+        font-size: 1rem;
+        margin: 1%;
+    }
+}
+
+.intro .settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+    width: 100%;
+    & div {
+        display: flex;
+        width: 50%;
+        align-items: center;
+    }
+}
+
+.start {
+    width: auto;
+    padding: 2%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.option {
+    width: 50%;
+    height: 20%;
+    font-size: 1rem;
+    margin-left: 5%;
+    font-weight: 600;
+}
+.danger {
+    color: red;
+}
+.careful {
+    color: rgb(201, 201, 81);
+}
+.safe {
+    color: #0db00d;
+}
+.disabled {
+    opacity: 0.6;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.game-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.game-modal .container {
+    background-color: #fff;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.game-modal img {
+    max-width: 130px;
+}
+.game-modal p {
+    margin-top: 10px;
+    font-size: 1.15rem;
+}
+.game-modal .play-again {
+    width: 100%;
+    padding: 2%;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.intro .settings .loader {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin-left: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    border-top: 2px solid white;
+    animation: spin 0.5s linear infinite;
+}
+body .outer .vanish {
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 5px 0px;
+    }
+    .inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: fit-content;
+    }
+    .hangman img {
+        max-width: 200px;
+    }
+    .hangman h2 {
+        display: none;
+    }
+    .game {
+        width: 90%;
+    }
+    .word {
+        height: 20%;
+    }
+    .letter {
+        margin: 0 5px;
+    }
+    .intro {
+        width: 100%;
+    }
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+    .intro .settings {
+        justify-content: space-evenly;
+    }
+    .rules {
+        font-size: 1rem;
+        & li {
+            font-size: 0.7rem;
+        }
+    }
+    .start {
+        font-size: 1rem;
+    }
+}
