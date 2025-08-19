@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <div class="outer">
+            <div class="game-modal vanish">
+                <div class="container">
+                    <img src="" alt="" srcset="" />
+                    <h2></h2>
+                    <p>The Correct word was: <b>Max</b></p>
+                    <button class="play-again button">Play Again</button>
+                </div>
+            </div>
+            <!-- game -->
+            <div class="inner vanish main-game">
+                <div class="hangman">
+                    <img src="images/hangman.svg" class="hangmanPic" />
+                    <h2>HANGMAN GAME</h2>
+                </div>
+                <div class="game">
+                    <ul class="word"></ul>
+                    <div class="hint-guess">
+                        <p class="hint">Hint:</p>
+                        <p class="guess">
+                            Incorrect guesses:
+                            <span class="safe guessCount">4/6</span>
+                        </p>
+                    </div>
+                    <div class="keyboard">
+                        <button type="button" class="key button" value="a">
+                            a
+                        </button>
+                        <button type="button" class="key button" value="b">
+                            b
+                        </button>
+                        <button type="button" class="key button" value="c">
+                            c
+                        </button>
+                        <button type="button" class="key button" value="d">
+                            d
+                        </button>
+                        <button type="button" class="key button" value="e">
+                            e
+                        </button>
+                        <button type="button" class="key button" value="f">
+                            f
+                        </button>
+                        <button type="button" class="key button" value="g">
+                            g
+                        </button>
+                        <button type="button" class="key button" value="h">
+                            h
+                        </button>
+                        <button type="button" class="key button" value="i">
+                            i
+                        </button>
+                        <button type="button" class="key button" value="j">
+                            j
+                        </button>
+                        <button type="button" class="key button" value="k">
+                            k
+                        </button>
+                        <button type="button" class="key button" value="l">
+                            l
+                        </button>
+                        <button type="button" class="key button" value="m">
+                            m
+                        </button>
+                        <button type="button" class="key button" value="n">
+                            n
+                        </button>
+                        <button type="button" class="key button" value="o">
+                            o
+                        </button>
+                        <button type="button" class="key button" value="p">
+                            p
+                        </button>
+                        <button type="button" class="key button" value="q">
+                            q
+                        </button>
+                        <button type="button" class="key button" value="r">
+                            r
+                        </button>
+                        <button type="button" class="key button" value="s">
+                            s
+                        </button>
+                        <button type="button" class="key button" value="t">
+                            t
+                        </button>
+                        <button type="button" class="key button" value="u">
+                            u
+                        </button>
+                        <button type="button" class="key button" value="v">
+                            v
+                        </button>
+                        <button type="button" class="key button" value="w">
+                            w
+                        </button>
+                        <button type="button" class="key button" value="x">
+                            x
+                        </button>
+                        <button type="button" class="key button" value="y">
+                            y
+                        </button>
+                        <button type="button" class="key button" value="z">
+                            z
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- rules -->
+            <div class="inner models game-rules">
+                <div class="hangman">
+                    <img src="images/hangman-9.svg" class="hangmanPic" />
+                    <h2>HANGMAN GAME</h2>
+                </div>
+                <div class="intro">
+                    <h1>Welcome to Hangman</h1>
+                    <div class="rules">
+                        <p>Rules:</p>
+                        <ul>
+                            <li>
+                                Guess the hidden word, one letter at a time.
+                            </li>
+                            <li>Correct guesses fill in the blanks.</li>
+                            <li>Wrong guesses draw parts of the hangman.</li>
+                            <li>
+                                Guess the word before drawing is complete to win
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings">
+                        <div>
+                            <p>Difficulty:</p>
+                            <select name="diff" id="diff" class="option">
+                                <option value="Easy">Easy</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Hard">Hard</option>
+                            </select>
+                        </div>
+                        <button class="button start">
+                            Start Game
+                            <div class="loader vanish"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
