@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.nav-bar{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    position:sticky;
+}
+
+.border{
+    background-color: 2px solid transparent;
+}
+.border:hover{
+     background-color: 2px solid white;
+}
+
+/* box 1 */
+.nav-logo{
+    height: 50px;
+    width: 115px;
+}
+
+.logo{
+    height: 50px;
+    width: 100%;
+    background-image: url("OIP.jpg");
+    background-size: cover;
+}
+
+/* box 2 */
+.nav-deliver-icon{
+    display: flex;
+    align-items: center;
+}
+.add-first{
+    margin-left: 15px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+/* box 3 */
+.search-bar{
+    margin-left: 10px;
+    height: 40px;
+    width: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    
+}
+.select-search{
+    width: 50px;
+    background-color: rgba(237, 232, 232, 0.958);
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px; 
+    text-align: center;
+}
+.search{
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.search-icon{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px; 
+    color: black;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 191, 0);
+}
+.country select{
+    height: 45px;
+    width: 45px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #0f1111;
+}
+.search-bar:hover{
+    border: 2px solid orange;
+}
+
+/* box 4 */
+.signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hello{
+    margin-right: 40px;
+    font-size: 12px;
+}
+.account{
+    font-size: 14px;
+    background-color: #0f1111;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* box 5 */
+.return{
+    margin-right: 25px;
+    font-size: 12px;
+}
+/* box 5 */
+.cart i{
+    font-size: 30px;
+}
+.cart{
+    font-weight: bold;
+}
+
+/* penal */
+.penal-ops{
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    background-color: #232f3e;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.penal-ops select{
+    background-color: #232f3e;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* hero section  */
+.hero-section{
+    display: flex;
+    justify-content: center;
+}
+.hero-img{
+    background-image: url("af_2x._CB788708155_.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 98%; 
+}
+
+/* Shop section*/
+.box-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #e2e7e6;
+    padding-bottom: 20px;
+}
+.box-img{
+    height:280px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}  
+
+.box{
+    margin-top: 15px;
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0 15px;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color: #007185;
+}
+
+/* footers  */
+footer{
+    background-color: #e2e7e6;
+   
+}
+.foot-penal1{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37475a;
+    color: white;
+    height: 2.7rem;
+    margin: none;
+}
+
+.foot-penal2{
+    padding-top: 3rem;
+    background-color: #232f3e;
+    height: 340px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.content h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.content a{
+    line-height: 30px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 0.85rem;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+
+.foot-penal3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(220, 215, 215, 0.3);
+    height: 80px;
+    background-color:  #232f3e;
+}
+.penal3-img{
+    margin-right: 100px;
+    background-image: url("OIP.jpg");
+    background-size: cover;
+    height: 30px;
+    width: 100px;
+}
+
+.penal3-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.selection-div{
+    height: 33px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+}
+.selection-div i{
+    color: #ccc;
+    font-size: 15px;
+}
+.selection-div select {
+    padding: 0 8px;
+    font-size: 15px;
+    border: none;
+    background-color:  #232f3e;
+    color: #ccc;
+}
+
+.india{
+    height: 33px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 15px;
+}
+
