@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row">
+    <h1 class="mt-3 mb-3 col-6 offset-3">login on NUERO_MENTOR <i class="fa-solid fa-graduation-cap"></i></h1>
+<div class="col-6 offset-3">
+    <form action="/login" method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="username" class="form-lable">Username</label>
+            <input type="text" name = "username" id="username" class="form-control" required>
+            <div class="invalid-feedback">Username required</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-lable">Password</label>
+            <input type="password" name = "password" id="password" class="form-control" required>
+            <div class="invalid-feedback">Password required</div>
+        </div>
+        <button class="btn btn-dark mb-3 add-btn">Log In</button>
+    </form>
+
+</div>
+</div>
