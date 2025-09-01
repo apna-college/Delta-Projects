@@ -1,0 +1,53 @@
+<!-- <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-graduation-cap"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/listings">All Student</a>
+        <a class="nav-link" href="/listings/new">Add new Student</a>
+        <a class="nav-link" href="/listings/new">Student Problems</a> -->
+      <!-- </div>
+      <div class="navbar-nav ms-auto">
+        <% //if(!currUser){ %>
+        <button class="btn btn-light"><a class="nav-link" href="/signup">Sign Up</a></button>
+        <button class="btn btn-light"><a class="nav-link" href="/login">Log In</a></button>
+        <% //} %>
+        <% //if(currUser){ %>
+        <button class="btn btn-light"><a class="nav-link" href="/logout">Log out</a></button>
+        <% //} %>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-md navbar-light bg-white border-bottom sticky-top shadow-sm" style="z-index: 1050;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-graduation-cap"></i></a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse bg-white" id="navbarNavAltMarkup">
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/listings">All Student</a>
+        <a class="nav-link" href="/listings/new">Add new Student</a>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row gap-2 ms-md-auto mt-3 mt-md-0">
+        <% if (!currUser) { %>
+          <a href="/signup" class="btn btn-light">Sign Up</a>
+          <a href="/login" class="btn btn-light">Log In</a>
+        <% } else { %>
+          <a href="/logout" class="btn btn-light">Log Out</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

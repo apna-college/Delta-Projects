@@ -1,0 +1,116 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links , .f-info-socials , .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    height: 8rem;
+    display: flex;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: space-evenly;
+    text-align: center;
+}
+/* Cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0;
+}
+.card-text p {
+    font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* Card-Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex !important;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* show_page_image */
+.profile-photo {
+  width: 250px !important;
+  height: 300px !important;
+  /* border-radius: 50% !important;            */
+  overflow: hidden !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important; 
+  border: 2px solid #e0e0e0 !important;    
+  margin: 20px auto !important;           
+  transition: transform 0.3s ease !important;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05) !important;     
+}
+
+.profile-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;     
+  display: block !important;
+}

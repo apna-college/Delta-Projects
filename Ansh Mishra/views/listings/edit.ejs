@@ -1,0 +1,78 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+<div class="col-8 offset-2">
+<body><br>
+    <h3>Edit Student details:</h3><br>
+    <form action="/listings/<%= listing._id %>?_method=PUT" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+         <div class="mb-3">
+            <label for="email" class="form-lable">Email</label>
+            <input type="text" name = listing[email] class="form-control" required value="<%=listing.email %>">
+            <div class="invalid-feedback">Email required</div>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-lable">Enter Name</label>
+            <input type="text" name = listing[name] class="form-control" required value="<%=listing.name %>">
+            <div class="invalid-feedback">name required</div>
+        </div>
+        <div class="mb-3">
+            <label for="family_background" class="form-lable">Family Background <br>(total family members and occupation of parents etc..)</label>
+            <textarea name="listing[family_background]" class="form-control" required ><%=listing.family_background %></textarea>
+            <div class="invalid-feedback">required</div>
+        </div>
+        <div class="mb-3 col-md-8">
+            <label for="skills" class="form-label">You are good in (skills)</label>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="listing[skills]" id="radio1" value="Digital literacy">
+              <label class="form-check-label" for="radio1">Digital literacy</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="listing[skills]" id="radio2" value="Programming and Coding">
+              <label class="form-check-label" for="radio2">Programming and Coding</label>
+            </div>
+            
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="listing[skills]" id="radio3" value="Music and Performance">
+              <label class="form-check-label" for="radio3">Music and Performance</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="listing[skills]" id="radio4" value="Adaptability and resilience">
+              <label class="form-check-label" for="radio4">Adaptability and resilience</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="listing[skills]" id="radio5" value="Time management and organization">
+              <label class="form-check-label" for="radio5">Time management and organization</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="challanges" class="form-lable">challanges</label>
+            <textarea name="listing[challanges]" class="form-control" required><%=listing.challanges %></textarea>
+            <div class="invalid-feedback">required</div>
+        </div>
+        <div class="mb-3">
+            <label for="goals" class="form-lable">Aims in life / goals</label>
+            <textarea name="listing[goals]" class="form-control" required><%=listing.goals %></textarea>
+            <div class="invalid-feedback">required</div>
+        </div>
+        <div class="mb-3">
+            <label for="higher_studies" class="form-lable">higher_studies</label>
+            <textarea name="listing[higher_studies]" class="form-control" required><%=listing.higher_studies %></textarea>
+            <div class="invalid-feedback">required</div>
+        </div>
+        <div class="mb-3">
+           <img src="<%= listing.image.url%>" class="img-fluid img-thumbnail" style="width: 200px; height: 250px;">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-lable">Image</label>
+            <input type="file" name="listing[image]" class="form-control" value="<%= listing.image %> " >
+        </div>
+        <button class="btn btn-dark mb-3 add-btn">Edit</button>
+    </form>
+</body>
+</div>
+</div>

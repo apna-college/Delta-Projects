@@ -1,0 +1,68 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-3">
+        <body>
+    <h3><%=listing.name %></h3>
+</div>
+    <div class="card col-6 offset-3 show-card listing-card">
+        <img src="<%= listing.image.url %>" alt="image" class="card-img-top show-img profile-photo" >
+        <div class="card-body">
+            <div class="card-text">
+                <p>
+                    <!-- <b>owned by :</b> <%= //listing.owner.username %><br> -->
+                   <b> Name : </b><%=listing.name %><br>
+                    <b> Email : </b><%= listing.email %> <br>
+                    <b> Family Background : </b> <%= listing.family_background %> <br>
+                    <b> Skills : </b><%= listing.skills %> <br>
+                    <b> Challanges : </b><%= listing.challanges %> <br>
+                    <b> Goals : </b><%= listing.goals %> <br>
+                    <b> Higher Studies : </b><%= listing.higher_studies %>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <% if( currUser && currUser._id.equals(listing.owner._id)){ %>
+    <div class="btns mb-3">
+        <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark  col-1 offset-3 add-btn">Edit</a>
+        <form action="/listings/<%=listing._id %>?_method=DELETE" method="post">
+            <button class="btn btn-outline-dark offset-5"> Delete</button>
+        </form>
+    </div>
+
+    
+
+    <div class="col-8 offset-3 mb-3">
+        <hr>
+        <h4>Do you have any problem : </h4>
+        <form action="/listings/<%= listing._id %>/stu_problem" method="post" novalidate class="needs-validation">
+            <div class="mb-3 mt-3">
+                <label for="rating" class="form-label">Emergency</label>
+                <input type="range" min="1" max="5" id="rating" name="stu_problem[rating]">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="problem" class="form-label">problem</label>
+                <textarea name="stu_problem[problem]" id="problem" cols="30" rows="5" class="form-control" required></textarea>
+                <div class="invalid-feedback">please submit some problem...</div>
+            </div>
+            <button class="btn btn-outline-dark">Submit</button>
+        </form>
+    </div>
+
+     <div class="problem col-8 offset-3">
+        <div class="row">
+        <h4>Your problems :</h4>
+        <% for(stu_problem of listing.stu_problems) {%>
+            <div class="card col-5 ms-3 mb-3">
+                <div class="card-text"><%= stu_problem.problem %></div>
+                <form class="mb-2" method="post" action="/listings/<%= listing._id %>/stu_problem/<%= stu_problem._id %>?_method=DELETE">
+                    <button class="btn btn-outline-dark btn-sm">Delete</button>
+                </form>
+            </div>
+        <% } %>
+       </div>
+    </div>  
+
+</div>
+<% } %>
+
