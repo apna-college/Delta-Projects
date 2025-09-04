@@ -1,0 +1,495 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    padding: 8px;
+    grid-template-rows: 1fr 7.4fr 1.6fr;
+    grid-template-columns: 2.3fr 7.85fr;
+    grid-gap: 2px;
+}
+.main-nav{
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 60px;
+    width: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .logo img{
+   height: 32px;
+   width: 32px;
+}
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    margin-left: 10px;
+
+}
+.home{
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.06s linear 0s;
+    cursor:pointer;
+}
+.home span{
+    font-size: 1.8rem;
+    font-variation-settings: 'wght' 100;
+    opacity: 0.7;
+}
+.home:hover{
+    transform: scale(1.06);
+}
+.home:hover i{
+    opacity: 1;
+}
+.search{
+    height: 47px;
+    width: 470px;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    justify-content: space-between;
+    margin: 0 8px;
+    border: 0.5px solid transparent;
+    transition: all 0.25s linear 0s;
+    
+}
+.search:hover{
+    background-color: #2d2c2c;
+    border-color: #454343;
+}
+
+.search i{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    transition: all 0.25s linear 0s;
+}
+.search:hover i{
+    opacity: 1;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+.browse{
+    height: 24px;
+    width: 12px;
+    padding-right: 20px;
+    padding-left: 12px;
+    border-left:2px solid rgba(255,255,255,0.5) ;
+    justify-self: flex-end;
+}
+
+.badge {
+    background-color: white;
+    border: none;
+    color: black;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    transition: all 0.06s linear 0s;
+    cursor: pointer;
+}
+.badge:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.dark-badge {
+    background-color: black;
+    color: rgba(255,255,255,0.7);
+    transition: all 0.06s linear 0s;
+}
+.dark-badge:hover {
+    opacity: 1;
+    color:rgba(255,255,255,1);
+}
+.dark-badge:hover i{
+    opacity: 1;
+    color:rgba(255,255,255,1);   
+}
+@media (max-width:1026px) {
+    .hide {
+        display: none;
+    }
+}
+.nav-options{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 10px;
+}
+.nav-options i{
+    transition: all 0.06s linear 0s;
+    padding: 0 6px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.nav-options i:hover{
+    opacity: 1;
+}
+
+
+.library{
+    width: 296px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #121212;
+    border-radius: 8px;
+    
+}
+.lib-header{
+    display: flex;
+    height: 35px;
+    width: 248px;
+    padding:12px 16px 8px 16px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.lib-title{
+    display: flex;
+    height: 35px;
+    font-weight: 600;
+    align-items: center;
+    margin-left: 4px;
+}
+.lib-icon{
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-self: flex-end;
+}
+.lib-icon i{
+    padding: 0 8px;
+    opacity: 0.7;
+    transition: all 0.06s linear 0s;
+    
+}
+.lib-icon i:hover{
+    opacity: 1;
+}
+.plus{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.options{
+    display: flex;
+    align-content: center;
+    width: 248px;
+    margin: 8px 16px;
+}
+.lib-badge{
+    display: flex;
+    width: auto;
+    height: 32px;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.lib-main{
+    padding: 0 8px;
+    display: flex;
+    overflow: auto;
+    width: 280px;
+    height: 339px;
+    flex-direction: column;
+    gap: 6px;
+}
+.lib-search{
+    display: flex;
+    width: 264px;
+    height: 34px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.lib-search>i{
+    margin-left: 16px;
+}
+.lib-content{
+}
+.lib-card{
+    height: 63px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+.lib-card:hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+.lib-card-img{
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    margin-left: 8px;
+}
+.lib-card:hover .lib-card-img{
+    background-color: black;
+    opacity: 0.6;
+}
+.lib-card:hover .lib-card-img i{
+    opacity: 0.6;
+}
+.play{
+    position: fixed;
+    opacity: 0;
+    z-index: 2;
+}
+.lib-card:hover .lib-card-img .play{
+    color: white;
+    opacity: 1;
+    transform: scale(1.3);
+}
+.lib-card-title{
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-left: 10px ;
+    line-height: 1.3rem;
+}
+.lib-card-title span{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.main-content{
+    background-color: #121212;
+    grid-row:2/3;
+    grid-column: 2/3;
+    border-radius: 8px ;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem 1rem 1rem;
+    gap: 10px;
+    z-index: 6;
+}
+.main-content-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.section-header{
+    width: 100%;
+    padding-left: 14px;
+}
+.section-heading{
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+}
+.section-heading:hover{
+    text-decoration: white underline solid 1.5px ;
+    cursor: pointer;
+}
+.card {
+    width: 160px;
+    border-radius: 0.4rem;
+    padding: 1rem 0.5rem 1rem 0.8rem;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #232323;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 97%;
+    border-radius: 0.4rem;
+}
+.card-animate{
+    color: #1DB954;
+}
+
+.card-title {
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+    margin-top: 6px;
+
+}
+.card-title:hover{
+    text-decoration: white underline solid 1.5px ;
+}
+
+/* .card-info {
+    font-size: 0.875rem;
+    opacity: 0.9;
+
+} */
+.footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #232323;
+}
+
+
+.info-curr-music{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.music-player{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media(max-width:1049px){
+    .music-player{
+        width: 1049px;
+    }
+}
+
+.album {
+    width: 25%;
+}
+
+.album-card{
+    height: 63px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+.album-card-img{
+}
+.album-card-title{
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    margin-right: 10px;
+}
+.album-card-title:hover{
+    text-decoration: white underline solid 1.5px ;
+    cursor: pointer;
+}
+.album-card-title:hover {
+    text-decoration: none;
+}
+.album-card-title span{
+    font-size: 0.75rem;
+}
+.album-card-title span:hover{
+    opacity: 1;
+    text-decoration: white underline solid 1.5px ;
+    cursor: pointer;
+}
+
+.album-icon{
+}
+
+.player {
+    width: 50%;
+
+}
+
+
+.player-control{
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.player-control-icon,.album-icon{
+    height: 1rem;
+    margin-right:0.7rem ;
+    margin-left:0.7rem ;
+    opacity: 0.7;
+    transition: all 0.06s linear 0s;
+}
+.player-control-icon:hover , .album-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 60%;
+    appearance: none;
+    color: white;
+    height: 4px;
+    border-radius:50px;
+    background-color: white;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.controls {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.controls i{
+    padding: 4px;
+    opacity: 0.7;
+    transition: all 0.06s linear 0s;
+    cursor: pointer;
+}
+.controls i:hover{
+    opacity: 1;
+}

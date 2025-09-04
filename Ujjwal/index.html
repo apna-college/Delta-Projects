@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0&icon_names=web_stories,slideshow,queue_music,volume_up,picture_in_picture_alt" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-nav">
+            <div class="logo">
+                <img src="./assets/logo.png">
+
+            </div>
+            <div class="nav-search">
+                <div class="home">
+                    <span class="material-symbols-outlined">
+                        home
+                        </sp>
+                </div>
+
+                <div class="search">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                    <a href="#">What do you want to play? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                    <span class="material-symbols-outlined browse">
+                        web_stories
+                    </span>
+                </div>
+
+            </div>
+            <div class="nav-options">
+                <button class="badge hide">Explore Premium</button>
+                <button class="badge dark-badge"><i class="fa-regular fa-circle-down"
+                        style="margin-right: 10px;"></i>Install App</button>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-user-group"></i>
+                <i class="fa-regular fa-user"></i>
+
+            </div>
+
+        </div>
+        <div class="library">
+            <div class="lib-options">
+                <div class="lib-header">
+                    <div class="lib-title">
+                        <a href="#" style="opacity: 1;">Your Library</a>
+                    </div>
+                    <div class="lib-icon">
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-up-right-and-down-left-from-center expand"></i>
+                    </div>
+
+                </div>
+                <div class="options">
+                    <!-- hover effect -->
+                    <div class="lib-badge">
+                        &nbsp;&nbsp; Playlists &nbsp;&nbsp;
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="lib-main">
+                <!-- hover effect -->
+                <div class="lib-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="badge dark-badge" style="background-color:inherit;font-weight: 400;">Recents <i
+                            class="fa-solid fa-list"></i></button>
+                </div>
+                <div class="lib-content">
+                    <div class="lib-card">
+                        <div class="lib-card-img"><i class="fa-solid fa-music"></i><i class="fa-solid fa-play play"></i>
+                        </div>
+                        <p class="lib-card-title">My Playlist #1 <br> <span>Playlist Ujjwal</span></p>
+                    </div>
+                    <div class="lib-card">
+                        <div class="lib-card-img"><i class="fa-solid fa-music"></i><i class="fa-solid fa-play play"></i>
+                        </div>
+                        <p class="lib-card-title">My Playlist #2 <br> <span>Playlist Ujjwal</span></p>
+                    </div>
+                    <div class="lib-card">
+                        <div class="lib-card-img"><i class="fa-solid fa-music"></i><i class="fa-solid fa-play play"></i>
+                        </div>
+                        <p class="lib-card-title">My Playlist #3 <br> <span>Playlist Ujjwal</span></p>
+                    </div>
+                    <div class="lib-card">
+                        <div class="lib-card-img"><i class="fa-solid fa-music"></i><i class="fa-solid fa-play play"></i>
+                        </div>
+                        <p class="lib-card-title">My Playlist #1 <br> <span>Playlist Ujjwal</span></p>
+                    </div>
+                    <div class="lib-card">
+                        <div class="lib-card-img"><i class="fa-solid fa-music"></i><i class="fa-solid fa-play play"></i>
+                        </div>
+                        <p class="lib-card-title">My Playlist #1 <br> <span>Playlist Ujjwal</span></p>
+                    </div>
+                    <div class="lib-card">
+                        <div class="lib-card-img"><i class="fa-solid fa-music"></i><i class="fa-solid fa-play play"></i>
+                        </div>
+                        <p class="lib-card-title">My Playlist #1 <br> <span>Playlist Ujjwal</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-badge lib-badge">
+                    &nbsp;&nbsp; All &nbsp;&nbsp;
+                </div>
+                <div class="sticky-nav-badge lib-badge">
+                    &nbsp;&nbsp; Music &nbsp;&nbsp;
+                </div>
+                <div class="sticky-nav-badge lib-badge">
+                    &nbsp;&nbsp; Podcasts &nbsp;&nbsp;
+                </div>
+
+            </div>
+            <div class="main-content-section">
+                <div class="section-header">
+                    <a class="section-heading">Recommended for you</a>
+                </div>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="./assets/card4img.jpeg">
+                        <p class="card-title">Manganl Bhavan Amangal Hari</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="./assets/card6img.jpeg">
+                        <p class="card-title">Top songs</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67616d00001e02f4b565fc280322f7835f848d">
+                        <p class="card-title">Ramayana Chaupai</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67616d00001e02defa43febb398ddf9326e903">
+                        <p class="card-title">Enchanting Flute</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67616d00001e02dcd131d00e30474e97c2214a">
+                        <p class="card-title">Sankat Mochan Hanuman Ashtak</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-section">
+                <div class="section-header">
+                    <a class="section-heading">Recently Played</a>
+                </div>
+
+
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67616d00001e02f4b565fc280322f7835f848d">
+                        <p class="card-title">Ramayana Chaupai</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="https://i.scdn.co/image/ab67616d00001e02defa43febb398ddf9326e903">
+                        <p class="card-title">Enchanting Flute</p>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img class="card-img" src="./assets/card4img.jpeg">
+                        <p class="card-title">Manganl Bhavan Amangal Hari</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="info-curr-music">
+
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album-card">
+                    <div class="album-card-img lib-card-img"><i class="fa-solid fa-music"></i><i
+                            class="fa-solid fa-play play"></i>
+                    </div>
+                    <p class="album-card-title lib-card-title">Current playing <br> <span>Creator</span></p>
+                    <i class="fa-solid fa-circle-plus album-icon"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1;height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">3:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="material-symbols-outlined">
+                    slideshow
+                </i>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="material-symbols-outlined">
+                    queue_music
+                </i>
+                <i class="fa-solid fa-headphones"></i>
+                <i class="material-symbols-outlined">
+                    volume_up
+                </i>
+                <input type="range" min="0" max="100" class="volume_bar">
+                <i class="material-symbols-outlined">
+                    picture_in_picture_alt
+                </i>
+                <i class="fa-solid fa-expand"></i>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
