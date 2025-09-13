@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flazon</title>
+    <link rel="shortcut icon" href="flazonLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="address border">
+                <p class="addr-del">Deliver to</p>
+                <div class="addr-logo">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="addr-loc">India</p>
+                </div>
+            </div>
+            <div class="search">
+                <select class="search-select border"><option>Deals</option></select>
+                <input class="search-box border" type="text" placeholder="Search Flazon">
+                <div class="search-logo border">
+                    <i class="fa-solid fa-magnifying-glass">
+                </i></div>
+            </div>
+            <div class="nav-signin border">
+                <p><span class="nav-first">Hello, sign in</span></p>
+                <p class="nav-second">Sign Up</p>
+            </div>
+            <div class="nav-orders border">
+                <p><span class="nav-first">Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-plus"></i>
+                Cart
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All 
+            </div>
+            <div class="panel-opt">
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+            </div>
+            <div class="panel-deals border">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="sliderr-container">
+            <div class="sliderrrr">
+                <div class="sliderr">
+                    <img src="heroSection0.png" alt="Image 1">
+                </div>
+                <div class="sliderr">
+                    <img src="heroSection1.png" alt="Image 2">
+                </div>
+                <div class="sliderr">
+                    <img src="heroSection2.png" alt="Image 3">
+                </div>
+            </div>
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <!-- Dots for Navigation -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img1 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Winter Essentials For You</h2>
+                <div class="box-img2 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronic Appliances</h2>
+                <div class="box-img3 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Grocery Items</h2>
+                <div class="box-img4 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty Products</h2>
+                <div class="box-img5 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Home & Furnitures</h2>
+                <div class="box-img6 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Toys & more</h2>
+                <div class="box-img7 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Two Wheelers</h2>
+                <div class="box-img8 box-img"></div>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="panel1">Back to top</div>
+        <section class="testimonial-slider">
+            <div class="slider-container">
+                <div class="testimonial-slide">
+                    <img src="customer1.png" alt="Customer 1" class="avatar">
+                    <p class="testimonial-text">"Flazon is my go-to place for everything! Amazing prices and top-quality service."</p>
+                    <p class="customer-name">John Doe</p>
+                    <div class="rating">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="customer2.png" alt="Customer 2" class="avatar">
+                    <p class="testimonial-text">"Best online shopping experience! Fast delivery and great customer support."</p>
+                    <p class="customer-name">Jane Smith</p>
+                    <div class="rating">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="customer3.png" alt="Customer 3" class="avatar">
+                    <p class="testimonial-text">"Flazon's product range is incredible. Always find what I need at the best prices."</p>
+                    <p class="customer-name">Michael Brown</p>
+                    <div class="rating">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
+        </section>
+        <div class="panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Flazon</a>
+                <a>Investor Relations</a>
+                <a>Flazon Devices</a>
+                <a>Flazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Flazon</a>
+                <a>Sell on Flazon Business</a>
+                <a>Sell apps on Flazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Flazon Hub</a>
+                <a>See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Flazon Payment Products</p>
+                <a>Flazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Flazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Flazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="panel3">
+            <div class="flazon-logo border"></div>
+        </div>
+        <div class="panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Consumer Health Data Privacy Disclosure</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2024, Flazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+    <script src="scripty.js"></script>
+</body>
+</html>

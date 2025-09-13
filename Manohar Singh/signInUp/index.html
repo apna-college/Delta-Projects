@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button class="toggle-btn" id="signInBtn" onclick="toggleForm('signIn')">Sign In</button>
+                <button class="toggle-btn" id="signUpBtn" onclick="toggleForm('signUp')">Sign Up</button>
+            </div>
+            <!-- Sign In Form -->
+            <form id="signInForm" class="form active" action="#">
+                <h2>Welcome Back</h2>
+                <div class="input-container">
+                    <i class="fas fa-user"></i> <!-- Icon for username -->
+                    <input type="text" id="signInUsername" placeholder="Username" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i> <!-- Icon for password -->
+                    <input type="password" id="signInPassword" placeholder="Password" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <!-- Sign Up Form -->
+            <form id="signUpForm" class="form" action="#">
+                <h2>Create an Account</h2>
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="signUpUsername" placeholder="Username" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="signUpEmail" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signUpPassword" placeholder="Password" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signUpConfirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

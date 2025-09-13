@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap'); 
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.navbar{
+    height: 3.8rem;
+    background-color: #0f1111;
+    color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{ 
+    margin-left: 0.8rem;
+    width: 5rem;
+    height: 4rem; 
+    margin: 0.25rem; 
+    border-radius: 0.125rem 0 0.125rem 0;
+}
+.logo{
+    height: 98%; 
+    width: 100%; 
+    background-image: url("flazonLogo.png");
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header{
+    position: sticky; 
+    top: 0; 
+    z-index: 600;
+}
+body{
+    padding-top: 2rem; 
+}
+.border{
+    border: 0.1rem solid transparent;
+}
+.border:hover{
+    border: 0.1rem solid white;  
+}
+.address{
+    margin-top: 0.625rem; 
+}
+.addr-loc{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 0.19rem;
+}
+.addr-del{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 0.9rem;
+}
+.addr-logo{
+    margin-top: 0.5rem; 
+    display: flex;
+    color: #cdcdcd; 
+}
+.search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40rem; 
+    height: 2.5rem; 
+    border-radius: 0.25rem;
+    background-color: pink;
+}
+.search-box{
+    width: 100%; 
+    font-size: 1rem; 
+    border: none;
+}
+.search-select{
+    text-align: center; 
+    background-color: #f3f3f3;
+    width: 3.75rem; 
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border: none;
+}
+.search-logo{
+    width: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    color: #0f1111;
+}
+.search-select:active{
+    border: 0.25rem solid pink; 
+}
+.nav-first{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.search:hover{
+    border: 0.19rem solid #febd68; 
+}
+.nav-cart i{
+    font-size: 2.1rem;
+}
+.nav-cart{
+    margin-right: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel{
+    height: 2.5rem; 
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel-all{
+    margin-left: 0.8rem;
+}
+.panel-opt p{
+    display: inline;
+    margin-left: 1.5rem; 
+}
+.panel-opt{
+    width: 65%; 
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-right: 0.8rem;
+}
+/* hero section */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    overflow: hidden; 
+}
+
+.sliderr-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderrrr {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliderr {
+    min-width: 100%;
+    height: 70%;
+}
+
+.sliderr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots Navigation */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot:hover, .dot.active {
+    background-color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sliderr img {
+        object-position: center;
+    }
+}
+
+/* shop-section */
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    background-color: #e2e7e6;
+}
+.box{
+    border: 0.125rem solid black;
+    height: 25rem; 
+    width: 23%;
+    background-color: white;
+    padding: 20px 0 15px; 
+    margin-top: 13px;
+}
+
+.box-img1{
+    background-image: url("health.png");
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: #007185; 
+}
+.box-img2{
+    background-image: url("winterEssentials.png");
+}
+.box-img3{
+    background-image: url("electronics.png");
+}
+.box-img4{
+    background-image: url("grocery.png");
+}
+.box-img5{
+    background-image: url("beautyItems.png");
+}
+.box-img6{
+    background-image: url("furniture.png");
+}
+.box-img7{
+    background-image: url("toy.png");
+}
+.box-img8{
+    background-image: url("twoWheeler.png");
+}
+.box-img{
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.panel1{
+    margin-top: 0.8rem;
+    height: 3rem;
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.panel1:hover{
+    background-color: #475360;
+}
+.panel2{
+    height: 20rem;
+    background-color: #222f3d;
+    display: flex; 
+    justify-content: space-evenly;
+}
+.panel2 a{
+    color: #dddddd;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+.panel2 p{
+    color: #ffffff;
+    font-size: 1rem; 
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.panel3{
+    height: 4.3rem;  
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-top: 0.001rem solid white;
+}
+.flazon-logo{
+    margin-top: 0.4rem;
+    height: 3.3rem; 
+    border: 1.5px solid black;  
+    width: 5.5rem; 
+    background-image: url("flazonLogo.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.panel4{
+    padding: 1rem 0 0 0; 
+    height: 5rem; 
+    background-color: #0f1111;
+    color: #dddddd;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 520;
+}
+.pages a{
+    margin-right: 0.5rem;
+}
+.copyright{
+    margin-top: 1rem; 
+}
+

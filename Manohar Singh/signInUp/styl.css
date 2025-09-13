@@ -1,0 +1,150 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #6a1123, #2575c3,#df3adf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form container */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 380px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: scale(1.08);
+}
+
+/* Form heading */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #dadada;
+    font-weight: 600;
+}
+
+/* Input Fields */
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #191d28;
+}
+
+/* Focused Input Fields */
+.input-container input:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    border: 2px solid #df4adf;
+}
+
+/* Submit Button */
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #6a11cb;
+}
+
+/* Form Toggle Buttons */
+.form-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.toggle-btn {
+    padding: 12px 25px;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Toggle active form */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .toggle-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+}
