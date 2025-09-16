@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: black;
+}
+
+.main {
+    background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%),
+        url(Assets/images/bg.jpg);
+
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+    margin: auto;
+    height: 70px;
+    background: transparent;
+
+}
+
+.nav {
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)70%);
+}
+
+nav img {
+    width: 140px;
+}
+
+.language {
+    width: 120px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: grey 1px solid;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.sign {
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.mid {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 23px;
+    background: transparent;
+}
+
+.mid h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    background: transparent;
+}
+
+.mid h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: transparent;
+
+}
+
+.mid h5 {
+    font-size: 1rem;
+    background: transparent;
+}
+
+.mid .mid-btn {
+    background: transparent;
+}
+
+.mid-btn .email {
+    height: 3.5rem;
+    width: 57%;
+    padding-left: 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid grey;
+    color: white;
+}
+
+.mid-btn button {
+    height: 3.75rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    transition: 0.2s ease-out;
+    padding: 13px;
+}
+
+.mid-btn button:hover {
+    cursor: pointer;
+    background-color: rgb(215, 14, 14);
+}
+
+.mid-btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 960px) {
+    .main {
+        height: 110vh;
+    }
+
+    .mid {
+        width: 80%;
+        top: 60%;
+        gap: 15px;
+    }
+
+    .mid h1 {
+        font-size: 1.5rem;
+    }
+
+    .mid h3 {
+        font-size: 1.2rem;
+    }
+
+    .mid h5 {
+        font-size: 1rem;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .mid-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .mid-btn .email {
+        width: 80%%;
+        height: 3rem;
+    }
+
+    .mid-btn button {
+        width: 128px;
+        margin-top: 23px;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .language {
+        width: 60px;
+        height: 21px;
+        font-size: 0.9rem;
+    }
+
+    .sign {
+        width: 59px;
+        height: 24px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(54, 51, 51);
+}
+
+section {
+    height: 80vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    width: 78vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+.secImg img {
+    width: 37vw;
+    position: relative;
+    z-index: 10;
+    background: transparent;
+}
+section> :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+section h2 {
+    font-size: 3rem;
+}
+section p {
+    font-size: 1.5rem;
+}
+.secImg video {
+    position: absolute;
+    width: 26vw;
+    top: 21%;
+    left: 15%;
+}
+section>div:nth-child(2) {
+
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.third .secImg video {
+    position: absolute;
+    width: 22vw;
+    top: 13%;
+    left: 21%;
+}
+.last {
+    height: 110vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: space-around;
+    gap: 10px;
+    padding: 70px 0 70px 0;
+
+}
+
+.last h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.last span {
+    background: transparent;
+}
+
+.last .board {
+    height: 12%;
+    background-color: rgb(53, 52, 52);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    transition: 0.2s ease-out;
+}
+
+.last .board span {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.last .board:hover {
+    background-color: rgb(88, 85, 85);
+    cursor: pointer;
+}
+
+.last p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.last .mid-btn {
+    text-align: center;
+}
+
+.last .email {
+    width: 40%;
+}
+
+footer {
+     max-width: 75vw;
+    margin: auto;
+    height: 50vh;
+    padding: 45px;
+    position: relative;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: left;
+   gap: 23px;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    
+}
+
+.container div a {
+    color: #ffffffaa;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.head{
+    color: #ffffff98;
+    margin-bottom: 4%;
+    text-decoration: underline;
+}
+
+footer .language {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+@media (max-width: 960px) {
+
+    section {
+        height: 80vh;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 98vw;
+        margin: auto;
+        color: white;
+        align-items: center;
+        padding: 22px 0;
+        gap: 5px;
+    }
+
+    .secImg {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secImg img {
+        width: 85%;
+        position: relative;
+        z-index: 10;
+        background: transparent;
+        margin: auto;
+    }
+
+    section> :nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .secImg video {
+        position: absolute;
+        width: 60%;
+        top: 21%;
+        left: 20%;
+    }
+
+    section>div:nth-child(2) {
+
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .second,
+    .fourth {
+        flex-direction: column-reverse;
+    }
+
+
+    .third .secImg video {
+        position: absolute;
+        width: 50%;
+        top: 13%;
+        left: 25%;
+    }
+
+    .last h2 {
+        font-size: 1.7rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .last .board span {
+        font-size: 1rem;
+    }
+
+    .last p {
+        font-size: 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .last .email {
+        width: 80%;
+    }
+    .container div a {
+       font-size: 0.9rem;
+    }
+
+     .head {
+        font-size: 1rem;
+    }
+    footer {
+        height: 80vh;
+    }
+
+    footer .language {
+        width: 90px;
+        height: 29px;
+        font-size: 0.9rem;
+        background-color: rgba(128, 128, 128, 0);
+    }
+}
