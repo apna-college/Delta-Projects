@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+
+
+        <!--  INPUT-SECTION -->
+        
+        <header class="input-section">
+            <input placeholder="Search city" type="text" class="input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </header>
+
+
+        
+        <div class="weather-info">
+            <!-- LOCATION-DATE -->
+            <div class="location-date">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="city-text">Mumbai</p>
+                </div>
+                <div class="date">
+                    <p class="current-date">Mon, 04 Aug</p>
+                </div>
+            </div>
+        
+
+            <!-- WEATHER-TEMP -->
+            <div class="weather-temp">
+                <div class="weather">
+                    <img src="assets/few-cloud.png"class="getImages">
+                </div>
+                <div class="temp">
+                    <p class="deg">29°C</p>
+                    <p class="weather-condn">Clouds</p>
+                </div>
+            </div>
+
+
+            <!-- HUMIDITY-WIND  -->
+            <div class="humidity-wind">
+                <div class="humidity">
+                    <span class="material-symbols-outlined humidity-icon">humidity_mid</span>
+                    <div class="label">
+                        <p class="label-title">Humidity</p>
+                        <p class="label-value" id="humidity-value">55%</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <span class="material-symbols-outlined wind-icon">air</span>
+                    <div class="label">
+                        <p class="label-title">Wind Speed</p>
+                        <p class="label-value" id="Wind-value"> 2 M/s</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- FORECAST-SECTION -->
+            <div class="forecast-section">
+                <div class="forecast">
+                    <p class="forecast-date">05 Aug</p>
+                    <img src="assets/rain.png" class="forecast-img">
+                    <h2 class="forecast-temp">29°C</h2>
+                </div>
+                <div class="forecast">
+                    <p class="forecast-date">05 Aug</p>
+                    <img src="assets/rain.png" class="forecast-img">
+                    <h2 class="forecast-temp" >29°C</h2>
+                </div>
+                <div class="forecast">
+                    <p class="forecast-date">05 Aug</p>
+                    <img src="assets/rain.png" class="forecast-img">
+                    <h2 class="forecast-temp" >29°C</h2>
+                </div>
+                <div class="forecast">
+                    <p class="forecast-date">05 Aug</p>
+                    <img src="assets/rain.png" class="forecast-img">
+                    <h2 class="forecast-temp">29°C</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEARCH-SECTION -->
+        <div class="search-section" style="display:none">
+            <img src="assets/search-city.webp">
+            <h2>Search City</h2>
+            <p class="text">Find out the weather condition of city</p>
+        </div>
+
+        <!-- NOT-FOUND-SECTION -->
+         <div class=" not-found-section" style="display: none">
+            <img src="assets/page-not-found.svg" >
+            <h2>Search City</h2>
+            <p class="text">Find out the weather condition of city</p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

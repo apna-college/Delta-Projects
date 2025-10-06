@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="rock-icon.jpg">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="scissors-icon.jpg">
+        </div>
+        <div class="choice" id="paper">
+            <img src="paper-icon.jpg">
+        </div>
+    </div>
+
+
+    <div class="disp">
+        <div class="u-display">
+            <img src="question-mark.jpeg" class="display" id="user-display">
+        </div>
+        <p>Vs</p>
+        <div class="c-display">
+            <img src="question-mark.jpeg" class="display" id="comp-display">
+        </div>
+
+    </div>
+
+
+    <div class="score-board">
+        <div class="user score">
+            <p id="user-score">0</p>
+            <p>Player</p>
+        </div>
+        
+        <div class="comp score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="msg">
+        <p id="message">Choose your move</p>
+    </div>
+
+    <div class="button-restart">
+    <button id="game-over">Game Over</button>
+    <button id="restart">Restart</button>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

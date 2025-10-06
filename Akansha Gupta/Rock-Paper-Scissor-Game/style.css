@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:monospace;
+}
+
+body{
+    background-color: #0f172a;
+}
+
+h1{
+    color:#fff;
+    background-color:#0f172a;
+    height: 80px;
+    font-size: 2.5rem;
+    line-height: 5rem ;
+    text-align: center;
+}
+
+.choices{
+    display:flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+
+.choice img {
+    height:150px;
+    width:150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img:hover{
+    box-shadow: 0 0 15px white;
+}
+
+
+
+.disp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.disp p{
+    color: #fff;
+    font-size: 60px;
+}
+
+
+.display{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 10px solid white; */
+}
+
+
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    margin-top: 2rem;
+    color: #fff;
+}
+
+#user-score{
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+#comp-score{
+    font-size: 2.5rem;
+    padding-left: 2rem;
+}
+
+.score p{
+    font-size: 2rem;
+}
+
+
+.score-board i{
+    font-size:50px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.msg p{
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: #0f172a;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.button-restart{
+    height:40px ;
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+#game-over{
+    color:#0f172a;
+    font-size:30px ;
+    text-align: center;
+    background-color:khaki;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#game-over:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+
+#restart:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+.restart{
+    height: 40px;
+    margin-top: 3rem;
+}
+#restart{
+    color: #fff;
+    background-color: cornflowerblue;
+    border: none;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
