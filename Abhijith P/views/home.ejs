@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My EJS Project Hub</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .content {
+            padding: 30px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 25px;
+        }
+        .project-card h2 {
+            margin-top: 0;
+            color: #4a90e2;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 10px;
+        }
+        p, li {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        ul.user-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul.user-list li {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+        code {
+            font-family: "Courier New", monospace;
+            background: #e9e9e9;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UNDERSTANDING EJS</h1>
+        </header>
+
+        <main class="content">
+            <div class="project-card">
+                <h2>What is EJS?</h2>
+                <p>EJS stands for <strong>Embedded JavaScript</strong>. It's a templating engine that lets us write JavaScript code directly inside our HTML files. Instead of just sending a static file, the server "renders" the page by running the JavaScript first. This allows us to pass data from our server (like a username or a list of posts) and dynamically build the HTML page before sending it to the user.</p>
+            </div>
+
+            <div class="project-card">
+                <h2>🎲 Roll Dice Page</h2>
+                <p>This page demonstrates the most basic concept of EJS. The server generates a random number from 1 to 6 and passes this number to the <code>dice.ejs</code> template. The template then uses EJS tags (<code>&lt;%= num %&gt;</code>) to display the value. It also uses EJS logic (<code>&lt;% if (num == 6) { %&gt;</code>) to show a special message only if you roll a 6!</p>
+                <a href="/rolldice" class="btn">Try the Dice Roll</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Dynamic Instagram Page</h2>
+                <p>This is a more advanced example. It uses <strong>dynamic routing</strong> to create a page for different users. When you visit a URL like <code>/instagram/cats</code>, the server grabs the "cats" part from the URL and uses it to find data in a <code>data.json</code> file. It then sends the entire user object (followers, posts, etc.) to the <code>instagram.ejs</code> template to build a custom profile page.</p>
+                
+                <h3>How to Use It:</h3>
+                <p>Our database (<code>data.json</code>) currently has these users. Click any of them to see their profile:</p>
+                <ul class="user-list">
+                    <li><a href="/instagram/cats"><code>/instagram/cats</code></a></li>
+                    <li><a href="/instagram/dogs"><code>/instagram/dogs</code></a></li>
+                 
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
