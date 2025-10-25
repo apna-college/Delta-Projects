@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Rolled the Dice!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --dice-size: 100px;
+            --dot-size: 20px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #4a3f70);
+            color: #ffffff;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        h2.congrats {
+            font-size: 1.5rem;
+            color: #4dff91;
+            font-weight: 600;
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .dice-face {
+            width: var(--dice-size);
+            height: var(--dice-size);
+            background-color: #ffffff;
+            border-radius: 15px;
+            border: 2px solid #eee;
+            margin: 30px auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .dice-face.winner {
+            border-color: #4dff91;
+            box-shadow: 0 0 25px #4dff91;
+        }
+
+        .dot {
+            width: var(--dot-size);
+            height: var(--dot-size);
+            background-color: #333;
+            border-radius: 50%;
+            align-self: center;
+            justify-self: center;
+            visibility: hidden;
+        }
+
+        /* 1 */
+        [data-value="1"] .dot:nth-child(5) { visibility: visible; }
+        
+        /* 2 */
+        [data-value="2"] .dot:nth-child(1) { visibility: visible; }
+        [data-value="2"] .dot:nth-child(9) { visibility: visible; }
+        
+        /* 3 */
+        [data-value="3"] .dot:nth-child(1) { visibility: visible; }
+        [data-value="3"] .dot:nth-child(5) { visibility: visible; }
+        [data-value="3"] .dot:nth-child(9) { visibility: visible; }
+        
+        /* 4 */
+        [data-value="4"] .dot:nth-child(1) { visibility: visible; }
+        [data-value="4"] .dot:nth-child(3) { visibility: visible; }
+        [data-value="4"] .dot:nth-child(7) { visibility: visible; }
+        [data-value="4"] .dot:nth-child(9) { visibility: visible; }
+        
+        /* 5 */
+        [data-value="5"] .dot:nth-child(1) { visibility: visible; }
+        [data-value="5"] .dot:nth-child(3) { visibility: visible; }
+        [data-value="5"] .dot:nth-child(5) { visibility: visible; }
+        [data-value="5"] .dot:nth-child(7) { visibility: visible; }
+        [data-value="5"] .dot:nth-child(9) { visibility: visible; }
+        
+        /* 6 */
+        [data-value="6"] .dot:nth-child(1) { visibility: visible; }
+        [data-value="6"] .dot:nth-child(3) { visibility: visible; }
+        [data-value="6"] .dot:nth-child(4) { visibility: visible; }
+        [data-value="6"] .dot:nth-child(6) { visibility: visible; }
+        [data-value="6"] .dot:nth-child(7) { visibility: visible; }
+        [data-value="6"] .dot:nth-child(9) { visibility: visible; }
+
+        .roll-btn {
+            background: linear-gradient(135deg, #7c6fff, #5850b3);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .roll-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You Rolled the Dice!</h1>
+
+        <div class="dice-face <%= (num == 6) ? 'winner' : '' %>" data-value="<%= num %>">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <% if (num == 6) { %>
+            <h2 class="congrats">WINNER! You rolled a 6!</h2>
+        <% } else { %>
+            <h2>You rolled a <%= num %></h2>
+        <% } %>
+
+        <button class="roll-btn" onclick="rollAgain()">Roll Again</button>
+    </div>
+
+    <script>
+        function rollAgain() {
+            window.location.href = '/rolldice';
+        }
+    </script>
+</body>
+</html>
