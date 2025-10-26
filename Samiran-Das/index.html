@@ -1,0 +1,459 @@
+<!-- https://cabit-cab-booking-webapp.netlify.app/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Cabs, Autos & Car Rentals | Cabit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <a href="#" class="logo-container">
+          <div class="logo-icon">C</div>
+          <div class="logo-text">Cabit</div>
+        </a>
+
+        <nav class="navbar">
+           <a href="#home">Home</a>
+           <a href="#home">Service</a>
+           <a href="#some-faqs">About</a>
+           <a href="#rides">Ride</a>
+           <a href="#footer">Contact</a>
+        </nav>
+
+        <div class="header-buttons">
+          <a href="#" class="login-btn">Log In</a>
+          <a href="#" class="signup-btn">Sign Up</a>
+        </div>
+
+        <button id="menu-bars" class="fas fa-bars"></button>
+      </header>
+
+      <section  id="home" class="hero-section">
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <i class="fas fa-star"></i> Trusted Cab Service Since 2015
+            </div>
+
+            <h1 class="hero-title">
+              Book Your Perfect <span>Ride</span> In Just Few Clicks
+            </h1>
+
+            <p class="hero-description">
+              Experience premium cab services with guaranteed safety, affordable
+              prices, and 24/7 customer support. Your journey, our
+              responsibility.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Happy Customers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15K+</span>
+                <span class="stat-label">5-Star Reviews</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Support</span>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#" class="btn-primary">
+                <i class="fas fa-car"></i> Book Now
+              </a>
+              <a href="#" class="btn-secondary">
+                <i class="fas fa-play-circle"></i> Watch Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="booking-form-container">
+            <div class="form-header">
+              <h2>Book Your Ride</h2>
+              <p>Get instant pricing and book in seconds</p>
+            </div>
+
+            <form class="booking-form">
+              <div class="form-group">
+                <label for="pickup">Pickup Location</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <input
+                    type="text"
+                    id="pickup"
+                    class="form-input"
+                    placeholder="Enter pickup location"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="drop">Drop Location</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-flag"></i>
+                  <input
+                    type="text"
+                    id="drop"
+                    class="form-input"
+                    placeholder="Enter drop location"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Pickup Date</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-calendar"></i>
+                  <input type="date" id="date" class="form-input" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Pickup Time</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-clock"></i>
+                  <input type="time" id="time" class="form-input" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="ride-type">Ride Type</label>
+                <select id="ride-type" class="form-select">
+                  <option value="">Select Ride Type</option>
+                  <option value="mini">Mini - ₹12/km</option>
+                  <option value="auto">Auto - ₹10/km</option>
+                  <option value="suv">Prime SUV - ₹18/km</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="distance">Distance (km)</label>
+                <input
+                  type="number"
+                  id="distance"
+                  class="form-input"
+                  placeholder="Enter distance"
+                  min="1"
+                  max="500"
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <div class="price-display-box">
+                  <div class="price-label">Estimated Price</div>
+                  <div class="price-amount">
+                    <span class="currency">₹</span>
+                    <span class="amount" id="estimated-price">0</span>
+                    <span class="duration">/trip</span>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-search"></i> Search & Book Cab
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="home-container">
+      <div class="home-content">
+        <div class="inner-content">
+          <h3>Best In City</h3>
+          <h2>Trusted Cab Service In Country</h2>
+          <p>
+            To travel with the lowest fares choose Cabit Share. For a faster
+            travel experience we have Share Express on some fixed routes with
+            zero deviations. Choose your ride and zoom away!
+          </p>
+          <a href="#" class="booknow">Book Now</a>
+        </div>
+        <div class="inner-content home-image">
+          <img
+            src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Cabit Cab Service"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="fast-booking">
+      <h1 class="fast-heading">we do best</h1>
+      <h2>Than You Wish</h2>
+      <div class="inner-fast">
+        <div class="booking-content">
+          <div class="icon-fast">
+            <span><i class="fa-solid fa-indian-rupee-sign"></i></span>
+          </div>
+          <div class="inner-fast-text">
+            <h1>Cab For Every Pocket</h1>
+            <p>
+              From Sedans and SUVs to Luxury cars for special occasions, we have
+              cabs to suit every pocket. You can also go cashless and travel
+              easy.
+            </p>
+          </div>
+        </div>
+        <div class="booking-content">
+          <div class="icon-fast">
+            <span><i class="fa-solid fa-shield"></i></span>
+          </div>
+          <div class="inner-fast-text">
+            <h1>Secure and Safer Rides</h1>
+            <p>
+              Verified drivers, an emergency alert button, and live ride
+              tracking are some of the features that we have in place to ensure
+              you a safe travel experience.
+            </p>
+          </div>
+        </div>
+        <div class="booking-content">
+          <div class="icon-fast">
+            <span><i class="fas fa-car"></i></span>
+          </div>
+          <div class="inner-fast-text">
+            <h1>Share and Express</h1>
+            <p>
+              To travel with the lowest fares choose Cabit Share. For a faster
+              travel experience we have Share Express on some fixed routes with
+              zero deviations.
+            </p>
+          </div>
+        </div>
+        <div class="booking-content">
+          <div class="icon-fast">
+            <span><i class="fas fa-music"></i></span>
+          </div>
+          <div class="inner-fast-text">
+            <h1>In Cab Entertainment</h1>
+            <p>
+              Play music, watch videos and a lot more with Cabit Play! Also stay
+              connected even if you are travelling through poor network areas
+              with our free Wi-fi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rides" class="main-tariff">
+      <h1>Our <span>Rides</span></h1>
+      <div class="inner-tariff">
+        <div class="tariff-container">
+          <div class="inner-box1">
+            <div class="price-badge">
+              <span class="currency">₹</span>
+              <span class="amount">12</span>
+              <span class="duration">/km</span>
+            </div>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/071/267/513/non_2x/an-old-car-is-shown-in-a-cartoon-style-free-vector.jpg"
+              alt="Mini Car"
+              width="250"
+            />
+            <h2>Mini</h2>
+            <p>
+              A regular comfortable AC hatchback that becomes your everyday
+              dependable ride. An economical option for daily commute.
+            </p>
+
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> AC Car</li>
+              <li><i class="fas fa-check"></i> Upto 4 Passengers</li>
+              <li><i class="fas fa-check"></i> Free Cancellation</li>
+              <li><i class="fas fa-times"></i> Premium Support</li>
+            </ul>
+
+            <h3>Small fares for short rides</h3>
+            <a href="#"><i class="fas fa-car"></i> Book Mini</a>
+          </div>
+        </div>
+
+        <div class="tariff-container">
+          <div class="inner-box2">
+            <div class="popular-badge">Most Popular</div>
+            <div class="price-badge">
+              <span class="currency">₹</span>
+              <span class="amount">10</span>
+              <span class="duration">/km</span>
+            </div>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/033/073/480/non_2x/rickshaw-thick-line-filled-dark-colors-icons-for-personal-and-commercial-use-free-vector.jpg"
+              alt="Auto"
+              width="230"
+            />
+            <h2>Auto</h2>
+            <p>
+              The all too familiar auto ride, minus the hassle waiting and
+              haggling for price. A convenient way to travel everyday.
+            </p>
+
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Fixed Prices</li>
+              <li><i class="fas fa-check"></i> Upto 3 Passengers</li>
+              <li><i class="fas fa-check"></i> Quick Pickup</li>
+              <li><i class="fas fa-times"></i> AC Not Available</li>
+            </ul>
+
+            <h3 class="yellow-section">Get an auto at your doorstep!</h3>
+            <a href="#" class="btn-yellow"
+              ><i class="fas fa-rickshaw"></i> Book Auto</a
+            >
+          </div>
+        </div>
+
+        <div class="tariff-container">
+          <div class="inner-box3">
+            <div class="price-badge">
+              <span class="currency">₹</span>
+              <span class="amount">18</span>
+              <span class="duration">/km</span>
+            </div>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/011/440/091/non_2x/realistic-blue-city-car-coupe-sport-transportation-on-isolated-background-free-vector.jpg"
+              alt="Prime SUV"
+              width="210"
+            />
+            <h2>Prime SUV</h2>
+            <p>
+              SUVs with free Wi-fi and top drivers for a comfortable getaway
+              with room for everyone including that extra bag.
+            </p>
+
+            <ul class="price-features">
+              <li><i class="fas fa-check"></i> Luxury SUV</li>
+              <li><i class="fas fa-check"></i> Upto 6 Passengers</li>
+              <li><i class="fas fa-check"></i> Free Wi-fi</li>
+              <li><i class="fas fa-check"></i> Premium Support</li>
+            </ul>
+
+            <h3>Perfect for weekend family getaways</h3>
+            <a href="#"><i class="fas fa-suv"></i> Book SUV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="some-faqs" id="some-faqs">
+      <h1>Cabs Booking FAQs</h1>
+      <div class="main-faqs">
+        <div class="faqs">
+          <button class="ques" aria-expanded="false">
+            <h2>What kind of cabs you can book from Cabit?</h2>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="ans" style="display: none">
+            <p>
+              You can book following kinds of cabs from Cabit: airport cabs and
+              intercity cabs / outstation cabs. You can book outstation cabs for
+              both one-way transfers & round-trip transfers.
+            </p>
+          </div>
+        </div>
+        <div class="faqs">
+          <button class="ques" aria-expanded="false">
+            <h2>How can I book cheap cabs online?</h2>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="ans" style="display: none">
+            <p>
+              Cabit helps you with online cab booking at the best prices,
+              comparatively much lower than the local vendors. Also you can use
+              promo codes and offers on the Cabit website & app on online cab
+              booking to get extra discounts.
+            </p>
+          </div>
+        </div>
+        <div class="faqs">
+          <button class="ques" aria-expanded="false">
+            <h2>What are the advantages of online taxi booking?</h2>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="ans" style="display: none">
+            <p>
+              Online taxi booking not only helps you with best prices but also
+              helps you with the convenience of paying through multiple payment
+              options (like Debit Card, Credit Card, eWallets etc.). You can
+              easily compare prices and choose various categories of cabs like
+              Hatchback cars, Sedan and SUV.
+            </p>
+          </div>
+        </div>
+        <div class="faqs">
+          <button class="ques" aria-expanded="false">
+            <h2>What are the popular outstation cab booking routes?</h2>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="ans" style="display: none">
+            <p>
+              Some of the popular outstation cab booking routes are Pune to
+              Mumbai cabs, Delhi to Jaipur cabs, Delhi to Agra cabs, Pondicherry
+              to Chennai cabs, Ahmedabad to Vadodara cabs, Bangalore to Mysore
+              cabs and Mumbai to Pune cabs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer" >
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Cabit</h3>
+          <p>
+            Your trusted partner for safe and reliable cab services across the
+            country.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book a Cab</a></li>
+            <li><a href="#">Our Rides</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: support@cabit.com</p>
+          <p>Phone: +91 1800-XXX-XXXX</p>
+          <p>Address: 123 Cab Street, City, Country</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cabit. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
