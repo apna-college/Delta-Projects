@@ -1,0 +1,84 @@
+body {
+    background-color: wheat;
+}
+
+h1 {
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+    color: chocolate;
+}
+
+.grid {
+    height: 30rem;
+    width: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: brown;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+#liveScore {
+  font-size: 2rem;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+}
+
+
+#score {
+    color: blue;
+}
+
+.hole {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: greenyellow;
+}
+
+.wrong {
+    background-color: red;
+}
+
+
+.mole {
+    background-image: url("mole.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#enter {
+    color: red;
+    text-decoration: underline;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.entery {
+    transform: scale(0.5); 
+}
+
+#score {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
