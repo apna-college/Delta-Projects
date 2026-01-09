@@ -1,0 +1,17 @@
+div{
+    text-align: center;
+    color: blueviolet;
+    font-family: monospace;
+}
+h2{
+    color: brown;
+    text-decoration: underline;
+}
+button{
+    padding: 10px 20px;
+    background-color: rgb(163, 15, 163);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+}
