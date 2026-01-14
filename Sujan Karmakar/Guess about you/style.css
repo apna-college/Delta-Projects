@@ -1,0 +1,210 @@
+/* Inheriting base styles from navStyle.css but adding specific page styles */
+
+html {
+    overflow-y: auto !important;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
+}
+
+.guess-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+}
+
+input:focus {
+    border-color: #00FF9D;
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Fix for Chrome autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #1a1a1a inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: white;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #00FF9D;
+    color: #00FF9D;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+button:hover {
+    background: #00FF9D;
+    color: #0F0F0F;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Results Container */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.results-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.result-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    width: 320px;
+    text-align: center;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nationalityBox {
+    width: 672px; /* 320 * 2 + 32px gap equivalent */
+    max-width: 90vw;
+}
+
+#nationalityBox .nation-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.result-box:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 255, 157, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 255, 157, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.result-box h3 {
+    color: #00FF9D;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(0, 255, 157, 0.3);
+    padding-bottom: 0.5rem;
+    width: 80%;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem 0;
+    color: #ffffff;
+    min-height: 2.5rem;
+}
+
+.probability {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+    .results-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: row;
+        width: 95%;
+        gap: 0.5rem;
+    }
+    
+    input {
+        width: auto;
+        flex: 1;
+        min-width: 0;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    button {
+        width: auto;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .result-box {
+        width: 100%;
+    }
+}
