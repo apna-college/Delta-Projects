@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global University Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+    <div class="container">
+        <h1>🌍 Global University Finder</h1>
+
+        <div class="search-box">
+            <h3>Search by Country</h3>
+            <div class="search-area">
+                <input type="text" id="countryInput" placeholder="Enter country name">
+                <button id="country">Search</button>
+            </div>
+            <ul id="clist"></ul>
+        </div>
+
+        <div class="search-box">
+            <h3>Search by State (India)</h3>
+            <div class="search-area">
+                <input type="text" id="stateInput" placeholder="Enter state name">
+                <button id="state">Search</button>
+            </div>
+            <ul id="slist"></ul>
+        </div>
+
+        <div class="footer">
+            Built using Hipolabs Universities API
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
