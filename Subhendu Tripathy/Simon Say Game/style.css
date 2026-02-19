@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    /* High quality dark space background */
+    background: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2072&auto=format&fit=crop') no-repeat center center/cover;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* This darkens the image slightly so your game buttons shine brighter */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* This creates the 2x2 grid automatically */
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    margin: 0.75rem;
+    border-radius: 20%;
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.red {
+    background-color: #d95980;
+    /* background-color: red; */
+}
+
+.green {
+    background-color: #63aac0;
+    /* background-color: green; */
+}
+
+.yellow {
+    background-color: #f99b49;
+    /* background-color: yellow; */
+}
+
+.purple {
+    background-color: #819ff9;
+    /* background-color: purple; */
+}
+
+.flash {
+    background-color: white;
+}
+
+.userflash {
+    background-color: green;
+}
+
+/* This class will be added briefly when the user fails */
+.game-over {
+    /* A Red/Dark "Danger" Space Image */
+    background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover !important;
+
+    /* Optional: Shake animation */
+    animation: shake 0.2s ease-in-out;
+}
+
+/* Optional: Adds a shaking effect for extra impact */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 2. Media Query for Phones (Screens smaller than 768px) */
+@media (max-width: 768px) {
+
+    /* Adjust the heading text size */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Shrink the buttons */
+    .btn {
+        height: 130px;
+        /* Smaller size for mobile */
+        width: 130px;
+        margin: 10px;
+        /* Reduce gap between buttons */
+        border-width: 5px;
+        /* Thinner border for cleaner look */
+    }
+}
+
+/* 3. Media Query for Very Small Phones (Screens smaller than 400px) */
+@media (max-width: 400px) {
+    .btn {
+        height: 110px;
+        width: 110px;
+    }
+}
