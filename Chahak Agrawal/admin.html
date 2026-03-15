@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Behavior Dashboard</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Bootstrap for layout (optional but makes life easier) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light p-4">
+  <div class="container">
+    <h1 class="mb-4">📊 User Behavior Dashboard</h1>
+      
+   
+    <!-- Filter options -->
+<div class="mb-3 d-flex gap-3">
+    <div>
+      <label for="filterType" class="form-label">Filter By</label>
+      <select class="form-select" id="filterType" onchange="applyFilters()">
+        <option value="all">All Sessions</option>
+        <option value="today">Today's Sessions</option>
+        <option value="idle">Idle Time > 20s</option>
+        <option value="lowTyping">Low Typing Activity</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="searchUser" class="form-label">Search by Username</label>
+      <input type="text" class="form-control" id="searchUser" placeholder="e.g., Chahak" oninput="applyFilters()" />
+    </div>
+  </div>
+   <!-- Session Selector -->
+   <div class="mb-3">
+    <label for="sessionSelect" class="form-label">Select Session</label>
+    <select class="form-select" id="sessionSelect" onchange="loadSessionData(this.value)">
+      <option selected disabled>Choose a session</option>
+    </select>
+  </div>
+
+    <!-- Stat Cards -->
+    <div class="row mb-4" id="statsRow">
+      <!-- Cards will be inserted dynamically here -->
+    </div>
+
+    <!-- Section Time Chart -->
+    <div>
+      <h4>🕒 Time Spent per Section</h4>
+      <canvas id="chart" height="100"></canvas>
+    </div>
+    <!-- Combined User Behavior Scatter Plot -->
+<div class="mt-5">
+  <h4>📍 Combined User Behavior (Flagged Outliers)</h4>
+  <canvas id="userScatterChart" height="100"></canvas>
+</div>
+<h4 class="mt-4">🚩 Flagged Users</h4>
+<table class="table table-bordered" id="flaggedUsersTable">
+  <thead>
+    <tr>
+      <th>User ID</th>
+      <th>Behavior Score</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+     <!-- User Aggregated Stats -->
+<div class="mt-5">
+  <h4>👥 Aggregated User Behavior</h4>
+  <div id="userSummaryTable" class="table-responsive"></div>
+</div>
+
+    <!-- Export Button -->
+    <button class="btn btn-success mt-4" onclick="exportToExcel()">⬇ Export to Excel</button>
+  </div>
+
+  <!-- SheetJS for Excel Export -->
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+  <!-- Dashboard Logic -->
+  <script>
+    // Load session options into dropdown
+    let allSessions = []; // For filtering
+
+window.onload = () => {
+  const select = document.getElementById('sessionSelect');
+  const sessionMap = {};
+  allSessions = [];
+
+  for (let key in localStorage) {
+    if (key.startsWith('session-')) {
+      const data = JSON.parse(localStorage.getItem(key));
+      const parts = key.split('-');
+      const username = parts[1] || data.username || 'Unknown';
+      const idleTime = data.idleTime || 0;
+      const typingCount = data.typing?.length || 0;
+      const timestamp = parts.slice(2).join('-') || new Date().toISOString();
+      const date = new Date(timestamp);
+
+      const session = { key, username, idleTime, typingCount, date };
+      allSessions.push(session);
+
+      if (!sessionMap[username]) sessionMap[username] = [];
+      sessionMap[username].push(session);
+    }
+  }
+  applyFilters(sessionMap);
+  generateUserSummary();
+  if (Object.keys(sessionMap).length > 0) {
+  calculateAndPlotUserScores(sessionMap);
+}
+
+ // initially populate
+};
+function generateUserSummary() {
+  const userMap = {};
+
+  for (const session of allSessions) {
+    const raw = localStorage.getItem(session.key);
+    if (!raw) continue;
+    const data = JSON.parse(raw);
+
+    if (!userMap[session.username]) {
+      userMap[session.username] = {
+        sessionCount: 0,
+        totalTime: 0,
+        totalIdle: 0,
+        totalTypingEvents: 0,
+        totalTypingSpeed: 0,
+        totalClicks: 0,
+        totalScrolls: 0,
+        timestamps: []
+      };
+    }
+
+    const u = userMap[session.username];
+    u.sessionCount++;
+    u.totalTime += Object.values(data.sectionTimes || {}).reduce((a, b) => a + b, 0);
+    u.totalIdle += data.idleTime || 0;
+    u.totalTypingEvents += data.typing?.length || 0;
+    u.totalTypingSpeed += data.typing?.reduce((sum, e) => sum + e.speed, 0) || 0;
+    u.totalClicks += data.clicks?.length || 0;
+    u.totalScrolls += data.scrolls?.length || 0;
+    u.timestamps.push(session.date);
+  }
+
+  // Render Table
+  const container = document.getElementById('userSummaryTable');
+  let html = `
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Sessions</th>
+          <th>Avg Time on Page (sec)</th>
+          <th>Avg Idle Time (sec)</th>
+          <th>Avg Typing Speed</th>
+          <th>Avg Clicks</th>
+          <th>Avg Scrolls</th>
+          <th>Visit Frequency (hrs)</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  for (const user in userMap) {
+    const u = userMap[user];
+    const avgTime = (u.totalTime / u.sessionCount).toFixed(1);
+    const avgIdle = (u.totalIdle / u.sessionCount).toFixed(1);
+    const avgTypingSpeed = u.totalTypingEvents ? (u.totalTypingSpeed / u.totalTypingEvents).toFixed(2) : 'N/A';
+    const avgClicks = (u.totalClicks / u.sessionCount).toFixed(1);
+    const avgScrolls = (u.totalScrolls / u.sessionCount).toFixed(1);
+
+    // Calculate average gap between sessions (in hours)
+    u.timestamps.sort((a, b) => new Date(a) - new Date(b));
+    let avgFreq = 'N/A';
+    if (u.timestamps.length > 1) {
+      const gaps = [];
+      for (let i = 1; i < u.timestamps.length; i++) {
+        const gapMs = new Date(u.timestamps[i]) - new Date(u.timestamps[i - 1]);
+        gaps.push(gapMs / (1000 * 60 * 60)); // hours
+      }
+      avgFreq = (gaps.reduce((a, b) => a + b, 0) / gaps.length).toFixed(1);
+    }
+
+    html += `
+      <tr>
+        <td>${user}</td>
+        <td>${u.sessionCount}</td>
+        <td>${avgTime}</td>
+        <td>${avgIdle}</td>
+        <td>${avgTypingSpeed}</td>
+        <td>${avgClicks}</td>
+        <td>${avgScrolls}</td>
+        <td>${avgFreq}</td>
+      </tr>
+    `;
+  }
+
+  html += '</tbody></table>';
+  container.innerHTML = html;
+}
+
+function applyFilters(sessionMapOverride = null) {
+  const select = document.getElementById('sessionSelect');
+  select.innerHTML = ''; // Clear previous options
+
+  const usernameFilter = document.getElementById('searchUser')?.value?.toLowerCase() || '';
+  const filterType = document.getElementById('filterType')?.value || 'all';
+
+  let filteredSessions = allSessions;
+
+  // Apply Filter By dropdown
+  if (filterType === 'today') {
+    const today = new Date().toDateString();
+    filteredSessions = filteredSessions.filter(s => s.date.toDateString() === today);
+  } else if (filterType === 'idle') {
+    filteredSessions = filteredSessions.filter(s => s.idleTime > 20);
+  } else if (filterType === 'lowTyping') {
+    filteredSessions = filteredSessions.filter(s => s.typingCount < 5);
+  }
+
+  // Apply username filter
+  if (usernameFilter) {
+    filteredSessions = filteredSessions.filter(s => s.username.toLowerCase().includes(usernameFilter));
+  }
+
+  // Group by username
+  const grouped = {};
+  for (const session of filteredSessions) {
+    if (!grouped[session.username]) grouped[session.username] = [];
+    grouped[session.username].push(session);
+  }
+
+  // Render
+  for (const username in grouped) {
+    const group = document.createElement('optgroup');
+    group.label = username;
+
+    grouped[username].forEach(session => {
+      const opt = document.createElement('option');
+      opt.value = session.key;
+      opt.textContent = session.key;
+      group.appendChild(opt);
+    });
+
+    select.appendChild(group);
+  }
+}
+
+
+
+
+
+    function loadSessionData(sessionKey) {
+      const raw = localStorage.getItem(sessionKey);
+      if (!raw) return alert("No data found for this session");
+      const data = JSON.parse(raw);
+
+      showStats(data);
+      drawChart(data.sectionTimes || {});
+    }
+
+    function showStats(data) {
+      const row = document.getElementById('statsRow');
+      row.innerHTML = ''; // clear previous
+
+      const totalClicks = data.clicks?.length || 0;
+      const typingEntries = data.typing || [];
+      const avgTypingSpeed = typingEntries.length
+        ? (typingEntries.reduce((sum, e) => sum + e.speed, 0) / typingEntries.length).toFixed(2)
+        : 'N/A';
+      const totalScrolls = data.scrolls?.length || 0;
+      const totalSectionTime = Object.values(data.sectionTimes || {}).reduce((a, b) => a + b, 0);
+
+      const stats = [
+        { label: 'Total Clicks', value: totalClicks },
+        { label: 'Avg Typing Speed (chars/sec)', value: avgTypingSpeed },
+        { label: 'Scroll Events', value: totalScrolls },
+        { label: 'Total Time on Page (sec)', value: totalSectionTime }
+      ];
+
+      for (const stat of stats) {
+        const col = document.createElement('div');
+        col.className = 'col-md-3 mb-3';
+        col.innerHTML = `
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">${stat.label}</h5>
+              <p class="card-text fs-4 fw-bold">${stat.value}</p>
+            </div>
+          </div>
+        `;
+        row.appendChild(col);
+      }
+    }
+
+    function drawChart(sectionTimes) {
+      const ctx = document.getElementById('chart').getContext('2d');
+      if (window.chartRef) window.chartRef.destroy(); // destroy previous chart if exists
+
+      const labels = Object.keys(sectionTimes);
+      const values = Object.values(sectionTimes);
+
+      window.chartRef = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Time Spent (sec)',
+            data: values,
+            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+    }
+
+    function exportToExcel() {
+      const data = [];
+      for (let key in localStorage) {
+        if (key.startsWith('session-')) {
+          const sessionData = JSON.parse(localStorage.getItem(key));
+          data.push({ session: key, ...flattenData(sessionData) });
+        }
+      }
+
+      const worksheet = XLSX.utils.json_to_sheet(data);
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, "All Sessions");
+      XLSX.writeFile(workbook, "UserSessions.xlsx");
+    }
+
+    function flattenData(data) {
+      return {
+        totalClicks: data.clicks?.length || 0,
+        avgTypingSpeed: data.typing?.length
+          ? (data.typing.reduce((a, b) => a + b.speed, 0) / data.typing.length).toFixed(2)
+          : 'N/A',
+        scrolls: data.scrolls?.length || 0,
+        totalTime: Object.values(data.sectionTimes || {}).reduce((a, b) => a + b, 0)
+      };
+    }
+
+    function calculateAndPlotUserScores(sessionMap) {
+  const userStats = [];
+
+  for (const [username, sessions] of Object.entries(sessionMap)) {
+    const totalSessions = sessions.length;
+    let totalIdle = 0, totalTyping = 0, totalTypingEvents = 0;
+    let totalTime = 0, totalClicks = 0, totalScrolls = 0;
+
+    sessions.forEach(session => {
+      const data = JSON.parse(localStorage.getItem(session.key));
+      totalIdle += session.idleTime || 0;
+      totalTyping += (data.typing || []).reduce((sum, t) => sum + (t.speed || 0), 0);
+      totalTypingEvents += (data.typing || []).length;
+      totalTime += Object.values(data.sectionTimes || {}).reduce((a, b) => a + b, 0);
+      totalClicks += (data.clicks || []).length;
+      totalScrolls += (data.scrolls || []).length;
+    });
+
+    const avgTypingSpeed = totalTypingEvents ? totalTyping / totalTypingEvents : 0;
+
+    userStats.push({
+      username,
+      totalSessions,
+      avgIdleTime: totalIdle / totalSessions,
+      avgTypingSpeed,
+      avgTimeOnPage: totalTime / totalSessions,
+      avgClicks: totalClicks / totalSessions,
+      avgScrolls: totalScrolls / totalSessions
+    });
+  }
+  if (userStats.length === 0) return;
+  // Normalize features
+  const maxVals = {
+    avgIdleTime: Math.max(...userStats.map(u => u.avgIdleTime)),
+    avgTypingSpeed: Math.max(...userStats.map(u => u.avgTypingSpeed)),
+    avgTimeOnPage: Math.max(...userStats.map(u => u.avgTimeOnPage)),
+    avgClicks: Math.max(...userStats.map(u => u.avgClicks)),
+    avgScrolls: Math.max(...userStats.map(u => u.avgScrolls)),
+    totalSessions: Math.max(...userStats.map(u => u.totalSessions))
+  };
+  userStats.forEach(u => {
+  const normalizedScore = (
+    ((u.avgIdleTime || 0) / (maxVals.avgIdleTime || 1)) * 0.2 +
+    ((u.avgTypingSpeed || 0) / (maxVals.avgTypingSpeed || 1)) * 0.2 +
+    ((u.avgTimeOnPage || 0) / (maxVals.avgTimeOnPage || 1)) * 0.2 +
+    ((u.avgClicks || 0) / (maxVals.avgClicks || 1)) * 0.2 +
+    ((u.avgScrolls || 0) / (maxVals.avgScrolls || 1)) * 0.1 +
+    ((u.totalSessions || 0) / (maxVals.totalSessions || 1)) * 0.1
+  );
+  //console.log(normalizedScore);
+  u.behaviorScore = parseFloat(normalizedScore.toFixed(2));
+  //console.log( u.behaviorScore);
+});
+const scores = userStats.map(u => u.behaviorScore);
+const mean = scores.reduce((sum, s) => sum + s, 0) / scores.length;
+const stdDev = Math.sqrt(scores.reduce((sum, s) => sum + Math.pow(s - mean, 2), 0) / scores.length);
+
+// Flag outliers
+userStats.forEach(u => {
+  const zScore = (u.behaviorScore - mean) / stdDev;
+  u.isFlagged = Math.abs(zScore) > 2; // change threshold if needed
+});
+
+  plotUserScatter(userStats);
+  
+
+
+}
+
+function plotUserScatter(users) {
+  const ctx = document.getElementById("userScatterChart").getContext("2d");
+  if (window.scatterRef) window.scatterRef.destroy();
+
+  const threshold = 0.3;
+
+  const dataPoints = users.map(user => ({
+    x: user.behaviorScore,
+    y: user.totalSessions,
+    username: user.username
+  }));
+
+  const colors = users.map(user =>
+    user.behaviorScore < threshold ? "red" : "green"
+  );
+
+  window.scatterRef = new Chart(ctx, {
+    type: 'scatter',
+    data: {
+      datasets: [{
+        label: 'Users',
+        data: dataPoints,
+        backgroundColor: colors,
+        pointRadius: 6
+      }]
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: context => {
+              const user = users[context.dataIndex];
+              return `${user.username}: Score ${user.behaviorScore}, Sessions ${user.totalSessions}`;
+            }
+          }
+        },
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: "Behavior Score" },
+          min: 0, max: 1
+        },
+        y: {
+          title: { display: true, text: "Session Count" }
+        }
+      }
+    }
+  });
+}
+
+
+  </script>
+</body>
+</html>

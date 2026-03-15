@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Login</title></head>
+<body>
+  <h2>🔐 Admin Login</h2>
+  <input type="password" id="pass" placeholder="Enter password">
+  <button onclick="login()">Login</button>
+
+  <script>
+    function login() {
+      const pass = document.getElementById('pass').value;
+      if (pass === 'Chahak24') { // Replace with your password
+        window.location.href = 'admin.html';  // Redirect to admin panel
+      } else {
+        alert('Wrong password');
+      }
+    }
+  </script>
+</body>
+</html>
