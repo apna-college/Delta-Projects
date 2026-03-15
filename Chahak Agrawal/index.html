@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Behavior Tracker Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="tracker.js"></script> <!-- Make sure tracker.js is in the same folder -->
+</head>
+<body>
+    <h1>Welcome to the Tracking Demo</h1>
+
+    <!-- Username prompt -->
+    <div id="userPrompt" style="margin-bottom: 20px;">
+        <label for="username">Enter your name to start:</label>
+        <input type="text" id="username" placeholder="e.g., Chahak">
+        <button onclick="startTracking()">Start</button>
+    </div>
+
+    <!-- Sections that will be tracked -->
+    <section id="home" style="height: 100vh; background: #f0f0f0;">Home Section</section>
+    <section id="about" style="height: 100vh; background: #cceeff;">About Section</section>
+    <section id="contact" style="height: 100vh; background: #ffcccb;">Contact Section</section>
+
+    <script>
+        let tracker;
+
+        function startTracking() {
+            const username = document.getElementById('username').value.trim();
+            if (!username) return alert("Please enter your name.");
+
+            localStorage.setItem('currentUser', username);
+            document.getElementById('userPrompt').style.display = 'none';
+            
+            tracker = new UserBehaviorTracker(username);  // Pass username to tracker
+
+            // Optional: Send data when user leaves
+            window.addEventListener('beforeunload', () => {
+                const payload = {
+                    username: tracker.username,
+                    clicks: tracker.clicks,
+                    typing: tracker.typing,
+                    scrolls: tracker.scrolls,
+                    sectionTimes: tracker.sectionTimes,
+                    idleTime: tracker.idleTime
+                };
+
+                navigator.sendBeacon(
+                    'https://yourserver.com/track',
+                    new Blob([JSON.stringify(payload)], { type: 'application/json' })
+                );
+            });
+        }
+    </script>
+</body>
+</html>
+
