@@ -13,4 +13,8 @@ admin-login.html-a page to login as admin|||
 admin.html-the admin page that shows the dsahboard for all the activities done at index(i,e; user page) with different features for anylaysis of the all the data|||
 tracker.js-handling the working of the features
 
+# Tech Used
+HTMl
+JS
+
 
