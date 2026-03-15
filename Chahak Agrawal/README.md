@@ -1,5 +1,7 @@
 # About Project
 
+UBA-User Beaviour Analysis
+
 Bascic frontend project.
 It tracks activity on user page-like clicks,time spent,no of sessions,time sepnt per sections,etc.
 It stores all the activity in the admin side .
