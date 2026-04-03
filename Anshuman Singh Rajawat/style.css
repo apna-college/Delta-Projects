@@ -1,0 +1,327 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-bar {
+    height: 215px; 
+}
+
+.dan-achievements {
+    background-color: antiquewhite;
+    height: 210px;
+}
+
+.dan-glory {
+    background-color: #fff;
+    height: 170px;
+}
+
+.main-content {
+    background-color: blueviolet;
+    flex-grow: 1;
+}
+
+.nav-up {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background-color: #e4e7ee;
+    font-size: 0.85rem;
+}
+
+.nav-up a {
+   text-decoration: none;
+   color: #000;
+   margin-right: 2rem; 
+}
+
+.nav-up a:hover {
+    color: #eb445a;   
+}
+
+.circle {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #3ebb97;
+    margin-bottom: -1px;
+}
+
+.nav-down {
+    display: flex;
+    height: 100px;
+}
+
+.iskcon {
+    background-color: #ff2d55;
+    display: flex;
+    color: white;
+    width: 25rem;
+}
+
+.iskcon img {
+    height: 3rem;
+    width: 4rem; 
+    padding: 1.5rem 0 1rem 5rem;  
+}
+
+.iskcon p {
+    margin: 0 0 0 0.65rem;
+    padding: 2rem 0 0 0;
+    font-size: 0.70rem;
+    line-height: 1.5;
+}
+
+.iskcon p span {
+    font-size: 1rem;
+    font-weight: 600; 
+    letter-spacing: 0.75px;
+}
+
+.ndown {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    font-weight: 450;
+    padding: 0 5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.n-options a i {
+    margin-bottom: -2px;
+}
+
+.n-icons {
+    margin-right: -6rem;
+}
+
+.n-icons img {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 4px;
+}
+
+.sign-in {
+    background-color: #ff2d55;
+    color: white;
+    border: none;
+    padding: 0.85rem 1.65rem;
+    border-radius: 5px;
+    font-size: 0.90rem;
+    font-weight: 500;
+}
+
+.n-options a {
+    margin-right: 25px;
+}
+
+.dan-achievements {
+    background-image: url("./assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 3rem 0 0 5rem;
+}
+
+.dan-achievements p {
+    display: inline-block;
+    margin-right: 0.65rem;
+    font-weight: 600;
+}
+
+.dan-achievements img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: -8px;
+    margin-right: 0.65rem;
+}
+
+.dan-achievements h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.dan-achievements h1 {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.dan-glory {
+    padding: 3.5rem 5rem 0 5rem;
+}
+
+.dan-glory a {
+    text-decoration: none;
+    color: #ff2d55;
+    font-weight: 400;
+    font-size: 1.10rem;
+}
+
+.dan-glory h1 {
+    margin: 1.25rem 0;
+    font-size: 2.5rem;
+}
+
+.dan-glory i {
+    color: grey;
+    margin-bottom: -2px;
+}
+
+.dan-glory p {
+    color: #3a3e47;
+    font-size: 1.10rem;
+    line-height: 1.4;
+}
+
+.main-content {
+    background-color: #F7F8FA;
+    padding: 1rem 5rem;
+}
+
+.Anna-btns {
+    background-color: #fff;
+    height: 3rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Anna-btns button{
+    appearance: none;
+    border: none;
+    width: 48.5%;
+    height: 80%;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-1 {
+    background-color: #ff2d55;
+    color: #fff;
+}
+
+.btn-2 {
+    color: #111928;
+    background-color: #fff;
+}
+
+.Anna-icons {
+   background-color: #fff;
+    height: 3rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Anna-icons i {
+    font-size: 1.13rem;
+    width: 2.25rem;
+    padding: 0.65rem 0;
+    border-radius: 5px;
+    color: #111928;
+}
+
+.Anna-icons img {
+    background-color: #ff2d55;
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.45rem;
+    border-radius: 5px;
+}
+
+.Anna-daan {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.daan-btns {
+    display: flex;
+    justify-content: flex-end;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+.card {
+    background-color: #fff;
+    width: 24.5rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.card img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.card button {
+    appearance: none;
+    background-color: transparent;
+    color: #637381;
+    border: 1px solid #d5d7d8;
+    border-radius: 5px;
+    width: 9rem;
+    height: 2.5rem;
+    margin-bottom: -2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+
+/* .card-title {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+} */
+
+.card-title h3 {
+    font-weight: 450;
+    font-size: 1.15rem;
+    margin-bottom: 0.85rem;
+}
+
+.card-title h3 i {
+    font-size: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
