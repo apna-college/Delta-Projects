@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <div class="container">
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name..." id="cityInput" />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+
+            <h2 id="cityName">Mumbai</h2>
+            <p id="date">Thursday, 23 April</p>
+
+            <div class="weather-main">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" id="weatherIcon" />
+                <h1 id="temperature">30°C</h1>
+            </div>
+
+            <!-- Details -->
+            <div class="details">
+                <div>
+                    <p>Wind</p>
+                    <h3 id="wind">10 km/h</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
