@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.product {
+  margin: 20px;
+  border: 1px solid #333;
+  padding: 30px 20px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+  background: #1c1c1c;
+}
+
+.product h2 {
+  font-size: 1.4rem;
+}
+
+.product p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.product strong {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+button {
+  width: 140px;
+  background: #3399cc;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+button:hover:not(:disabled) {
+  background: #2277aa;
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.payment-result {
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.payment-result h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.payment-result p {
+  font-size: 0.8rem;
+  word-break: break-all;
+  color: #ccc;
+}
+
+.success {
+  background: #1a3a1a;
+  border: 1px solid #2e7d32;
+}
+
+.failed {
+  background: #3a1a1a;
+  border: 1px solid #c62828;
+}
