@@ -1,0 +1,144 @@
+{
+  "rahul": {
+    "personalInfo": {
+      "name": "Rahul Sharma",
+      "email": "rahulsharma@gmail.com",
+      "phone": "9876543210",
+      "location": "Nagpur, India",
+      "linkedin": "linkedin.com/in/rahulsharma",
+      "github": "github.com/rahulsharma"
+    },
+    "objective": "Motivated BCA student aiming to become a full stack developer.",
+    "education": [
+      { "degree": "BCA", "college": "XYZ College", "year": "2023 - 2026", "percentage": "75%" },
+      { "degree": "12th", "school": "ABC School", "year": "2022", "percentage": "70.85%" }
+    ],
+    "skills": {
+      "technical": ["HTML", "CSS", "JavaScript", "Node.js"],
+      "soft": ["Communication", "Time Management"]
+    },
+    "projects": [
+      {
+        "title": "E-commerce Website",
+        "description": "Built a shopping website with product filters and cart system.",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Delivery Executive",
+        "company": "Zomato",
+        "duration": "2024 - Present",
+        "description": "Handled deliveries and improved customer interaction skills."
+      }
+    ],
+    "certifications": [
+      { "name": "Frontend Development", "platform": "Udemy", "year": "2025" }
+    ],
+    "hobbies": ["Coding", "Gym", "Trading"],
+    "languages": ["Hindi", "English"]
+  },
+
+  "amit": {
+    "personalInfo": {
+      "name": "Amit Verma",
+      "email": "amitverma@gmail.com",
+      "phone": "9123456780",
+      "location": "Pune, India",
+      "linkedin": "linkedin.com/in/amitverma",
+      "github": "github.com/amitverma"
+    },
+    "objective": "Aspiring backend developer focusing on server-side technologies.",
+    "education": [
+      { "degree": "BCA", "college": "PQR College", "year": "2022 - 2025", "percentage": "72%" }
+    ],
+    "skills": {
+      "technical": ["PHP", "MySQL", "Node.js"],
+      "soft": ["Problem Solving", "Adaptability"]
+    },
+    "projects": [
+      {
+        "title": "Student Management System",
+        "description": "Created a system to manage student records using PHP & MySQL.",
+        "technologies": ["PHP", "MySQL"]
+      }
+    ],
+    "experience": [],
+    "certifications": [
+      { "name": "PHP Bootcamp", "platform": "Coursera", "year": "2024" }
+    ],
+    "hobbies": ["Reading Tech Blogs", "Cricket", "Chess"],
+    "languages": ["Hindi", "English"]
+  },
+
+  "neha": {
+    "personalInfo": {
+      "name": "Neha Singh",
+      "email": "neha@gmail.com",
+      "phone": "9988776655",
+      "location": "Delhi, India",
+      "linkedin": "linkedin.com/in/nehasingh",
+      "github": "github.com/nehasingh"
+    },
+    "objective": "Creative frontend developer passionate about UI/UX design.",
+    "education": [
+      { "degree": "BCA", "college": "Delhi College", "year": "2023 - 2026", "percentage": "78%" }
+    ],
+    "skills": {
+      "technical": ["HTML", "CSS", "JavaScript", "React"],
+      "soft": ["Creativity", "Communication"]
+    },
+    "projects": [
+      {
+        "title": "Portfolio Website",
+        "description": "Designed a personal portfolio using modern UI techniques.",
+        "technologies": ["HTML", "CSS", "React"]
+      }
+    ],
+    "experience": [],
+    "certifications": [
+      { "name": "UI/UX Design Basics", "platform": "Google", "year": "2025" }
+    ],
+    "hobbies": ["Designing", "Photography", "Music"],
+    "languages": ["Hindi", "English"]
+  },
+
+  "rohit": {
+    "personalInfo": {
+      "name": "Rohit Patil",
+      "email": "rohit@gmail.com",
+      "phone": "9012345678",
+      "location": "Mumbai, India",
+      "linkedin": "linkedin.com/in/rohitpatil",
+      "github": "github.com/rohitpatil"
+    },
+    "objective": "Passionate developer aiming to build scalable web applications.",
+    "education": [
+      { "degree": "BCA", "college": "Mumbai University", "year": "2021 - 2024", "percentage": "74%" }
+    ],
+    "skills": {
+      "technical": ["JavaScript", "Node.js", "MongoDB"],
+      "soft": ["Leadership", "Teamwork"]
+    },
+    "projects": [
+      {
+        "title": "Chat Application",
+        "description": "Developed real-time chat app using Node.js and sockets.",
+        "technologies": ["Node.js", "Socket.io"]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Intern Developer",
+        "company": "StartupX",
+        "duration": "2023",
+        "description": "Worked on backend APIs and debugging."
+      }
+    ],
+    "certifications": [
+      { "name": "Full Stack Development", "platform": "Udemy", "year": "2024" }
+    ],
+    "hobbies": ["Football", "Coding", "Traveling"],
+    "languages": ["Hindi", "English", "Marathi"]
+  }
+}
