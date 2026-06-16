@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MediaX - Upload</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <!-- Include the same nav element from index.html -->
+
+  <!-- Upload Content -->
+  <main>
+    <div class="upload-container">
+      <h2>Create a New Post</h2>
+      <form id="uploadForm">
+        <label for="contentType">Content Type:</label>
+        <select id="contentType" required>
+          <option value="">Select Type</option>
+          <option value="note">Note</option>
+          <option value="image">Image</option>
+          <option value="thought">Thought</option>
+        </select>
+
+        <div id="fileUploadSection">
+          <label for="fileInput">Select File:</label>
+          <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf">
+        </div>
+
+        <label for="caption">Caption:</label>
+        <textarea id="caption" placeholder="Write a caption..."></textarea>
+
+        <button type="submit">Post</button>
+      </form>
+    </div>
+  </main>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

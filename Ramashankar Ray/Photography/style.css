@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    display: inline-block;
+    vertical-align: middle;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body{
+    background:url('https://aaftonline.com/blog/wp-content/uploads/2024/01/What-are-the-Benefits-of-Photography-Complete-Overview.png');
+    background-size: cover;
+}
+
+.sidebar{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    left: -350px;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.3s ease;
+}
+.sidebar-head{
+    font-family: cursive;
+    padding: 20px;
+    color: #fff;
+}
+
+h2{
+    display: inline;
+}
+
+.sidebar-head label{
+    position: absolute;
+    left: 200px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+.sidebar-body{
+    margin-top: 20px;
+
+
+}
+
+.sidebar-body ul{
+    list-style: none;
+}
+
+.sidebar-body ul li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span{
+    margin:0px 10px 0px 10px;
+}
+
+.social-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    /* margin: 0 10px; */
+}
+.sidebar-footer .social-links{
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    padding: 10px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    text-align: center;
+}
+
+li a:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-head{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-icon{
+    position: absolute;
+    top:8px;
+    left: 8px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#menu-toggle:checked ~ .sidebar{
+    left: 0;
+}
+
+#menu-toggle:checked ~ .menu-icon{
+    opacity: 0;
+    
+}

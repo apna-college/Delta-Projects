@@ -1,0 +1,461 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 28px;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li a i {
+    margin-right: 5px;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  /* Responsive Navigation Menu */
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-toggle-label {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+      display: block;
+      background: #333;
+      height: 2px;
+      width: 25px;
+      border-radius: 2px;
+      position: relative;
+    }
+  
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: 0.3s;
+    }
+  
+    .nav-toggle-label span::before {
+      top: -8px;
+    }
+  
+    .nav-toggle-label span::after {
+      top: 8px;
+    }
+  
+    .nav-toggle:checked + .nav-links {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      display: none;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 0;
+    }
+  
+    .nav-links li {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .nav-links li a {
+      justify-content: center;
+      padding: 15px 0;
+    }
+  }
+  
+  /* Main Content */
+  main {
+    padding: 100px 20px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Post Styles */
+  .post {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .post-header .username {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .post-content {
+    margin-top: 15px;
+  }
+  
+  .post-content p {
+    margin: 0 0 10px 0;
+  }
+  
+  .post-content img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .post-footer {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .post-footer .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .post-footer button {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .post-footer button:hover {
+    color: #007BFF;
+  }
+  
+  .post-footer .comments-toggle {
+    color: #007BFF;
+  }
+  
+  /* Comments Section */
+  .post-comments {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .comment img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .comment .comment-text {
+    margin-left: 10px;
+  }
+  
+  .comment .username {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .comment-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .comment-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .comment-form button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .comment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    nav .logo span {
+      font-size: 24px;
+    }
+  
+    .nav-links li a {
+      font-size: 14px;
+    }
+  
+    .nav-links li a i {
+      display: none;
+    }
+  
+    .post-header img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .comment img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+
+  /* Authentication Styles */
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.auth-header {
+  margin-bottom: 20px;
+}
+
+.auth-header img {
+  height: 50px;
+}
+
+.auth-header h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  padding: 12px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-container button:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s;
+}
+
+.auth-container p {
+  margin-top: 15px;
+}
+
+
+/* Profile Styles */
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-header img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-header h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.profile-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+/* Upload Styles */
+.upload-container {
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.upload-container h2 {
+  margin-bottom: 20px;
+}
+
+.upload-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-container label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.upload-container input,
+.upload-container select,
+.upload-container textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.upload-container button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-container button:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s;
+}
+
+/* Hide File Upload when Not Needed */
+#fileUploadSection.hidden {
+  display: none;
+}
+
+
+/* Search Styles */
+.search-container {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.search-container h2 {
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#searchResults {
+  margin-top: 30px;
+}
