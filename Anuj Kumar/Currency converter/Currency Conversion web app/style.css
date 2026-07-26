@@ -1,0 +1,174 @@
+/* 1. Global Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0a192f;
+    color: #e0f2fe;
+}
+
+/* 2. Main Card Wrapper */
+.wrapper {
+    background-color: #172a45;
+    width: 90%;
+    max-width: 380px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Amount Field */
+.amount-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.amount-field label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.amount-field input {
+    background-color: #0a192f;
+    border: 1px solid #334155;
+    color: #ffffff;
+    height: 2.75rem;
+    font-size: 1.1rem;
+    padding: 0 0.85rem;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.amount-field input:focus {
+    border-color: #38bdf8;
+}
+
+/* 4. Dropdowns Container */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.select-box p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Wrapper around Flag + Select */
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #0a192f;
+    border: 1px solid #334155;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+}
+
+/* Flag Icon adjustments */
+.select-wrapper .fi {
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+
+/* Custom Select Styling */
+.select-wrapper select {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.select-wrapper select option {
+    background-color: #0a192f;
+    color: #ffffff;
+}
+
+/* Swap Icon Button */
+.swap-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    color: #38bdf8;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.swap-icon:hover {
+    background-color: rgba(56, 189, 248, 0.1);
+    transform: rotate(180deg);
+}
+
+/* 5. Result Display Text */
+.exchange-rate {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin: 0.5rem 0 1.25rem 0;
+    min-height: 1.5rem;
+}
+
+/* 6. Convert Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #38bdf8;
+    color: #0a192f;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7dd3fc;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Flag Icons CDN -->
+    <link rel="stylesheet" href="https://flagcdn.io/css/flag-icons.min.css" />
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=currency_exchange" />
+    <title>Convert - Your Money Currency</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Currency Converter</h2>
+        <form>
+            <!-- Amount Input Section -->
+            <div class="amount-field">
+                <label for="amount">Enter amount</label>
+                <input type="number" id="amount" value="1" min="1">
+            </div>
+
+            <!-- Currency Selection Section -->
+            <div class="dropdown-container">
+                <!-- From Section -->
+                <div class="select-box from">
+                    <p>From</p>
+                    <div class="select-wrapper">
+                        <span class="fi fi-us" id="from-flag"></span>
+                        <select id="from-select" name="from">
+                            <option value="USD" selected>USD</option>
+                            <option value="INR">INR</option>
+                            <option value="NPR">NPR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Swap Icon -->
+                <div class="swap-icon">
+                    <span class="material-symbols-outlined">currency_exchange</span>
+                </div>
+
+                <!-- To Section -->
+                <div class="select-box to">
+                    <p>To</p>
+                    <div class="select-wrapper">
+                        <span class="fi fi-in" id="to-flag"></span>
+                        <select id="to-select" name="to">
+                            <option value="USD">USD</option>
+                            <option value="INR" selected>INR</option>
+                            <option value="NPR">NPR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Display -->
+            <div class="exchange-rate">1 USD = 96.57 INR</div>
+
+            <!-- Submit Button -->
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="country-list.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
