@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #F8F6F3;
+}
+
+header{
+    height: 3rem;
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1{
+    text-align: center;
+    color: #7C3AED;
+}
+
+.searchArea{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    /* background-color: pink; */
+}
+
+#searchBar{
+    width:350px;
+    height: 2.2rem;
+    border-radius: 7px;
+    border: 1.5px solid #E5E7EB;
+    padding-left: 0.25rem;
+    font-size: 14px;
+}
+
+.searchBtn{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 450;
+    background-color: #7C3AED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2.2px;
+}
+
+main{
+    width: 100vw;
+    height: 94vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    height: 98%;
+    width: 98%;
+    /* background-color: purple; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 25px;
+}
+.card{
+height: 380px;
+width: 220px;
+background-color: #FFFFFF;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px;
+border-radius: 14px;
+ box-shadow: 0 4px 12px rgba(0,0,0,.08);
+ overflow: hidden;
+}
+.bookimg{
+    max-height: 220px;
+    object-fit: cover;
+    width: auto;
+}
+.title{
+    color: #1F2937;
+}
+.author{
+    color: #6B7280;
+}
