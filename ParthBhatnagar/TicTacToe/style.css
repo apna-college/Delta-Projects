@@ -1,0 +1,39 @@
+body{
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    background-color: #212121;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    display: flex;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 33px;
+    font-size: 35px;
+    font-weight: 700;
+    
+   
+}
+
+.reset{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.symbol{
+    padding-top: 15px;
+}
