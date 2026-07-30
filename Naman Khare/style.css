@@ -4,6 +4,7 @@
   padding: 0px;
   margin: 0px;
   font-family: "Poppins", sans-serif;
+  box-sizing:border-box;
 }
 
 body {
@@ -72,7 +73,6 @@ body {
 
 .fact-content::-webkit-scrollbar {
   display: none;
-  padding: 10px;
 }
 
 .generate-btn {
