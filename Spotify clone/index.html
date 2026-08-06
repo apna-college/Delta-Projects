@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-search"></i>
+                    <a href="#">Search</a>
+                </div>
+
+            </div>
+            <div class="library">
+
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png" alt="Library icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus" style="color: rgb(220, 226, 237);"></i>
+                        <i class="fa-solid fa-arrow-right" style="color: rgb(220, 226, 237);"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box1">
+                        <h4>Create your first playlist</h4>
+                        <p>It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box2">
+                        <h4>Let's listen to some podcasts</h4>
+                        <p>I'll help you find new shows and episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="backward_icon.png" alt="Backword arrow">
+                    <img src="forward_icon.png" alt="Forward arrow" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge hide">Explore Premium</button>
+                    <button class="badge" style="background-color: black; color: white;"><i
+                            class="fa-regular fa-circle-down"
+                            style="margin-right: 5px; background-color: black; color: white;"></i>Install
+                        App</button>
+                    <i class="fa-regular fa-user" style="padding-left: 20px; "></i>
+                </div>
+
+
+            </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card1img.jpeg" alt="Card 1 image" class="card-image">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily update of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" alt="Card 2 image" class="card-image">
+                    <p class="card-title">Mahiye Jinna Sona</p>
+                    <p class="card-info">Song: Darshal rawal</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" alt="Card 4 image" class="card-image">
+                    <p class="card-title">Apna Bana Le Piya</p>
+                    <p class="card-info">Song: Arijit Singh</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" alt="Card 5 image" class="card-image">
+                    <p class="card-title">Top Songs-Global</p>
+                    <p class="card-info">The top most streamed songs globally</p>
+                </div>
+            </div>
+            <h2>Trending Now Near You</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card2img.jpeg" alt="Card 2 image" class="card-image">
+                    <p class="card-title">Mahiye Jinna Sona</p>
+                    <p class="card-info">Song: Darshal rawal</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="card3img.jpeg" alt="Card 3 image" class="card-image">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+
+
+
+                <div class="card">
+                    <img src="card4img.jpeg" alt="Card 4 image" class="card-image">
+                    <p class="card-title">Apna Bana Le Piya</p>
+                    <p class="card-info">Song: Arijit Singh</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="card5img.jpeg" alt="Card 5 image" class="card-image">
+                    <p class="card-title">Top Songs-Global</p>
+                    <p class="card-info">The top most streamed songs globally</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="card6img.jpeg" alt="Card 6 image" class="card-image">
+                    <p class="card-title">Top Songs-India</p>
+                    <p class="card-info">The top most streamed songs in India</p>
+                </div>
+
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card1img.jpeg" alt="Card 1 image" class="card-image">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily update of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" alt="Card 5 image" class="card-image">
+                    <p class="card-title">Top-Songs-Global</p>
+                    <p class="card-info">The top most streamed songs globally</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" alt="Card 6 image" class="card-image">
+                    <p class="card-title">Top 50-India</p>
+                    <p class="card-info">The top most streamed songs in India</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="music-player">
+        <div class="album">
+            <img src="card2img.jpeg" alt="card2image" class="album-image">
+            <div class="album-info">
+                <p class="title">Mahiye Jinna Sona</p>
+                <p class="artist">Darshal rawal</p>
+            </div>
+        </div>  
+        <div class="player">
+            <div class="player-controls">
+                <img src="player_icon1.png" class="player-control-icon" id="one">
+                <img src="player_icon2.png" class="player-control-icon " id="two">
+                <img src="player_icon3.png" class="player-control-icon " id="main">
+                <img src="player_icon4.png" class="player-control-icon" id="four">
+                <img src="player_icon5.png" class="player-control-icon" id="five">
+            </div>
+            <div class="playback-bar">
+                <span class="current-time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="total-time">03:34</span>
+
+            </div>
+        </div>
+        <div class="controls">
+            <div class="controls">
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-laptop"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <input type="range" class="volume-bar">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
