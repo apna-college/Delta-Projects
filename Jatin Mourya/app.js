@@ -1,17 +1,21 @@
 let url = "https://quote-garden.onrender.com/api/v3/quotes/random";
 let btn = document.getElementById("btn");
+let copyBtn = document.getElementById("copyBtn");
+let themeBtn = document.getElementById("themeBtn");
 
 btn.addEventListener("click", async() => {
-    let quote = await getQuote();
+     let qt = document.querySelector("#quote");
+     qt.innerText = "Loading...";
+
+     let quote = await getQuote();
+
+     qt.innerHTML = '"' + quote[0] + '"';
+
+     let atn = document.querySelector("author");
+     atn.innerText = "-" + quote[1];
+
     console.log(quote[0]);
     console.log(quote[1]);
-
-    let qt = document.querySelector("#quote");
-    // let ans = quote[0].toUpperCase();
-    qt.innerHTML = '"' + quote[0] + '"';
-
-    let ath = document.querySelector("#author");
-    ath.innerText = "- " + quote[1];
 });
 
 async function getQuote() {
@@ -24,3 +28,10 @@ async function getQuote() {
         console.log("error - ", e);
     }
 }
+
+copyBtn.addEventListener("click", () => {
+    let quote = document.getElementById("quote").innerText;
+    navigator.clipboard.writeText(quote);
+    alert("Quote Copied Successfilly");
+});
+

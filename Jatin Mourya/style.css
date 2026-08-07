@@ -9,7 +9,7 @@ body {
     height: 100vh;
     width: 100%;
     color: #262322;
-    background-color: #f2e5d7;
+    background-color: #feb9e6;
 }
 
 .top {
@@ -40,11 +40,12 @@ body {
 .main .quote-area {
     height: 55vh;
     width: 27rem;
-    background-color: #eff1f5;
+    background-color: #a6c0f5;
     border-radius: 0.7rem;
     padding: 1.3rem 3rem;
     overflow-y: auto;
     box-sizing: border-box;
+
 }
 
 /* .quote-area::-webkit-scrollbar {
@@ -56,10 +57,14 @@ body {
     font-weight: 600;
     line-height: 2.3rem;
     text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgb(122 122 122)
 }
 
 .main .quote-area #author {
     font-size: 1.1rem;
+    color: red;
+    font-weight: 600;
+    text-shadow:1px 1px 5px rgb(241, 104, 124);
 }
 
 .bottom {
@@ -72,12 +77,13 @@ body {
     width: 27rem;
     height: 4rem;
     color: #fff;
-    background-color: #262322;
+    background-color: #434cf6;
     border-radius: 0.7rem;
     font-weight: 700;
     font-size: 1.1rem;
     border: 0;
     cursor: pointer;
+    
 }
 
 .end {
@@ -90,6 +96,7 @@ body {
     font-weight: 600;
     font-size: 0.8rem;
     padding-top: 0.5rem;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 720px){
@@ -99,3 +106,22 @@ body {
     }
 }
 
+#btn {
+    text-shadow: 5px 5px 10px rgb(22, 21, 21);
+}
+
+#copyBtn {
+    text-shadow: 5px 5px 10px rgb(22, 21, 21);
+}
+
+.bottom #copyBtn {
+    width: 10rem;
+    height: 4rem;
+    color: #fff;
+    background-color: #434cf6;
+    border-radius: 1.7rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 0;
+    cursor: pointer;
+}
