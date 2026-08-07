@@ -3,6 +3,7 @@ let btn = document.getElementById("btn");
 let copyBtn = document.getElementById("copyBtn");
 let themeBtn = document.getElementById("themeBtn");
 
+
 btn.addEventListener("click", async() => {
      let qt = document.querySelector("#quote");
      qt.innerText = "Loading...";
