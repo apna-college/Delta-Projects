@@ -48,9 +48,6 @@ body {
 
 }
 
-/* .quote-area::-webkit-scrollbar {
-    display: none;
-} */
 
 .main .quote-area #quote {
     font-size: 1.6rem;
@@ -67,24 +64,7 @@ body {
     text-shadow:1px 1px 5px rgb(241, 104, 124);
 }
 
-.bottom {
-    display: flex;
-    justify-content: center;
-    padding-top: 1.5rem;
-}
 
-.bottom #btn {
-    width: 27rem;
-    height: 4rem;
-    color: #fff;
-    background-color: #434cf6;
-    border-radius: 0.7rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border: 0;
-    cursor: pointer;
-    
-}
 
 .end {
     display: flex;
@@ -114,14 +94,34 @@ body {
     text-shadow: 5px 5px 10px rgb(22, 21, 21);
 }
 
-.bottom #copyBtn {
-    width: 10rem;
-    height: 4rem;
-    color: #fff;
-    background-color: #434cf6;
-    border-radius: 1.7rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border: 0;
+
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.bottom button{
+    padding: 14px 28px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4facfe, #0066ff);
+    border: none;
+    border-radius: 40px;
     cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.bottom button:hover{
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #0066ff, #4facfe);
+}
+
+.bottom button:active{
+    transform: scale(0.96);
 }
