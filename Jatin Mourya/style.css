@@ -8,8 +8,8 @@ body {
 .container {
     height: 100vh;
     width: 100%;
-    color: #262322;
-    background-color: #feb9e6;
+    color: #f27951;
+    background-color: #0c0c0c;
 }
 
 .top {
@@ -54,7 +54,8 @@ body {
     font-weight: 600;
     line-height: 2.3rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 8px rgb(122 122 122)
+    text-shadow: 2px 2px 8px rgb(122 122 122);
+    color: black
 }
 
 .main .quote-area #author {
