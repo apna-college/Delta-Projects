@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+}
+body {
+  background-color: #0b1026;
+  padding: 1rem 0;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #151a3a;
+  border: 1px solid #4b5280;
+  border-radius: 1rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(255, 79, 129, 0.3);
+  padding-top: 1rem;
+}
+.keep {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+  border: 1px solid #515a88;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: #1d2344;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+}
+.totalTasks {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  background-color: #ff4f81;
+  box-shadow: 0 4px 15px rgba(255, 107, 145, 0.45);
+  border: none;
+  border-radius: 50%;
+}
+.addtask {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+.addtask .inp {
+  width: 90%;
+  font-size: 1.1rem;
+  border: 1px solid #555d8a;
+  outline: none; /*is property se input ko click karne per uska border nahi aata hai lekin agar ise nahi likhenge chahe border none set kiya ho tab bhi click karne per input ko border aa jata hai */
+  border-radius: 1.5rem;
+  padding: 0.5rem 0.85rem;
+  background-color: #24294a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.addtask ::placeholder {
+  /*isse placeholder me jo likha usper style de sakte hai */
+  color: #a7aec7;
+}
+.addtask #btn {
+  background-color: #ff4f81;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(255, 79, 129, 0.4);
+}
+.addtask #btn:hover {
+  background-color: #ff6b9a;
+  box-shadow: 0 0 18px rgba(255, 107, 154, 0.55);
+  transform: scale(1.1);
+  cursor: pointer;
+  opacity: 0.9;
+}
+.toggle {
+  padding: 1rem 1rem 0;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.itemBox {
+  background-color: #20264a;
+  border: 1px solid #3f4772;
+  color: #f8faff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 2rem;
+}
+ul {
+  list-style-type: none; /* bullet points remove karne ke liye*/
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.check {
+  appearance: none;
+}
+.checkdiv {
+  height: 1.4rem;
+  width: 1.4rem;
+  border: 2px solid #6b7399;
+  background: transparent;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  text-align: center;
+  padding-top: 0.1rem;
+}
+.checkdiv:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.compDiv {
+  color: #fff;
+  border: 2px solid #00e676;
+  background-color: #00e676;
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.4);
+}
+.editBtn {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(255, 193, 7, 0.35);
+  font-size: 0.9rem;
+  padding: 0.35rem;
+  background-color: #ffc107;
+  color: #fff;
+  margin-right: 0.3rem;
+}
+.editBtn:hover {
+  background-color: #ffdf4f;
+  box-shadow: 0 0 15px rgba(255, 213, 79, 0.5);
+}
+.delBtn {
+  border: none;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  padding: 0.35rem;
+  background-color: #ff4f81;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 79, 129, 0.35);
+}
+.delBtn:hover {
+  background-color: #ff6b9a;
+  box-shadow: 0 0 15px rgba(255, 107, 154, 0.5);
+}
+.span {
+  font-size: 1.3rem;
+  color: white;
+}
+.span:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editInp {
+  border: 1px solid #555d8a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  width: 80%;
+  background-color: #24294a;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.editInp {
+  cursor: pointer;
+}
+.seveEditBtn {
+  border: none;
+  color: #fff;
+  background-color: #22c55e;
+  box-shadow: 0 3px 10px rgba(34, 197, 94, 0.3);
+  font-size: 1rem;
+  padding: 0.35rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.taskCom {
+  text-decoration: 3px line-through black;
+  color: #fff;
+}
+.taskPend {
+  color: #fff;
+  text-decoration: none;
+}
+.dark {
+  background-color: #0b1026;
+}
+.light {
+  background-color: #000; /*isko black se kuch aur accha desing dena hai */
+}

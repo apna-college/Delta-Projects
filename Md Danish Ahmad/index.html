@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="toggle"><i class="fa-regular fa-lightbulb"></i></button>
+      <div class="box">
+        <h2>To-Do App</h2>
+        <div class="keep">
+          <p>Keep it Up!</p>
+          <div class="totalTasks">
+            <div class="task-completed">0</div>
+            <span id="task-span">/</span>
+            <div class="task">0</div>
+          </div>
+        </div>
+        <div class="addtask">
+          <input type="text" placeholder="Add New Task" class="inp" />
+          <button id="btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+      <div class="task-list">
+        <ul id="list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
